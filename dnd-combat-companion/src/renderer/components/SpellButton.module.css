@@ -1,0 +1,72 @@
+.button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 8px 10px;
+  background: rgba(10, 10, 20, 0.82);
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  cursor: pointer;
+  color: #fff;
+  font-family: inherit;
+  text-align: left;
+  transition: background 0.15s, transform 0.1s;
+  backdrop-filter: blur(6px);
+}
+
+.button:hover {
+  background: rgba(20, 20, 35, 0.92);
+  transform: translateX(-2px);
+}
+
+.dot {
+  flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.name {
+  flex: 1;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #fff;
+}
+
+.badge {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--accent);
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.pinIcon {
+  flex-shrink: 0;
+  font-size: 11px;
+  color: var(--accent);
+  opacity: 0.8;
+  line-height: 1;
+}
+
+.dismiss {
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 2px;
+  transition: color 0.15s;
+}
+
+.dismiss:hover {
+  color: #fff;
+}

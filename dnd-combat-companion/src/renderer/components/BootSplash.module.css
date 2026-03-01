@@ -1,0 +1,92 @@
+.splash {
+  position: fixed;
+  bottom: 60px;
+  right: 16px;
+  width: 260px;
+  background: rgba(4, 12, 4, 0.97);
+  border: 1px solid #1a6b1a;
+  border-radius: 6px;
+  padding: 14px 16px 12px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #39d353;
+  box-shadow: 0 0 18px rgba(57, 211, 83, 0.15), inset 0 0 30px rgba(0, 0, 0, 0.4);
+  z-index: 100;
+  pointer-events: none;
+  animation: flicker 0.15s ease-in-out;
+}
+
+@keyframes flicker {
+  0%   { opacity: 0; }
+  60%  { opacity: 0.8; }
+  80%  { opacity: 0.6; }
+  100% { opacity: 1; }
+}
+
+.fadeOut {
+  animation: fadeOut 1.6s ease-out forwards;
+}
+
+@keyframes fadeOut {
+  0%   { opacity: 1; transform: scale(1); }
+  70%  { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(0.97); }
+}
+
+.banner {
+  margin: 0 0 4px;
+  font-size: 9px;
+  line-height: 1.4;
+  color: #57e870;
+  letter-spacing: 0.5px;
+  white-space: pre;
+}
+
+.subtitle {
+  font-size: 10px;
+  font-weight: bold;
+  color: #57e870;
+  letter-spacing: 0.12em;
+  margin-bottom: 8px;
+}
+
+.divider {
+  font-size: 10px;
+  color: #1a6b1a;
+  margin-bottom: 8px;
+  letter-spacing: 0;
+}
+
+.log {
+  font-size: 11px;
+  line-height: 1.8;
+  color: #39d353;
+}
+
+.prompt {
+  color: #57e870;
+  font-weight: bold;
+}
+
+.ok {
+  color: #57e870;
+  font-weight: bold;
+}
+
+.barRow {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+}
+
+.bar {
+  color: #39d353;
+  letter-spacing: -0.5px;
+}
+
+.barLabel {
+  color: #57e870;
+  font-weight: bold;
+  font-size: 11px;
+  margin-left: 2px;
+}
