@@ -2,45 +2,46 @@ import * as fs from 'fs'
 import * as path from 'path'
 
 /**
- * Load all spell/feature keywords from the built JSON data files.
+ * Load all keywords from the built JSON data files.
  * Returns them as lowercase strings for Vosk grammar.
  *
  * In production, data files are in process.resourcesPath/data/.
  * In development, they're relative to the project src.
  */
 export function loadKeywords(): string[] {
-  let spells: { name: string }[] = []
-  let features: { name: string }[] = []
-
   const isProd = !process.env['ELECTRON_RENDERER_URL']
 
   const dataDir = isProd
     ? path.join(process.resourcesPath, 'data')
     : path.resolve(__dirname, '../../src/renderer/data')
 
-  try {
-    const spellsPath = path.join(dataDir, 'spells.json')
-    const featuresPath = path.join(dataDir, 'features.json')
-
-    if (fs.existsSync(spellsPath)) {
-      spells = JSON.parse(fs.readFileSync(spellsPath, 'utf-8'))
-    } else {
-      console.warn('[grammar] spells.json not found at', spellsPath)
-    }
-
-    if (fs.existsSync(featuresPath)) {
-      features = JSON.parse(fs.readFileSync(featuresPath, 'utf-8'))
-    } else {
-      console.warn('[grammar] features.json not found at', featuresPath)
-    }
-  } catch (err) {
-    console.error('[grammar] Failed to load data files:', err)
-  }
-
-  const allNames = [
-    ...spells.map((s) => s.name.toLowerCase()),
-    ...features.map((f) => f.name.toLowerCase())
+  const dataFiles = [
+    'spells.json',
+    'features.json',
+    'feats.json',
+    'equipment.json',
+    'backgrounds.json',
+    'species.json',
+    'rules.json',
+    'magicItems.json',
+    'daggerheart.json'
   ]
+
+  const allNames: string[] = []
+
+  for (const file of dataFiles) {
+    try {
+      const filePath = path.join(dataDir, file)
+      if (fs.existsSync(filePath)) {
+        const entries: { name: string }[] = JSON.parse(fs.readFileSync(filePath, 'utf-8'))
+        allNames.push(...entries.map((e) => e.name.toLowerCase()))
+      } else {
+        console.warn(`[grammar] ${file} not found at`, filePath)
+      }
+    } catch (err) {
+      console.error(`[grammar] Failed to load ${file}:`, err)
+    }
+  }
 
   // Also extract individual words from multi-word names so Vosk can recognise
   // partial speech (e.g. "fire" from "fire bolt", "magic" from "magic missile").

@@ -8,6 +8,10 @@ import type { KeywordDetectedPayload } from '../preload/types'
 let speechProcess: ChildProcess | null = null
 let isListening = false
 
+// Prevent unhandled EPIPE crashes when piped child processes exit unexpectedly
+process.stdout?.on('error', () => {})
+process.stderr?.on('error', () => {})
+
 function getModelPath(): string {
   const isProd = !process.env['ELECTRON_RENDERER_URL']
   return isProd
@@ -59,7 +63,11 @@ export function startSpeechPipeline(mainWindow: BrowserWindow): void {
     silent: true
   })
 
-  // Still forward worker output to Electron's console in dev
+  // Still forward worker output to Electron's console in dev.
+  // Swallow EPIPE errors that occur when the worker exits while streams are piped
+  // (common during React StrictMode double-invoke).
+  speechProcess.stdout?.on('error', () => {})
+  speechProcess.stderr?.on('error', () => {})
   speechProcess.stdout?.pipe(process.stdout)
   speechProcess.stderr?.pipe(process.stderr)
 
@@ -117,9 +125,9 @@ export function stopSpeechPipeline(mainWindow: BrowserWindow): void {
   isListening = false
   mainWindow.webContents.send('speech:status', 'stopped')
   if (proc) {
-    proc.send({ type: 'stop' })
+    try { proc.send({ type: 'stop' }) } catch { /* already exited */ }
     // Closure keeps `proc` alive until the timeout fires
-    setTimeout(() => proc.kill(), 500)
+    setTimeout(() => { try { proc.kill() } catch { /* already exited */ } }, 500)
   }
 }
 

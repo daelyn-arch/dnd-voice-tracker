@@ -1,7 +1,6 @@
 import React from 'react'
-import { isSpell } from '../types'
 import type { Detection } from '../types'
-import { getSchoolColor } from './schoolColors'
+import { getEntryColor } from './schoolColors'
 import styles from './SpellCard.module.css'
 
 interface Props {
@@ -13,8 +12,7 @@ interface Props {
 
 export function SpellCard({ detection, onCollapse, onDismiss, onPin }: Props): React.JSX.Element {
   const { entry } = detection
-  const isSpellEntry = isSpell(entry)
-  const color = isSpellEntry ? getSchoolColor(entry.school) : getSchoolColor('Feature')
+  const color = getEntryColor(entry)
 
   return (
     <div className={styles.card} style={{ '--accent': color } as React.CSSProperties}>
@@ -39,53 +37,107 @@ export function SpellCard({ detection, onCollapse, onDismiss, onPin }: Props): R
       </div>
 
       <div className={styles.body}>
-        {isSpellEntry ? (
-          <>
-            <div className={styles.meta}>
-              <MetaRow label="Level" value={entry.level === 0 ? 'Cantrip' : `${entry.level}`} />
-              <MetaRow label="School" value={entry.school} />
-              <MetaRow label="Casting Time" value={entry.castingTime} />
-              <MetaRow label="Range" value={entry.range} />
-              <MetaRow label="Components" value={entry.components} />
-              <MetaRow label="Duration" value={entry.concentration ? `Concentration, ${entry.duration}` : entry.duration} />
-              {entry.classes.length > 0 && (
-                <MetaRow label="Classes" value={entry.classes.join(', ')} />
-              )}
-            </div>
-
-            <div className={styles.divider} />
-            <p className={styles.description}><RichText text={entry.description} /></p>
-
-            {entry.higherLevels && (
-              <>
-                <div className={styles.divider} />
-                <p className={styles.higherLevels}>
-                  <span className={styles.hlLabel}>At Higher Levels.</span>{' '}
-                  <RichText text={entry.higherLevels} />
-                </p>
-              </>
-            )}
-          </>
-        ) : (
-          <>
-            <div className={styles.meta}>
-              <MetaRow label="Class" value={entry.class} />
-              <MetaRow label="Available at" value={`Level ${entry.levelAvailable}`} />
-              {entry.usesPerRest && (
-                <MetaRow label="Uses" value={entry.usesPerRest} />
-              )}
-              {entry.restType && entry.restType !== 'none' && (
-                <MetaRow label="Recharges" value={`${entry.restType} rest`} />
-              )}
-            </div>
-
-            <div className={styles.divider} />
-            <p className={styles.description}><RichText text={entry.description} /></p>
-          </>
-        )}
+        <CardBody entry={entry} />
       </div>
     </div>
   )
+}
+
+function CardBody({ entry }: { entry: Detection['entry'] }): React.JSX.Element {
+  switch (entry._type) {
+    case 'spell':
+      return (
+        <>
+          <div className={styles.meta}>
+            <MetaRow label="Level" value={entry.level === 0 ? 'Cantrip' : `${entry.level}`} />
+            <MetaRow label="School" value={entry.school} />
+            <MetaRow label="Casting Time" value={entry.castingTime} />
+            <MetaRow label="Range" value={entry.range} />
+            <MetaRow label="Components" value={entry.components} />
+            <MetaRow label="Duration" value={entry.concentration ? `Concentration, ${entry.duration}` : entry.duration} />
+            {entry.classes.length > 0 && (
+              <MetaRow label="Classes" value={entry.classes.join(', ')} />
+            )}
+          </div>
+          <div className={styles.divider} />
+          <p className={styles.description}><RichText text={entry.description} /></p>
+          {entry.higherLevels && (
+            <>
+              <div className={styles.divider} />
+              <p className={styles.higherLevels}>
+                <span className={styles.hlLabel}>At Higher Levels.</span>{' '}
+                <RichText text={entry.higherLevels} />
+              </p>
+            </>
+          )}
+        </>
+      )
+
+    case 'feature':
+      return (
+        <>
+          <div className={styles.meta}>
+            <MetaRow label="Class" value={entry.class} />
+            <MetaRow label="Available at" value={entry.levelAvailable === 0 ? 'Class Intro' : `Level ${entry.levelAvailable}`} />
+            {entry.subclass && <MetaRow label="Subclass" value={entry.subclass} />}
+            {entry.usesPerRest && <MetaRow label="Uses" value={entry.usesPerRest} />}
+            {entry.restType && entry.restType !== 'none' && (
+              <MetaRow label="Recharges" value={`${entry.restType} rest`} />
+            )}
+          </div>
+          <div className={styles.divider} />
+          <p className={styles.description}><RichText text={entry.description} /></p>
+        </>
+      )
+
+    case 'feat':
+      return (
+        <>
+          <div className={styles.meta}>
+            <MetaRow label="Type" value={entry.featType ?? 'Feat'} />
+          </div>
+          <div className={styles.divider} />
+          <p className={styles.description}><RichText text={entry.description} /></p>
+        </>
+      )
+
+    case 'magicItem':
+      return (
+        <>
+          <div className={styles.meta}>
+            {entry.rarity && <MetaRow label="Rarity" value={entry.rarity} />}
+            {entry.attunement !== undefined && (
+              <MetaRow label="Attunement" value={entry.attunement ? 'Required' : 'No'} />
+            )}
+          </div>
+          <div className={styles.divider} />
+          <p className={styles.description}><RichText text={entry.description} /></p>
+        </>
+      )
+
+    case 'daggerheart': {
+      const catLabel = entry.category === 'class features' ? 'Class Feature'
+        : entry.category.charAt(0).toUpperCase() + entry.category.slice(1)
+      return (
+        <>
+          <div className={styles.meta}>
+            <MetaRow label="System" value="Daggerheart" />
+            <MetaRow label="Category" value={catLabel} />
+          </div>
+          <div className={styles.divider} />
+          <p className={styles.description}><RichText text={entry.description} /></p>
+        </>
+      )
+    }
+
+    // equipment, background, species, rules — simple description cards
+    default:
+      return (
+        <>
+          <p className={styles.description}><RichText text={entry.description} /></p>
+        </>
+      )
+  }
 }
 
 function MetaRow({ label, value }: { label: string; value: string }): React.JSX.Element {

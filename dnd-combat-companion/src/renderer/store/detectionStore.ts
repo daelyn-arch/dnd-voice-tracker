@@ -1,7 +1,9 @@
 import { create } from 'zustand'
-import type { Detection, Entry } from '../types'
+import type { Detection, Entry, EntryType } from '../types'
 
-const MAX_DETECTIONS = 32
+const MAX_DETECTIONS = 128
+
+type VisibleTypes = Record<EntryType, boolean>
 
 interface DetectionStore {
   detections: Detection[]
@@ -17,10 +19,28 @@ interface DetectionStore {
   setError: (msg: string | null) => void
   catchAllMode: boolean
   toggleCatchAllMode: () => void
+
+  // Unified visibility map replaces showSpells/showFeatures
+  visibleTypes: VisibleTypes
+  toggleVisibleType: (type: EntryType) => void
+
+  // Legacy compat — derived from visibleTypes
   showSpells: boolean
   showFeatures: boolean
   toggleShowSpells: () => void
   toggleShowFeatures: () => void
+}
+
+const DEFAULT_VISIBLE: VisibleTypes = {
+  spell: true,
+  feature: true,
+  feat: true,
+  equipment: true,
+  background: true,
+  species: true,
+  rules: true,
+  magicItem: true,
+  daggerheart: true
 }
 
 export const useDetectionStore = create<DetectionStore>((set, get) => ({
@@ -28,12 +48,14 @@ export const useDetectionStore = create<DetectionStore>((set, get) => ({
   isListening: false,
   errorMsg: null,
   catchAllMode: false,
-  showSpells: true,
-  showFeatures: true,
+  visibleTypes: { ...DEFAULT_VISIBLE },
+
+  // Legacy derived getters
+  get showSpells() { return get().visibleTypes.spell },
+  get showFeatures() { return get().visibleTypes.feature },
 
   addDetection(keyword, entry) {
     set((state) => {
-      // Dedup: if same keyword already present, refresh its timestamp
       const existing = state.detections.find(
         (d) => d.keyword === keyword
       )
@@ -54,7 +76,6 @@ export const useDetectionStore = create<DetectionStore>((set, get) => ({
         pinned: false
       }
 
-      // Cap at MAX_DETECTIONS — drop oldest
       const list = [next, ...state.detections].slice(0, MAX_DETECTIONS)
       return { detections: list }
     })
@@ -102,11 +123,17 @@ export const useDetectionStore = create<DetectionStore>((set, get) => ({
     set((s) => ({ catchAllMode: !s.catchAllMode }))
   },
 
-  toggleShowSpells() {
-    set((s) => ({ showSpells: !s.showSpells }))
+  toggleVisibleType(type) {
+    set((s) => ({
+      visibleTypes: { ...s.visibleTypes, [type]: !s.visibleTypes[type] }
+    }))
   },
 
+  // Legacy toggle methods
+  toggleShowSpells() {
+    get().toggleVisibleType('spell')
+  },
   toggleShowFeatures() {
-    set((s) => ({ showFeatures: !s.showFeatures }))
+    get().toggleVisibleType('feature')
   }
 }))

@@ -1,0 +1,862 @@
+[
+  {
+    "id": "core-cleric-traits",
+    "name": "Core Cleric Traits",
+    "description": "Primary Ability: Wisdom\nHit Point Die: D8 per Cleric level\nSaving Throw Proficiencies: Wisdom and Charisma\nSkill Proficiencies: Choose 2: History, Insight, Medicine, Persuasion, or Religion\nWeapon Proficiencies: Simple weapons\nArmor Training: Light and Medium armor and Shields\nStarting Equipment: Choose A or B: (A) Chain Shirt, Shield, Mace, Holy Symbol, Priest's Pack, and 7 GP; or (B) 110 GP"
+  },
+  {
+    "id": "cleric-class-features",
+    "name": "Cleric Class Features",
+    "description": "As a Cleric, you gain the following class features when you reach the specified Cleric levels. These features are listed in the Cleric Features table."
+  },
+  {
+    "id": "becoming-a-cleric",
+    "name": "Becoming a Cleric",
+    "description": "As a Level 1 Character\n• Gain all the traits in the Core Cleric Traits table.\n• Gain the Cleric's level 1 features, which are listed in the Cleric Features table.\n\nAs a Multiclass Character\n• Gain the following traits from the Core Cleric Traits table: Hit Point Die and training with Light and Medium armor and Shields.\n• Gain the Cleric's level 1 features, which are listed in the Cleric Features table. See the multiclassing rules in chapter 2 to determine your available spell slots."
+  },
+  {
+    "id": "cleric",
+    "name": "Cleric",
+    "description": "Clerics draw power from the realms of the gods and harness it to work miracles. Blessed by a deity, a pantheon, or another immortal entity, a Cleric can reach out to the divine magic of the Outer Planes—where gods dwell—and channel it to bolster people and battle foes.\n\nBecause their power is a divine gift, Clerics typically associate themselves with temples dedicated to the deity or other immortal force that unlocked their magic. Harnessing divine magic doesn't rely on specific training, yet Clerics might learn prayers and rites that help them draw on power from the Outer Planes.\n\nNot every member of a temple or shrine is a Cleric. Some priests are called to a simple life of temple service, carrying out their devotion through prayer and rituals, not through magic. Many mortals claim to speak for the gods, but few can marshal the power of those gods the way a Cleric can."
+  },
+  {
+    "id": "core-fighter-traits",
+    "name": "Core Fighter Traits",
+    "description": "Primary Ability: Strength or Dexterity\nHit Point Die: D10 per Fighter level\nSaving Throw Proficiencies: Strength and Constitution\nSkill Proficiencies: Choose 2: Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Persuasion, Perception, or Survival\nWeapon Proficiencies: Simple and Martial weapons\nArmor Training: Light, Medium, and Heavy armor and Shields\nStarting Equipment: Choose A, B, or C: (A) Chain Mail, Greatsword, Flail, 8 Javelins, Dungeoneer's Pack, and 4 GP; (B) Studded Leather Armor, Scimitar, Shortsword, Longbow, 20 Arrows, Quiver, Dungeoneer's Pack, and 11 GP; or (C) 155 GP"
+  },
+  {
+    "id": "becoming-a-fighter",
+    "name": "Becoming a Fighter",
+    "description": "AS A LEVEL 1 CHARACTER\n• Gain all the traits in the Core Fighter Traits table.\n• Gain the Fighter's level 1 features, which are listed in the Fighter Features table.\n\nAS A MULTICLASS CHARACTER\n• Gain the following traits from the Core Fighter Traits table: Hit Point Die, proficiency with Martial weapons, and training with Light and Medium armor and Shields.\n• Gain the Fighter's level 1 features, which are listed in the Fighter Features table."
+  },
+  {
+    "id": "fighter-subclasses",
+    "name": "Fighter Subclasses",
+    "description": "A Fighter subclass is a specialization that grants you features at certain levels, as specified in the subclass. This section presents the Battle Master, Champion, Eldritch Knight, and Psi Warrior subclasses."
+  },
+  {
+    "id": "ambush",
+    "name": "Ambush",
+    "description": "Ambush. When you make a Dexterity (Stealth) check or an Initiative roll, you can expend one Superiority Die and add the die to the roll, unless you have the Incapacitated condition."
+  },
+  {
+    "id": "bait-and-switch",
+    "name": "Bait and Switch",
+    "description": "Bait and Switch. When you're within 5 feet of a creature on your turn, you can expend one Superiority Die and switch places with that creature, provided you spend at least 5 feet of movement and the creature is willing and doesn't have the Incapacitated condition. This movement doesn't provoke Opportunity Attacks.\nRoll the Superiority Die. Until the start of your next turn, you or the other creature (your choice) gains a bonus to AC equal to the number rolled."
+  },
+  {
+    "id": "commanders-strike",
+    "name": "Commander's Strike",
+    "description": "Commander's Strike. When you take the Attack action on your turn, you can replace one of your attacks to direct one of your companions to strike. When you do so, choose a willing creature who can see or hear you and expend one Superiority Die. That creature can immediately use its Reaction to make one attack with a weapon or an Unarmed Strike, adding the Superiority Die to the attack's damage roll on a hit."
+  },
+  {
+    "id": "commanding-presence",
+    "name": "Commanding Presence",
+    "description": "Commanding Presence. When you make a Charisma (Intimidation), or Persuasion) check, you can expend one Superiority Die and add that die to the roll."
+  },
+  {
+    "id": "disarming-attack",
+    "name": "Disarming Attack",
+    "description": "Disarming Attack. When you hit a creature with an attack roll, you can expend one Superiority Die to attempt to disarm the target. Add the Superiority Die roll to the attack's damage roll. The target must succeed on a Strength saving throw or drop one object of your choice that it's holding, with the object landing in its space."
+  },
+  {
+    "id": "distracting-strike",
+    "name": "Distracting Strike",
+    "description": "Distracting Strike. When you hit a creature with an attack roll, you can expend one Superiority Die to distract the target. Add the Superiority Die roll to the attack's damage roll. The next attack roll against the target by an attacker other than you has Advantage if the attack is made before the start of your next turn."
+  },
+  {
+    "id": "evasive-footwork",
+    "name": "Evasive Footwork",
+    "description": "Evasive Footwork. As a Bonus Action, you can expend one Superiority Die and take the Disengage action. You also roll the die and add the number rolled to your AC until the start of your next turn."
+  },
+  {
+    "id": "feinting-attack",
+    "name": "Feinting Attack",
+    "description": "Feinting Attack. As a Bonus Action, you can expend one Superiority Die to feint, choosing one creature within 5 feet of yourself as your target. You have Advantage on your next attack roll against that target this turn. If that attack hits, add the Superiority Die to the attack's damage roll."
+  },
+  {
+    "id": "goading-attack",
+    "name": "Goading Attack",
+    "description": "Goading Attack. When you hit a creature with an attack roll, you can expend one Superiority Die to attempt to goad the target into attacking you. Add the Superiority Die to the attack's damage roll. The target must succeed on a Wisdom saving throw or have Disadvantage on attack rolls against targets other than you until the end of your next turn."
+  },
+  {
+    "id": "lunging-attack",
+    "name": "Lunging Attack",
+    "description": "Lunging Attack. As a Bonus Action, you can expend one Superiority Die and take the Dash action. If you move at least 5 feet in a straight line immediately before hitting with a melee attack as part of the Attack action on this turn, you add the Superiority Die to the attack's damage roll."
+  },
+  {
+    "id": "maneuvering-attack",
+    "name": "Maneuvering Attack",
+    "description": "Maneuvering Attack. When you hit a creature with an attack roll, you can expend one Superiority Die to maneuver one of your comrades into another position. Add the Superiority Die roll to the attack's damage roll, and choose a willing creature who can see or hear you. That creature can use its Reaction to move up to half its Speed without provoking an Opportunity Attack from the target of your attack."
+  },
+  {
+    "id": "menacing-attack",
+    "name": "Menacing Attack",
+    "description": "Menacing Attack. When you hit a creature with an attack roll, you can expend one Superiority Die to attempt to frighten the target. Add the Superiority Die to the attack's damage roll. The target must succeed on a Wisdom saving throw or have the Frightened condition until the end of your next turn."
+  },
+  {
+    "id": "parry",
+    "name": "Parry",
+    "description": "Parry. When another creature damages you with a melee attack roll, you can take a Reaction and expend one Superiority Die to reduce the damage by the number you roll on your Superiority Die plus your Strength or Dexterity modifier (your choice)."
+  },
+  {
+    "id": "precision-attack",
+    "name": "Precision Attack",
+    "description": "Precision Attack. When you miss with an attack roll, you can expend one Superiority Die, roll that die, and add it to the attack roll, potentially causing the attack to hit."
+  },
+  {
+    "id": "pushing-attack",
+    "name": "Pushing Attack",
+    "description": "Pushing Attack. When you hit a creature with an attack roll using a weapon or an Unarmed Strike, you can expend one Superiority Die to attempt to drive the target back. Add the Superiority Die to the attack's damage roll. If the target is Large or smaller, it must succeed on a Strength saving throw or be pushed up to 15 feet directly away from you."
+  },
+  {
+    "id": "rally",
+    "name": "Rally",
+    "description": "Rally. As a Bonus Action, you can expend one Superiority Die to bolster the resolve of a companion. Choose an ally of yours within 30 feet of yourself who can see or hear you. That creature gains Temporary Hit Points equal to the Superiority Die roll plus half your Fighter level (round down)."
+  },
+  {
+    "id": "riposte",
+    "name": "Riposte",
+    "description": "Riposte. When a creature misses you with a melee attack roll, you can take a Reaction and expend one Superiority Die to make a melee attack roll with a weapon or an Unarmed Strike against the creature. If you hit, add the Superiority Die to the attack's damage."
+  },
+  {
+    "id": "sweeping-attack",
+    "name": "Sweeping Attack",
+    "description": "Sweeping Attack. When you hit a creature with a melee attack roll using a weapon or an Unarmed Strike, you can expend one Superiority Die to attempt to damage another creature. Choose another creature within 5 feet of the original target and within your reach. If the original attack roll would hit the second creature, it takes damage equal to the number you roll on your Superiority Die. The damage is of the same type dealt by the original attack."
+  },
+  {
+    "id": "tactical-assessment",
+    "name": "Tactical Assessment",
+    "description": "Tactical Assessment. When you make an Intelligence (History or Investigation) check or a Wisdom (Insight) check, you can expend one Superiority Die and add that die to the ability check."
+  },
+  {
+    "id": "trip-attack",
+    "name": "Trip Attack",
+    "description": "Trip Attack. When you hit a creature with an attack roll using a weapon or an Unarmed Strike, you can expend one Superiority Die and add the die to the attack's damage roll. If the target is Large or smaller, it must succeed on a Strength saving throw or have the Prone condition."
+  },
+  {
+    "id": "core-paladin-traits",
+    "name": "Core Paladin Traits",
+    "description": "Primary Ability: Strength and Charisma\nHit Point Die: D10 per Paladin level\nSaving Throw Proficiencies: Wisdom and Charisma\nSkill Proficiencies: Choose 2: Athletics, Insight, Intimidation, Medicine, Persuasion, or Religion\nWeapon Proficiencies: Simple and Martial weapons\nArmor Training: Light, Medium, and Heavy armor and Shields\nStarting Equipment: Choose A or B: (A) Chain Mail, Shield, Longsword, 6 Javelins, Holy Symbol, Priest's Pack, and 9 GP; or (B) 150 GP"
+  },
+  {
+    "id": "becoming-a-paladin",
+    "name": "Becoming a Paladin",
+    "description": "As a Level 1 Character:\n• Gain all the traits in the Core Paladin Traits table.\n• Gain the Paladin's level 1 features, which are listed in the Paladin Features table.\n\nAs a Multiclass Character:\n• Gain the following traits from the Core Paladin Traits table: Hit Point Die, proficiency with Martial weapons, and training with Light and Medium armor and Shields.\n• Gain the Paladin's level 1 features, which are listed in the Paladin Features table. See the multiclassing rules in chapter 2 to determine your available spell slots."
+  },
+  {
+    "id": "paladin-class-features",
+    "name": "Paladin Class Features",
+    "description": "As a Paladin, you gain the following class features when you reach the specified Paladin levels. These features are listed in the Paladin Features table."
+  },
+  {
+    "id": "breaking-your-oath",
+    "name": "Breaking Your Oath",
+    "description": "A Paladin tries to hold to the highest standards of conduct, but even the most dedicated are fallible. Sometimes a Paladin transgresses their oath.\n\nA Paladin who has broken a vow typically seeks absolution, spending an all-night vigil as a sign of penitence or undertaking a fast. After a rite of forgiveness, the Paladin starts fresh.\n\nIf your Paladin unreasonably violates their oath, talk to your DM. Your Paladin should probably take a more appropriate subclass or even abandon the class and adopt another one."
+  },
+  {
+    "id": "paladin-spell-list",
+    "name": "Paladin Spell List",
+    "description": "This section presents the Paladin spell list. The spells are organized by spell level and then alphabetized, and each spell's school of magic is listed. In the Special column, C means the spell requires Concentration, R means it's a Ritual, and M means it requires a specific Material component."
+  },
+  {
+    "id": "paladin-subclasses",
+    "name": "Paladin Subclasses",
+    "description": "A Paladin subclass is a specialization that grants you features at certain Paladin levels, as specified in the subclass. This section presents the Oath of Devotion, Oath of Glory, Oath of the Ancients, and Oath of Vengeance subclasses.\n\nEach of these subclasses represents a body of oaths that a Paladin begins taking upon joining the class. The final oath, taken at level 3, is the culmination of a Paladin's training. Some characters with this class don't consider themselves true Paladins until they've reached level 3 and made this oath. For others, the swearing of the oath is a formality, an official stamp on what was already in their hearts."
+  },
+  {
+    "id": "oath-of-devotion-spells",
+    "name": "Oath of Devotion Spells",
+    "description": "Paladin Level 3: Protection from Evil and Good, Shield of Faith\nPaladin Level 5: Aid, Zone of Truth\nPaladin Level 9: Beacon of Hope, Dispel Magic\nPaladin Level 13: Freedom of Movement, Guardian of Faith\nPaladin Level 17: Commune, Flame Strike"
+  },
+  {
+    "id": "changing-your-prepared-spells",
+    "name": "Changing Your Prepared Spells",
+    "description": "Changing Your Prepared Spells. Whenever you gain a Rogue level, you can replace one spell on your list with another Wizard spell for which you have spell slots.\n\nSpellcasting Ability. Intelligence is your spellcasting ability for your Wizard spells.\n\nSpellcasting Focus. You can use an Arcane Focus as a Spellcasting Focus for your Wizard spells."
+  },
+  {
+    "id": "withdraw",
+    "name": "Withdraw",
+    "description": "Withdraw (Cost: 1d6). Immediately after the attack, you move up to half your Speed without provoking Opportunity Attacks."
+  },
+  {
+    "id": "knock-out",
+    "name": "Knock Out",
+    "description": "Knock Out (Cost: 6d6). The target must succeed on a Constitution saving throw, or it has the Unconscious condition for 1 minute or until it takes any damage. The Unconscious target repeats the save at the end of each of its turns, ending the effect on itself on a success."
+  },
+  {
+    "id": "obscure",
+    "name": "Obscure",
+    "description": "Obscure (Cost: 3d6). The target must succeed on a Dexterity saving throw, or it has the Blinded condition until the end of its next turn."
+  },
+  {
+    "id": "becoming-a-sorcerer",
+    "name": "Becoming a Sorcerer...",
+    "description": "As a Level 1 Character\n• Gain all the traits in the Core Sorcerer Traits table.\n• Gain the Sorcerer's level 1 features, which are listed in the Sorcerer Features table.\n\nAs a Multiclass Character\n• Gain the Hit Point Die from the Core Sorcerer Traits table.\n• Gain the Sorcerer's level 1 features, which are listed in the Sorcerer Features table. See the multiclassing rules in chapter 2 to determine your available spell slots."
+  },
+  {
+    "id": "manifestations-of-order",
+    "name": "Manifestations of Order",
+    "description": "1d6 Manifestation\n1   Spectral cogwheels hover behind you.\n2   The hands of a clock spin in your eyes.\n3   Your skin glows with a brassy sheen.\n4   Floating equations and geometric objects overlay your body.\n5   Your Spellcasting Focus temporarily takes the form of a Tiny clockwork mechanism.\n6   The ticking of gears or ringing of a clock can be heard by you and those affected by your magic."
+  },
+  {
+    "id": "wild-magic-surge",
+    "name": "Wild Magic Surge",
+    "description": "1d100 Effect\n01-04 Roll on this table at the start of each of your turns for the next minute, ignoring this result on subsequent rolls.\n05-08 A creature that is Friendly toward you appears in a random unoccupied space within 60 feet of you. The creature is under the DM's control and disappears 1 minute later. Roll 1d4 to determine the creature: on a 1, a Modron Duodrone appears; on a 2, a Flumph appears; on a 3, a Modron Monodrone appears; on a 4, a Unicorn appears. See the Monster Manual for the creature's stat block.\n09-12 For the next minute, you regain 5 Hit Points at the start of each of your turns.\n13-16 Creatures have Disadvantage on saving throws against the next spell you cast in the next minute that involves a saving throw.\n17-20 You are subjected to an effect that lasts for 1 minute unless its description says otherwise. Roll 1d8 to determine the effect: on a 1, you're surrounded by faint, ethereal music only you and creatures within 5 feet of you can hear; on a 2, your size increases by one size category; on a 3, you grow a long beard made of feathers that remains until you sneeze, at which point the feathers explode from your face and vanish; on a 4, you must shout when you speak; on a 5, illusory butterflies flutter in the air within 10 feet of you; on a 6, an eye appears on your forehead, granting you Advantage on Wisdom (Perception) checks; on an 7, pink bubbles float out of your mouth whenever you speak; on an 8, your skin turns a vibrant shade of blue for 24 hours or until the effect is ended by a Remove Curse spell.\n21-24 For the next minute, all your spells with a casting time of an action have a casting time of a Bonus Action.\n25-28 You are transported to the Astral Plane until the end of your next turn. You then return to the space you previously occupied or the nearest unoccupied space if that space is occupied.\n29-32 The next time you cast a spell that deals damage within the next minute, don't roll the spell's damage dice for the damage. Instead use the highest number possible for each damage die.\n33-36 You have Resistance to all damage for the next minute.\n37-40 You turn into a potted plant until the start of your next turn. While you're a plant, you have the Incapacitated condition and have Vulnerability to all damage. If you drop to 0 Hit Points, your pot breaks, and your form reverts.\n41-44 For the next minute, you can teleport up to 20 feet as a Bonus Action on each of your turns.\n45-48 You and up to three creatures you choose within 30 feet of you have the Invisible condition for 1 minute. This invisibility ends on a creature immediately after it makes an attack roll, deals damage, or casts a spell.\n49-52 A spectral shield hovers near you for the next minute, granting you a +2 bonus to AC and immunity to Magic Missile.\n53-56 You can take one extra action on this turn.\n57-60 You cast a random spell. If the spell normally requires Concentration, it doesn't require Concentration in this case; the spell lasts for its full duration. Roll 1d10 to determine the spell: on a 1, Confusion; on a 2, Fireball; on a 3, Fog Cloud; on a 4, Fly (cast on a random creature within 60 feet of you), on a 5, Grease; on a 6, Levitate (cast on yourself); on a 7, Magic Missile (cast as a level 5 spell); on an 8, Mirror Image; on a 9, Polymorph (cast on yourself), and if you fail the saving throw, you turn into a Goat (see appendix B); on a 10, See Invisibility.\n61-64 For the next minute, any flammable, nonmagical object you touch that isn't being worn or carried by another creature bursts into flame, takes 1d4 Fire damage, and is burning.\n65-68 If you die within the next hour, you immediately revive as if by the Reincarnate spell.\n69-72 You have the Frightened condition until the end of your next turn. The DM determines the source of your fear.\n73-76 You teleport up to 60 feet to an unoccupied space you can see.\n77-80 A random creature within 60 feet of you has the Poisoned condition for 1d4 hours.\n81-84 You radiate Bright Light in a 30-foot radius for the next minute. Any creature that ends its turn within 5 feet of you has the Blinded condition until the end of its next turn.\n85-88 Up to three creatures of your choice that you can see within 30 feet of you take 1d10 Necrotic damage. You regain Hit Points equal to the sum of the Necrotic damage dealt.\n89-92 Up to three creatures of your choice that you can see within 30 feet of you take 4d10 Lightning damage.\n93-96 You and all creatures within 30 feet of you have Vulnerability to Piercing damage for the next minute.\n97-00 Roll 1d6: On a 1, you regain 2d10 Hit Points; on a 2, one ally of your choice within 300 feet of you regains 2d10 Hit Points; on a 3, you regain your lowest-level expended spell slot; on a 4, one ally of your choice within 300 feet of you regains their lowest-level expended spell slot; on a 5, you regain all your expended Sorcery Points; on a 6, all the effects of row 17-20 affect you simultaneously."
+  },
+  {
+    "id": "warlock-class-features",
+    "name": "Warlock Class Features",
+    "description": "As a Warlock, you gain the following class features when you reach the specified Warlock levels. These features are listed in the Warlock Features table."
+  },
+  {
+    "id": "expanding-and-replacing-a-spellbook",
+    "name": "Expanding and Replacing a Spellbook",
+    "description": "The spells you add to your spellbook as you gain levels reflect your ongoing magical research, but you might find other spells during your adventures that you can add to the book. You could discover a Wizard spell on a Spell Scroll, for example, and then copy it into your spellbook.\n\nCopying a Spell into the Book. When you find a level 1+ Wizard spell, you can copy it into your spellbook if it's of a level you can prepare and if you have time to copy it. For each level of the spell, the transcription takes 2 hours and costs 50 GP. Afterward you can prepare the spell like the other spells in your spellbook.\n\nCopying the Book. You can copy a spell from your spellbook into another book. This is like copying a new spell into your spellbook but faster, since you already know how to cast the spell. You need spend only 1 hour and 10 GP for each level of the copied spell.\n\nIf you lose your spellbook, you can use the same procedure to transcribe the Wizard spells that you have prepared into a new spellbook. Filling out the remainder of the new book requires you to find new spells to do so. For this reason, many wizards keep a backup spellbook.\n\nWhenever you finish a Long Rest, you can study your spellbook and replace one of those spells with an eligible spell of the same level from the book."
+  },
+  {
+    "id": "improvised-weapons",
+    "name": "Improvised Weapons",
+    "description": "If you use an object—such as a table leg, frying pan, or bottle—as a makeshift weapon, see \"Improvised Weapons\" in the rules glossary. Also see those rules if you wield a weapon in an unusual way, such as using a Ranged weapon to make a melee attack."
+  },
+  {
+    "id": "loading",
+    "name": "Loading",
+    "description": "You can fire only one piece of ammunition from a Loading weapon when you use an action, a Bonus Action, or a Reaction to fire it, regardless of the number of attacks you can normally make."
+  },
+  {
+    "id": "reach",
+    "name": "Reach",
+    "description": "A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it."
+  },
+  {
+    "id": "thrown",
+    "name": "Thrown",
+    "description": "If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon."
+  },
+  {
+    "id": "two-handed",
+    "name": "Two-Handed",
+    "description": "A Two-Handed weapon requires two hands when you attack with it."
+  },
+  {
+    "id": "versatile",
+    "name": "Versatile",
+    "description": "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+  },
+  {
+    "id": "mastery-properties",
+    "name": "Mastery Properties",
+    "description": "Each weapon has a mastery property, which is usable only by a character who has a feature, such as Weapon Mastery, that unlocks the property for the character. The properties are defined below."
+  },
+  {
+    "id": "cleave",
+    "name": "Cleave",
+    "description": "If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn."
+  },
+  {
+    "id": "graze",
+    "name": "Graze",
+    "description": "If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier."
+  },
+  {
+    "id": "nick",
+    "name": "Nick",
+    "description": "When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn."
+  },
+  {
+    "id": "push",
+    "name": "Push",
+    "description": "If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller."
+  },
+  {
+    "id": "sap",
+    "name": "Sap",
+    "description": "If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn."
+  },
+  {
+    "id": "topple",
+    "name": "Topple",
+    "description": "If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition."
+  },
+  {
+    "id": "vex",
+    "name": "Vex",
+    "description": "If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn."
+  },
+  {
+    "id": "barding",
+    "name": "Barding",
+    "description": "Barding is armor designed for a mount. Any type of armor on the Armor table in this chapter can be purchased as barding. The cost is four times the normal cost, and it weighs twice as much."
+  },
+  {
+    "id": "saddles",
+    "name": "Saddles",
+    "description": "A saddle comes with a bit, a bridle, reins, and any other equipment needed to use the saddle. A Military Saddle gives Advantage on any ability check you make to remain mounted. An Exotic Saddle is required for riding an aquatic or a flying mount."
+  },
+  {
+    "id": "mounts-and-vehicles",
+    "name": "Mounts and Vehicles",
+    "description": "A mount can help you move more quickly through the wilderness, but its primary purpose is to carry gear that would otherwise slow you down. The Mounts and Other Animals table shows each animal's carrying capacity. See appendix B for the animals' stat blocks."
+  },
+  {
+    "id": "mounts-and-cargo",
+    "name": "Mounts and Cargo",
+    "description": "An animal pulling a carriage, cart, chariot, sled, or wagon can move weight up to five times its base carrying capacity, including the weight of the vehicle. If multiple animals pull the same vehicle, add their carrying capacities together."
+  },
+  {
+    "id": "passengers",
+    "name": "Passengers",
+    "description": "The table lists the number of Small and Medium passengers the ship can accommodate using hammocks. A ship outfitted with private accommodations can carry one-fifth as many passengers. A passenger usually pays 5 SP per day for a hammock, but prices can vary from ship to ship. A small private cabin usually costs 2 GP per day."
+  },
+  {
+    "id": "damage-threshold",
+    "name": "Damage Threshold",
+    "description": "If a vehicle has a damage threshold (see the rules glossary), it's noted in the table."
+  },
+  {
+    "id": "ship-repair",
+    "name": "Ship Repair",
+    "description": "Repairs to a damaged ship can be made while the vessel is berthed. Repairing 1 Hit Point of damage requires 1 day and costs 20 GP for materials and labor. If the repairs are made in a location where supplies and skilled labor are abundant, such as a city shipyard, the repair time and cost are halved."
+  },
+  {
+    "id": "speed",
+    "name": "Speed",
+    "description": "A ship sailing against a strong wind moves at half speed. In a dead calm (no wind), waterborne ships can't move under sail and must be rowed. Keelboats and Rowboats are used on lakes and rivers. If going downstream, add the speed of the current (typically 3 miles per hour) to the speed of the vehicle. These vehicles can't be rowed against any significant current, but they can be pulled upstream by draft animals on the shores. A Rowboat can be carried and weighs 100 pounds."
+  },
+  {
+    "id": "crew",
+    "name": "Crew",
+    "description": "A ship larger than a Keelboat or Rowboat needs a crew of skilled hirelings (see \"Services\" later in this chapter) to function. The minimum number of skilled hirelings needed to crew a ship depends on the type of ship, as shown in the table."
+  },
+  {
+    "id": "hirelings",
+    "name": "Hirelings",
+    "description": "Skilled hirelings include anyone hired to perform a service that involves a proficiency (including weapon, tool, or skill): a mercenary, an artisan, a scribe, or the like. The pay shown on the Hirelings table is a minimum; some expert hirelings require more pay. Untrained hirelings are hired for work that requires no particular proficiencies; they include laborers and porters."
+  },
+  {
+    "id": "identifying-a-magic-item",
+    "name": "Identifying a Magic Item",
+    "description": "Some magic items are indistinguishable from their nonmagical counterparts, while others are conspicuously magical. Handling a magic item is enough to give you a sense that it is extraordinary, but learning a magic item's properties isn't automatic.\n\nThe Identify spell is the fastest way to reveal an item's properties. Alternatively, you can focus on one magic item during a Short Rest while being in physical contact with the item. At the end of the rest, you learn its properties and how to use them (but not any curse the item might bear).\n\nSometimes a magic item carries a clue to its properties. The command word to activate a ring might be etched inside the band, or a feathered design might hint that it's a Ring of Feather Falling.\n\nWearing or experimenting with an item can also offer hints about its properties. In the specific case of Potions, a little taste is enough to tell the taster what a potion does. Other items might require more experimentation. For example, if your character puts on a Ring of Swimming, the DM might say, \"Your movement feels strangely fluid.\" Perhaps you then dive into a river to see what happens. The DM would then say swim unexpectedly well."
+  },
+  {
+    "id": "attunement",
+    "name": "Attunement",
+    "description": "Some magic items require a creature to form a bond—called Attunement—with them before the creature can use an item's magical properties. Without becoming attuned to an item that requires Attunement, you gain only its nonmagical benefits unless its description states otherwise. For example, a magic Shield that requires Attunement provides the benefits of a normal Shield if you aren't attuned to it, but none of its magical properties."
+  },
+  {
+    "id": "attune-during-a-short-rest",
+    "name": "Attune during a Short Rest",
+    "description": "Attuning to an item requires you to spend a Short Rest focused on only that item while being in physical contact with it (this can't be the same Short Rest used to learn the item's properties). This focus can take the form of weapon practice (for a Weapon), meditation (for a Wand), or some other appropriate activity. If the Short Rest is interrupted, the Attunement attempt fails. Otherwise, at the end of the Short Rest, you're attuned to the magic item and can access its full magical capabilities."
+  },
+  {
+    "id": "no-more-than-three-items",
+    "name": "No More Than Three Items",
+    "description": "You can be attuned to no more than three magic items at a time. Any attempt to attune to a fourth item fails; you must end your Attunement to an item first. Additionally, you can't attune to more than one copy of an item. For example, you can't attune to more than one Ring of Protection at a time."
+  },
+  {
+    "id": "ending-attunement",
+    "name": "Ending Attunement",
+    "description": "Your Attunement to an item ends if you no longer satisfy the prerequisites for Attunement, if the item has been more than 100 feet away for at least 24 hours, if you die, or if another creature attunes to the item. You can also voluntarily end Attunement by spending another Short Rest focused on the item unless the item is cursed."
+  },
+  {
+    "id": "wearing-and-wielding-items",
+    "name": "Wearing and Wielding Items",
+    "description": "Using a magic item's properties might mean wearing or wielding it. A magic item meant to be worn must be donned in the intended fashion: boots go on feet, gloves on hands, hats and helmets on a head, and rings on a finger. Magic armor must be donned, a Shield strapped to the arm, a cloak fastened about the shoulders. A weapon must be held.\n\nIn most cases, a magic item that's meant to be worn can fit a creature regardless of size or build. Magic garments are made to be easily adjustable, or they magically adjust themselves to the wearer."
+  },
+  {
+    "id": "multiple-items-of-the-same-kind",
+    "name": "Multiple Items of the Same Kind",
+    "description": "You can't wear more than one of certain magic items. You can't normally wear more than one pair of footwear, one pair of gloves or gauntlets, one pair of bracers, one suit of armor, one item of headwear, or one cloak. The DM might make exceptions."
+  },
+  {
+    "id": "paired-items",
+    "name": "Paired Items",
+    "description": "Items that come in pairs—such as boots, bracers, gauntlets, and gloves—impart their benefits only if both items of the pair are worn. For example, a character wearing a Boot of Striding and Springing on one foot and a Boot of Elvenkind on the other foot gains no benefit from either."
+  },
+  {
+    "id": "brewing-potions-of-healing",
+    "name": "Brewing Potions of Healing",
+    "description": "A character who has proficiency with the Herbalism Kit can create a Potion of Healing. Doing so requires using that kit and 25 GP of raw material over the course of 1 day (8 hours of work)."
+  },
+  {
+    "id": "scribing-spell-scrolls",
+    "name": "Scribing Spell Scrolls",
+    "description": "A spellcaster can transfer a spell to a scroll and create a Spell Scroll, using the rules below."
+  },
+  {
+    "id": "time-and-cost",
+    "name": "Time and Cost",
+    "description": "Scribing a scroll takes an amount of time and money based on the level of the spell, as shown in the Spell Scroll Costs table. For each day of inscription, you must work for 8 hours. If a scroll requires multiple days, those days needn't be consecutive."
+  },
+  {
+    "id": "prerequisites-for-the-scribe",
+    "name": "Prerequisites for the Scribe",
+    "description": "To scribe a scroll, you must have proficiency in the Arcana skill or with Calligrapher's Tools and have the spell prepared on each day of the inscription. You must also have at hand any Material components required by the spell; if the spell consumes its Material components, they are consumed only when you complete the scroll. The scroll's spell uses your spell save DC and spell attack bonus."
+  },
+  {
+    "id": "cantrips",
+    "name": "Cantrips",
+    "description": "If the scribed spell is a cantrip, the version on the scroll works as if the caster were your level."
+  },
+  {
+    "id": "crafting-nonmagical-items",
+    "name": "Crafting Nonmagical Items",
+    "description": "To craft a nonmagical item, you need tools, raw materials, and time, each of which is detailed below. If you meet the requirements, you make the item, and you can use it or sell it at its normal price."
+  },
+  {
+    "id": "tools",
+    "name": "Tools",
+    "description": "This chapter's \"Tools\" section lists which tools are required to make certain items. The DM assigns required tools for items not listed there.\n\nYou must use the required tool to make an item and have proficiency with that tool. Anyone who helps you must also have proficiency with it."
+  },
+  {
+    "id": "raw-materials",
+    "name": "Raw Materials",
+    "description": "To make an item, you need raw materials worth half its purchase cost (round down). For example, you need 750 GP of raw materials to make Plate Armor, which sells for 1,500 GP. The DM determines whether appropriate raw materials are available."
+  },
+  {
+    "id": "time",
+    "name": "Time",
+    "description": "To determine how many days (working 8 hours a day) it takes to make an item, divide its purchase cost in GP by 10 (round a fraction up to a day). For example, you need 5 days to make a Heavy Crossbow, which sells for 50 GP.\n\nIf an item requires multiple days, the days needn't be consecutive.\n\nCharacters can combine their efforts to shorten the crafting time. Divide the time needed to create an item by the number of characters working on it. Normally, only one other character can assist you, but the DM might allow more assistants."
+  },
+  {
+    "id": "range",
+    "name": "Range",
+    "description": "A spell's range indicates how far from the spellcaster the spell's effect can originate, and the spell's description specifies which part of the effect is limited by the range.\n\nA range usually takes one of the following forms:\n\nDistance. The range is expressed in feet.\nTouch. The spell's effect originates on something the spellcaster must touch, as defined in the spell.\nSelf. The spell is cast on the spellcaster or emanates from them, as specified in the spell.\n\nIf a spell has movable effects, they aren't restricted by its range unless the spell's description says otherwise."
+  },
+  {
+    "id": "gaining-spells",
+    "name": "Gaining Spells",
+    "description": "Before you can cast a spell, you must have the spell prepared in your mind or have access to the spell from a magic item, such as a Spell Scroll. Your features specify which spells you have access to, if any; whether you always have certain spells prepared; and whether you can change the list of spells you have prepared."
+  },
+  {
+    "id": "preparing-spells",
+    "name": "Preparing Spells",
+    "description": "If you have a list of level 1+ spells you prepare, your spellcasting feature specifies when you can change the list and the number of spells you can change, as summarized in the Spell Preparation by Class table.\n\nSpell Preparation by Class\nClass          Change When You ...  Number of Spells\nBard           Gain a level         One\nCleric         Finish a Long Rest   Any\nDruid          Finish a Long Rest   Any\nPaladin        Finish a Long Rest   One\nRanger         Finish a Long Rest   One\nSorcerer       Gain a level         One\nWarlock        Gain a level         One\nWizard         Finish a Long Rest   Any\n\nMost spellcasting monsters don't change their lists of prepared spells, but the DM is free to alter them."
+  },
+  {
+    "id": "always-prepared-spells",
+    "name": "Always-Prepared Spells",
+    "description": "Certain features might give you a spell that you always have prepared. If you also have a list of prepared spells that you can change, a spell that you always have prepared doesn't count against the number of spells on that list."
+  },
+  {
+    "id": "casting-in-armor",
+    "name": "Casting in Armor",
+    "description": "You must have training with any armor you are wearing to cast spells while wearing it. You are otherwise too hampered by the armor for spellcasting."
+  },
+  {
+    "id": "casting-spells",
+    "name": "Casting Spells",
+    "description": "Each spell description has a series of entries that provide the details needed to cast the spell. The following sections explain each of those entries, which follow a spell's name."
+  },
+  {
+    "id": "spell-level",
+    "name": "Spell Level",
+    "description": "Every spell has a level from 0 to 9, which is indicated in a spell's description. A spell's level is an indicator of how powerful it is. Cantrips—simple spells that can be cast by role-are level 0. The rules for each spellcasting class say when its members gain access to spells of certain levels."
+  },
+  {
+    "id": "casting-without-slots",
+    "name": "Casting without Slots",
+    "description": "There are several ways to cast a spell without expending a spell slot:\n\nCantrips. A cantrip is cast without a spell slot.\nRituals. Certain spells have the Ritual tag in the Casting Time entry. Such a spell can be cast following the normal rules for spellcasting, or it can be cast as a Ritual. The Ritual version of a spell takes 10 minutes longer to cast than normal, but it doesn't expend a spell slot. To cast a spell as a Ritual, a spellcaster must have it prepared.\nSpecial Abilities. Some characters and monsters have special abilities that allow them to cast specific spells without a spell slot. This casting is usually limited in another way, such as being able to cast the spell a limited number of times per day."
+  },
+  {
+    "id": "magic-items",
+    "name": "Magic Items",
+    "description": "Spell Scrolls and some other magic items contain spells that can be cast without a spell slot. The description of such an item specifies how many times a spell can be cast from it."
+  },
+  {
+    "id": "using-a-higher-level-spell-slot",
+    "name": "Using a Higher-Level Spell Slot",
+    "description": "When a spellcaster casts a spell using a slot that is of a higher level than the spell, the spell takes on the higher level for that casting. For instance, if Wizard casts Magic Missile using a level 2 slot, that Magic Missile is level 2. Effectively, the spell expands to fill the slot it is put into.\n\nSome spells, such as Magic Missile and Cure Wounds, have more powerful effects when cast at a higher level, as detailed in a spell's description."
+  },
+  {
+    "id": "school-of-magic",
+    "name": "School of Magic",
+    "description": "Each spell belongs to a school of magic. The schools are listed in the Schools of Magic table. These categories help describe spells but have no rules of their own, although some other rules refer to them."
+  },
+  {
+    "id": "schools-of-magic",
+    "name": "Schools of Magic",
+    "description": "School          Typical Effects\nAbjuration      Prevents or reverses harmful effects\nConjuration     Transports creatures or objects\nDivination      Reveals information\nEnchantment     Influences minds\nEvocation       Channels energy to create effects that are often destructive\nIllusion        Deceives the mind or senses\nNecromancy      Manipulates life and death\nTransmutation   Transforms creatures or objects"
+  },
+  {
+    "id": "class-spell-lists",
+    "name": "Class Spell Lists",
+    "description": "If a spell is on a class's spell list, the class's name appears in parentheses after the spell's school of magic. Some features add a spell to a character's spell list even if the character isn't a member of a class in the parentheses."
+  },
+  {
+    "id": "casting-time",
+    "name": "Casting Time",
+    "description": "Most spells require the Magic action to cast, but some spells require a Bonus Action, a Reaction, or 1 minute or more. A spell's Casting Time entry specifies which of those is required."
+  },
+  {
+    "id": "one-spell-with-a-spell-slot-per-turn",
+    "name": "One Spell with a Spell Slot per Turn",
+    "description": "On a turn, you can expend only one spell slot to cast a spell. This rule means you can't, for example, cast a spell with a spell slot using the Magic action and another one using a Bonus Action on the same turn."
+  },
+  {
+    "id": "reaction-and-bonus-action-triggers",
+    "name": "Reaction and Bonus Action Triggers",
+    "description": "A spell that has a casting time of a Reaction is cast in response to a trigger that is defined in the spell's Casting Time entry. Some spells that have a casting time of a Bonus Action are also cast in response to a trigger defined in the spell."
+  },
+  {
+    "id": "longer-casting-times",
+    "name": "Longer Casting Times",
+    "description": "Certain spells—including a spell cast as a Ritual—require more time to cast: minutes or even hours. While you cast a spell with a casting time of 1 minute or more, you must take the Magic action on each of your turns, and you must maintain Concentration (see the rules glossary) while you do so. If your Concentration is broken, the spell fails, but you don't expend a spell slot. To cast the spell again, you must start over."
+  },
+  {
+    "id": "components",
+    "name": "Components",
+    "description": "A spell's components are physical requirements the spellcaster must meet to cast the spell. Each spell's description indicates whether it requires Verbal (V), Somatic (S), or Material (M) components. If the spellcaster can't provide one or more of a spell's components, the spellcaster can't cast the spell."
+  },
+  {
+    "id": "verbal-v",
+    "name": "Verbal (V)",
+    "description": "A Verbal component is the chanting of esoteric words that sound like nonsense to the uninitiated. The words must be uttered in a normal speaking voice. The words themselves aren't the source of the spell's power; rather, the particular combination of sounds, with specific pitch and resonance, sets the threads of magic in motion. Thus, a creature who is gagged or in an area of magical silence can't cast a spell with a Verbal component."
+  },
+  {
+    "id": "somatic-s",
+    "name": "Somatic (S)",
+    "description": "A Somatic component is a forceful gesticulation or an intricate set of gestures. A spellcaster must use at least one of their hands to perform these movements."
+  },
+  {
+    "id": "material-m",
+    "name": "Material (M)",
+    "description": "A Material component is a particular material used in a spell's casting, as specified in parentheses in the Components entry. These materials aren't consumed by the spell unless the spell's description states otherwise. The spellcaster must have a hand free to access them, but it can be the same hand used to perform Somatic components, if any.\n\nIf a spell doesn't consume its materials and doesn't specify a cost for them, a spellcaster can use a Component Pouch (see chapter 6) instead of providing the materials specified in the spell, or the spellcaster can substitute a Spellcasting Focus if the caster has a feature that allows that substitution. To use a Component Pouch, you must have a hand free to reach into it, and to use a Spellcasting Focus, you must hold it unless its description says otherwise (see chapter 6 for descriptions)."
+  },
+  {
+    "id": "creating-verbal-components",
+    "name": "Creating Verbal Components",
+    "description": "If you'd like to say a spell's Verbal component, you may make up the words. However you make them, the goal is to create something that's easy to say and that doesn't mean anything in the real world. Consider this method: take the name of the spell, keep only one instance of each of its letters, and rearrange the remaining letters into words. For example, remove the second I from Fireball and rearrange the remaining letters to create Ber Fla or Fel Bira."
+  },
+  {
+    "id": "duration",
+    "name": "Duration",
+    "description": "A spell's duration is the length of time the spell persists after it is cast. A duration typically takes one of the following forms:\n\nConcentration. A duration that requires Concentration follows the Concentration rules (see the rules glossary).\nInstantaneous. An instantaneous duration means the spell's magic appears only for a moment and then disappears.\nTimed. A duration that provides a time span specifies how long the spell lasts in rounds, minutes, hours, or the like. For example, a Duration entry might say \"1 minute,\" meaning the spell ends after 1 minute has passed. While a time-span spell that you cast is ongoing, you can dismiss it (no action required) if you don't have the Incapacitated condition."
+  },
+  {
+    "id": "effects",
+    "name": "Effects",
+    "description": "The effects of a spell are detailed after its duration entry. Those details present exactly what the spell does, which ignores mundane physical laws; any outcomes beyond those effects are under the DM's purview. Whatever the effects, they typically deal with targets, saving throws, attack rolls, or all three, each of which is detailed below."
+  },
+  {
+    "id": "targets",
+    "name": "Targets",
+    "description": "A typical spell requires the caster to pick one or more targets to be affected by the spell's magic. A spell's description says whether the spell targets creatures, objects, or something else."
+  },
+  {
+    "id": "a-clear-path-to-the-target",
+    "name": "A Clear Path to the Target",
+    "description": "To target something with a spell, a caster must have a clear path to it, so it can't be behind Total Cover.\n\nTargeting Yourself. If a spell targets a creature of your choice, you can choose yourself unless the creature must be Hostile or specifically a creature other than you.\n\nAreas of Effect. Some spells, such as Thunderwave, cover an area called an area of effect, which is defined in the rules glossary. The area determines what the spell targets. The description of a spell specifies whether it has an area of effect, which is typically one of these shapes: Cone, Cube, Cylinder, Emanation, Line, or Sphere.\n\nAwareness of Being Targeted. Unless a spell has a perceptible effect, a creature doesn't know it was targeted by the spell. An effect like lightning is obvious, but a more subtle effect, such as an attempt to read thoughts, goes unnoticed unless a spell's description says otherwise.\n\nInvalid Targets. If you cast a spell on someone or something that can't be affected by it, nothing happens to that target, but if you used a spell slot to cast the spell, the slot is still expended.\n\nIf the spell normally has no effect on a target that succeeds on a saving throw, the invalid target appears to have succeeded on its saving throw, even though it didn't attempt one (giving no hint that the creature is an invalid target). Otherwise, you perceive that the spell did nothing to the target."
+  },
+  {
+    "id": "saving-throws",
+    "name": "Saving Throws",
+    "description": "Many spells specify that a target makes a saving throw to avoid some or all of a spell's effects. The spell specifies the ability that the target uses for the save and what happens on a success or failure. Here's how to calculate the DC for your spells:\n\nSpell save DC = 8 + your spellcasting ability modifier + your Proficiency Bonus"
+  },
+  {
+    "id": "attack-rolls",
+    "name": "Attack Rolls",
+    "description": "Some spells require the caster to make an attack roll to determine whether the spell hits a target. Here's how to calculate the attack modifier for your spells:\n\nSpell attack modifier = your spellcasting ability modifier + your Proficiency Bonus"
+  },
+  {
+    "id": "combining-spell-effects",
+    "name": "Combining Spell Effects",
+    "description": "The effects of different spells add together while their durations overlap. In contrast, the effects of the same spell cast multiple times don't combine. Instead, the most potent effect—such as the highest bonus—from those castings applies while their durations overlap. The most recent effect applies if the castings are equally potent and their durations overlap. For example, if two Clerics cast Bless on the same target, that target gains the spell's benefit only once; the target doesn't receive two bonus dice. But if the duration of the spells overlap, the effect continues until the duration of the second Bless ends."
+  },
+  {
+    "id": "identifying-an-ongoing-spell",
+    "name": "Identifying an Ongoing Spell",
+    "description": "You can try to identify a nonillusory, instantaneous spell by its observable effects if its duration is ongoing. To identify it, you must take the Study action and succeed on a DC 15 Intelligence (Arcana) check."
+  },
+  {
+    "id": "draconic-spirit",
+    "name": "Draconic Spirit",
+    "description": "Large Dragon, Neutral\nAC 14 + the spell's level\nHP 50 + 10 for each spell level above 5\nSpeed 30 ft., Fly 60 ft., Swim 30 ft.\n\nSTR 19 +4 +4    DEX 14 +2 +2    CON 17 +3 +3\nINT 10 +0 +0    WIS 14 +2 +2    CHA 14 +2 +2\n\nResistances Acid, Cold, Fire, Lightning, Poison\nImmunities Charmed, Frightened, Poisoned\nSenses Blindsight 30 ft., Darkvision 60 ft., Passive Perception 12\nLanguages Draconic, understands the languages you know\nCR None (XP 0; PB equals your Proficiency Bonus)\n\nTRAITS\nShared Resistances. When you summon the spirit, choose one of its Resistances. You have Resistance to the chosen damage type until the spell ends.\n\nACTIONS\nMultiattack. The spirit makes a number of Rend attacks equal to half the spell's level (round down), and it uses Breath Weapon.\n\nRend. Melee Attack: Bonus equals your spell attack modifier, reach 10 feet. Hit: 1d6 + 4 + the spell's level Piercing damage.\n\nBreath Weapon. Dexterity Saving Throw: DC equals your spell save DC, each creature in a 30-foot Cone. Failure: 2d6 damage of a type this spirit has Resistance to (your choice when you cast the spell). Success: Half damage."
+  },
+  {
+    "id": "elemental-spirit",
+    "name": "Elemental Spirit",
+    "description": "Medium Elemental, Neutral\n\nAC 11 + the spell's level\nHP 50 + 10 for each spell level above 4\nSpeed 40 ft.; Burrow 40 ft. (Earth only); Fly 40 ft. (hover; Air only); Swim 40 ft. (Water only)\n\nSTR 18 +4 +4    DEX 15 +2 +2    CON 17 +3 +3\nINT 4 -3 -3     WIS 10 +0 +0    CHA 16 +3 +3\n\nResistances Acid (Water only), Lightning and Thunder (Air only), Piercing and Slashing (Earth only)\nImmunities Fire (Fire only), Poison; Exhaustion, Paralyzed, Petrified, Poisoned\nSenses Darkvision 60 ft., Passive Perception 10\nLanguages Primordial, understands the languages you know\nCR None (XP 0; PB equals your Proficiency Bonus)\n\nTRAITS\nAmorphous Form (Air, Fire, and Water Only). The spirit can move through a space as narrow as 1 inch wide without it counting as Difficult Terrain.\n\nACTIONS\nMultiattack. The spirit makes a number of Slam attacks equal to half this spell's level (round down).\n\nSlam. Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d10 + 4 + the spell's level Bludgeoning (Earth only), Cold (Water only), Lightning (Air only), or Fire (Fire only) damage."
+  },
+  {
+    "id": "fey-spirit",
+    "name": "Fey Spirit",
+    "description": "Small Fey, Neutral\n\nAC 12 + the spell's level\nHP 30 + 10 for each spell level above 3\nSpeed 30 ft., Fly 30 ft.\n\nSTR 13 +1 +1    DEX 16 +3 +3    CON 14 +2 +2\nINT 14 +2 +2    WIS 11 +0 +0    CHA 16 +3 +3\n\nImmunities Charmed\nSenses Darkvision 60 ft., Passive Perception 10\nLanguages Sylvan, understands the languages you know\nCR None (XP 0; PB equals your Proficiency Bonus)\n\nACTIONS\nMultiattack. The spirit makes a number of Fey Blade attacks equal to half this spell's level (round down).\n\nFey Blade. Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 2d6 + 3 + the spell's level Force damage.\n\nBONUS ACTIONS\nFey Step. The spirit magically teleports up to 30 feet to an unoccupied space it can see. Then one of the following effects occurs, based on the spirit's chosen mood:\n\nFuming. The spirit has Advantage on the next attack roll it makes before the end of this turn.\n\nMirthful. Wisdom Saving Throw: DC equals your spell save DC, one creature the spirit can see within 10 feet of itself. Failure: The target is Charmed by you and the spirit for 1 minute or until the target takes any damage.\n\nTricksy. The spirit fills a 10-foot Cube within 5 feet of it with magical Darkness, which lasts until the end of its next turn."
+  },
+  {
+    "id": "fiendish-spirit",
+    "name": "Fiendish Spirit",
+    "description": "Large Fiend, Neutral\n\nAC 12 + the spell's level\nHP 50 (Demon only) or 40 (Devil only) or 60 (Yugoloth only) + 15 for each spell level above 6\nSpeed 40 ft.; Climb 40 ft. (Demon only); Fly 60 ft. (Devil only)\n\nSTR 13 +1 +1    DEX 16 +3 +3    CON 15 +2 +2\nINT 10 +0 +0    WIS 10 +0 +0    CHA 16 +3 +3\n\nResistances Fire\nImmunities Poison; Poisoned\nSenses Darkvision 60 ft., Passive Perception 10\nLanguages Abyssal, Infernal, Telepathy 60 ft.\nCR None (XP 0; PB equals your Proficiency Bonus)\n\nTRAITS\nDeath Throes (Demon Only). When the spirit drops to 0 Hit Points or the spell ends, the spirit explodes. Dexterity Saving Throw: DC equals your spell save DC, each creature in a 10-foot Emanation originating from the spirit. Failure: 2d10 plus this spell's level Fire damage. Success: Half damage.\n\nDevil's Sight (Devil Only). Magical Darkness doesn't impede the spirit's Darkvision.\n\nMagic Resistance. The spirit has Advantage on saving throws against spells and other magical effects.\n\nACTIONS\nMultiattack. The spirit makes a number of attacks equal to half this spell's level (round down).\n\nBite (Demon Only). Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d12 + 3 + the spell's level Necrotic damage.\n\nClaws (Yugoloth Only). Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d8 + 3 + the spell's level Slashing damage. Immediately after the attack hits or misses, the spirit can teleport up to 30 feet to an unoccupied space it can see.\n\nFiery Strike (Devil Only). Melee or Ranged Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. or range 150 ft. Hit: 2d6 + 3 + the spell's level Fire damage."
+  },
+  {
+    "id": "undead-spirit",
+    "name": "Undead Spirit",
+    "description": "Medium Undead, Neutral\n\nAC 11 + the spell's level\nHP 30 (Ghostly and Putrid only) or 20 (Skeletal only) + 10 for each spell level above 3\nSpeed 30 ft.; Fly 40 ft. (hover; Ghostly only)\n\nSTR 12 +1 +1    DEX 16 +3 +3    CON 15 +2 +2\nINT 4 -3 -3     WIS 10 +0 +0    CHA 9 -1 -1\n\nImmunities Necrotic, Poison; Exhaustion, Frightened, Paralyzed, Poisoned\nSenses Darkvision 60 ft., Passive Perception 10\nLanguages Understands the languages you know\nCR None (XP 0; PB equals your Proficiency Bonus)\n\nTRAITS\nFestering Aura (Putrid Only). Constitution Saving Throw: DC equals your spell save DC, any creature (other than you) that starts its turn within a 5-foot Emanation originating from the spirit. Failure: The creature has the Poisoned condition until the start of its next turn.\n\nIncorporeal Passage (Ghostly Only). The spirit can move through other creatures and objects as if they were Difficult Terrain. If it ends its turn inside an object, it is shunted to the nearest unoccupied space and takes 1d10 Force damage for every 5 feet traveled.\n\nACTIONS\nMultiattack. The spirit makes a number of attacks equal to half this spell's level (round down).\n\nDeathly Touch (Ghostly Only). Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d8 + 3 + the spell's level Necrotic damage, and the target has the Frightened condition until the end of its next turn.\n\nGrave Bolt (Skeletal Only). Ranged Attack Roll: Bonus equals your spell attack modifier, range 150 ft. Hit: 2d4 + 3 + the spell's level Necrotic damage.\n\nRotting Claw (Putrid Only). Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d6 + 3 + the spell's level Slashing damage. If the target has the Poisoned condition, it has the Paralyzed condition until the end of its next turn."
+  },
+  {
+    "id": "the-multiverse",
+    "name": "The Multiverse",
+    "description": "This appendix provides an overview of the multiverse, the overarching reality that encompasses D&D's countless worlds and adventures. These realms are explored in greater detail in the Dungeon Master's Guide, along with other planes like the Far Realm, Negative Plane, and Positive Plane."
+  },
+  {
+    "id": "the-material-realms",
+    "name": "The Material Realms",
+    "description": "The philosophical and elemental forces of reality combine to create the following planes of existence:\n\nMaterial Plane. Most D&D adventures take place on the Material Plane, which holds the worlds of settings like Dragonlance, Eberron, the Forgotten Realms, and Greyhawk. There's also room for any world your group creates. Magic and physical laws shape this plane's diverse worlds.\n\nFeywild. This vibrant, idealized realm brims with life and emotion, which are most intense in the realm's Domains of Delight.\n\nShadowfell. This gloom-haunted realm holds grim wastelands, haunted ruins, and the infamous Domains of Dread."
+  },
+  {
+    "id": "transitive-planes",
+    "name": "Transitive Planes",
+    "description": "The transitive planes serve as paths between planes:\n\nAstral Plane. This endless, silvery expanse links the Material Plane and the Outer Planes. Whole civilizations have arisen in this glimmering vastness, while others traverse the magical cosmos in spelljamming vessels.\n\nEthereal Plane. This ghostly realm connects the Material Plane and the Inner Planes. The region where the Ethereal Plane overlaps with other planes is called the Border Ethereal, a place where creatures can glimpse visions of planes beyond."
+  },
+  {
+    "id": "the-inner-planes",
+    "name": "The Inner Planes",
+    "description": "Elemental forces and the building blocks of reality originate from these Inner Planes:\n\nElemental Plane of Air. Winds blow clouds and floating islands across this boundless sky.\n\nElemental Plane of Earth. This maze of caverns winds through stone and untold mineral riches.\n\nElemental Plane of Fire. An everlasting inferno, this realm blazes with life on volcanic islands.\n\nElemental Plane of Water. This bottomless ocean churns with mysterious sea life.\n\nElemental Chaos. Here on the fringes of the Inner Planes, elemental forces clash unpredictably.\n\nPara-Elemental Planes. In these borderlands between the Elemental Planes, elemental forces combine into realms of ash, ice, magma, and ooze."
+  },
+  {
+    "id": "the-outer-planes",
+    "name": "The Outer Planes",
+    "description": "Realms where ideas take form and spirits spend their afterlives, the Outer Planes are the homes of immortals. The following locations compose the Outer Planes:\n\nSigil. Sigil, the City of Doors, is a metropolis rather than a plane at the center of the Outer Planes. Here portals lead throughout the multiverse, and the enigmatic Lady of Pain maintains order.\n\nOutlands. Influences from the other Outer Planes converge in the Outlands, where portals lead to those planes. At the Outlands' center rises the Spire, a pillar atop which floats Sigil.\n\nOther Outer Planes. These planes are listed on the Outer Planes table. Some are paradise, some are nightmare realms, and some are more bizarre. Each is dominated by forces that embody one or more of the alignments described in chapter 2."
+  },
+  {
+    "id": "outer-planes-table",
+    "name": "Outer Planes Table",
+    "description": "Outer Plane - Alignment\nAbyss - Chaotic Evil\nAcheron - Lawful Evil, Lawful Neutral\nArborea - Chaotic Good\nArcadia - Lawful Good, Lawful Neutral\nBeastlands - Chaotic Good, Neutral Good\nBytopia - Lawful Good, Neutral Good\nCarceri - Chaotic Evil, Neutral Evil\nElysium - Neutral Good\nGehenna - Lawful Evil, Neutral Evil\nHades - Neutral Evil\nLimbo - Chaotic Neutral\nMechanus - Lawful Neutral\nMount Celestia - Lawful Good\nNine Hells - Lawful Evil\nOutlands - Neutral\nPandemonium - Chaotic Evil, Chaotic Neutral\nYsgard - Chaotic Good, Chaotic Neutral"
+  },
+  {
+    "id": "path-of-the-berserker",
+    "name": "Path of the Berserker",
+    "description": "[Barbarian Subclass] Channel Rage into Violent Fury\nBarbarians who walk the Path of the Berserker direct their Rage primarily toward violence. Their path is one of untrammeled fury, and they thrill in the chaos of battle as they allow their Rage to seize and empower them."
+  },
+  {
+    "id": "path-of-the-wild-heart",
+    "name": "Path of the Wild Heart",
+    "description": "[Barbarian Subclass] Walk in Community with the Animal World\nBarbarians who follow the Path of the Wild Heart view themselves as kin to animals. These Barbarians learn magical means to communicate with animals, and their Rage heightens their connection to animals as it fills them with supernatural might."
+  },
+  {
+    "id": "path-of-the-world-tree",
+    "name": "Path of the World Tree",
+    "description": "[Barbarian Subclass] Trace the Roots and Branches of the Multiverse\nBarbarians who follow the Path of the World Tree connect with the cosmic tree Yggdrasil through their Rage. This tree grows among the Outer Planes, connecting them to each other and the Material Plane. These Barbarians draw on the tree's magic for vitality and as a means of dimensional travel."
+  },
+  {
+    "id": "college-of-dance",
+    "name": "College of Dance",
+    "description": "[Bard Subclass] Move in Harmony with the Cosmos\n\nBards of the College of Dance know that the Words of Creation can't be contained within speech or song; the words are uttered by the movements of celestial bodies and flow through the motions of the smallest creatures. These Bards practice a way of being in harmony with the whirling cosmos that emphasizes agility, speed, and grace."
+  },
+  {
+    "id": "college-of-glamour",
+    "name": "College of Glamour",
+    "description": "[Bard Subclass] Weave Beguiling Fey Magic\n\nThe College of Glamour traces its origins to the beguiling magic of the Feywild. Bards who study this magic weave threads of beauty and terror into their songs and stories, and the mightiest among them can cloak themselves in otherworldly majesty. Their performances stir up wistful longing for forgotten innocence, evoke unconscious memories of long-held fears, and tug at the emotions of even the most hard-hearted listeners."
+  },
+  {
+    "id": "college-of-lore",
+    "name": "College of Lore",
+    "description": "[Bard Subclass] Plumb the Depths of Magical Knowledge\n\nBards of the College of Lore collect spells and secrets from diverse sources, such as scholarly tomes, mystical rites, and peasant tales. The college's members gather in libraries and universities to share their lore with one another. They also meet at festivals or affairs of state, where they can expose corruption, unravel lies, and poke fun at self-important figures of authority."
+  },
+  {
+    "id": "college-of-valor",
+    "name": "College of Valor",
+    "description": "[Bard Subclass] Sing the Deeds of Ancient Heroes\n\nBards of the College of Valor are daring storytellers whose tales preserve the memory of the great heroes of the past. These Bards sing the deeds of the mighty in vaulted halls or to crowds gathered around great bonfires. They travel to witness great events firsthand and to ensure that the memory of these events doesn't pass away. With their songs, they inspire new generations to reach the same heights of accomplishment as the heroes of old."
+  },
+  {
+    "id": "life-domain",
+    "name": "Life Domain",
+    "description": "[Cleric Subclass] Soothe the Hurts of the World\n\nThe Life Domain focuses on the positive energy that helps sustain all life in the multiverse. Clerics who tap into this domain are masters of healing, using that life force to cure many hurts.\n\nExistence itself relies on the positive energy associated with this domain, so a Cleric of almost any religious tradition might choose it. This domain is particularly associated with agricultural deities, gods of healing or endurance, and gods of home and community. Religious orders of healing also seek the magic of this domain."
+  },
+  {
+    "id": "light-domain",
+    "name": "Light Domain",
+    "description": "[Cleric Subclass] Bring Light to Banish Darkness\n\nThe Light Domain emphasizes the divine power to bring about blazing fire and revelation. Clerics who wield this power are enlightened souls infused with radiance and the power of their deities' discerning vision, charged with chasing away lies and burning away darkness.\n\nThe Light Domain is associated with gods of truth, vigilance, beauty, insight, and renewal. Some of these gods are identified with the sun or as charioteers who guide the sun across the sky. Others are sentinels who pierce deception. Some are deities of beauty and artistry who teach that art is a vehicle for the soul's improvement."
+  },
+  {
+    "id": "trickery-domain",
+    "name": "Trickery Domain",
+    "description": "[Cleric Subclass] Make Mischief and Challenge Authority\n\nThe Trickery Domain offers magic of deception, illusion, and stealth. Clerics who wield this magic are a disruptive force in the world, puncturing pride, mocking tyrants, freeing captives, and flouting hollow traditions. They prefer subterfuge and pranks to direct confrontation.\n\nGods of trickery are mischief-makers and instigators who stand as a constant challenge to the accepted order among both gods and mortals. They embody the forces of change and social upheaval, and they're patrons of thieves, scoundrels, gamblers, rebels, and liberators. Religious orders that operate in secret, especially those that seek to undermine oppressive governments or hierarchies, also draw on the power of the Trickery Domain."
+  },
+  {
+    "id": "war-domain",
+    "name": "War Domain",
+    "description": "[Cleric Subclass] Inspire Valor and Smite Foes\n\nWar has many manifestations. It can make heroes of ordinary people. It can be desperate and horrific, with acts of cruelty and cowardice eclipsing instances of excellence and courage. Clerics who tap into the magic of the War Domain excel in battle, inspiring others to fight the good fight or offering acts of violence as prayers.\n\nGods of the War Domain watch over warriors and reward them for their great deeds. They include champions of honor and chivalry as well as gods of destruction and pillage. Other war gods take a more neutral stance, promoting war in all its manifestations and supporting warriors in any circumstance."
+  },
+  {
+    "id": "circle-of-the-land",
+    "name": "Circle of the Land",
+    "description": "[Druid Subclass] Celebrate Connection to the Natural World\nThe Circle of the Land comprises mystics and sages who safeguard ancient knowledge and rites. These Druids meet within sacred circles of trees or standing stones to whisper primal secrets in Druidic. The circle's wisest members preside as the chief priests of their communities."
+  },
+  {
+    "id": "circle-of-the-moon",
+    "name": "Circle of the Moon",
+    "description": "[Druid Subclass] Adopt Animal Forms to Guard the Wilds\nDruids of the Circle of the Moon draw on lunar magic to transform themselves. Their order gathers under the moon to share news and perform rituals. Changeable as the moon, a Druid of this circle might prowl as a great cat one night, soar over the treetops as an eagle the next day, and then crash through undergrowth as a bear to drive off a trespassing monster. The wild is in the Druid's blood."
+  },
+  {
+    "id": "circle-of-the-sea",
+    "name": "Circle of the Sea",
+    "description": "[Druid Subclass] Become One with Tides and Storms\nDruids of the Circle of the Sea draw on the tempestuous forces of oceans and storms. Some view themselves as embodiments of nature's wrath, seeking vengeance against those who despoil nature. Others seek mystical unity with nature by attuning themselves to the ebb and flow of the tides, following the rush of currents and waves and listening to the inscrutable whispers and roars of the winds."
+  },
+  {
+    "id": "circle-of-the-stars",
+    "name": "Circle of the Stars",
+    "description": "[Druid Subclass] Harness Secrets Hidden in Constellations\nThe Circle of the Stars has tracked heavenly patterns since time immemorial, discovering secrets hidden amid the constellations. By understanding these secrets, the Druids of this circle seek to harness the powers of the cosmos."
+  },
+  {
+    "id": "battle-master",
+    "name": "Battle Master",
+    "description": "[Fighter Subclass] Master Sophisticated Battle Maneuvers\n\nBattle Masters are students of the art of battle, learning martial techniques passed down through generations. The most accomplished Battle Masters are well-rounded figures who combine their carefully honed combat skills with academic study in the fields of history, theory, and the arts."
+  },
+  {
+    "id": "champion",
+    "name": "Champion",
+    "description": "[Fighter Subclass] Pursue Physical Excellence in Combat\nA Champion focuses on the development of martial prowess in a relentless pursuit of victory. Champions combine rigorous training with physical excellence to deal devastating blows, withstand peril, and garner glory. Whether in athletic contests or bloody battle, Champions strive for the crown of the victor."
+  },
+  {
+    "id": "eldritch-knight",
+    "name": "Eldritch Knight",
+    "description": "[Fighter Subclass] Support Combat Skills with Arcane Magic\nEldritch Knights combine the martial mastery common to all Fighters with a careful study of magic. Their spells both complement and extend their combat skills, providing additional protection to shore up their armor and also allowing them to engage many foes at once with explosive magic."
+  },
+  {
+    "id": "psi-warrior",
+    "name": "Psi Warrior",
+    "description": "[Fighter Subclass] Psi Warrior\nAugment Physical Might with Psionic Power\nPsi Warriors awaken the power of their minds to augment their physical might. They harness this psionic power to infuse their weapon strikes, lash out with telekinetic energy, and create barriers of mental force."
+  },
+  {
+    "id": "warrior-of-mercy",
+    "name": "Warrior of Mercy",
+    "description": "[Monk Subclass] Manipulate Forces of Life and Death\n\nWarriors of Mercy manipulate the life force of others. These Monks are wandering physicians, but they bring a swift end to their enemies. They often wear masks, presenting themselves as faceless bringers of life and death."
+  },
+  {
+    "id": "warrior-of-shadow",
+    "name": "Warrior of Shadow",
+    "description": "[Monk Subclass] Harness Shadow Power for Stealth and Subterfuge\n\nWarriors of Shadow practice stealth and subterfuge, harnessing the power of the Shadowfell. They are at home in darkness, able to draw gloom around themselves to hide, leap from shadow to shadow, and take on a wraithlike form."
+  },
+  {
+    "id": "warrior-of-the-elements",
+    "name": "Warrior of the Elements",
+    "description": "[Monk Subclass] Wield Strikes and Bursts of Elemental Power\n\nWarriors of the Elements tap into the power of the Elemental Planes. Harnessing their supernatural focus, these Monks momentarily tame the energy of the Elemental Chaos to empower themselves in and out of battle."
+  },
+  {
+    "id": "warrior-of-the-open-hand",
+    "name": "Warrior of the Open Hand",
+    "description": "[Monk Subclass] Master Unarmed Combat Techniques\n\nWarriors of the Open Hand are masters of unarmed combat. They learn techniques to push and trip their opponents and manipulate their own energy to protect themselves from harm."
+  },
+  {
+    "id": "oath-of-devotion",
+    "name": "Oath of Devotion",
+    "description": "[Paladin Subclass] Uphold the Ideals of Justice and Order\n\nThe Oath of Devotion binds Paladins to the ideals of justice and order. These Paladins meet the archetype of the knight in shining armor. They hold themselves to the highest standards of conduct, and some—for better or worse—hold the rest of the world to the same standards.\n\nMany who swear this oath are devoted to gods of law and good and use their gods' tenets as the measure of personal devotion. Others hold angels as their ideals and incorporate images of angelic wings into their helmets or coats of arms.\n\nThese paladins share the following tenets:\n\n• Let your word be your promise.\n• Protect the weak and never fear to act.\n• Let your honorable deeds be an example."
+  },
+  {
+    "id": "oath-of-glory",
+    "name": "Oath of Glory",
+    "description": "[Paladin Subclass] Strive for the Heights of Heroism\n\nPaladins who take the Oath of Glory believe they and their companions are destined to achieve glory through deeds of heroism. They train diligently and encourage their companions, so they're all ready when destiny calls.\n\nThese paladins share the following tenets:\n• Endeavor to be known by your deeds.\n• Face hardships with courage.\n• Inspire others to strive for glory."
+  },
+  {
+    "id": "oath-of-the-ancients",
+    "name": "Oath of the Ancients",
+    "description": "[Paladin Subclass] Preserve Life and Light in the World\n\nThe Oath of the Ancients is as old as the first elves. Paladins who swear this oath cherish the light; they love the beautiful and life-giving things of the world more than any principles of honor, courage, and justice. They often adorn their armor and clothing with images of growing things—leaves, antlers, or flowers—to reflect their commitment to preserving life and light.\n\nThese paladins share the following tenets:\n• Kindle the light of hope.\n• Shelter life.\n• Delight in art and laughter."
+  },
+  {
+    "id": "oath-of-vengeance",
+    "name": "Oath of Vengeance",
+    "description": "[Paladin Subclass] Punish Evildoers at Any Cost\n\nThe Oath of Vengeance is a solemn commitment to punish those who have committed grievously evil acts. When evil armies slaughter helpless villagers, when a tyrant defies the will of the gods, when a thieves' guild grows too violent, when a dragon rampages through the countryside—at times like these, paladins arise and swear an Oath of Vengeance to set right what has gone wrong.\n\nThese paladins share the following tenets:\n• Show the wicked no mercy.\n• Fight injustice and its causes.\n• Aid those harmed by injustice."
+  },
+  {
+    "id": "beast-master",
+    "name": "Beast Master",
+    "description": "[Ranger Subclass] Bond with a Primal Beast\n\nA Beast Master forms a mystical bond with a special animal, drawing on primal magic and a deep connection to the natural world."
+  },
+  {
+    "id": "fey-wanderer",
+    "name": "Fey Wanderer",
+    "description": "[Ranger Subclass] Wield Fey Mirth and Fury\n\nA fey mystique surrounds you, thanks to the boon of an archfey or a location in the Feywild that transformed you. However you gained fey magic, you are now a Fey Wanderer. Your joyful laughter brightens the hearts of the downtrodden, and your martial prowess strikes terror in your foes, for great is the mirth of the fey and dreadful is their fury."
+  },
+  {
+    "id": "gloom-stalker",
+    "name": "Gloom Stalker",
+    "description": "[Ranger Subclass] Draw on Shadow Magic to Fight Your Foes\n\nGloom Stalkers are at home in the darkest places, wielding magic drawn from the Shadowfell to combat enemies that lurk in darkness."
+  },
+  {
+    "id": "hunter",
+    "name": "Hunter",
+    "description": "[Ranger Subclass] Hunter\nProtect Nature and People from Destruction\nYou stalk prey in the wilds and elsewhere, using your abilities as a Hunter to protect nature and people everywhere from forces that would destroy them."
+  },
+  {
+    "id": "arcane-trickster",
+    "name": "Arcane Trickster",
+    "description": "[Rogue Subclass] A Rogue subclass is a specialization that grants you features at certain Rogue levels, as specified in the subclass. This section presents the Arcane Trickster, Assassin, Soulknife, and Thief subclasses.\n\nEnhance Stealth with Arcane Spells\n\nSome Rogues enhance their fine-honed skills of stealth and agility with spells, learning magical tricks to aid them in their trade. Some Arcane Tricksters use their talents as pickpockets and burglars, while others are pranksters."
+  },
+  {
+    "id": "assassin",
+    "name": "Assassin",
+    "description": "[Rogue Subclass] Practice the Grim Art of Death\n\nAn Assassin's training focuses on using stealth, poison, and disguise to eliminate foes with deadly efficiency. While some Rogues who follow this path are hired killers, spies, or bounty hunters, the capabilities of this subclass are equally useful for adventurers facing a variety of monstrous enemies."
+  },
+  {
+    "id": "soulknife",
+    "name": "Soulknife",
+    "description": "[Rogue Subclass] Strike Foes with Psionic Blades\n\nA Soulknife strikes with the mind, cutting through barriers both physical and psychic. These Rogues discover psionic power within themselves and channel it to do their roguish work. As a Soulknife, your psionic abilities might have haunted you since childhood, only revealing their full potential as you experienced the stress of adventure. Or you might have sought out an order of psychic adepts and spent years learning how to manifest your power."
+  },
+  {
+    "id": "thief",
+    "name": "Thief",
+    "description": "[Rogue Subclass] Hunt for Treasure as a Classic Adventurer\n\nA mix of burglar, treasure hunter, and explorer, you are the epitome of an adventurer. In addition to improving your agility and stealth, you gain abilities useful for delving into ruins and getting maximum benefit from the magic items you find there."
+  },
+  {
+    "id": "aberrant-sorcery",
+    "name": "Aberrant Sorcery",
+    "description": "[Sorcerer Subclass] Wield Unnatural Psionic Power\n\nAn alien influence has wrapped its tendrils around your mind, giving you psionic power. You can now touch other minds with that power and alter the world around you. Will this power shine from you as a hopeful beacon to others? Or will you be a terror to those who feel the stab of your mind?\n\nPerhaps a psychic wind from the Astral Plane carried psionic energy to you, or you were exposed to the Far Realm's warping influence. Alternatively, you were implanted with a mind flayer tadpole, but your transformation into a mind flayer never occurred; now the tadpole's psionic power is yours. However you acquired this power, your mind is aflame with it."
+  },
+  {
+    "id": "clockwork-sorcery",
+    "name": "Clockwork Sorcery",
+    "description": "[Sorcerer Subclass] Channel Cosmic Forces of Order\n\nThe cosmic force of order has suffused you with magic. That power arises from Mechanus or a realm like it—a plane of existence shaped entirely by clockwork efficiency. You or someone from your lineage might have become entangled in the machinations of modrons, the orderly beings who inhabit Mechanus. Perhaps your ancestor even took part in the Great Modron March. Whatever its origin within you, the power of order can seem strange to others, but for you, it's part of a vast and glorious system."
+  },
+  {
+    "id": "draconic-sorcery",
+    "name": "Draconic Sorcery",
+    "description": "[Sorcerer Subclass] Breathe the Magic of Dragons\n\nYour innate magic comes from the gift of a dragon. Perhaps an ancient dragon facing death bequeathed some of its magical power to you or your ancestor. You might have absorbed magic from a site infused with dragons' power. Or perhaps you handled a treasure taken from a dragon's hoard that was steeped in draconic power. Or you might have a dragon for an ancestor."
+  },
+  {
+    "id": "wild-magic-sorcery",
+    "name": "Wild Magic Sorcery",
+    "description": "[Sorcerer Subclass] Unleash Chaotic Magic\n\nYour innate magic stems from the forces of chaos that underlie the order of creation. You or an ancestor might have endured exposure to raw magic, perhaps through a planar portal leading to Limbo or the Elemental Planes. Perhaps you were blessed by a fey being or marked by a demon. Or your magic could be a fluke with no apparent cause. Whatever its source, this magic churns within you, waiting for any outlet."
+  },
+  {
+    "id": "archfey-patron",
+    "name": "Archfey Patron",
+    "description": "[Warlock Subclass] Bargain with Whimsical Fey\n\nYour pact draws on the power of the Feywild. When you choose this subclass, you might make a deal with an archfey, such as the Prince of Frost; the Queen of Air and Darkness, ruler of the Gloaming Court; Titania of the Summer Court; or an ancient hag. Or you might call on a spectrum of Fey, weaving a web of favors and debts. Whoever they are, your patron is often inscrutable and whimsical."
+  },
+  {
+    "id": "celestial-patron",
+    "name": "Celestial Patron",
+    "description": "[Warlock Subclass] Call on the Power of the Heavens\n\nYour pact draws on the Upper Planes, the realms of everlasting bliss. You might enter an agreement with an empyrean, a couatl, a sphinx, a unicorn, or another heavenly entity. Or you might call on numerous such beings as you pursue goals aligned with theirs. Your pact allows you to experience a hint of the holy light that illuminates the multiverse."
+  },
+  {
+    "id": "fiend-patron",
+    "name": "Fiend Patron",
+    "description": "[Warlock Subclass] Make a Deal with the Lower Planes\n\nYour pact draws on the Lower Planes, the realms of perdition. You might forge a bargain with a demon lord such as Demogorgon or Orcus; an archdevil such as Asmodeus; or a pit fiend, balor, yugoloth, or night hag that is especially mighty. That patron's aims are evil—the corruption or destruction of all things, ultimately including you—and your path is defined by the extent to which you strive against those aims."
+  },
+  {
+    "id": "great-old-one-patron",
+    "name": "Great Old One Patron",
+    "description": "[Warlock Subclass] Unearth Forbidden Lore of Ineffable Beings\nWhen you choose this subclass, you might bind yourself to an unspeakable being from the Far Realm or an elder god—a being such as Tharizdun, the Chained God; Zargon, the Returner; Hadar, the Dark Hunger; or Great Cthulhu. Or you might invoke several entities without yoking yourself to one. The motives of these beings are incomprehensible, and the Great Old One might be indifferent to your existence. But the secrets you've learned nevertheless allow you to draw strange magic from it."
+  },
+  {
+    "id": "abjurer",
+    "name": "Abjurer",
+    "description": "[Wizard Subclass] Shield Companions and Banish Foes\n\nYour study of magic is focused on spells that block, banish, or protect—ending harmful effects, banishing evil influences, and protecting the weak. Abjurers are sought when baleful spirits require exorcism, when locations must be guarded against magical spying, and when portals to other planes of existence must be closed. Adventuring parties value Abjurers for the protection they provide against a variety of hostile magic and other attacks."
+  },
+  {
+    "id": "diviner",
+    "name": "Diviner",
+    "description": "[Wizard Subclass] Learn the Secrets of the Multiverse\n\nThe counsel of a Diviner is sought by those who want a clearer understanding of the past, present, and future. As a Diviner, you strive to part the veils of space, time, and consciousness. You work to master spells of discernment, remote viewing, supernatural knowledge, and foresight."
+  },
+  {
+    "id": "evoker",
+    "name": "Evoker",
+    "description": "[Wizard Subclass] Create Explosive Elemental Effects\n\nYour studies focus on magic that creates powerful elemental effects such as bitter cold, searing flame, rolling thunder, crackling lightning, and burning acid. Some Evokers find employment in military forces, serving as artillery to blast armies from afar. Others use their power to protect others, while some seek their own gain."
+  },
+  {
+    "id": "illusionist",
+    "name": "Illusionist",
+    "description": "[Wizard Subclass] Weave Subtle Spells of Deception\n\nYou specialize in magic that dazzles the senses and tricks the mind, and the illusions you craft make the impossible seem real."
+  }
+]

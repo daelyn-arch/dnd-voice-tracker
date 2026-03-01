@@ -1,50 +1,37 @@
 import React, { useState } from 'react'
-import { getSpells, getFeatures } from '../data'
+import { getAllEntries } from '../data'
 import { useDetectionStore } from '../store/detectionStore'
-import { isSpell } from '../types'
-import { getSchoolColor } from './schoolColors'
+import { getEntryColor, getEntryBadge } from './schoolColors'
 import type { Entry } from '../types'
 import styles from './SearchBar.module.css'
-
-
 
 interface Props {
   onClose: () => void
 }
 
 let _all: Entry[] | null = null
-function getAllEntries(): Entry[] {
-  if (!_all) _all = [...getSpells(), ...getFeatures()]
+function cachedAllEntries(): Entry[] {
+  if (!_all) _all = getAllEntries()
   return _all
-}
-
-function entryColor(entry: Entry): string {
-  return isSpell(entry) ? getSchoolColor(entry.school) : '#607d8b'
-}
-
-function entryBadge(entry: Entry): string {
-  return isSpell(entry) ? entry.school : (entry as { class: string }).class
 }
 
 export function SearchBar({ onClose }: Props): React.JSX.Element {
   const [query, setQuery] = useState('')
   const addDetection = useDetectionStore((s) => s.addDetection)
   const expandDetection = useDetectionStore((s) => s.expandDetection)
-  const showSpells = useDetectionStore((s) => s.showSpells)
-  const showFeatures = useDetectionStore((s) => s.showFeatures)
+  const visibleTypes = useDetectionStore((s) => s.visibleTypes)
 
   const trimmed = query.trim()
   const results = trimmed.length >= 2
-    ? getAllEntries()
-        .filter((e) => isSpell(e) ? showSpells : showFeatures)
+    ? cachedAllEntries()
+        .filter((e) => visibleTypes[e._type])
         .filter((e) => e.name.toLowerCase().includes(trimmed.toLowerCase()))
-        .slice(0, 8)
+        .slice(0, 12)
     : []
 
   function handleSelect(entry: Entry): void {
     const keyword = entry.name.toLowerCase()
     addDetection(keyword, entry)
-    // Expand immediately — read id from store after addDetection has run
     const detection = useDetectionStore.getState().detections.find((d) => d.keyword === keyword)
     if (detection) expandDetection(detection.id)
     onClose()
@@ -56,7 +43,7 @@ export function SearchBar({ onClose }: Props): React.JSX.Element {
         <input
           className={styles.input}
           autoFocus
-          placeholder="Search spells & features…"
+          placeholder="Search all entries…"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           onKeyDown={(e) => {
@@ -83,9 +70,9 @@ export function SearchBar({ onClose }: Props): React.JSX.Element {
                   className={styles.resultBtn}
                   onMouseDown={(e) => { e.preventDefault(); handleSelect(entry) }}
                 >
-                  <span className={styles.dot} style={{ background: entryColor(entry) }} />
+                  <span className={styles.dot} style={{ background: getEntryColor(entry) }} />
                   <span className={styles.resultName}>{entry.name}</span>
-                  <span className={styles.resultBadge}>{entryBadge(entry)}</span>
+                  <span className={styles.resultBadge}>{getEntryBadge(entry)}</span>
                 </button>
               </li>
             ))}
@@ -94,7 +81,7 @@ export function SearchBar({ onClose }: Props): React.JSX.Element {
       )}
 
       {trimmed.length >= 2 && results.length === 0 && (
-        <p className={styles.empty}>No results for "{trimmed}"</p>
+        <p className={styles.empty}>No results for &ldquo;{trimmed}&rdquo;</p>
       )}
     </div>
   )

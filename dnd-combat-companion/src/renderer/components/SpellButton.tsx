@@ -1,7 +1,6 @@
 import React from 'react'
-import { isSpell } from '../types'
 import type { Detection } from '../types'
-import { getSchoolColor } from './schoolColors'
+import { getEntryColor, getEntryBadge } from './schoolColors'
 import styles from './SpellButton.module.css'
 
 interface Props {
@@ -12,15 +11,8 @@ interface Props {
 
 export function SpellButton({ detection, onExpand, onDismiss }: Props): React.JSX.Element {
   const { entry } = detection
-  const isSpellEntry = isSpell(entry)
-  const color = isSpellEntry ? getSchoolColor(entry.school) : getSchoolColor('Feature')
-
-  const label = entry.name
-  const badge = isSpellEntry
-    ? entry.level === 0
-      ? 'Cantrip'
-      : `L${entry.level} ${entry.school.slice(0, 4)}`
-    : entry.class
+  const color = getEntryColor(entry)
+  const badge = getEntryBadge(entry)
 
   return (
     <button
@@ -29,7 +21,7 @@ export function SpellButton({ detection, onExpand, onDismiss }: Props): React.JS
       onClick={onExpand}
     >
       <span className={styles.dot} />
-      <span className={styles.name}>{label}</span>
+      <span className={styles.name}>{entry.name}</span>
       <span className={styles.badge}>{badge}</span>
       {detection.pinned && <span className={styles.pinIcon} title="Pinned">◈</span>}
       <button

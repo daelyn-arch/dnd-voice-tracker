@@ -1,16 +1,35 @@
 import React from 'react'
 import { useDetectionStore } from '../store/detectionStore'
+import type { EntryType } from '../types'
 import styles from './SettingsPanel.module.css'
 
 interface Props {
   onClose: () => void
 }
 
+interface FilterItem {
+  type: EntryType
+  label: string
+}
+
+const DND_FILTERS: FilterItem[] = [
+  { type: 'spell', label: 'Spells' },
+  { type: 'feature', label: 'Class Features' },
+  { type: 'feat', label: 'Feats' },
+  { type: 'equipment', label: 'Equipment' },
+  { type: 'background', label: 'Backgrounds' },
+  { type: 'species', label: 'Species' },
+  { type: 'rules', label: 'Rules' },
+  { type: 'magicItem', label: 'Magic Items' }
+]
+
+const DH_FILTERS: FilterItem[] = [
+  { type: 'daggerheart', label: 'Daggerheart (All)' }
+]
+
 export function SettingsPanel({ onClose }: Props): React.JSX.Element {
-  const showSpells = useDetectionStore((s) => s.showSpells)
-  const showFeatures = useDetectionStore((s) => s.showFeatures)
-  const toggleShowSpells = useDetectionStore((s) => s.toggleShowSpells)
-  const toggleShowFeatures = useDetectionStore((s) => s.toggleShowFeatures)
+  const visibleTypes = useDetectionStore((s) => s.visibleTypes)
+  const toggleVisibleType = useDetectionStore((s) => s.toggleVisibleType)
 
   return (
     <div className={styles.panel}>
@@ -21,31 +40,41 @@ export function SettingsPanel({ onClose }: Props): React.JSX.Element {
 
       <div className={styles.divider} />
 
-      <h3 className={styles.sectionTitle}>Detection Filter</h3>
+      <h3 className={styles.sectionTitle}>D&D 2024</h3>
       <p className={styles.sectionHint}>
         Choose which entry types appear when a keyword is heard or searched.
       </p>
 
       <div className={styles.checkList}>
-        <label className={styles.checkRow}>
-          <input
-            type="checkbox"
-            className={styles.checkbox}
-            checked={showSpells}
-            onChange={toggleShowSpells}
-          />
-          <span className={styles.checkLabel}>Spells</span>
-        </label>
+        {DND_FILTERS.map(({ type, label }) => (
+          <label key={type} className={styles.checkRow}>
+            <input
+              type="checkbox"
+              className={styles.checkbox}
+              checked={visibleTypes[type]}
+              onChange={() => toggleVisibleType(type)}
+            />
+            <span className={styles.checkLabel}>{label}</span>
+          </label>
+        ))}
+      </div>
 
-        <label className={styles.checkRow}>
-          <input
-            type="checkbox"
-            className={styles.checkbox}
-            checked={showFeatures}
-            onChange={toggleShowFeatures}
-          />
-          <span className={styles.checkLabel}>Class Features</span>
-        </label>
+      <div className={styles.divider} />
+
+      <h3 className={styles.sectionTitle}>Daggerheart</h3>
+
+      <div className={styles.checkList}>
+        {DH_FILTERS.map(({ type, label }) => (
+          <label key={type} className={styles.checkRow}>
+            <input
+              type="checkbox"
+              className={styles.checkbox}
+              checked={visibleTypes[type]}
+              onChange={() => toggleVisibleType(type)}
+            />
+            <span className={styles.checkLabel}>{label}</span>
+          </label>
+        ))}
       </div>
     </div>
   )

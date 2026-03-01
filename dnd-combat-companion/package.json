@@ -8,7 +8,8 @@
     "build": "electron-vite build",
     "dist": "electron-builder",
     "build-data": "ts-node --esm scripts/build-data.ts",
-    "build-spells-2024": "ts-node -P tsconfig.node.json scripts/build-spells-srd2024.ts"
+    "build-spells-2024": "ts-node -P tsconfig.node.json scripts/build-spells-srd2024.ts",
+    "build-library": "ts-node -P tsconfig.node.json scripts/build-from-library.ts"
   },
   "dependencies": {
     "vosk": "^0.3.39",

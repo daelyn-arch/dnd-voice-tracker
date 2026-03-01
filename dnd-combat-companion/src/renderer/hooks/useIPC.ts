@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { useDetectionStore } from '../store/detectionStore'
-import { lookupEntry, getSpells, getFeatures } from '../data'
+import { lookupEntry, getAllEntries } from '../data'
 import type { Entry } from '../types'
 import { useAudio } from './useAudio'
 
@@ -15,7 +15,7 @@ const CATCH_ALL_IGNORE = new Set([
 
 let _allEntries: Entry[] | null = null
 function allEntries(): Entry[] {
-  if (!_allEntries) _allEntries = [...getSpells(), ...getFeatures()]
+  if (!_allEntries) _allEntries = getAllEntries()
   return _allEntries
 }
 

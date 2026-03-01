@@ -1,0 +1,1457 @@
+[
+  {
+    "id": "beast-of-the-land",
+    "name": "Beast of the Land",
+    "description": "Medium Beast, Neutral\nAC 13 plus your Wisdom modifier\nHP 5 plus five times your Ranger level (the beast has a number of Hit Dice [d8s] equal to your Ranger level)\nSpeed 40 ft., Climb 40 ft.\n\nSTR 14 +2 +2    DEX 14 +2 +2    CON 15 +2 +2\nINT 8 -1 -1     WIS 14 +2 +2    CHA 11 +0 +0\n\nSenses Darkvision 60 ft., Passive Perception 12\nLanguages Understands the languages you know\nCR None (XP 0; PB equals your Proficiency Bonus)\n\nTRAITS\nPrimal Bond. Add your Proficiency Bonus to any ability check or saving throw the beast makes.\n\nACTIONS\nBeast's Strike. Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d8 + 2 plus your Wisdom modifier Bludgeoning, Piercing, or Slashing damage (your choice when you summon the beast). If the beast moved at least 20 feet straight toward the target before the hit, the target takes an extra 1d6 damage of the same type, and the target has the Prone condition if it is a Large or smaller creature."
+  },
+  {
+    "id": "beast-of-the-sky",
+    "name": "Beast of the Sky",
+    "description": "Small Beast, Neutral\nAC 13 plus your Wisdom modifier\nHP 4 plus four times your Ranger level (the beast has a number of Hit Dice [d6s] equal to your Ranger level)\nSpeed 10 ft., Fly 60 ft.\n\nSTR 6 -2 -2     DEX 16 +3 +3    CON 13 +1 +1\nINT 8 -1 -1     WIS 14 +2 +2    CHA 11 +0 +0\n\nSenses Darkvision 60 ft., Passive Perception 12\nLanguages Understands the languages you know\nCR None (XP 0; PB equals your Proficiency Bonus)\n\nTRAITS\nFlyby. The beast doesn't provoke Opportunity Attacks when it flies out of an enemy's reach.\n\nPrimal Bond. Add your Proficiency Bonus to any ability check or saving throw the beast makes.\n\nACTIONS\nBeast's Strike. Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d4 + 3 plus your Wisdom modifier Slashing damage."
+  },
+  {
+    "id": "beast-of-the-sea",
+    "name": "Beast of the Sea",
+    "description": "Medium Beast, Neutral\nAC 13 plus your Wisdom modifier\nHP 5 plus five times your Ranger level (the beast has a number of Hit Dice [d8s] equal to your Ranger level)\nSpeed 5 ft., Swim 60 ft.\n\nSTR 14 +2 +2    DEX 14 +2 +2    CON 15 +2 +2\nINT 8 -1 -1     WIS 14 +2 +2    CHA 11 +0 +0\n\nSenses Darkvision 90 ft., Passive Perception 12\nLanguages Understands the languages you know\nCR None (XP 0; PB equals your Proficiency Bonus)\n\nTRAITS\nAmphibious. The beast can breathe air and water.\n\nPrimal Bond. Add your Proficiency Bonus to any ability check or saving throw the beast makes.\n\nACTIONS\nBeast's Strike. Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 ft. Hit: 1d6 + 2 plus your Wisdom modifier Bludgeoning or Piercing damage (your choice when you summon the beast), and the target has the Grappled condition (escape DC equals your spell save DC)."
+  },
+  {
+    "id": "club",
+    "name": "Club",
+    "description": "1d4 Bludgeoning, Light, Slow mastery, 2 lb., 1 SP"
+  },
+  {
+    "id": "dagger",
+    "name": "Dagger",
+    "description": "1d4 Piercing, Finesse, Light, Thrown (Range 20/60), Nick mastery, 1 lb., 2 GP"
+  },
+  {
+    "id": "greatclub",
+    "name": "Greatclub",
+    "description": "1d8 Bludgeoning, Two-Handed, Push mastery, 10 lb., 2 SP"
+  },
+  {
+    "id": "handaxe",
+    "name": "Handaxe",
+    "description": "1d6 Slashing, Light, Thrown (Range 20/60), Vex mastery, 2 lb., 5 GP"
+  },
+  {
+    "id": "javelin",
+    "name": "Javelin",
+    "description": "1d6 Piercing, Thrown (Range 30/120), Slow mastery, 2 lb., 5 SP"
+  },
+  {
+    "id": "light-hammer",
+    "name": "Light Hammer",
+    "description": "1d4 Bludgeoning, Light, Thrown (Range 20/60), Nick mastery, 2 lb., 2 GP"
+  },
+  {
+    "id": "mace",
+    "name": "Mace",
+    "description": "1d6 Bludgeoning, Sap mastery, 4 lb., 5 GP"
+  },
+  {
+    "id": "quarterstaff",
+    "name": "Quarterstaff",
+    "description": "1d6 Bludgeoning, Versatile (1d8), Topple mastery, 4 lb., 2 SP"
+  },
+  {
+    "id": "sickle",
+    "name": "Sickle",
+    "description": "1d4 Slashing, Light, Nick mastery, 2 lb., 1 GP"
+  },
+  {
+    "id": "spear",
+    "name": "Spear",
+    "description": "1d6 Piercing, Thrown (Range 20/60), Versatile (1d8), Sap mastery, 3 lb., 1 GP"
+  },
+  {
+    "id": "dart",
+    "name": "Dart",
+    "description": "1d4 Piercing, Finesse, Thrown (Range 20/60), Vex mastery, 1/4 lb., 5 CP"
+  },
+  {
+    "id": "light-crossbow",
+    "name": "Light Crossbow",
+    "description": "1d8 Piercing, Ammunition (Range 80/320; Bolt), Loading, Two-Handed, Slow mastery, 5 lb., 25 GP"
+  },
+  {
+    "id": "shortbow",
+    "name": "Shortbow",
+    "description": "1d6 Piercing, Ammunition (Range 80/320; Arrow), Two-Handed, Vex mastery, 2 lb., 25 GP"
+  },
+  {
+    "id": "sling",
+    "name": "Sling",
+    "description": "1d4 Bludgeoning, Ammunition (Range 30/120; Bullet), Slow mastery, —, 1 SP"
+  },
+  {
+    "id": "battleaxe",
+    "name": "Battleaxe",
+    "description": "1d8 Slashing, Versatile (1d10), Topple mastery, 4 lb., 10 GP"
+  },
+  {
+    "id": "flail",
+    "name": "Flail",
+    "description": "1d8 Bludgeoning, Sap mastery, 2 lb., 10 GP"
+  },
+  {
+    "id": "glaive",
+    "name": "Glaive",
+    "description": "1d10 Slashing, Heavy, Reach, Two-Handed, Graze mastery, 6 lb., 20 GP"
+  },
+  {
+    "id": "greataxe",
+    "name": "Greataxe",
+    "description": "1d12 Slashing, Heavy, Two-Handed, Cleave mastery, 7 lb., 30 GP"
+  },
+  {
+    "id": "greatsword",
+    "name": "Greatsword",
+    "description": "2d6 Slashing, Heavy, Two-Handed, Graze mastery, 6 lb., 50 GP"
+  },
+  {
+    "id": "halberd",
+    "name": "Halberd",
+    "description": "1d10 Slashing, Heavy, Reach, Two-Handed, Cleave mastery, 6 lb., 20 GP"
+  },
+  {
+    "id": "lance",
+    "name": "Lance",
+    "description": "1d10 Piercing, Heavy, Reach, Two-Handed (unless mounted), Topple mastery, 6 lb., 10 GP"
+  },
+  {
+    "id": "longsword",
+    "name": "Longsword",
+    "description": "1d8 Slashing, Versatile (1d10), Sap mastery, 3 lb., 15 GP"
+  },
+  {
+    "id": "maul",
+    "name": "Maul",
+    "description": "2d6 Bludgeoning, Heavy, Two-Handed, Topple mastery, 10 lb., 10 GP"
+  },
+  {
+    "id": "morningstar",
+    "name": "Morningstar",
+    "description": "1d8 Piercing, Sap mastery, 4 lb., 15 GP"
+  },
+  {
+    "id": "pike",
+    "name": "Pike",
+    "description": "1d10 Piercing, Heavy, Reach, Two-Handed, Push mastery, 18 lb., 5 GP"
+  },
+  {
+    "id": "rapier",
+    "name": "Rapier",
+    "description": "1d8 Piercing, Finesse, Vex mastery, 2 lb., 25 GP"
+  },
+  {
+    "id": "scimitar",
+    "name": "Scimitar",
+    "description": "1d6 Slashing, Finesse, Light, Nick mastery, 3 lb., 25 GP"
+  },
+  {
+    "id": "shortsword",
+    "name": "Shortsword",
+    "description": "1d6 Piercing, Finesse, Light, Vex mastery, 2 lb., 10 GP"
+  },
+  {
+    "id": "trident",
+    "name": "Trident",
+    "description": "1d8 Piercing, Thrown (Range 20/60), Versatile (1d10), Topple mastery, 4 lb., 5 GP"
+  },
+  {
+    "id": "warhammer",
+    "name": "Warhammer",
+    "description": "1d8 Bludgeoning, Versatile (1d10), Push mastery, 5 lb., 15 GP"
+  },
+  {
+    "id": "war-pick",
+    "name": "War Pick",
+    "description": "1d8 Piercing, Versatile (1d10), Sap mastery, 2 lb., 5 GP"
+  },
+  {
+    "id": "whip",
+    "name": "Whip",
+    "description": "1d4 Slashing, Finesse, Reach, Slow mastery, 3 lb., 2 GP"
+  },
+  {
+    "id": "blowgun",
+    "name": "Blowgun",
+    "description": "1 Piercing, Ammunition (Range 25/100; Needle), Loading, Vex mastery, 1 lb., 10 GP"
+  },
+  {
+    "id": "hand-crossbow",
+    "name": "Hand Crossbow",
+    "description": "1d6 Piercing, Ammunition (Range 30/120; Bolt), Light, Loading, Vex mastery, 3 lb., 75 GP"
+  },
+  {
+    "id": "heavy-crossbow",
+    "name": "Heavy Crossbow",
+    "description": "1d10 Piercing, Ammunition (Range 100/400; Bolt), Heavy, Loading, Two-Handed, Push mastery, 18 lb., 50 GP"
+  },
+  {
+    "id": "longbow",
+    "name": "Longbow",
+    "description": "1d8 Piercing, Ammunition (Range 150/600; Arrow), Heavy, Two-Handed, Slow mastery, 2 lb., 50 GP"
+  },
+  {
+    "id": "musket",
+    "name": "Musket",
+    "description": "1d12 Piercing, Ammunition (Range 40/120; Bullet), Loading, Two-Handed, Slow mastery, 10 lb., 500 GP"
+  },
+  {
+    "id": "pistol",
+    "name": "Pistol",
+    "description": "1d10 Piercing, Ammunition (Range 30/90; Bullet), Loading, Vex mastery, 3 lb., 250 GP"
+  },
+  {
+    "id": "padded-armor",
+    "name": "Padded Armor",
+    "description": "Armor Class (AC): 11 + Dex modifier, Strength: —, Stealth: Disadvantage, Weight: 8 lb., Cost: 5 GP. Light Armor (1 Minute to Don or Doff)."
+  },
+  {
+    "id": "leather-armor",
+    "name": "Leather Armor",
+    "description": "Armor Class (AC): 11 + Dex modifier, Strength: —, Stealth: —, Weight: 10 lb., Cost: 10 GP. Light Armor (1 Minute to Don or Doff)."
+  },
+  {
+    "id": "studded-leather-armor",
+    "name": "Studded Leather Armor",
+    "description": "Armor Class (AC): 12 + Dex modifier, Strength: —, Stealth: —, Weight: 13 lb., Cost: 45 GP. Light Armor (1 Minute to Don or Doff)."
+  },
+  {
+    "id": "hide-armor",
+    "name": "Hide Armor",
+    "description": "Armor Class (AC): 12 + Dex modifier (max 2), Strength: —, Stealth: —, Weight: 12 lb., Cost: 10 GP. Medium Armor (5 Minutes to Don and 1 Minute to Doff)."
+  },
+  {
+    "id": "chain-shirt",
+    "name": "Chain Shirt",
+    "description": "Armor Class (AC): 13 + Dex modifier (max 2), Strength: —, Stealth: —, Weight: 20 lb., Cost: 50 GP. Medium Armor (5 Minutes to Don and 1 Minute to Doff)."
+  },
+  {
+    "id": "scale-mail",
+    "name": "Scale Mail",
+    "description": "Armor Class (AC): 14 + Dex modifier (max 2), Strength: —, Stealth: Disadvantage, Weight: 45 lb., Cost: 50 GP. Medium Armor (5 Minutes to Don and 1 Minute to Doff)."
+  },
+  {
+    "id": "breastplate",
+    "name": "Breastplate",
+    "description": "Armor Class (AC): 14 + Dex modifier (max 2), Strength: —, Stealth: —, Weight: 20 lb., Cost: 400 GP. Medium Armor (5 Minutes to Don and 1 Minute to Doff)."
+  },
+  {
+    "id": "half-plate-armor",
+    "name": "Half Plate Armor",
+    "description": "Armor Class (AC): 15 + Dex modifier (max 2), Strength: —, Stealth: Disadvantage, Weight: 40 lb., Cost: 750 GP. Medium Armor (5 Minutes to Don and 1 Minute to Doff)."
+  },
+  {
+    "id": "ring-mail",
+    "name": "Ring Mail",
+    "description": "Armor Class (AC): 14, Strength: —, Stealth: Disadvantage, Weight: 40 lb., Cost: 30 GP. Heavy Armor (10 Minutes to Don and 5 Minutes to Doff)."
+  },
+  {
+    "id": "chain-mail",
+    "name": "Chain Mail",
+    "description": "Armor Class (AC): 16, Strength: Str 13, Stealth: Disadvantage, Weight: 55 lb., Cost: 75 GP. Heavy Armor (10 Minutes to Don and 5 Minutes to Doff)."
+  },
+  {
+    "id": "splint-armor",
+    "name": "Splint Armor",
+    "description": "Armor Class (AC): 17, Strength: Str 15, Stealth: Disadvantage, Weight: 60 lb., Cost: 200 GP. Heavy Armor (10 Minutes to Don and 5 Minutes to Doff)."
+  },
+  {
+    "id": "plate-armor",
+    "name": "Plate Armor",
+    "description": "Armor Class (AC): 18, Strength: Str 15, Stealth: Disadvantage, Weight: 65 lb., Cost: 1,500 GP. Heavy Armor (10 Minutes to Don and 5 Minutes to Doff)."
+  },
+  {
+    "id": "carpenters-tools",
+    "name": "Carpenter's Tools",
+    "description": "Cost: 8 GP, Weight: 6 lb. Ability: Strength. Utilize: Seal or pry open a door or container (DC 20). Craft: Club, Greatclub, Quarterstaff, Barrel, Chest, Ladder, Pole, Portable Ram, Torch."
+  },
+  {
+    "id": "cartographers-tools",
+    "name": "Cartographer's Tools",
+    "description": "Cost: 15 GP, Weight: 6 lb. Ability: Wisdom. Utilize: Draft a map of a small area (DC 15). Craft: Map."
+  },
+  {
+    "id": "cobblers-tools",
+    "name": "Cobbler's Tools",
+    "description": "Cost: 5 GP, Weight: 5 lb. Ability: Dexterity. Utilize: Modify footwear to give Advantage on the wearer's next Dexterity (Acrobatics) check (DC 10). Craft: Climber's Kit."
+  },
+  {
+    "id": "cooks-utensils",
+    "name": "Cook's Utensils",
+    "description": "Cost: 1 GP, Weight: 8 lb. Ability: Wisdom. Utilize: Improve food's flavor (DC 10), or detect spoiled or poisoned food (DC 15). Craft: Rations."
+  },
+  {
+    "id": "alchemists-supplies",
+    "name": "Alchemist's Supplies",
+    "description": "Cost: 50 GP, Weight: 8 lb. Ability: Intelligence. Utilize: Identify a substance (DC 15), or start a fire (DC 15). Craft: Acid, Alchemist's Fire, Component Pouch, Oil, Paper, Perfume."
+  },
+  {
+    "id": "brewers-supplies",
+    "name": "Brewer's Supplies",
+    "description": "Cost: 20 GP, Weight: 9 lb. Ability: Intelligence. Utilize: Detect poisoned drink (DC 15), or identify alcohol (DC 10). Craft: Antitoxin."
+  },
+  {
+    "id": "calligraphers-supplies",
+    "name": "Calligrapher's Supplies",
+    "description": "Cost: 10 GP, Weight: 5 lb. Ability: Dexterity. Utilize: Write text with impressive flourishes that guard against forgery (DC 15). Craft: Ink, Spell Scroll."
+  },
+  {
+    "id": "glassblowers-tools",
+    "name": "Glassblower's Tools",
+    "description": "Cost: 30 GP, Weight: 5 lb. Ability: Intelligence. Utilize: Discern what a glass object held in the past 24 hours (DC 15). Craft: Glass Bottle, Magnifying Glass, Spyglass, Vial."
+  },
+  {
+    "id": "jewelers-tools",
+    "name": "Jeweler's Tools",
+    "description": "Cost: 25 GP, Weight: 2 lb. Ability: Intelligence. Utilize: Discern a gem's value (DC 15). Craft: Arcane Focus, Holy Symbol."
+  },
+  {
+    "id": "leatherworkers-tools",
+    "name": "Leatherworker's Tools",
+    "description": "Cost: 5 GP, Weight: 5 lb. Ability: Dexterity. Utilize: Add a design to a leather item (DC 10). Craft: Sling, Whip, Hide Armor, Leather Armor, Studded Leather Armor, Backpack, Crossbow Bolt Case, Map or Scroll Case, Parchment, Pouch, Quiver, Waterskin."
+  },
+  {
+    "id": "masons-tools",
+    "name": "Mason's Tools",
+    "description": "Cost: 10 GP, Weight: 8 lb. Ability: Strength. Utilize: Chisel a symbol or hole in stone (DC 10). Craft: Block and Tackle."
+  },
+  {
+    "id": "painters-supplies",
+    "name": "Painter's Supplies",
+    "description": "Cost: 10 GP, Weight: 5 lb. Ability: Wisdom. Utilize: Paint a recognizable image of something you've seen (DC 10). Craft: Druidic Focus, Holy Symbol."
+  },
+  {
+    "id": "potters-tools",
+    "name": "Potter's Tools",
+    "description": "Cost: 10 GP, Weight: 3 lb. Ability: Intelligence. Utilize: Discern what a ceramic object held in the past 24 hours (DC 15). Craft: Jug, Lamp."
+  },
+  {
+    "id": "smiths-tools",
+    "name": "Smith's Tools",
+    "description": "Cost: 20 GP, Weight: 8 lb. Ability: Strength. Utilize: Pry open a door or container (DC 20). Craft: Any Melee weapon (except Club, Greatclub, Quarterstaff, and Whip), Medium armor (except Hide), Heavy armor, Ball Bearings, Bucket, Caltrops, Chain, Crowbar, Firearm Bullets, Grappling Hook, Iron Pot, Iron Spikes, Sling Bullets."
+  },
+  {
+    "id": "tinkers-tools",
+    "name": "Tinker's Tools",
+    "description": "Cost: 50 GP, Weight: 10 lb. Ability: Dexterity. Utilize: Assemble a Tiny item composed of scrap, which falls apart in 1 minute (DC 20). Craft: Musket, Pistol, Bell, Bullseye Lantern, Flask, Hooded Lantern, Hunting Trap, Lock, Manacles, Mirror, Shovel, Signal Whistle, Tinderbox."
+  },
+  {
+    "id": "weavers-tools",
+    "name": "Weaver's Tools",
+    "description": "Cost: 1 GP, Weight: 5 lb. Ability: Dexterity. Utilize: Mend a tear in clothing (DC 10), or sew a Tiny design (DC 10). Craft: Padded Armor, Basket, Bedroll, Blanket, Fine Clothes, Net, Robe, Rope, Sack, String, Tent, Traveler's Clothes."
+  },
+  {
+    "id": "woodcarvers-tools",
+    "name": "Woodcarver's Tools",
+    "description": "Cost: 1 GP, Weight: 5 lb. Ability: Dexterity. Utilize: Carve a pattern in wood (DC 10). Craft: Club, Greatclub, Quarterstaff, Ranged weapons (except Pistol, Musket, and Sling), Arcane Focus, Arrows, Bolts, Druidic Focus, Ink Pen, Needles."
+  },
+  {
+    "id": "disguise-kit",
+    "name": "Disguise Kit",
+    "description": "Cost: 25 GP, Weight: 3 lb. Ability: Charisma. Utilize: Apply makeup (DC 10). Craft: Costume."
+  },
+  {
+    "id": "forgery-kit",
+    "name": "Forgery Kit",
+    "description": "Cost: 15 GP, Weight: 5 lb. Ability: Dexterity. Utilize: Mimic 10 or fewer words of someone else's handwriting (DC 15), or duplicate a wax seal (DC 20)."
+  },
+  {
+    "id": "gaming-set",
+    "name": "Gaming Set",
+    "description": "Cost: Varies, Weight: —. Ability: Wisdom. Utilize: Discern whether someone is cheating (DC 10), or win the game (DC 20). Variants: Dice (1 SP), dragonchess (1 GP), playing cards (5 SP), three-dragon ante (1 GP)."
+  },
+  {
+    "id": "herbalism-kit",
+    "name": "Herbalism Kit",
+    "description": "Cost: 5 GP, Weight: 3 lb. Ability: Intelligence. Utilize: Identify a plant (DC 10). Craft: Antitoxin, Candle, Healer's Kit, Potion of Healing."
+  },
+  {
+    "id": "musical-instrument",
+    "name": "Musical Instrument",
+    "description": "Cost: Varies, Weight: Varies. Ability: Charisma. Utilize: Play a known tune (DC 10), or improvise a song (DC 15). Variants: Bagpipes (30 GP, 6 lb.), drum (6 GP, 3 lb.), dulcimer (25 GP, 10 lb.), flute (2 GP, 1 lb.), horn (3 GP, 2 lb.), lute (35 GP, 2 lb.), lyre (30 GP, 2 lb.), pan flute (12 GP, 2 lb.), shawm (2 GP, 1 lb.), viol (30 GP, 1 lb.)."
+  },
+  {
+    "id": "navigators-tools",
+    "name": "Navigator's Tools",
+    "description": "Cost: 25 GP, Weight: 2 lb. Ability: Wisdom. Utilize: Plot a course (DC 10), or determine position by stargazing (DC 15)."
+  },
+  {
+    "id": "poisoners-kit",
+    "name": "Poisoner's Kit",
+    "description": "Cost: 50 GP, Weight: 2 lb. Ability: Intelligence. Utilize: Detect a poisoned object (DC 10). Craft: Basic Poison."
+  },
+  {
+    "id": "thieves-tools",
+    "name": "Thieves' Tools",
+    "description": "Cost: 25 GP, Weight: 1 lb. Ability: Dexterity. Utilize: Pick a lock (DC 15), or disarm a trap (DC 15)."
+  },
+  {
+    "id": "acid",
+    "name": "Acid",
+    "description": "When you take the Attack action, you can replace one of your attacks with throwing a vial of Acid. Target one creature or object you can see within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or take 2d6 Acid damage."
+  },
+  {
+    "id": "alchemists-fire",
+    "name": "Alchemist's Fire",
+    "description": "When you take the Attack action, you can replace one of your attacks with throwing a flask of Alchemist's Fire. Target one creature or object you can see within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or take 1d4 Fire damage and start burning (see the rules glossary)."
+  },
+  {
+    "id": "arrows",
+    "name": "Arrows",
+    "description": "Type: Arrows, Amount: 20, Storage: Quiver, Weight: 1 lb., Cost: 1 GP"
+  },
+  {
+    "id": "bolts",
+    "name": "Bolts",
+    "description": "Type: Bolts, Amount: 20, Storage: Case, Weight: 1½ lb., Cost: 1 GP"
+  },
+  {
+    "id": "bullets-firearm",
+    "name": "Bullets, Firearm",
+    "description": "Type: Bullets, Firearm, Amount: 10, Storage: Pouch, Weight: 2 lb., Cost: 3 GP"
+  },
+  {
+    "id": "bullets-sling",
+    "name": "Bullets, Sling",
+    "description": "Type: Bullets, Sling, Amount: 20, Storage: Pouch, Weight: 1½ lb., Cost: 4 CP"
+  },
+  {
+    "id": "needles",
+    "name": "Needles",
+    "description": "Type: Needles, Amount: 50, Storage: Pouch, Weight: 1 lb., Cost: 1 GP"
+  },
+  {
+    "id": "antitoxin",
+    "name": "Antitoxin",
+    "description": "As a Bonus Action, you can drink a vial of Antitoxin to gain Advantage on saving throws to avoid or end the Poisoned condition for 1 hour."
+  },
+  {
+    "id": "arcane-focus",
+    "name": "Arcane Focus",
+    "description": "An Arcane Focus takes one of the forms in the Arcane Focuses table and is bejeweled or carved to channel arcane magic. A Sorcerer, Warlock, or Wizard can use such an item as a Spellcasting Focus."
+  },
+  {
+    "id": "crystal",
+    "name": "Crystal",
+    "description": "Focus: Crystal, Weight: 1 lb., Cost: 10 GP"
+  },
+  {
+    "id": "orb",
+    "name": "Orb",
+    "description": "Focus: Orb, Weight: 3 lb., Cost: 20 GP"
+  },
+  {
+    "id": "rod",
+    "name": "Rod",
+    "description": "Focus: Rod, Weight: 2 lb., Cost: 10 GP"
+  },
+  {
+    "id": "staff",
+    "name": "Staff",
+    "description": "Focus: Staff (also a Quarterstaff), Weight: 4 lb., Cost: 5 GP"
+  },
+  {
+    "id": "wand",
+    "name": "Wand",
+    "description": "Focus: Wand, Weight: 1 lb., Cost: 10 GP"
+  },
+  {
+    "id": "backpack",
+    "name": "Backpack",
+    "description": "A Backpack holds up to 30 pounds within 1 cubic foot. It can also serve as a saddlebag. Weight: 5 lb., Cost: 2 GP"
+  },
+  {
+    "id": "ball-bearings",
+    "name": "Ball Bearings",
+    "description": "As a Utilize action, you can spill Ball Bearings from their pouch. They spread to cover a level, 10-foot-square area within 10 feet of yourself. A creature that enters this area for the first time on a turn must succeed on a DC 10 Dexterity saving throw or have the Prone condition. It takes 10 minutes to recover the Ball Bearings. Weight: 2 lb., Cost: 1 GP"
+  },
+  {
+    "id": "barrel",
+    "name": "Barrel",
+    "description": "A Barrel holds up to 40 gallons of liquid or up to 4 cubic feet of dry goods. Weight: 70 lb., Cost: 2 GP"
+  },
+  {
+    "id": "basket",
+    "name": "Basket",
+    "description": "A Basket holds up to 40 pounds within 2 cubic feet. Weight: 2 lb., Cost: 4 SP"
+  },
+  {
+    "id": "bedroll",
+    "name": "Bedroll",
+    "description": "A Bedroll sleeps one Small or Medium creature. While in a Bedroll, you automatically succeed on saving throws against extreme cold (see the Dungeon Master's Guide). Weight: 7 lb., Cost: 1 GP"
+  },
+  {
+    "id": "bell",
+    "name": "Bell",
+    "description": "When rung as a Utilize action, a Bell produces a sound that can be heard up to 60 feet away. Weight: —, Cost: 1 GP"
+  },
+  {
+    "id": "blanket",
+    "name": "Blanket",
+    "description": "While wrapped in a blanket, you have Advantage on saving throws against extreme cold (see the Dungeon Master's Guide). Weight: 3 lb., Cost: 5 SP"
+  },
+  {
+    "id": "block-and-tackle",
+    "name": "Block and Tackle",
+    "description": "A Block and Tackle allows you to hoist up to four times the weight you can normally lift. Weight: 5 lb., Cost: 1 GP"
+  },
+  {
+    "id": "book",
+    "name": "Book",
+    "description": "A Book contains fiction or nonfiction. If you consult an accurate nonfiction Book about its topic, you gain a +5 bonus to Intelligence (Arcana, History, Nature, or Religion) checks you make about that topic. Weight: 5 lb., Cost: 25 GP"
+  },
+  {
+    "id": "bottle-glass",
+    "name": "Bottle, Glass",
+    "description": "A Glass Bottle holds up to 1½ pints. Weight: 2 lb., Cost: 2 GP"
+  },
+  {
+    "id": "bucket",
+    "name": "Bucket",
+    "description": "A Bucket holds up to half a cubic foot of contents. Weight: 2 lb., Cost: 5 CP"
+  },
+  {
+    "id": "burglars-pack",
+    "name": "Burglar's Pack",
+    "description": "A Burglar's Pack contains the following items: Backpack, Ball Bearings, Bell, 10 Candles, Crowbar, Hooded Lantern, 7 flasks of Oil, 5 days of Rations, Rope, Tinderbox, and Waterskin. Weight: 42 lb., Cost: 16 GP"
+  },
+  {
+    "id": "caltrops",
+    "name": "Caltrops",
+    "description": "As a Utilize action, you can spread Caltrops from their bag to cover a 5-foot-square area within 5 feet of yourself. A creature that enters this area for the first time on a turn must succeed on a DC 15 Dexterity saving throw or take 1 Piercing damage and have its Speed reduced to 0 until the start of its next turn. It takes 10 minutes to recover the Caltrops. Weight: 2 lb., Cost: 1 GP"
+  },
+  {
+    "id": "candle",
+    "name": "Candle",
+    "description": "For 1 hour, a lit Candle sheds Bright Light in a 5-foot radius and Dim Light for an additional 5 feet. Weight: —, Cost: 1 CP"
+  },
+  {
+    "id": "case-crossbow-bolt",
+    "name": "Case, Crossbow Bolt",
+    "description": "A Crossbow Bolt Case holds up to 20 Bolts. Weight: 1 lb., Cost: 1 GP"
+  },
+  {
+    "id": "case-map-or-scroll",
+    "name": "Case, Map or Scroll",
+    "description": "A Map or Scroll Case holds up to 10 sheets of paper or 5 sheets of parchment. Weight: 1 lb., Cost: 1 GP"
+  },
+  {
+    "id": "chain",
+    "name": "Chain",
+    "description": "As a Utilize action, you can wrap a Chain around an unwilling creature within 5 feet of yourself that has the Grappled, Incapacitated, or Restrained condition if you succeed on a DC 13 Strength (Athletics) check. If the creature's legs are bound, the creature has the Restrained condition until it escapes. Escaping the Chain requires the creature to make a successful DC 18 Dexterity (Acrobatics) check as an action. Bursting the Chain requires a successful DC 20 Strength (Athletics) check as an action. Weight: 10 lb., Cost: 5 GP"
+  },
+  {
+    "id": "chest",
+    "name": "Chest",
+    "description": "A Chest holds up to 12 cubic feet of contents. Weight: 25 lb., Cost: 5 GP"
+  },
+  {
+    "id": "climbers-kit",
+    "name": "Climber's Kit",
+    "description": "A Climber's Kit includes boot tips, gloves, pitons, and a harness. As a Utilize action, you can use the Climber's Kit to anchor yourself; when you do, you can't fall more than 25 feet from the anchor point, and you can't move more than 25 feet from there without undoing the anchor as a Bonus Action. Weight: 12 lb., Cost: 25 GP"
+  },
+  {
+    "id": "clothes-fine",
+    "name": "Clothes, Fine",
+    "description": "Fine Clothes are made of expensive fabrics and adorned with expertly crafted details. Some events and locations admit only people wearing these clothes. Weight: 6 lb., Cost: 15 GP"
+  },
+  {
+    "id": "clothes-travelers",
+    "name": "Clothes, Traveler's",
+    "description": "Traveler's Clothes are resilient garments designed for travel in various environments. Weight: 4 lb., Cost: 2 GP"
+  },
+  {
+    "id": "component-pouch",
+    "name": "Component Pouch",
+    "description": "A Component Pouch is watertight and filled with compartments that hold all the free Material components of your spells. Weight: 2 lb., Cost: 25 GP"
+  },
+  {
+    "id": "costume",
+    "name": "Costume",
+    "description": "While wearing a Costume, you have Advantage on any ability check you make to impersonate the person or type of person it represents. Weight: 4 lb., Cost: 5 GP"
+  },
+  {
+    "id": "crowbar",
+    "name": "Crowbar",
+    "description": "Using a Crowbar gives you Advantage on Strength checks where the Crowbar's leverage can be applied. Weight: 5 lb., Cost: 2 GP"
+  },
+  {
+    "id": "diplomats-pack",
+    "name": "Diplomat's Pack",
+    "description": "A Diplomat's Pack contains the following items: Chest, Fine Clothes, Ink, 5 Ink Pens, Lamp, 2 Map or Scroll Cases, 4 flasks of Oil, 5 sheets of Paper, 5 sheets of Parchment, Perfume, and Tinderbox. Weight: 39 lb., Cost: 39 GP"
+  },
+  {
+    "id": "druidic-focus",
+    "name": "Druidic Focus",
+    "description": "A Druidic Focus takes one of the forms in the Druidic Focuses table and is carved, tied with ribbon, or painted to channel primal magic. A Druid or Ranger can use such an object as a Spellcasting Focus."
+  },
+  {
+    "id": "sprig-of-mistletoe",
+    "name": "Sprig of mistletoe",
+    "description": "Focus: Sprig of mistletoe, Weight: —, Cost: 1 GP"
+  },
+  {
+    "id": "wooden-staff",
+    "name": "Wooden staff",
+    "description": "Focus: Wooden staff (also a Quarterstaff), Weight: 4 lb., Cost: 5 GP"
+  },
+  {
+    "id": "yew-wand",
+    "name": "Yew wand",
+    "description": "Focus: Yew wand, Weight: 1 lb., Cost: 10 GP"
+  },
+  {
+    "id": "dungeoneers-pack",
+    "name": "Dungeoneer's Pack",
+    "description": "A Dungeoneer's Pack contains the following items: Backpack, Caltrops, Crowbar, 2 flasks of Oil, 10 days of Rations, Rope, Tinderbox, 10 Torches, and Waterskin. Weight: 55 lb., Cost: 12 GP"
+  },
+  {
+    "id": "entertainers-pack",
+    "name": "Entertainer's Pack",
+    "description": "An Entertainer's Pack contains the following items: Backpack, Bedroll, Bell, Bullseye Lantern, 3 Costumes, Mirror, 8 flasks of Oil, 9 days of Rations, Tinderbox, and Waterskin. Weight: 58½ lb., Cost: 40 GP"
+  },
+  {
+    "id": "explorers-pack",
+    "name": "Explorer's Pack",
+    "description": "An Explorer's Pack contains the following items: Backpack, Bedroll, 2 flasks of Oil, 10 days of Rations, Rope, Tinderbox, 10 Torches, and Waterskin. Weight: 55 lb., Cost: 10 GP"
+  },
+  {
+    "id": "flask",
+    "name": "Flask",
+    "description": "A Flask holds up to 1 pint. Weight: 1 lb., Cost: 2 CP"
+  },
+  {
+    "id": "grappling-hook",
+    "name": "Grappling Hook",
+    "description": "As a Utilize action, you can throw the Grappling Hook at a railing, a ledge, or another catch within 50 feet of yourself, and the hook catches on if you succeed on a DC 13 Dexterity (Acrobatics) check. If you tied a Rope to the hook, you can then climb it. Weight: 4 lb., Cost: 2 GP"
+  },
+  {
+    "id": "healers-kit",
+    "name": "Healer's Kit",
+    "description": "A Healer's Kit has ten uses. As a Utilize action, you can expend one of its uses to stabilize an Unconscious creature that has 0 Hit Points without needing to make a Wisdom (Medicine) check. Weight: 3 lb., Cost: 5 GP"
+  },
+  {
+    "id": "holy-symbol",
+    "name": "Holy Symbol",
+    "description": "Weight: Varies, Cost: Varies"
+  },
+  {
+    "id": "holy-water",
+    "name": "Holy Water",
+    "description": "Weight: 1 lb., Cost: 25 GP"
+  },
+  {
+    "id": "hunting-trap",
+    "name": "Hunting Trap",
+    "description": "Weight: 25 lb., Cost: 5 GP"
+  },
+  {
+    "id": "ink",
+    "name": "Ink",
+    "description": "Weight: —, Cost: 10 GP"
+  },
+  {
+    "id": "ink-pen",
+    "name": "Ink Pen",
+    "description": "Weight: —, Cost: 2 CP"
+  },
+  {
+    "id": "jug",
+    "name": "Jug",
+    "description": "Weight: 4 lb., Cost: 2 CP"
+  },
+  {
+    "id": "ladder",
+    "name": "Ladder",
+    "description": "Weight: 25 lb., Cost: 1 SP"
+  },
+  {
+    "id": "lamp",
+    "name": "Lamp",
+    "description": "Weight: 1 lb., Cost: 5 SP"
+  },
+  {
+    "id": "lantern-bullseye",
+    "name": "Lantern, Bullseye",
+    "description": "Weight: 2 lb., Cost: 10 GP"
+  },
+  {
+    "id": "lantern-hooded",
+    "name": "Lantern, Hooded",
+    "description": "Weight: 2 lb., Cost: 5 GP"
+  },
+  {
+    "id": "lock",
+    "name": "Lock",
+    "description": "Weight: 1 lb., Cost: 10 GP"
+  },
+  {
+    "id": "magnifying-glass",
+    "name": "Magnifying Glass",
+    "description": "Weight: —, Cost: 100 GP"
+  },
+  {
+    "id": "manacles",
+    "name": "Manacles",
+    "description": "Weight: 6 lb., Cost: 2 GP"
+  },
+  {
+    "id": "map",
+    "name": "Map",
+    "description": "Weight: —, Cost: 1 GP"
+  },
+  {
+    "id": "mirror",
+    "name": "Mirror",
+    "description": "Weight: ½ lb., Cost: 5 GP"
+  },
+  {
+    "id": "net",
+    "name": "Net",
+    "description": "Weight: 3 lb., Cost: 1 GP"
+  },
+  {
+    "id": "oil",
+    "name": "Oil",
+    "description": "Weight: 1 lb., Cost: 1 SP"
+  },
+  {
+    "id": "paper",
+    "name": "Paper",
+    "description": "Weight: —, Cost: 2 SP"
+  },
+  {
+    "id": "parchment",
+    "name": "Parchment",
+    "description": "Weight: —, Cost: 1 SP"
+  },
+  {
+    "id": "perfume",
+    "name": "Perfume",
+    "description": "Weight: —, Cost: 5 GP"
+  },
+  {
+    "id": "poison-basic",
+    "name": "Poison, Basic",
+    "description": "Weight: —, Cost: 100 GP"
+  },
+  {
+    "id": "pole",
+    "name": "Pole",
+    "description": "Weight: 7 lb., Cost: 5 CP"
+  },
+  {
+    "id": "pot-iron",
+    "name": "Pot, Iron",
+    "description": "Weight: 10 lb., Cost: 2 GP"
+  },
+  {
+    "id": "potion-of-healing",
+    "name": "Potion of Healing",
+    "description": "Weight: ½ lb., Cost: 50 GP"
+  },
+  {
+    "id": "pouch",
+    "name": "Pouch",
+    "description": "Weight: 1 lb., Cost: 5 SP"
+  },
+  {
+    "id": "priests-pack",
+    "name": "Priest's Pack",
+    "description": "Weight: 29 lb., Cost: 33 GP"
+  },
+  {
+    "id": "quiver",
+    "name": "Quiver",
+    "description": "Weight: 1 lb., Cost: 1 GP"
+  },
+  {
+    "id": "ram-portable",
+    "name": "Ram, Portable",
+    "description": "Weight: 35 lb., Cost: 4 GP"
+  },
+  {
+    "id": "rations",
+    "name": "Rations",
+    "description": "Weight: 2 lb., Cost: 5 SP"
+  },
+  {
+    "id": "robe",
+    "name": "Robe",
+    "description": "Weight: 4 lb., Cost: 1 GP"
+  },
+  {
+    "id": "rope",
+    "name": "Rope",
+    "description": "Weight: 5 lb., Cost: 1 GP"
+  },
+  {
+    "id": "sack",
+    "name": "Sack",
+    "description": "Weight: ½ lb., Cost: 1 CP"
+  },
+  {
+    "id": "scholars-pack",
+    "name": "Scholar's Pack",
+    "description": "Weight: 22 lb., Cost: 40 GP"
+  },
+  {
+    "id": "shovel",
+    "name": "Shovel",
+    "description": "Weight: 5 lb., Cost: 2 GP"
+  },
+  {
+    "id": "signal-whistle",
+    "name": "Signal Whistle",
+    "description": "Weight: —, Cost: 5 CP"
+  },
+  {
+    "id": "spell-scroll-cantrip",
+    "name": "Spell Scroll (Cantrip)",
+    "description": "Weight: —, Cost: 30 GP"
+  },
+  {
+    "id": "spell-scroll-level-1",
+    "name": "Spell Scroll (Level 1)",
+    "description": "Weight: —, Cost: 50 GP"
+  },
+  {
+    "id": "spikes-iron",
+    "name": "Spikes, Iron",
+    "description": "Weight: 5 lb., Cost: 1 GP"
+  },
+  {
+    "id": "spyglass",
+    "name": "Spyglass",
+    "description": "Weight: 1 lb., Cost: 1,000 GP"
+  },
+  {
+    "id": "string",
+    "name": "String",
+    "description": "Weight: —, Cost: 1 SP"
+  },
+  {
+    "id": "tent",
+    "name": "Tent",
+    "description": "Weight: 20 lb., Cost: 2 GP"
+  },
+  {
+    "id": "tinderbox",
+    "name": "Tinderbox",
+    "description": "Weight: 1 lb., Cost: 5 SP"
+  },
+  {
+    "id": "torch",
+    "name": "Torch",
+    "description": "Weight: 1 lb., Cost: 1 CP"
+  },
+  {
+    "id": "vial",
+    "name": "Vial",
+    "description": "Weight: —, Cost: 1 GP"
+  },
+  {
+    "id": "waterskin",
+    "name": "Waterskin",
+    "description": "Weight: 5 lb. (full), Cost: 2 SP"
+  },
+  {
+    "id": "holy-symbol-varies",
+    "name": "Holy Symbol (Varies)",
+    "description": "A Holy Symbol takes one of the forms in the Holy Symbol table and is bejeweled or painted to channel divine magic. A Cleric or Paladin can use a Holy Symbol as a Spellcasting Focus. The table indicates whether a Holy Symbol needs to be held, worn, or borne on fabric (such as a tabard or banner) or a Shield."
+  },
+  {
+    "id": "amulet-worn-or-held",
+    "name": "Amulet (worn or held)",
+    "description": "Weight 1 lb. Cost 5 GP"
+  },
+  {
+    "id": "emblem-borne-on-fabric-or-a-shield",
+    "name": "Emblem (borne on fabric or a Shield)",
+    "description": "Weight — Cost 5 GP"
+  },
+  {
+    "id": "reliquary-held",
+    "name": "Reliquary (held)",
+    "description": "Weight 2 lb. Cost 5 GP"
+  },
+  {
+    "id": "holy-water-25-gp",
+    "name": "Holy Water (25 GP)",
+    "description": "When you take the Attack action, you can replace one of your attacks with throwing a flask of Holy Water. Target one creature you can see within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or take 2d8 Radiant damage if it is a Fiend or an Undead."
+  },
+  {
+    "id": "hunting-trap-5-gp",
+    "name": "Hunting Trap (5 GP)",
+    "description": "As a Utilize action, you can set a Hunting Trap, which is a sawtooth steel ring that snaps shut when a creature steps on a pressure plate in the center. The trap is affixed by a heavy chain to an immobile object, such as a tree or a spike driven into the ground. A creature that steps on the plate must succeed on a DC 13 Dexterity saving throw or take 1d4 Piercing damage and have its Speed reduced to 0 until the start of its next turn. Thereafter, until the creature breaks free of the trap, its movement is limited by the length of the chain (typically 3 feet). A creature can use its action to make a DC 13 Strength (Athletics) check, freeing itself or another creature within its reach on a success. Each failed check deals 1 Piercing damage to the trapped creature."
+  },
+  {
+    "id": "ink-10-gp",
+    "name": "Ink (10 GP)",
+    "description": "Ink comes in a 1-ounce bottle, which provides enough ink to write about 500 pages."
+  },
+  {
+    "id": "ink-pen-2-cp",
+    "name": "Ink Pen (2 CP)",
+    "description": "Using Ink, an Ink Pen is used to write or draw."
+  },
+  {
+    "id": "jug-2-cp",
+    "name": "Jug (2 CP)",
+    "description": "A Jug holds up to 1 gallon."
+  },
+  {
+    "id": "ladder-1-sp",
+    "name": "Ladder (1 SP)",
+    "description": "A Ladder is 10 feet tall. You must climb to move up or down it."
+  },
+  {
+    "id": "lamp-5-sp",
+    "name": "Lamp (5 SP)",
+    "description": "A Lamp burns Oil as fuel to cast Bright Light in a 15-foot radius and Dim Light for an additional 30 feet."
+  },
+  {
+    "id": "lantern-bullseye-10-gp",
+    "name": "Lantern, Bullseye (10 GP)",
+    "description": "A Bullseye Lantern burns Oil as fuel to cast Bright Light in a 60-foot Cone and Dim Light for an additional 60 feet."
+  },
+  {
+    "id": "lantern-hooded-5-gp",
+    "name": "Lantern, Hooded (5 GP)",
+    "description": "A Hooded Lantern burns Oil as fuel to cast Bright Light in a 30-foot radius and Dim Light for an additional 30 feet. As a Bonus Action, you can lower the hood, reducing the light to Dim Light in a 5-foot radius, or raise it again."
+  },
+  {
+    "id": "lock-10-gp",
+    "name": "Lock (10 GP)",
+    "description": "A Lock comes with a key. Without the key, a creature can use Thieves' Tools to pick this Lock with a successful DC 15 Dexterity (Sleight of Hand) check."
+  },
+  {
+    "id": "magnifying-glass-100-gp",
+    "name": "Magnifying Glass (100 GP)",
+    "description": "A Magnifying Glass grants Advantage on any ability check made to appraise or inspect a highly detailed item. Lighting a fire with a Magnifying Glass requires light as bright as sunlight to focus, tinder to ignite, and about 5 minutes for the fire to ignite."
+  },
+  {
+    "id": "manacles-2-gp",
+    "name": "Manacles (2 GP)",
+    "description": "As a Utilize action, you can use Manacles to bind an unwilling Small or Medium creature within 5 feet of yourself that has the Grappled, Incapacitated, or Restrained condition if you succeed on a DC 13 Dexterity (Sleight of Hand) check. While bound, a creature has Disadvantage on attack rolls, and the creature is Restrained if the Manacles are attached to a chain or hook that is fixed in place. Escaping the Manacles requires a successful DC 20 Dexterity (Sleight of Hand) check as an action. Bursting them requires a successful DC 25 Strength (Athletics) check as an action. Each set of Manacles comes with a key. Without the key, a creature can use Thieves' Tools to pick the Manacles' lock with a successful DC 15 Dexterity (Sleight of Hand) check."
+  },
+  {
+    "id": "map-1-gp",
+    "name": "Map (1 GP)",
+    "description": "If you consult an accurate Map, you gain a +5 bonus to Wisdom (Survival) checks you make to find your way in the place represented on it."
+  },
+  {
+    "id": "mirror-5-gp",
+    "name": "Mirror (5 GP)",
+    "description": "A handheld steel Mirror is useful for personal cosmetics but also for peeking around corners and reflecting light as a signal."
+  },
+  {
+    "id": "net-1-gp",
+    "name": "Net (1 GP)",
+    "description": "When you take the Attack action, you can replace one of your attacks with throwing a Net. Target a creature you can see within 15 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or have the Restrained condition until it escapes. The target succeeds automatically if it is Huge or larger. To escape, the target or a creature within 5 feet of it must take an action to make a DC 10 Strength (Athletics) check, freeing the Restrained creature on a success. Destroying the Net (AC 10; 5 HP; Immunity to Bludgeoning, Poison, and Psychic damage) also frees the target, ending the effect."
+  },
+  {
+    "id": "oil-1-sp",
+    "name": "Oil (1 SP)",
+    "description": "You can douse a creature, object, or space with Oil or use it as fuel, as detailed below. Dousing a Creature or an Object. When you take the Attack action, you can replace one of your attacks with throwing an Oil flask. Target one creature or object within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or be covered in oil. If the target takes Fire damage before the oil dries (after 1 minute), the target takes an extra 5 Fire damage from burning oil. Dousing a Space. You can take the Utilize action to pour an Oil flask on level ground to cover a 5-foot-square area within 5 feet of yourself. If lit, the oil burns until the end of the turn 2 rounds from when the oil was lit (or 12 seconds) and deals 5 Fire damage to any creature that enters the area or ends its turn there. A creature can take this damage only once per turn. Fuel. Oil serves as fuel for Lamps and Lanterns. Once lit, a flask of Oil burns for 6 hours in a Lamp or Lantern. That duration doesn't need to be consecutive; you can extinguish the burning Oil (as a Utilize action) and rekindle it again until it has burned for a total of 6 hours."
+  },
+  {
+    "id": "paper-2-sp",
+    "name": "Paper (2 SP)",
+    "description": "One sheet of Paper can hold about 250 handwritten words."
+  },
+  {
+    "id": "parchment-1-sp",
+    "name": "Parchment (1 SP)",
+    "description": "One sheet of Parchment can hold about 250 handwritten words."
+  },
+  {
+    "id": "perfume-5-gp",
+    "name": "Perfume (5 GP)",
+    "description": "Perfume comes in a 4-ounce vial. For 1 hour after applying Perfume to yourself, you have Advantage on Charisma (Persuasion) checks made to influence an Indifferent Humanoid within 5 feet of yourself."
+  },
+  {
+    "id": "poison-basic-100-gp",
+    "name": "Poison, Basic (100 GP)",
+    "description": "As a Bonus Action, you can use a vial of Basic Poison to coat one weapon or up to three pieces of ammunition. A creature that takes Piercing or Slashing damage from the poisoned weapon or ammunition takes an extra 1d4 Poison damage. Once applied, the poison retains potency for 1 minute or until its damage is dealt, whichever comes first."
+  },
+  {
+    "id": "pole-5-cp",
+    "name": "Pole (5 CP)",
+    "description": "A Pole is 10 feet long. You can use it to touch something up to 10 feet away. If you must make a Strength (Athletics) check as part of a High or Long Jump, you can use the Pole to vault, giving yourself Advantage on the check."
+  },
+  {
+    "id": "pot-iron-2-gp",
+    "name": "Pot, Iron (2 GP)",
+    "description": "An Iron Pot holds up to 1 gallon."
+  },
+  {
+    "id": "pouch-5-sp",
+    "name": "Pouch (5 SP)",
+    "description": "A Pouch holds up to 6 pounds within one-fifth of a cubic foot."
+  },
+  {
+    "id": "priests-pack-33-gp",
+    "name": "Priest's Pack (33 GP)",
+    "description": "A Priest's Pack contains the following items: Backpack, Blanket, Holy Water, Lamp, 7 days of Rations, Robe, and Tinderbox."
+  },
+  {
+    "id": "quiver-1-gp",
+    "name": "Quiver (1 GP)",
+    "description": "A Quiver holds up to 20 Arrows."
+  },
+  {
+    "id": "ram-portable-4-gp",
+    "name": "Ram, Portable (4 GP)",
+    "description": "You can use a Portable Ram to break down doors. When doing so, you gain a +4 bonus to the Strength check. One other character can help you use the ram, giving you Advantage on this check."
+  },
+  {
+    "id": "rations-5-sp",
+    "name": "Rations (5 SP)",
+    "description": "Rations consist of travel-ready food, including jerky, dried fruit, hardtack, and nuts. See \"Malnutrition\" in the rules glossary for the risks of not eating."
+  },
+  {
+    "id": "robe-1-gp",
+    "name": "Robe (1 GP)",
+    "description": "A Robe has vocational or ceremonial significance. Some events and locations admit only people wearing a Robe bearing certain colors or symbols."
+  },
+  {
+    "id": "rope-1-gp",
+    "name": "Rope (1 GP)",
+    "description": "As a Utilize action, you can tie a knot with Rope if you succeed on a DC 10 Dexterity (Sleight of Hand) check. The Rope can be burst with a successful DC 20 Strength (Athletics) check. You can bind an unwilling creature with the Rope only if the creature has the Grappled, Incapacitated, or Restrained condition. If the creature's legs are bound, the creature has the Restrained condition until it escapes. Escaping the Rope requires the creature to make a successful DC 15 Dexterity (Acrobatics) check as an action."
+  },
+  {
+    "id": "sack-1-cp",
+    "name": "Sack (1 CP)",
+    "description": "A Sack holds up to 30 pounds within 1 cubic foot."
+  },
+  {
+    "id": "scholars-pack-40-gp",
+    "name": "Scholar's Pack (40 GP)",
+    "description": "A Scholar's Pack contains the following items: Backpack, Book, Ink, Ink Pen, Lamp, 10 flasks of Oil, 10 sheets of Parchment, and Tinderbox."
+  },
+  {
+    "id": "shovel-2-gp",
+    "name": "Shovel (2 GP)",
+    "description": "Working for 1 hour, you can use a Shovel to dig a hole that is 5 feet on each side in soil or similar material."
+  },
+  {
+    "id": "signal-whistle-5-cp",
+    "name": "Signal Whistle (5 CP)",
+    "description": "When blown as a Utilize action, a Signal Whistle produces a sound that can be heard up to 600 feet away."
+  },
+  {
+    "id": "spikes-iron-1-gp",
+    "name": "Spikes, Iron (1 GP)",
+    "description": "Iron Spikes come in bundles of ten. As a Utilize action, you can use a blunt object, such as a Light Hammer, to hammer a spike into wood, earth, or a similar material. You can do so to jam a door shut or to then tie a Rope or Chain to the Spike."
+  },
+  {
+    "id": "spyglass-1000-gp",
+    "name": "Spyglass (1,000 GP)",
+    "description": "Objects viewed through a Spyglass are magnified to twice their size."
+  },
+  {
+    "id": "string-1-sp",
+    "name": "String (1 SP)",
+    "description": "String is 10 feet long. You can tie a knot in it as a Utilize action."
+  },
+  {
+    "id": "tent-2-gp",
+    "name": "Tent (2 GP)",
+    "description": "A Tent sleeps up to two Small or Medium creatures."
+  },
+  {
+    "id": "tinderbox-5-sp",
+    "name": "Tinderbox (5 SP)",
+    "description": "A Tinderbox is a small container holding flint, fire steel, and tinder (usually dry cloth soaked in light oil) used to kindle a fire. Using it to light a Candle, Lamp, Lantern, or Torch—or anything else with exposed fuel—takes a Bonus Action. Lighting any other fire takes 1 minute."
+  },
+  {
+    "id": "torch-1-cp",
+    "name": "Torch (1 CP)",
+    "description": "A Torch burns for 1 hour, casting Bright Light in a 20-foot radius and Dim Light for an additional 20 feet. When you take the Attack action, you can attack with the Torch, using it as a Simple Melee weapon. On a hit, the target takes 1 Fire damage."
+  },
+  {
+    "id": "vial-1-gp",
+    "name": "Vial (1 GP)",
+    "description": "A Vial holds up to 4 ounces."
+  },
+  {
+    "id": "waterskin-2-sp",
+    "name": "Waterskin (2 SP)",
+    "description": "A Waterskin holds up to 4 pints. If you don't drink sufficient water, you risk dehydration (see the rules glossary)."
+  },
+  {
+    "id": "camel",
+    "name": "Camel",
+    "description": "Carrying Capacity 450 lb. Cost 50 GP"
+  },
+  {
+    "id": "elephant",
+    "name": "Elephant",
+    "description": "Carrying Capacity 1,320 lb. Cost 200 GP"
+  },
+  {
+    "id": "horse-draft",
+    "name": "Horse, Draft",
+    "description": "Carrying Capacity 540 lb. Cost 50 GP"
+  },
+  {
+    "id": "horse-riding",
+    "name": "Horse, Riding",
+    "description": "Carrying Capacity 480 lb. Cost 75 GP"
+  },
+  {
+    "id": "mastiff",
+    "name": "Mastiff",
+    "description": "Carrying Capacity 195 lb. Cost 25 GP"
+  },
+  {
+    "id": "mule",
+    "name": "Mule",
+    "description": "Carrying Capacity 420 lb. Cost 8 GP"
+  },
+  {
+    "id": "pony",
+    "name": "Pony",
+    "description": "Carrying Capacity 225 lb. Cost 30 GP"
+  },
+  {
+    "id": "warhorse",
+    "name": "Warhorse",
+    "description": "Carrying Capacity 540 lb. Cost 400 GP"
+  },
+  {
+    "id": "carriage",
+    "name": "Carriage",
+    "description": "Weight: 600 lb. Cost: 100 GP"
+  },
+  {
+    "id": "cart",
+    "name": "Cart",
+    "description": "Weight: 200 lb. Cost: 15 GP"
+  },
+  {
+    "id": "chariot",
+    "name": "Chariot",
+    "description": "Weight: 100 lb. Cost: 250 GP"
+  },
+  {
+    "id": "feed-per-day",
+    "name": "Feed per day",
+    "description": "Weight: 10 lb. Cost: 5 CP"
+  },
+  {
+    "id": "exotic-saddle",
+    "name": "Exotic Saddle",
+    "description": "Weight: 40 lb. Cost: 60 GP"
+  },
+  {
+    "id": "military-saddle",
+    "name": "Military Saddle",
+    "description": "Weight: 30 lb. Cost: 20 GP"
+  },
+  {
+    "id": "riding-saddle",
+    "name": "Riding Saddle",
+    "description": "Weight: 25 lb. Cost: 10 GP"
+  },
+  {
+    "id": "sled",
+    "name": "Sled",
+    "description": "Weight: 300 lb. Cost: 20 GP"
+  },
+  {
+    "id": "stabling-per-day",
+    "name": "Stabling per day",
+    "description": "Cost: 5 SP"
+  },
+  {
+    "id": "wagon",
+    "name": "Wagon",
+    "description": "Weight: 400 lb. Cost: 35 GP"
+  },
+  {
+    "id": "airship",
+    "name": "Airship",
+    "description": "Speed: 8 mph, Crew: 10, Passengers: 20, Cargo: 1 Ton, AC: 13, HP: 300, Damage Threshold: —, Cost: 40,000 GP"
+  },
+  {
+    "id": "galley",
+    "name": "Galley",
+    "description": "Speed: 4 mph, Crew: 80, Passengers: —, Cargo: 150 Tons, AC: 15, HP: 500, Damage Threshold: 20, Cost: 30,000 GP"
+  },
+  {
+    "id": "keelboat",
+    "name": "Keelboat",
+    "description": "Speed: 1 mph, Crew: 1, Passengers: 6, Cargo: 1/2 Ton, AC: 15, HP: 100, Damage Threshold: 10, Cost: 3,000 GP"
+  },
+  {
+    "id": "longship",
+    "name": "Longship",
+    "description": "Speed: 3 mph, Crew: 40, Passengers: 150, Cargo: 10 Tons, AC: 15, HP: 300, Damage Threshold: 15, Cost: 10,000 GP"
+  },
+  {
+    "id": "rowboat",
+    "name": "Rowboat",
+    "description": "Speed: 1½ mph, Crew: 1, Passengers: 3, Cargo: —, AC: 11, HP: 50, Damage Threshold: —, Cost: 50 GP"
+  },
+  {
+    "id": "sailing-ship",
+    "name": "Sailing Ship",
+    "description": "Speed: 2 mph, Crew: 20, Passengers: 20, Cargo: 100 Tons, AC: 15, HP: 300, Damage Threshold: 15, Cost: 10,000 GP"
+  },
+  {
+    "id": "warship",
+    "name": "Warship",
+    "description": "Speed: 2½ mph, Crew: 60, Passengers: 60, Cargo: 200 Tons, AC: 15, HP: 500, Damage Threshold: 20, Cost: 25,000 GP"
+  },
+  {
+    "id": "wretched-free",
+    "name": "Wretched (Free)",
+    "description": "You survive via chance and charity. You're often exposed to natural dangers as a result of sleeping outside."
+  },
+  {
+    "id": "squalid-1-sp-per-day",
+    "name": "Squalid (1 SP per Day)",
+    "description": "You spend the bare minimum for your necessities. You might be exposed to unhealthy conditions and opportunistic criminals."
+  },
+  {
+    "id": "poor-2-sp-per-day",
+    "name": "Poor (2 SP per Day)",
+    "description": "You spend frugally for your necessities."
+  },
+  {
+    "id": "modest-1-gp-per-day",
+    "name": "Modest (1 GP per Day)",
+    "description": "You support yourself at an average level."
+  },
+  {
+    "id": "comfortable-2-gp-per-day",
+    "name": "Comfortable (2 GP per Day)",
+    "description": "You spend modestly for your necessities and enjoy a few luxuries."
+  },
+  {
+    "id": "wealthy-4-gp-per-day",
+    "name": "Wealthy (4 GP per Day)",
+    "description": "You're accustomed to the finer things in life and might have servants."
+  },
+  {
+    "id": "aristocratic-10-gp-per-day",
+    "name": "Aristocratic (10 GP per Day)",
+    "description": "You pay for the best and might have a staff that supports your lifestyle. Others notice your wealth and might encourage you to share it, either legally or otherwise."
+  },
+  {
+    "id": "ale-mug",
+    "name": "Ale (mug)",
+    "description": "Cost: 4 CP"
+  },
+  {
+    "id": "bread-loaf",
+    "name": "Bread (loaf)",
+    "description": "Cost: 2 CP"
+  },
+  {
+    "id": "cheese-wedge",
+    "name": "Cheese (wedge)",
+    "description": "Cost: 1 SP"
+  },
+  {
+    "id": "meal",
+    "name": "Meal",
+    "description": "Cost: Varies by lifestyle level"
+  },
+  {
+    "id": "squalid-meal",
+    "name": "Squalid Meal",
+    "description": "Cost: 1 CP"
+  },
+  {
+    "id": "poor-meal",
+    "name": "Poor Meal",
+    "description": "Cost: 2 CP"
+  },
+  {
+    "id": "modest-meal",
+    "name": "Modest Meal",
+    "description": "Cost: 1 SP"
+  },
+  {
+    "id": "comfortable-meal",
+    "name": "Comfortable Meal",
+    "description": "Cost: 2 SP"
+  },
+  {
+    "id": "wealthy-meal",
+    "name": "Wealthy Meal",
+    "description": "Cost: 3 SP"
+  },
+  {
+    "id": "aristocratic-meal",
+    "name": "Aristocratic Meal",
+    "description": "Cost: 6 SP"
+  },
+  {
+    "id": "inn-stay-per-day-squalid",
+    "name": "Inn Stay per Day - Squalid",
+    "description": "Cost: 7 CP"
+  },
+  {
+    "id": "inn-stay-per-day-poor",
+    "name": "Inn Stay per Day - Poor",
+    "description": "Cost: 1 SP"
+  },
+  {
+    "id": "inn-stay-per-day-modest",
+    "name": "Inn Stay per Day - Modest",
+    "description": "Cost: 5 SP"
+  },
+  {
+    "id": "inn-stay-per-day-comfortable",
+    "name": "Inn Stay per Day - Comfortable",
+    "description": "Cost: 8 SP"
+  },
+  {
+    "id": "inn-stay-per-day-wealthy",
+    "name": "Inn Stay per Day - Wealthy",
+    "description": "Cost: 2 GP"
+  },
+  {
+    "id": "inn-stay-per-day-aristocratic",
+    "name": "Inn Stay per Day - Aristocratic",
+    "description": "Cost: 4 GP"
+  },
+  {
+    "id": "wine-bottle-common",
+    "name": "Wine (bottle) - Common",
+    "description": "Cost: 2 SP"
+  },
+  {
+    "id": "wine-bottle-fine",
+    "name": "Wine (bottle) - Fine",
+    "description": "Cost: 10 GP"
+  },
+  {
+    "id": "coach-ride-between-towns",
+    "name": "Coach ride between towns",
+    "description": "Cost: 3 CP per mile"
+  },
+  {
+    "id": "coach-ride-within-a-city",
+    "name": "Coach ride within a city",
+    "description": "Cost: 1 CP per mile"
+  },
+  {
+    "id": "road-or-gate-toll",
+    "name": "Road or gate toll",
+    "description": "Cost: 1 CP"
+  },
+  {
+    "id": "ships-passage",
+    "name": "Ship's passage",
+    "description": "Cost: 1 SP per mile"
+  },
+  {
+    "id": "skilled-hireling",
+    "name": "Skilled hireling",
+    "description": "Cost: 2 GP per day"
+  },
+  {
+    "id": "untrained-hireling",
+    "name": "Untrained hireling",
+    "description": "Cost: 2 SP per day"
+  },
+  {
+    "id": "messenger",
+    "name": "Messenger",
+    "description": "Cost: 2 CP per mile"
+  },
+  {
+    "id": "cantrip-spellcasting",
+    "name": "Cantrip Spellcasting",
+    "description": "Availability: Village, town, or city. Cost: 30 GP"
+  },
+  {
+    "id": "1st-level-spellcasting",
+    "name": "1st Level Spellcasting",
+    "description": "Availability: Village, town, or city. Cost: 50 GP"
+  },
+  {
+    "id": "2nd-level-spellcasting",
+    "name": "2nd Level Spellcasting",
+    "description": "Availability: Village, town, or city. Cost: 200 GP"
+  },
+  {
+    "id": "3rd-level-spellcasting",
+    "name": "3rd Level Spellcasting",
+    "description": "Availability: Town or city only. Cost: 300 GP"
+  },
+  {
+    "id": "4th-5th-level-spellcasting",
+    "name": "4th-5th Level Spellcasting",
+    "description": "Availability: Town or city only. Cost: 2,000 GP"
+  },
+  {
+    "id": "6th-8th-level-spellcasting",
+    "name": "6th-8th Level Spellcasting",
+    "description": "Availability: City only. Cost: 20,000 GP"
+  },
+  {
+    "id": "9th-level-spellcasting",
+    "name": "9th Level Spellcasting",
+    "description": "Availability: City only. Cost: 100,000 GP"
+  },
+  {
+    "id": "cantrip-spell-scroll",
+    "name": "Cantrip Spell Scroll",
+    "description": "Time: 1 day. Cost: 15 GP"
+  },
+  {
+    "id": "1st-level-spell-scroll",
+    "name": "1st Level Spell Scroll",
+    "description": "Time: 1 day. Cost: 25 GP"
+  },
+  {
+    "id": "2nd-level-spell-scroll",
+    "name": "2nd Level Spell Scroll",
+    "description": "Time: 3 days. Cost: 100 GP"
+  },
+  {
+    "id": "3rd-level-spell-scroll",
+    "name": "3rd Level Spell Scroll",
+    "description": "Time: 5 days. Cost: 150 GP"
+  },
+  {
+    "id": "4th-level-spell-scroll",
+    "name": "4th Level Spell Scroll",
+    "description": "Time: 10 days. Cost: 1,000 GP"
+  },
+  {
+    "id": "5th-level-spell-scroll",
+    "name": "5th Level Spell Scroll",
+    "description": "Time: 25 days. Cost: 1,500 GP"
+  },
+  {
+    "id": "6th-level-spell-scroll",
+    "name": "6th Level Spell Scroll",
+    "description": "Time: 40 days. Cost: 10,000 GP"
+  },
+  {
+    "id": "7th-level-spell-scroll",
+    "name": "7th Level Spell Scroll",
+    "description": "Time: 50 days. Cost: 12,500 GP"
+  },
+  {
+    "id": "8th-level-spell-scroll",
+    "name": "8th Level Spell Scroll",
+    "description": "Time: 60 days. Cost: 15,000 GP"
+  },
+  {
+    "id": "9th-level-spell-scroll",
+    "name": "9th Level Spell Scroll",
+    "description": "Time: 120 days. Cost: 50,000 GP"
+  }
+]

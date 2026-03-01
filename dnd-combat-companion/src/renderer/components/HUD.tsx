@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { useDetectionStore } from '../store/detectionStore'
-import { isSpell } from '../types'
 import { DetectionItem } from './DetectionItem'
 import { StatusIndicator } from './StatusIndicator'
 import { SearchBar } from './SearchBar'
@@ -17,16 +16,13 @@ export function HUD(): React.JSX.Element {
   const catchAllMode = useDetectionStore((s) => s.catchAllMode)
   const toggleCatchAllMode = useDetectionStore((s) => s.toggleCatchAllMode)
   const togglePin = useDetectionStore((s) => s.togglePin)
-  const showSpells = useDetectionStore((s) => s.showSpells)
-  const showFeatures = useDetectionStore((s) => s.showFeatures)
+  const visibleTypes = useDetectionStore((s) => s.visibleTypes)
 
   const [showSearch, setShowSearch] = useState(false)
   const [showAbout, setShowAbout] = useState(false)
   const [showSettings, setShowSettings] = useState(false)
 
-  const visibleDetections = detections.filter((d) =>
-    isSpell(d.entry) ? showSpells : showFeatures
-  )
+  const visibleDetections = detections.filter((d) => visibleTypes[d.entry._type])
 
   const hudRef = useRef<HTMLDivElement>(null)
   const ignoreRef = useRef(true)
@@ -99,7 +95,7 @@ export function HUD(): React.JSX.Element {
           <button
             className={`${styles.iconBtn} ${showSearch ? styles.iconBtnActive : ''}`}
             onMouseDown={(e) => { e.preventDefault(); setShowSearch((v) => !v); setShowAbout(false); setShowSettings(false) }}
-            title="Search spells & features"
+            title="Search all entries"
           >
             ?
           </button>

@@ -70,7 +70,7 @@
 }
 
 .body {
-  max-height: 320px;
+  max-height: 640px;
   overflow-y: auto;
   overflow-x: hidden;
   scrollbar-width: thin;
