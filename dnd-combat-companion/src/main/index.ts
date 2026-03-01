@@ -6,7 +6,7 @@ let mainWindow: BrowserWindow | null = null
 
 function createWindow(): void {
   mainWindow = new BrowserWindow({
-    width: 460,
+    width: 900,
     height: 800,
     transparent: true,
     frame: false,
@@ -25,7 +25,7 @@ function createWindow(): void {
   // Position: bottom-right of primary display
   const { screen } = require('electron')
   const { width, height } = screen.getPrimaryDisplay().workAreaSize
-  mainWindow.setPosition(width - 480, height - 840)
+  mainWindow.setPosition(width - 920, height - 840)
 
   mainWindow.setIgnoreMouseEvents(true, { forward: true })
 

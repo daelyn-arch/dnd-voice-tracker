@@ -32,5 +32,8 @@ contextBridge.exposeInMainWorld('electronAPI', {
   sendAudioChunk: (buffer: ArrayBuffer) => ipcRenderer.send('audio:chunk', buffer),
 
   /** Toggle window mouse passthrough */
-  setIgnoreMouseEvents: (ignore: boolean) => ipcRenderer.send('set-ignore-mouse', ignore)
+  setIgnoreMouseEvents: (ignore: boolean) => ipcRenderer.send('set-ignore-mouse', ignore),
+
+  /** Resize window width, keeping right edge anchored */
+  resizeWidth: (width: number) => ipcRenderer.send('resize-width', width)
 })

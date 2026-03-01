@@ -8,20 +8,35 @@ interface Props {
   onCollapse: () => void
   onDismiss: () => void
   onPin: () => void
+  onStickyToggle: () => void
 }
 
-export function SpellCard({ detection, onCollapse, onDismiss, onPin }: Props): React.JSX.Element {
+export function SpellCard({ detection, onCollapse, onDismiss, onPin, onStickyToggle }: Props): React.JSX.Element {
   const { entry } = detection
   const color = getEntryColor(entry)
+  const showSticky = entry._type === 'diceRoll' && detection.pinned
 
   return (
     <div className={styles.card} style={{ '--accent': color } as React.CSSProperties}>
       <div className={styles.header}>
         <div className={styles.titleRow}>
           <span className={styles.dot} />
-          <h2 className={styles.name}>{entry.name}</h2>
+          <h2 className={styles.name}>
+            {entry._type === 'diceRoll'
+              ? <>d20<span style={{ color }}>{`+${entry.modifier}`}</span>{`: ${entry.total}`}</>
+              : entry.name}
+          </h2>
         </div>
         <div className={styles.controls}>
+          {showSticky && (
+            <button
+              className={`${styles.btn} ${detection.stickyRoll ? styles.btnSticky : ''}`}
+              onClick={onStickyToggle}
+              title={detection.stickyRoll ? 'Sticky ON — new rolls update this card' : 'Sticky OFF — new rolls create new cards'}
+            >
+              ⊙
+            </button>
+          )}
           <button
             className={`${styles.btn} ${detection.pinned ? styles.btnPinned : ''}`}
             onClick={onPin}
@@ -129,6 +144,17 @@ function CardBody({ entry }: { entry: Detection['entry'] }): React.JSX.Element {
         </>
       )
     }
+
+    case 'diceRoll':
+      return (
+        <>
+          <div className={styles.meta}>
+            <MetaRow label="d20 Roll" value={`${entry.roll}`} />
+            <MetaRow label="Modifier" value={`+${entry.modifier}`} />
+            <MetaRow label="Total" value={`${entry.total}`} />
+          </div>
+        </>
+      )
 
     // equipment, background, species, rules — simple description cards
     default:

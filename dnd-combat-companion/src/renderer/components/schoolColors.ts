@@ -19,6 +19,8 @@ export const SCHOOL_COLORS: Record<string, string> = {
   Species: '#26a69a',
   Rules: '#5c6bc0',
   MagicItem: '#ffd54f',
+  // Dice rolls
+  DiceRoll: '#ffab40',
   // Daggerheart categories
   'DH-domain': '#ef5350',
   'DH-class features': '#42a5f5',
@@ -51,6 +53,8 @@ export function getEntryColor(entry: Entry): string {
       return SCHOOL_COLORS.MagicItem
     case 'daggerheart':
       return SCHOOL_COLORS[`DH-${(entry as DaggerheartEntry).category}`] ?? '#607d8b'
+    case 'diceRoll':
+      return SCHOOL_COLORS.DiceRoll
     default:
       return '#607d8b'
   }
@@ -82,6 +86,8 @@ export function getEntryBadge(entry: Entry): string {
       if (cat === 'adversary') return 'Adversary'
       return 'DH Rules'
     }
+    case 'diceRoll':
+      return 'd20'
     default:
       return ''
   }

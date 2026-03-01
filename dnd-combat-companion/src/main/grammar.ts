@@ -54,7 +54,17 @@ export function loadKeywords(): string[] {
     }
   }
 
-  const keywords = [...allNames, ...wordParts]
+  // Dice roll phrases: "plus one" through "plus thirty"
+  const NUMBERS = [
+    'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten',
+    'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen',
+    'eighteen', 'nineteen', 'twenty', 'twenty one', 'twenty two', 'twenty three',
+    'twenty four', 'twenty five', 'twenty six', 'twenty seven', 'twenty eight',
+    'twenty nine', 'thirty'
+  ]
+  const plusPhrases = NUMBERS.map((n) => `plus ${n}`)
+
+  const keywords = [...allNames, ...wordParts, ...plusPhrases]
 
   // Deduplicate and strip entries with special characters vosk can't use
   // (parentheses, colons, slashes, digits, apostrophes, etc.)

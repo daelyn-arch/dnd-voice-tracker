@@ -96,5 +96,6 @@ export const ENTRY_TYPE_LABELS: Record<EntryType, string> = {
   species: 'Species',
   rules: 'Rules',
   magicItem: 'Magic Items',
-  daggerheart: 'Daggerheart'
+  daggerheart: 'Daggerheart',
+  diceRoll: 'Dice Rolls'
 }

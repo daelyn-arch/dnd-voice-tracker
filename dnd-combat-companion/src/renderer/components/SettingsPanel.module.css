@@ -98,3 +98,30 @@
   color: rgba(255, 255, 255, 0.85);
   user-select: none;
 }
+
+.subCheck {
+  padding-left: 28px;
+}
+
+.quickRow {
+  display: flex;
+  gap: 8px;
+}
+
+.quickBtn {
+  flex: 1;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.quickBtn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.35);
+}

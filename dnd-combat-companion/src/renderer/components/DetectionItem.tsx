@@ -12,9 +12,10 @@ interface Props {
   onCollapse: (id: string) => void
   onDismiss: (id: string) => void
   onPin: (id: string) => void
+  onStickyToggle: (id: string) => void
 }
 
-export function DetectionItem({ detection, onExpand, onCollapse, onDismiss, onPin }: Props): React.JSX.Element {
+export function DetectionItem({ detection, onExpand, onCollapse, onDismiss, onPin, onStickyToggle }: Props): React.JSX.Element {
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   // Auto-dismiss logic: 15s countdown, paused while expanded or pinned
@@ -44,6 +45,7 @@ export function DetectionItem({ detection, onExpand, onCollapse, onDismiss, onPi
           onCollapse={() => onCollapse(detection.id)}
           onDismiss={() => onDismiss(detection.id)}
           onPin={() => onPin(detection.id)}
+          onStickyToggle={() => onStickyToggle(detection.id)}
         />
       ) : (
         <SpellButton

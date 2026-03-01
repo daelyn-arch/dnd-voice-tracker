@@ -79,6 +79,16 @@ export interface DaggerheartEntry {
   category: 'domain' | 'class features' | 'rules' | 'adversary'
 }
 
+export interface DiceRollEntry {
+  _type: 'diceRoll'
+  id: string
+  name: string
+  description: string
+  modifier: number
+  roll: number          // the raw d20 result (1-20)
+  total: number         // roll + modifier
+}
+
 export type Entry =
   | SpellEntry
   | FeatureEntry
@@ -89,6 +99,7 @@ export type Entry =
   | RulesEntry
   | MagicItemEntry
   | DaggerheartEntry
+  | DiceRollEntry
 
 export type EntryType = Entry['_type']
 
@@ -130,6 +141,10 @@ export function isDaggerheart(e: Entry): e is DaggerheartEntry {
   return e._type === 'daggerheart'
 }
 
+export function isDiceRoll(e: Entry): e is DiceRollEntry {
+  return e._type === 'diceRoll'
+}
+
 export interface Detection {
   id: string
   keyword: string       // matched keyword (lowercase)
@@ -137,6 +152,7 @@ export interface Detection {
   detectedAt: number    // Date.now()
   expanded: boolean
   pinned: boolean       // if true, auto-dismiss timer is suppressed
+  stickyRoll: boolean   // if true, new d20 rolls update this card in-place
 }
 
 export interface KeywordDetectedPayload {

@@ -69,6 +69,12 @@
   background: rgba(255, 255, 255, 0.08);
 }
 
+.btnSticky {
+  color: var(--accent);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 4px var(--accent);
+}
+
 .body {
   max-height: 640px;
   overflow-y: auto;

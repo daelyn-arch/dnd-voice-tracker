@@ -21,7 +21,11 @@ export function SpellButton({ detection, onExpand, onDismiss }: Props): React.JS
       onClick={onExpand}
     >
       <span className={styles.dot} />
-      <span className={styles.name}>{entry.name}</span>
+      <span className={styles.name}>
+        {entry._type === 'diceRoll'
+          ? <>d20<span style={{ color }}>{`+${entry.modifier}`}</span>{`: ${entry.total}`}</>
+          : entry.name}
+      </span>
       <span className={styles.badge}>{badge}</span>
       {detection.pinned && <span className={styles.pinIcon} title="Pinned">◈</span>}
       <button

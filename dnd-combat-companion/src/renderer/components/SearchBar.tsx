@@ -20,11 +20,16 @@ export function SearchBar({ onClose }: Props): React.JSX.Element {
   const addDetection = useDetectionStore((s) => s.addDetection)
   const expandDetection = useDetectionStore((s) => s.expandDetection)
   const visibleTypes = useDetectionStore((s) => s.visibleTypes)
+  const visibleDHCategories = useDetectionStore((s) => s.visibleDHCategories)
+  const isEntryVisible = useDetectionStore((s) => s.isEntryVisible)
+
+  void visibleTypes
+  void visibleDHCategories
 
   const trimmed = query.trim()
   const results = trimmed.length >= 2
     ? cachedAllEntries()
-        .filter((e) => visibleTypes[e._type])
+        .filter((e) => isEntryVisible(e))
         .filter((e) => e.name.toLowerCase().includes(trimmed.toLowerCase()))
         .slice(0, 12)
     : []

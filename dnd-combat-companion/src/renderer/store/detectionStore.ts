@@ -1,9 +1,15 @@
 import { create } from 'zustand'
-import type { Detection, Entry, EntryType } from '../types'
+import type { Detection, Entry, EntryType, DaggerheartEntry, DiceRollEntry } from '../types'
 
 const MAX_DETECTIONS = 128
 
 type VisibleTypes = Record<EntryType, boolean>
+
+export type DHCategory = 'domain' | 'class features' | 'rules' | 'adversary'
+type VisibleDHCategories = Record<DHCategory, boolean>
+
+// D&D entry types (for quick-select buttons)
+const DND_TYPES: EntryType[] = ['spell', 'feature', 'feat', 'equipment', 'background', 'species', 'rules', 'magicItem']
 
 interface DetectionStore {
   detections: Detection[]
@@ -11,6 +17,9 @@ interface DetectionStore {
   errorMsg: string | null
 
   addDetection: (keyword: string, entry: Entry) => void
+  /** Update the sticky-pinned d20 card in-place. Returns true if one was updated. */
+  updateStickyRoll: (entry: DiceRollEntry) => boolean
+  toggleStickyRoll: (id: string) => void
   removeDetection: (id: string) => void
   expandDetection: (id: string) => void
   collapseDetection: (id: string) => void
@@ -20,9 +29,24 @@ interface DetectionStore {
   catchAllMode: boolean
   toggleCatchAllMode: () => void
 
-  // Unified visibility map replaces showSpells/showFeatures
+  // Unified visibility map
   visibleTypes: VisibleTypes
   toggleVisibleType: (type: EntryType) => void
+
+  // Daggerheart sub-category visibility
+  visibleDHCategories: VisibleDHCategories
+  toggleDHCategory: (cat: DHCategory) => void
+
+  // Quick-select: enable one system, disable the other
+  selectDndOnly: () => void
+  selectDaggerheartOnly: () => void
+
+  /** Check if a detection should be visible (type + DH category) */
+  isEntryVisible: (entry: Entry) => boolean
+
+  // Dice roll settings
+  autoExpandDiceRolls: boolean
+  toggleAutoExpandDiceRolls: () => void
 
   // Legacy compat — derived from visibleTypes
   showSpells: boolean
@@ -40,7 +64,15 @@ const DEFAULT_VISIBLE: VisibleTypes = {
   species: true,
   rules: true,
   magicItem: true,
-  daggerheart: true
+  daggerheart: true,
+  diceRoll: true
+}
+
+const DEFAULT_DH_CATEGORIES: VisibleDHCategories = {
+  domain: true,
+  'class features': true,
+  rules: true,
+  adversary: true
 }
 
 export const useDetectionStore = create<DetectionStore>((set, get) => ({
@@ -49,6 +81,8 @@ export const useDetectionStore = create<DetectionStore>((set, get) => ({
   errorMsg: null,
   catchAllMode: false,
   visibleTypes: { ...DEFAULT_VISIBLE },
+  visibleDHCategories: { ...DEFAULT_DH_CATEGORIES },
+  autoExpandDiceRolls: true,
 
   // Legacy derived getters
   get showSpells() { return get().visibleTypes.spell },
@@ -67,18 +101,45 @@ export const useDetectionStore = create<DetectionStore>((set, get) => ({
         }
       }
 
+      const autoExpand = entry._type === 'diceRoll' && get().autoExpandDiceRolls
+
       const next: Detection = {
         id: `${Date.now()}-${Math.random().toString(36).slice(2, 7)}`,
         keyword,
         entry,
         detectedAt: Date.now(),
-        expanded: false,
-        pinned: false
+        expanded: autoExpand,
+        pinned: false,
+        stickyRoll: false
       }
 
       const list = [next, ...state.detections].slice(0, MAX_DETECTIONS)
       return { detections: list }
     })
+  },
+
+  updateStickyRoll(entry: DiceRollEntry) {
+    const state = get()
+    const sticky = state.detections.find(
+      (d) => d.stickyRoll && d.pinned && d.expanded && d.entry._type === 'diceRoll'
+    )
+    if (!sticky) return false
+    set({
+      detections: state.detections.map((d) =>
+        d.id === sticky.id
+          ? { ...d, entry, keyword: entry.id, detectedAt: Date.now() }
+          : d
+      )
+    })
+    return true
+  },
+
+  toggleStickyRoll(id) {
+    set((state) => ({
+      detections: state.detections.map((d) =>
+        d.id === id ? { ...d, stickyRoll: !d.stickyRoll } : d
+      )
+    }))
   },
 
   removeDetection(id) {
@@ -127,6 +188,48 @@ export const useDetectionStore = create<DetectionStore>((set, get) => ({
     set((s) => ({
       visibleTypes: { ...s.visibleTypes, [type]: !s.visibleTypes[type] }
     }))
+  },
+
+  toggleDHCategory(cat) {
+    set((s) => ({
+      visibleDHCategories: { ...s.visibleDHCategories, [cat]: !s.visibleDHCategories[cat] }
+    }))
+  },
+
+  selectDndOnly() {
+    set((s) => {
+      const vt = { ...s.visibleTypes }
+      for (const t of DND_TYPES) vt[t] = true
+      vt.daggerheart = false
+      vt.diceRoll = true
+      return { visibleTypes: vt }
+    })
+  },
+
+  selectDaggerheartOnly() {
+    set((s) => {
+      const vt = { ...s.visibleTypes }
+      for (const t of DND_TYPES) vt[t] = false
+      vt.daggerheart = true
+      vt.diceRoll = true
+      return {
+        visibleTypes: vt,
+        visibleDHCategories: { ...DEFAULT_DH_CATEGORIES }
+      }
+    })
+  },
+
+  toggleAutoExpandDiceRolls() {
+    set((s) => ({ autoExpandDiceRolls: !s.autoExpandDiceRolls }))
+  },
+
+  isEntryVisible(entry) {
+    const s = get()
+    if (!s.visibleTypes[entry._type]) return false
+    if (entry._type === 'daggerheart') {
+      return s.visibleDHCategories[(entry as DaggerheartEntry).category]
+    }
+    return true
   },
 
   // Legacy toggle methods

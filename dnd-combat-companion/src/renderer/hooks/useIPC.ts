@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { useDetectionStore } from '../store/detectionStore'
 import { lookupEntry, getAllEntries } from '../data'
-import type { Entry } from '../types'
+import type { Entry, DiceRollEntry } from '../types'
 import { useAudio } from './useAudio'
 
 // Words to ignore when searching — short/common English words and dice grammar words
@@ -12,6 +12,37 @@ const CATCH_ALL_IGNORE = new Set([
   'sixteen', 'seventeen', 'eighteen', 'nineteen', 'twenty', 'hundred',
   'die', 'dice'
 ])
+
+// Map number words to numeric values for "plus {N}" dice rolls
+const WORD_TO_NUM: Record<string, number> = {
+  one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8,
+  nine: 9, ten: 10, eleven: 11, twelve: 12, thirteen: 13, fourteen: 14,
+  fifteen: 15, sixteen: 16, seventeen: 17, eighteen: 18, nineteen: 19,
+  twenty: 20, 'twenty one': 21, 'twenty two': 22, 'twenty three': 23,
+  'twenty four': 24, 'twenty five': 25, 'twenty six': 26, 'twenty seven': 27,
+  'twenty eight': 28, 'twenty nine': 29, thirty: 30
+}
+
+/** Check if keyword is "plus {number}" and return a dice roll entry, or null */
+function tryDiceRoll(keyword: string): DiceRollEntry | null {
+  const match = keyword.match(/^plus\s+(.+)$/)
+  if (!match) return null
+  const mod = WORD_TO_NUM[match[1]]
+  if (mod === undefined) return null
+
+  const roll = Math.floor(Math.random() * 20) + 1
+  const total = roll + mod
+  const sign = mod >= 0 ? '+' : ''
+  return {
+    _type: 'diceRoll',
+    id: `roll-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`,
+    name: `d20${sign}${mod}: ${total}`,
+    description: `Rolled ${roll} on d20 ${sign} ${mod} modifier = ${total}`,
+    modifier: mod,
+    roll,
+    total
+  }
+}
 
 let _allEntries: Entry[] | null = null
 function allEntries(): Entry[] {
@@ -56,6 +87,18 @@ export function useIPC(): void {
 
   useEffect(() => {
     const offKeyword = window.electronAPI.onKeywordDetected((payload) => {
+      // Check for "plus {N}" dice roll first
+      const diceEntry = tryDiceRoll(payload.keyword)
+      if (diceEntry) {
+        // If a sticky-pinned d20 card exists, update it in-place
+        const updated = useDetectionStore.getState().updateStickyRoll(diceEntry)
+        if (!updated) {
+          // Otherwise create a new card
+          addDetection(diceEntry.id, diceEntry)
+        }
+        return
+      }
+
       // Read catchAllMode from store directly so closure always sees latest value
       if (useDetectionStore.getState().catchAllMode) {
         const matches = catchAllLookup(payload.keyword)

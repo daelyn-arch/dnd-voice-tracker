@@ -1,6 +1,7 @@
 import React from 'react'
 import { useDetectionStore } from '../store/detectionStore'
 import type { EntryType } from '../types'
+import type { DHCategory } from '../store/detectionStore'
 import styles from './SettingsPanel.module.css'
 
 interface Props {
@@ -11,6 +12,13 @@ interface FilterItem {
   type: EntryType
   label: string
 }
+
+interface DHFilterItem {
+  category: DHCategory
+  label: string
+}
+
+const DND_TYPES: EntryType[] = ['spell', 'feature', 'feat', 'equipment', 'background', 'species', 'rules', 'magicItem']
 
 const DND_FILTERS: FilterItem[] = [
   { type: 'spell', label: 'Spells' },
@@ -23,13 +31,33 @@ const DND_FILTERS: FilterItem[] = [
   { type: 'magicItem', label: 'Magic Items' }
 ]
 
-const DH_FILTERS: FilterItem[] = [
-  { type: 'daggerheart', label: 'Daggerheart (All)' }
+const DH_CATEGORY_FILTERS: DHFilterItem[] = [
+  { category: 'domain', label: 'Domains' },
+  { category: 'class features', label: 'Class Features' },
+  { category: 'rules', label: 'Rules' },
+  { category: 'adversary', label: 'Adversaries' }
 ]
 
 export function SettingsPanel({ onClose }: Props): React.JSX.Element {
   const visibleTypes = useDetectionStore((s) => s.visibleTypes)
   const toggleVisibleType = useDetectionStore((s) => s.toggleVisibleType)
+  const visibleDHCategories = useDetectionStore((s) => s.visibleDHCategories)
+  const toggleDHCategory = useDetectionStore((s) => s.toggleDHCategory)
+  const selectDndOnly = useDetectionStore((s) => s.selectDndOnly)
+  const selectDaggerheartOnly = useDetectionStore((s) => s.selectDaggerheartOnly)
+  const autoExpandDiceRolls = useDetectionStore((s) => s.autoExpandDiceRolls)
+  const toggleAutoExpandDiceRolls = useDetectionStore((s) => s.toggleAutoExpandDiceRolls)
+
+  const anyDndOn = DND_TYPES.some((t) => visibleTypes[t])
+  const allDndOn = DND_TYPES.every((t) => visibleTypes[t])
+
+  function toggleAllDnd(): void {
+    const target = !allDndOn
+    const store = useDetectionStore.getState()
+    const vt = { ...store.visibleTypes }
+    for (const t of DND_TYPES) vt[t] = target
+    useDetectionStore.setState({ visibleTypes: vt })
+  }
 
   return (
     <div className={styles.panel}>
@@ -40,14 +68,32 @@ export function SettingsPanel({ onClose }: Props): React.JSX.Element {
 
       <div className={styles.divider} />
 
+      <div className={styles.quickRow}>
+        <button className={styles.quickBtn} onMouseDown={(e) => { e.preventDefault(); selectDndOnly() }}>
+          D&D 2024
+        </button>
+        <button className={styles.quickBtn} onMouseDown={(e) => { e.preventDefault(); selectDaggerheartOnly() }}>
+          Daggerheart
+        </button>
+      </div>
+
+      <div className={styles.divider} />
+
       <h3 className={styles.sectionTitle}>D&D 2024</h3>
-      <p className={styles.sectionHint}>
-        Choose which entry types appear when a keyword is heard or searched.
-      </p>
 
       <div className={styles.checkList}>
-        {DND_FILTERS.map(({ type, label }) => (
-          <label key={type} className={styles.checkRow}>
+        <label className={styles.checkRow}>
+          <input
+            type="checkbox"
+            className={styles.checkbox}
+            checked={allDndOn}
+            ref={(el) => { if (el) el.indeterminate = anyDndOn && !allDndOn }}
+            onChange={toggleAllDnd}
+          />
+          <span className={styles.checkLabel}>All D&D</span>
+        </label>
+        {anyDndOn && DND_FILTERS.map(({ type, label }) => (
+          <label key={type} className={`${styles.checkRow} ${styles.subCheck}`}>
             <input
               type="checkbox"
               className={styles.checkbox}
@@ -64,17 +110,50 @@ export function SettingsPanel({ onClose }: Props): React.JSX.Element {
       <h3 className={styles.sectionTitle}>Daggerheart</h3>
 
       <div className={styles.checkList}>
-        {DH_FILTERS.map(({ type, label }) => (
-          <label key={type} className={styles.checkRow}>
+        <label className={styles.checkRow}>
+          <input
+            type="checkbox"
+            className={styles.checkbox}
+            checked={visibleTypes.daggerheart}
+            onChange={() => toggleVisibleType('daggerheart')}
+          />
+          <span className={styles.checkLabel}>All Daggerheart</span>
+        </label>
+        {visibleTypes.daggerheart && DH_CATEGORY_FILTERS.map(({ category, label }) => (
+          <label key={category} className={`${styles.checkRow} ${styles.subCheck}`}>
             <input
               type="checkbox"
               className={styles.checkbox}
-              checked={visibleTypes[type]}
-              onChange={() => toggleVisibleType(type)}
+              checked={visibleDHCategories[category]}
+              onChange={() => toggleDHCategory(category)}
             />
             <span className={styles.checkLabel}>{label}</span>
           </label>
         ))}
+      </div>
+
+      <div className={styles.divider} />
+
+      <h3 className={styles.sectionTitle}>Dice Rolls</h3>
+      <div className={styles.checkList}>
+        <label className={styles.checkRow}>
+          <input
+            type="checkbox"
+            className={styles.checkbox}
+            checked={visibleTypes.diceRoll}
+            onChange={() => toggleVisibleType('diceRoll')}
+          />
+          <span className={styles.checkLabel}>Show Dice Rolls</span>
+        </label>
+        <label className={`${styles.checkRow} ${styles.subCheck}`}>
+          <input
+            type="checkbox"
+            className={styles.checkbox}
+            checked={autoExpandDiceRolls}
+            onChange={toggleAutoExpandDiceRolls}
+          />
+          <span className={styles.checkLabel}>Auto-expand on pop up</span>
+        </label>
       </div>
     </div>
   )

@@ -10,6 +10,7 @@ interface ElectronAPI {
   stopListening: () => Promise<void>
   sendAudioChunk: (buffer: ArrayBuffer) => void
   setIgnoreMouseEvents: (ignore: boolean) => void
+  resizeWidth: (width: number) => void
 }
 
 declare global {
