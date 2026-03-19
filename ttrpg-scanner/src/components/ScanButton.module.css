@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.modelSelect {
+  padding: 8px 12px;
+  background: var(--bg-input);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  font-size: 13px;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.15s;
+}
+
+.modelSelect:focus {
+  border-color: var(--accent-blue);
+}
+
+.modelSelect:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.scanBtn {
+  flex: 1;
+  padding: 10px 24px;
+  background: var(--accent-blue);
+  color: #fff;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 600;
+  transition: filter 0.15s;
+}
+
+.scanBtn:hover:not(:disabled) {
+  filter: brightness(1.15);
+}
+
+.scanBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

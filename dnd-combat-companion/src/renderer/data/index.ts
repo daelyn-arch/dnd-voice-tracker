@@ -13,7 +13,10 @@ import backgroundsRaw from './backgrounds.json'
 import speciesRaw from './species.json'
 import rulesRaw from './rules.json'
 import magicItemsRaw from './magicItems.json'
-import daggerheartRaw from './daggerheart.json'
+import daggerheartCoreBookRaw from './daggerheart.json'
+import daggerheartSrdRaw from './daggerheart_srd.json'
+
+export type DaggerheartSource = 'corebook' | 'srd'
 
 // Tag each entry with _type discriminant at load time
 const spellsData: SpellEntry[] = (spellsRaw as any[]).map((s) => ({ ...s, _type: 'spell' as const }))
@@ -24,31 +27,52 @@ const backgroundsData: BackgroundEntry[] = (backgroundsRaw as any[]).map((b) => 
 const speciesData: SpeciesEntry[] = (speciesRaw as any[]).map((s) => ({ ...s, _type: 'species' as const }))
 const rulesData: RulesEntry[] = (rulesRaw as any[]).map((r) => ({ ...r, _type: 'rules' as const }))
 const magicItemsData: MagicItemEntry[] = (magicItemsRaw as any[]).map((m) => ({ ...m, _type: 'magicItem' as const }))
-const daggerheartData: DaggerheartEntry[] = (daggerheartRaw as any[]).map((d) => ({ ...d, _type: 'daggerheart' as const }))
+
+// Both Daggerheart datasets, tagged at load time
+const daggerheartCoreBookData: DaggerheartEntry[] = (daggerheartCoreBookRaw as any[]).map((d) => ({ ...d, _type: 'daggerheart' as const }))
+const daggerheartSrdData: DaggerheartEntry[] = (daggerheartSrdRaw as any[]).map((d) => ({ ...d, _type: 'daggerheart' as const }))
+
+// Active Daggerheart source — defaults to corebook for personal use
+let activeDaggerheartSource: DaggerheartSource = 'corebook'
+let daggerheartData: DaggerheartEntry[] = daggerheartCoreBookData
 
 // Normalize: lowercase, collapse hyphens/whitespace to single space
 function normalize(s: string): string {
   return s.toLowerCase().replace(/[-\s]+/g, ' ').trim()
 }
 
-// Build lookup map once at module init
-const lookupMap = new Map<string, Entry>()
+// Build lookup map — rebuilt when data source changes
+let lookupMap = new Map<string, Entry>()
 
-function addToLookup(entries: Entry[]): void {
-  for (const entry of entries) {
-    lookupMap.set(normalize(entry.name), entry)
+function rebuildLookupMap(): void {
+  lookupMap = new Map<string, Entry>()
+  const allSources: Entry[][] = [
+    spellsData, featuresData, featsData, equipmentData,
+    backgroundsData, speciesData, rulesData, magicItemsData,
+    daggerheartData
+  ]
+  for (const entries of allSources) {
+    for (const entry of entries) {
+      lookupMap.set(normalize(entry.name), entry)
+    }
   }
 }
 
-addToLookup(spellsData)
-addToLookup(featuresData)
-addToLookup(featsData)
-addToLookup(equipmentData)
-addToLookup(backgroundsData)
-addToLookup(speciesData)
-addToLookup(rulesData)
-addToLookup(magicItemsData)
-addToLookup(daggerheartData)
+// Initial build
+rebuildLookupMap()
+
+/** Get the current Daggerheart data source */
+export function getDaggerheartSource(): DaggerheartSource {
+  return activeDaggerheartSource
+}
+
+/** Switch the active Daggerheart data source and rebuild lookups */
+export function setDaggerheartSource(source: DaggerheartSource): void {
+  if (source === activeDaggerheartSource) return
+  activeDaggerheartSource = source
+  daggerheartData = source === 'corebook' ? daggerheartCoreBookData : daggerheartSrdData
+  rebuildLookupMap()
+}
 
 export function lookupEntry(keyword: string): Entry | undefined {
   return lookupMap.get(normalize(keyword))
@@ -98,4 +122,25 @@ export const ENTRY_TYPE_LABELS: Record<EntryType, string> = {
   magicItem: 'Magic Items',
   daggerheart: 'Daggerheart',
   diceRoll: 'Dice Rolls'
+}
+
+/** Get all entries of a given type */
+export function getEntriesByType(type: EntryType): Entry[] {
+  switch (type) {
+    case 'spell': return spellsData
+    case 'feature': return featuresData
+    case 'feat': return featsData
+    case 'equipment': return equipmentData
+    case 'background': return backgroundsData
+    case 'species': return speciesData
+    case 'rules': return rulesData
+    case 'magicItem': return magicItemsData
+    case 'daggerheart': return daggerheartData
+    default: return []
+  }
+}
+
+/** Get daggerheart entries filtered by category */
+export function getDaggerheartByCategory(cat: DaggerheartEntry['category']): DaggerheartEntry[] {
+  return daggerheartData.filter((d) => d.category === cat)
 }

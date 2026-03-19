@@ -1,0 +1,212 @@
+.panel {
+  width: 100%;
+  background: rgba(8, 8, 18, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  overflow: hidden;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
+  animation: slideDown 0.16s ease-out;
+  display: flex;
+  flex-direction: column;
+  max-height: 70vh;
+}
+
+.panel::before {
+  content: '';
+  display: block;
+  height: 2px;
+  background: linear-gradient(90deg, #8e44ad, #4a90d9);
+  flex-shrink: 0;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Header ─────────────────────────────────────────────────── */
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.headerIcon {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.headerTitle {
+  flex: 1;
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.85);
+  letter-spacing: 0.04em;
+}
+
+.closeBtn {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 18px;
+  line-height: 1;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  border-radius: 4px;
+  transition: color 0.15s, background 0.15s;
+}
+
+.closeBtn:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* ── Category view ──────────────────────────────────────────── */
+
+.categoryList {
+  overflow-y: auto;
+  padding: 0 0 4px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+}
+
+.sectionLabel {
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.25);
+  padding: 8px 12px 4px;
+}
+
+.categoryBtn {
+  width: 100%;
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 12px;
+  cursor: pointer;
+  transition: background 0.1s;
+  text-align: left;
+}
+
+.categoryBtn:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.dot {
+  flex-shrink: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.categoryName {
+  flex: 1;
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.categoryCount {
+  font-size: 10px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.25);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Divider ────────────────────────────────────────────────── */
+
+.divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.07);
+  margin: 2px 10px;
+  flex-shrink: 0;
+}
+
+/* ── Entry list view ────────────────────────────────────────── */
+
+.entryList {
+  flex: 1;
+  overflow-y: auto;
+  padding: 4px 0;
+  min-height: 0;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+}
+
+.entryBtn {
+  width: 100%;
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background 0.1s, transform 0.12s;
+  text-align: left;
+}
+
+.entryBtn:hover {
+  background: rgba(255, 255, 255, 0.06);
+  transform: translateX(-2px);
+}
+
+.entryName {
+  flex: 1;
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.entryBadge {
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 0.28);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* ── Pinned category card ───────────────────────────────────── */
+
+.pinnedCategory {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.04);
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 12px;
+  cursor: pointer;
+  transition: background 0.1s;
+  text-align: left;
+  flex-shrink: 0;
+}
+
+.pinnedCategory:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.backArrow {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.35);
+  flex-shrink: 0;
+}

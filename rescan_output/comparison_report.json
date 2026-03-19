@@ -1,0 +1,514 @@
+{
+  "matched_perfect": [
+    "ARCANA",
+    "GRACE",
+    "BLADE",
+    "MIDNIGHT",
+    "BONE",
+    "SAGE",
+    "CODEX",
+    "SPLENDOR",
+    "VALOR",
+    "RUNE WARD",
+    "WALL WALK",
+    "CINDER GRASP",
+    "FLOATING EYE",
+    "COUNTERSPELL",
+    "FLIGHT",
+    "BLINK OUT",
+    "PREMONITION",
+    "RIFT WALKER",
+    "CLOAKING BLAST",
+    "ARCANE REFLECTION",
+    "EARTHQUAKE",
+    "SENSORY PROJECTION",
+    "ADJUST REALITY",
+    "FALLING SKY",
+    "GET BACK UP",
+    "NOT GOOD ENOUGH",
+    "WHIRLWIND",
+    "A SOLDIER'S BOND",
+    "RECKLESS",
+    "VERSATILE FIGHTER",
+    "FORTIFIED ARMOR",
+    "BATTLE-HARDENED",
+    "GLANCING BLOW",
+    "BATTLE CRY",
+    "FRENZY",
+    "GORE AND GLORY",
+    "BATTLE MONSTER",
+    "ONSLAUGHT",
+    "DEFT MANEUVERS",
+    "I SEE IT COMING",
+    "UNTOUCHABLE",
+    "FEROCITY",
+    "BRACE",
+    "TACTICIAN",
+    "BOOST",
+    "REDIRECT",
+    "SIGNATURE MOVE",
+    "RAPID RIPOSTE",
+    "RECOVERY",
+    "CRUEL PRECISION",
+    "WRANGLE",
+    "ON THE BRINK",
+    "DEATHRUN",
+    "SWIFT STEP",
+    "BOOK OF TYFAR",
+    "BOOK OF STIL",
+    "BOOK OF KORVAX",
+    "MANIFEST WALL",
+    "BOOK OF HOMET",
+    "BOOK OF YARROW",
+    "DISINTEGRATION WAVE",
+    "TRANSCENDENT UNION",
+    "DEFT DECEIVER",
+    "TELL NO LIES",
+    "HYPNOTIC SHIMMER",
+    "INVISIBILITY",
+    "SOOTHING SPEECH",
+    "SHARE THE BURDEN",
+    "COPYCAT",
+    "ENDLESS CHARISMA",
+    "MASTER OF THE CRAFT",
+    "ENCORE",
+    "NOTORIOUS",
+    "PICK AND PULL",
+    "SHADOWBIND",
+    "CHOKEHOLD",
+    "VEIL OF NIGHT",
+    "STEALTH EXPERTISE",
+    "HUSH",
+    "PHANTOM RETREAT",
+    "MASS DISGUISE",
+    "VANISHING DODGE",
+    "SHADOWHUNTER",
+    "SPECTER OF THE DARK",
+    "NATURAL FAMILIAR",
+    "TOWERING STALK",
+    "HEALING FIELD",
+    "THORN SKIN",
+    "REJUVENATION BARRIER",
+    "MENDING TOUCH",
+    "REASSURANCE",
+    "HEALING HANDS",
+    "SECOND WIND",
+    "VOICE OF REASON",
+    "DIVINATION",
+    "LIFE WARD",
+    "SHAPE MATERIAL",
+    "SMITE",
+    "RESTORATION",
+    "ZONE OF PROTECTION",
+    "HEALING STRIKE",
+    "STUNNING SUNLIGHT",
+    "OVERWHELMING AURA",
+    "SALVATION BEAM",
+    "INVIGORATION",
+    "FORCEFUL PUSH",
+    "I AM YOUR SHIELD",
+    "BODY BASHER",
+    "BOLD PRESENCE",
+    "CRITICAL INSPIRATION",
+    "LEAN ON ME",
+    "GOAD THEM ON",
+    "SUPPORT TANK",
+    "INEVITABLE",
+    "RISE UP",
+    "SHRUG IT OFF",
+    "FULL SURGE",
+    "GROUND POUND",
+    "LEAD BY EXAMPLE",
+    "UNBREAKABLE",
+    "UNYIELDING ARMOR"
+  ],
+  "differences": [
+    {
+      "name": "UNLEASH CHAOS",
+      "old_description": "Level 1 Arcana Spell\nRecall Cost: 1\n\nAt the beginning of a session, place a number of tokens equal to your Spellcast trait on this card.\n\nMake a Spellcast Roll and spend a target within Far range and spend any number of tokens to channel raw energy from within yourself to unleash against them. On a success, roll a number of d10s equal to the tokens you spent and deal that much magic damage to the target. Mark a Stress to replenish this card with tokens (up to your Spellcast trait).\n\nAt the end of each session, clear all unspent tokens.",
+      "new_description": "Level 1 Arcana Spell\nRecall Cost: 1\n\nAt the beginning of a session, place a number of tokens equal to your Spellcast trait on this card.\n\nMake a Spellcast Roll and against a target within Far range and spend any number of tokens to channel raw energy from within yourself to unleash against them. On a success, roll a number of d10s equal to the tokens you spent and deal that much magic damage to the target. Mark a Stress to replenish this card with tokens (up to your Spellcast trait).\n\nAt the end of each session, clear all unspent tokens."
+    },
+    {
+      "name": "PRESERVATION BLAST",
+      "old_description": "Level 4 Arcana Spell\nRecall Cost: 2\n\nMake a Spellcast Roll against all targets within Melee range. Targets you succeed against are forced back to Far range and take d8+3 magic damage using your Spellcast trait.",
+      "new_description": "Level 4 Arcana Spell\nRecall Cost: 1\n\nMake a Spellcast Roll against all targets within Melee range. Targets you succeed against are forced back to Far range and take d8+3 magic damage using your Spellcast trait."
+    },
+    {
+      "name": "CHAIN LIGHTNING",
+      "old_description": "Level 5 Arcana Spell\nRecall Cost: 1\n\nMark 2 Stress to make a Spellcast Roll, unleashing lightning on all targets within Close range. Targets you succeed against must make a reaction roll with a Difficulty equal to the result of your Spellcast Roll. Targets who fail take 2d6+4 magic damage. Additional adversaries not already targeted by Chain Lightning and within Close range of previous targets who took damage must also make the reaction roll. Targets who fail take 2d8+4 magic damage. This chain continues until there are no more adversaries within range.",
+      "new_description": "Level 5 Arcana Spell\nRecall Cost: 1\n\nMark 2 Stress to make a Spellcast Roll, unleashing lightning on all targets within Close range. Targets you succeed against must make a reaction roll with a Difficulty equal to the result of your Spellcast Roll. Targets who fail take 2d8+4 magic damage. Additional adversaries not already targeted by Chain Lightning and within Close range of previous targets who took damage must also make the reaction roll. Targets who fail take 2d8+4 magic damage. This chain continues until there are no more adversaries within range."
+    },
+    {
+      "name": "TELEKINESIS",
+      "old_description": "Level 6 Arcana Spell\nRecall Cost: 0\n\nMake a Spellcast Roll against a target within Far range. On a success, you can use your mind to move them anywhere within Far range of their original position. You can throw the lifted target as an attack by making an additional Spellcast Roll against the second target you're trying to attack. On a success, deal 2d12+4 physical damage to the second target using your Proficiency. This spell then ends.",
+      "new_description": "Level 6 Arcana Spell\nRecall Cost: 0\nMake a Spellcast Roll against a target within Far range. On a success, you can use your mind to move them anywhere within Far range of their original position. You can throw the lifted target as an attack by making an additional Spellcast Roll against the second target you're trying to attack. On a success, deal d12+4 physical damage to the second target using your Proficiency. This spell then ends."
+    },
+    {
+      "name": "ARCANA-TOUCHED",
+      "old_description": "Level 7 Arcana Ability\nRecall Cost: 2\n\nWhen 4 or more of the domain cards in your loadout are from the Arcana domain, gain the following benefits:\n\n\u00e2\u20ac\u00a2 +1 bonus to your Spellcast Rolls\n\u00e2\u20ac\u00a2 Once per rest, you can switch the results of your Hope and Fear Dice.",
+      "new_description": "Level 7 Arcana Ability\nRecall Cost: 2\nWhen 4 or more of the domain cards in your loadout are from the Arcana domain, gain the following benefits:\n\u2022 +1 bonus to your Spellcast Rolls\n\u2022 Once per rest, you can switch the results of your Hope and Fear Dice."
+    },
+    {
+      "name": "CONFUSING AURA",
+      "old_description": "Level 8 Arcana Spell\nRecall Cost: 2\n\nMake a Spellcast Roll (14). Once per long rest on a success, you create a layer of chaos over your body that makes it hard to tell exactly where you are. Mark any number of Stress to make that many additional layers. When an adversary makes an attack against you, roll a number of d6s equal to the number of layers currently active. If any roll a 5 or higher, one layer of the aura is destroyed and the attack fails. If all the results are 4 or lower, you take the damage and this spell ends.",
+      "new_description": "Level 8 Arcana Spell\nRecall Cost: 2\nMake a Spellcast Roll (14). Once per long rest on a success, you create a layer of illusion over your body that makes it hard to tell exactly where you are. Mark any number of Stress to make that many additional layers. When an adversary makes an attack against you, roll a number of d6s equal to the number of layers currently active. If any roll a 5 or higher, one layer of the aura is destroyed and the attack fails. If all the results are 4 or lower, you take the damage and this spell ends."
+    },
+    {
+      "name": "SCRAMBLE",
+      "old_description": "Level 3 Blade Ability\nRecall Cost: 1\n\nOnce per rest, when a creature within Melee range would deal damage to you, you can avoid the attack and safely move out of Melee range of the enemy.",
+      "new_description": "Level 3 Blade Ability\nRecall Cost: 0\nOnce per rest, when a creature within Melee range would deal damage to you, you can avoid the attack and safely move out of Melee range of the enemy."
+    },
+    {
+      "name": "DEADLY FOCUS",
+      "old_description": "Level 4 Blade Ability\nRecall Cost: 2\n\nOnce per rest, you can apply all your focus toward a target of your choice. Until you attack another creature, you defend anyone, or the battle ends, gain a +1 bonus to your Proficiency.",
+      "new_description": "Level 4 Blade Ability\nRecall Cost: 2\nOnce per rest, you can apply all your focus toward a target of your choice. Until you attack another creature, you defeat a foe, or the battle ends, gain a +1 bonus to your Proficiency."
+    },
+    {
+      "name": "CHAMPION'S EDGE",
+      "old_description": "Level 5 Blade Ability\nRecall Cost: 1\n\nWhen you critically succeed on an attack, you can spend up to 3 Hope and choose one of the following options for each Hope spent:\n\n\u00e2\u20ac\u00a2 You clear a Hit Point.\n\u00e2\u20ac\u00a2 You clear an Armor Slot.\n\u00e2\u20ac\u00a2 The target must mark an additional Hit Point.\n\nYou can't choose the same option more than once.",
+      "new_description": "Level 5 Blade Ability\nRecall Cost: 1\nWhen you critically succeed on an attack, you can spend up to 3 Hope and choose one of the following options for each Hope spent:\n\u2022 You clear a Hit Point.\n\u2022 You clear an Armor Slot.\n\u2022 The target must mark an additional Hit Point.\nYou can't choose the same option more than once."
+    },
+    {
+      "name": "VITALITY",
+      "old_description": "Level 5 Blade Ability\nRecall Cost: 0\n\nWhen you choose this card, permanently gain two of the following benefits:\n\n\u00e2\u20ac\u00a2 One Stress slot\n\u00e2\u20ac\u00a2 One Hit Point slot\n\u00e2\u20ac\u00a2 +2 bonus to your damage thresholds\n\nThen place this card in your vault permanently.",
+      "new_description": "Level 5 Blade Ability\nRecall Cost: 0\nWhen you choose this card, permanently gain two of the following benefits:\n\u2022 One Stress slot\n\u2022 One Hit Point slot\n\u2022 +2 bonus to your damage thresholds\nThen place this card in your vault permanently."
+    },
+    {
+      "name": "RAGE UP",
+      "old_description": "Level 6 Blade Ability\nRecall Cost: 1\n\nBefore you make an attack, you can mark a Stress to gain a bonus to your damage equal to twice your Strength.\n\nYou can Rage Up twice per attack.",
+      "new_description": "Level 6 Blade Ability\nRecall Cost: 1\nBefore you make an attack, you can mark a Stress to gain a bonus to your damage equal to your Strength.\nYou can Rage Up twice per attack."
+    },
+    {
+      "name": "BLADE-TOUCHED",
+      "old_description": "Level 7 Blade Ability\nRecall Cost: 1\n\nWhen 4 or more of the domain cards in your loadout are from the Blade domain, gain the following benefits:\n\n\u00e2\u20ac\u00a2 +2 bonus to your attack rolls\n\u00e2\u20ac\u00a2 +4 bonus to your Severe damage threshold",
+      "new_description": "Level 7 Blade Ability\nRecall Cost: 1\nWhen 4 or more of the domain cards in your loadout are from the Blade domain, gain the following benefits:\n\u2022 +2 bonus to your attack rolls\n\u2022 +4 bonus to your Severe damage threshold"
+    },
+    {
+      "name": "REAPER'S STRIKE",
+      "old_description": "Level 9 Blade Ability\nRecall Cost: 3\n\nOnce per long rest, spend a Hope to make an attack roll. The GM tells you which target within range it would succeed against. Choose one of these targets and force them to mark 5 Hit Points.",
+      "new_description": "Level 9 Blade Ability\nRecall Cost: 1\nOnce per long rest, spend a Hope to make an attack roll. The GM tells you which target within range it would succeed against. Choose one of these targets and force them to mark 5 Hit Points."
+    },
+    {
+      "name": "STRATEGIC APPROACH",
+      "old_description": "Level 2 Bone Ability\nRecall Cost: 1\n\nAfter a long rest, place a number of tokens equal to your Knowledge on this card (minimum 1). The first time you move within Close range of an adversary and make an attack against them, you can spend one token to choose one of the following options:\n\u00e2\u20ac\u00a2 You make the attack with advantage.\n\u00e2\u20ac\u00a2 You clear a Stress on an ally within Melee range of the adversary.\n\u00e2\u20ac\u00a2 You add a d8 to your damage roll.\nWhen you take a long rest, clear all unspent tokens.",
+      "new_description": "Level 2 Bone Ability\nRecall Cost: 1\n\nAfter a long rest, place a number of tokens equal to your Knowledge on this card (minimum 1). The first time you move within Close range of an adversary and make an attack against them, you can spend one token to choose one of the following options:\n\n\u2022 You make the attack with advantage.\n\u2022 You clear a Stress on an ally within Melee range of the adversary.\n\u2022 You add a d8 to your damage roll.\n\nWhen you take a long rest, clear all unspent tokens."
+    },
+    {
+      "name": "KNOW THY ENEMY",
+      "old_description": "Level 5 Bone Ability\nRecall Cost: 1\n\nWhen observing a creature, you can make an Instinct Roll against them. On a success, spend a Hope and ask the GM for one set of information about the target from the following options:\n\u00e2\u20ac\u00a2 Their unmarked Hit Points and Stress.\n\u00e2\u20ac\u00a2 Their Difficulty and damage thresholds.\n\u00e2\u20ac\u00a2 Their tactics and standard attack damage dice.\n\u00e2\u20ac\u00a2 Their features and Experiences.\nAdditionally on a success, you can mark a Stress to remove a Fear from the GM's Fear Pool.",
+      "new_description": "Level 5 Bone Ability\nRecall Cost: 1\n\nWhen observing a creature, you can make an Instinct Roll against them. On a success, spend a Hope and ask the GM for one set of information about the target from the following options:\n\n\u2022 Their unmarked Hit Points and Stress.\n\u2022 Their Difficulty and damage thresholds.\n\u2022 Their tactics and standard attack damage dice.\n\u2022 Their features and Experiences.\n\nAdditionally on a success, you can mark a Stress to remove a Fear from the GM's Fear Pool."
+    },
+    {
+      "name": "BONE-TOUCHED",
+      "old_description": "Level 7 Bone Ability\nRecall Cost: 2\n\nWhen 4 or more of the domain cards in your loadout are from the Bone domain, gain the following benefits:\n\u00e2\u20ac\u00a2 +1 bonus to Agility\n\u00e2\u20ac\u00a2 Once per rest, you can spend 3 Hope to cause an attack that succeeded against you to fail instead.",
+      "new_description": "Level 7 Bone Ability\nRecall Cost: 2\n\nWhen 4 or more of the domain cards in your loadout are from the Bone domain, gain the following benefits:\n\n\u2022 +1 bonus to Agility\n\u2022 Once per rest, you can spend 3 Hope to cause an attack that succeeded against you to fail instead."
+    },
+    {
+      "name": "BREAKING BLOW",
+      "old_description": "Level 8 Bone Ability\nRecall Cost: 3\n\nWhen you make a successful attack, you can mark a Stress to make the next successful attack against that same target deal an extra 2d12 damage.",
+      "new_description": "Level 8 Bone Ability\nRecall Cost: 1\n\nWhen you make a successful attack, you can mark a Stress to make the next successful attack against that same target deal an extra 2d12 damage."
+    },
+    {
+      "name": "SPLINTERING STRIKE",
+      "old_description": "Level 9 Bone Ability\nRecall Cost: 3\nSpend a Hope and make an attack against all adversaries within your weapon's range. Once per long rest, on a success against any targets, add up the damage dealt, then redistribute that damage however you wish between the targets you succeeded against. When you deal damage to a target, roll an additional damage die and add its result to the damage you deal to that target.",
+      "new_description": "Level 9 Bone Ability\nRecall Cost: 3\nSpend a Hope and make an attack against all adversaries within your weapon's range. Once per long rest, on a success against any targets, roll your weapon's damage and distribute that damage however you wish between the targets you succeeded against. Before you deal damage to each target, roll an additional damage die and add its result to the damage you deal to them."
+    },
+    {
+      "name": "BOOK OF AVA",
+      "old_description": "Level 1 Codex Grimoire\nRecall Cost: 2\nPower Push: Make a Spellcast Roll against a target within Melee range. On a success, they're knocked back to Far range and take 2d12+2 magic damage using your Proficiency.\nTava's Armor: Spend a Hope to give a target you can touch a +1 bonus to their Armor Score until their next rest or you cast Tava's Armor again.\nIce Spike: Make a Spellcast Roll (12) to summon a large ice spike within Far range. If you use it as a weapon, make the Spellcast Roll against the target's Difficulty instead. On a success, deal d6 physical damage using your Proficiency.",
+      "new_description": "Level 1 Codex Grimoire\nRecall Cost: 2\nPower Push: Make a Spellcast Roll against a target within Melee range. On a success, they're knocked back to Far range and take 2d6+2 magic damage using your Proficiency.\n\nTava's Armor: Spend a Hope to give a target you can touch a +1 bonus to their Armor Score until their next rest or you cast Tava's Armor again.\n\nIce Spike: Make a Spellcast Roll (12) to summon a large ice spike within Far range. If you use it as a weapon, make the Spellcast Roll against the target's Difficulty instead. On a success, deal d6 physical damage using your Proficiency."
+    },
+    {
+      "name": "BOOK OF VAGRAS",
+      "old_description": "Level 2 Codex Grimoire\nRecall Cost: 2\nRunic Lock: Make a Spellcast Roll (15) on an object you're touching that can close (such as a lock, chest, or box). Once per rest on a success, you can lock the object so it can only be opened by creatures of your choice. Someone with access to magic and an hour of time to study the spell can break it.\nArcane Door: When you have no adversaries within Melee range, make a Spellcast Roll (14). On a success, spend a Hope to create a portal from where you are to a point within Far range you can see. It closes once a creature has passed through it.\nReveal: Make a Spellcast Roll. If there is anything magically hidden within Close range, it is revealed.",
+      "new_description": "Level 2 Codex Grimoire\nRecall Cost: 2\nRunic Lock: Make a Spellcast Roll (15) on an object you're touching that can close (such as a lock, chest, or box). Once per rest on a success, you can lock the object so it can only be opened by creatures of your choice. Someone with access to magic and an hour of time to study the spell can break it.\n\nArcane Door: When you have no adversaries within Melee range, make a Spellcast Roll (13). On a success, spend a Hope to create a portal from where you are to a point within Far range you can see. It closes once a creature has passed through it.\n\nReveal: Make a Spellcast Roll. If there is anything magically hidden within Close range, it is revealed."
+    },
+    {
+      "name": "BOOK OF ILLIAT",
+      "old_description": "Level 1 Codex Grimoire\nRecall Cost: 2\nSlumber: Make a Spellcast Roll against a target within Very Close range. On a success, they're Asleep until they take damage or the GM spends a Fear on their turn to clear this condition.\nArcane Barrage: Once per rest, spend any number of Hope and shoot magical projectiles that strike a target of your choice within Close range. Roll a number of d6s equal to the Hope spent and deal that much magic damage to the target.\nTelepathy: Spend a Hope to open a line of mental communication with one target you can see. This connection lasts until your next rest or you cast Telepathy again.",
+      "new_description": "Level 1 Codex Grimoire\nRecall Cost: 2\nSlumber: Make a Spellcast Roll against a target within Very Close range. On a success, they're Asleep until they take damage or the GM spends a Fear and their turn to clear this condition.\n\nArcane Barrage: Once per rest, spend any number of Hope and shoot magical projectiles that strike a target of your choice within Close range. Roll a number of d6s equal to the Hope spent and deal that much magic damage to the target.\n\nTelepathy: Spend a Hope to open a line of mental communication with one target you can see. This connection lasts until your next rest or you cast Telepathy again."
+    },
+    {
+      "name": "BOOK OF NORAI",
+      "old_description": "Level 3 Codex Grimoire\nRecall Cost: 2\nMystic Tether: Make a Spellcast Roll against a target within Far range. On a success, they're Magically Restrained and must mark a Stress. If you target a flying creature, this spell grounds and temporarily Restrains them.\nFireball: Make a Spellcast Roll against a target within Very Far range. On a success, hurl a sphere of fire toward them that explodes on impact. The target and all creatures within Very Close range of them must make a Reaction Roll (13). Targets who fail take d20+5 magic damage using your Proficiency. Targets who succeed take half damage.",
+      "new_description": "Level 3 Codex Grimoire\nRecall Cost: 2\nMystic Tether: Make a Spellcast Roll against a target within Far range. On a success, they're temporarily Restrained and must mark a Stress. If you target a flying creature, this spell grounds and temporarily Restrains them.\n\nFireball: Make a Spellcast Roll against a target within Very Far range. On a success, hurl a sphere of fire toward them that explodes on impact. The target and all creatures within Very Close range of the target must make a Reaction Roll (13). Targets who fail take d20+5 magic damage using your Proficiency. Targets who succeed take half damage."
+    },
+    {
+      "name": "SIGIL OF RETRIBUTION",
+      "old_description": "Level 6 Codex Spell\nRecall Cost: 2\nMark an adversary within Close range with a sigil of retribution. The GM gains a Fear. When the marked adversary deals damage to you or your allies, place a d8 on this card. You can hold a number of d8s equal to your level. When you successfully attack the marked adversary, roll the dice on this card and add it to your damage roll, then clear the dice. This effect ends when the marked adversary is defeated or you cast Sigil of Retribution again.",
+      "new_description": "Level 6 Codex Spell\nRecall Cost: 2\nMark an adversary within Close range with a sigil of retribution. The GM gains a Fear. When the marked adversary deals damage to you or your allies, place a d8 on this card. You can hold a number of d8s equal to your level. When you successfully attack the marked adversary, roll the dice on this card and add the total to your damage roll, then clear the dice. This effect ends when the marked adversary is defeated or you cast Sigil of Retribution again."
+    },
+    {
+      "name": "TELEPORT",
+      "old_description": "Level 5 Codex Spell\nRecall Cost: 2\nOnce per long rest, you can instantly teleport yourself and any number of willing targets within Close range to a place you've been before. Choose one of the following options, then make a Spellcast Roll (16):\n\u00e2\u20ac\u00a2 If you know the place very well, gain a +3 bonus.\n\u00e2\u20ac\u00a2 If you've visited the place frequently, gain a +1 bonus.\n\u00e2\u20ac\u00a2 If you've visited the place infrequently, gain no modifier.\n\u00e2\u20ac\u00a2 If you've only been there once, gain a \u00e2\u02c6\u20192 penalty.\nOn a success, you appear where you were intending to go. On a failure, you appear off course, with the range of failure determining how far off course.",
+      "new_description": "Level 5 Codex Spell\nRecall Cost: 2\nOnce per long rest, you can instantly teleport yourself and any number of willing targets within Close range to any place you've been before. Choose one of the following options, then make a Spellcast Roll (16).\n\u2022 If you know the place very well, gain a +3 bonus.\n\u2022 If you've visited the place frequently, gain a +1 bonus.\n\u2022 If you've visited the place infrequently, gain no modifier.\n\u2022 If you've only been there once, gain a \u22122 penalty.\n\nOn a success, you appear where you were intending to go. On a failure, you appear off course, with the range of failure determining how far off course."
+    },
+    {
+      "name": "BANISH",
+      "old_description": "Level 6 Codex Spell\nRecall Cost: 0\nMake a Spellcast Roll against a target within Close range. On a success, roll a number of d20s equal to your Spellcast trait. The target must make a reaction roll with a Difficulty equal to your highest result. On a success, the target must mark a Stress but cannot be banished. Once per rest on a failure, they are banished from this realm.\nWhen the PCs roll with Fear, the Difficulty gains a \u00e2\u02c6\u20191 penalty and the target makes another Reaction. On a success, they return from banishment.",
+      "new_description": "Level 6 Codex Spell\nRecall Cost: 2\nMake a Spellcast Roll against a target within Close range. On a success, roll a number of d20s equal to your Spellcast trait. The target must make a reaction roll with a Difficulty equal to your highest result. On a success, the target must mark a Stress but isn't banished. Once per rest on a failure, they are banished from this realm.\n\nWhen the PCs roll with Fear, the Difficulty gains a \u22121 penalty and the target makes another reaction. On a success, they return from banishment."
+    },
+    {
+      "name": "CODEX-TOUCHED",
+      "old_description": "Level 7 Codex Ability\nRecall Cost: 2\nWhen 4 or more of the domain cards in your loadout are from the Codex domain, gain the following benefits:\n\u00e2\u20ac\u00a2 You can mark a Stress to add your Proficiency to a Spellcast Roll.\n\u00e2\u20ac\u00a2 Once per rest, replace this card with any card from your vault without paying its Recall Cost.",
+      "new_description": "Level 7 Codex Ability\nRecall Cost: 2\nWhen 4 or more of the domain cards in your loadout are from the Codex domain, gain the following benefits:\n\u2022 You can mark a Stress to add your Proficiency to a Spellcast Roll.\n\u2022 Once per rest, replace this card with any card from your vault without paying its Recall Cost."
+    },
+    {
+      "name": "BOOK OF EXOTA",
+      "old_description": "Level 4 Codex Grimoire\nRecall Cost: 3\nRepulse: You can interrupt a magical effect taking place. Make a reaction roll using your Spellcast trait. Once per rest on a success, the effect stops and any consequences are avoided.\nCreate Constructs: Spend a Hope to choose a group of objects around you and create an animated construct from them that obeys basic commands. Make a Spellcast Roll to command them to take action. When necessary, they share your Evasion and traits and their attacks deal 2d10+3 physical damage. You can only maintain one construct at a time, and they fall apart when they take any amount of damage.",
+      "new_description": "Level 4 Codex Grimoire\nRecall Cost: 3\nRepudiate: You can interrupt a magical effect taking place. Make a reaction roll using your Spellcast trait. Once per rest on a success, the effect stops and any consequences are avoided.\n\nCreate Constructs: Spend a Hope to choose a group of objects around you and create an animated construct from them that obeys basic commands. Make a Spellcast Roll to give them to take action. When necessary, they share your Evasion and traits and their attacks deal 2d10+3 damage. You can only maintain one construct at a time, and they fall apart when they take any amount of damage."
+    },
+    {
+      "name": "BOOK OF GRYNN",
+      "old_description": "Level 4 Codex Grimoire\nRecall Cost: 2\nArcane Deflection: Once per long rest, spend a Hope to negate the damage of an attack targeting you or an ally within Very Close range.\nTime Lock: Target an object within Far range. That object stops in time and space exactly where it is until your next rest. If a creature tries to move it, make a Spellcast Roll against them to maintain this spell.\nWall of Flame: Make a Spellcast Roll (15). On a success, create a a wall of magical flame between two points within Far range. All creatures in its path must choose a side to be on, and anything that subsequently passes through the wall takes 4d10+3 magic damage.",
+      "new_description": "Level 4 Codex Grimoire\nRecall Cost: 2\nArcane Deflection: Once per long rest, spend a Hope to negate the damage of an attack targeting you or an ally within Very Close range.\n\nTime Lock: Target an object within Far range. That object stops in time and space exactly where it is until your next rest. If a creature tries to move it, make a Spellcast Roll against them to maintain this spell.\n\nWall of Flame: Make a Spellcast Roll (15). On a success, create a temporary wall of magical flame between two points within Far range. All creatures in its path must choose a side to be on, and anything that subsequently passes through the wall takes 4d10+3 magic damage."
+    },
+    {
+      "name": "BOOK OF VVOLA",
+      "old_description": "Level 8 Codex Grimoire\nRecall Cost: 1\nMemory Delve: Make a Spellcast Roll against a target within Far range. On a success, you enter the target's mind and ask the GM a question. The GM describes any memories the target has pertaining to the answer.\nShared Clarity: Once per long rest, spend a Hope to choose two willing creatures. When one of them would mark Stress, they can choose between the two of them who marks it. This spell lasts until their next rest.",
+      "new_description": "Level 8 Codex Grimoire\nRecall Cost: 2\nMemory Delve: Make a Spellcast Roll against a target within Far range. On a success, see into the target's mind and ask the GM a question. The GM describes any memories the target has pertaining to the answer.\n\nShared Clarity: Once per long rest, spend a Hope to choose two willing creatures. When one of them would mark Stress, they can choose between the two of them who marks it. This spell lasts until their next rest."
+    },
+    {
+      "name": "SAFE HAVEN",
+      "old_description": "Level 8 Codex Spell\nRecall Cost: 3\nWhen you have a few minutes of calm to focus, you can spend 2 Hope to summon your Safe Haven, a large interdimensional home where you and your allies can take shelter. When you do, a magical door appears somewhere within Close range. Only creatures of your choice can enter. Once inside, you can make the entrance invisible. You and anyone else inside can always exit. Once you leave, the doorway must be summoned again.\nWhen you take a rest within your own Safe Haven, you choose an additional downtime move.",
+      "new_description": "Level 8 Codex Spell\nRecall Cost: 3\nWhen you have a few minutes of calm to focus, you can spend 2 Hope to summon your Safe Haven, a large interdimensional home where you and your allies can take shelter. When you do, a magical door appears somewhere within Close range. Only creatures of your choice can enter. Once inside, you can make the entrance invisible. You and anyone else inside can always exit. Once you leave, the doorway must be summoned again.\nWhen you take a rest within your own Safe Haven, you can choose an additional downtime move."
+    },
+    {
+      "name": "BOOK OF RONIN",
+      "old_description": "Level 9 Codex Grimoire\nRecall Cost: 4\nTransform: Make a Spellcast Roll (15). On a success, transform into an inanimate object no larger than twice your normal size. You can remain in this shape until you take damage.\nEternal Enravation: Once per long rest, make a Spellcast Roll against a target within Close range. On a success, they become permanently Vulnerable. They can't clear this condition by any means.",
+      "new_description": "Level 9 Codex Grimoire\nRecall Cost: 4\nTransform: Make a Spellcast Roll (15). On a success, transform into an inanimate object no larger than twice your normal size. You can remain in this shape until you take damage.\nEternal Enervation: Once per long rest, make a Spellcast Roll against a target within Close range. On a success, they become permanently Vulnerable. They can't clear this condition by any means."
+    },
+    {
+      "name": "ENRAPTURE",
+      "old_description": "Level 1 Grace Spell\nRecall Cost: 0\nMake a Spellcast Roll against a target within Close range. On a success, they become temporarily Enraptured. While Enraptured, a target's attention is fixed on you, narrowing their field of view and drowning out any sound but your voice. Once per rest on a success, you can mark a Stress to force the Enraptured target to mark a Stress as well.",
+      "new_description": "Level 1 Grace Spell\nRecall Cost: 0\nMake a Spellcast Roll against a target within Close range. On a success, they become temporarily Enraptured. While Enraptured, a target's attention is fixed on you, narrowing their field of view and drowning out any sound but your voice. Once per rest on a success, you can mark a Stress for each Enraptured target to mark a Stress as well."
+    },
+    {
+      "name": "TROUBLEMAKER",
+      "old_description": "Level 2 Grace Ability\nRecall Cost: 2\nWhen you taunt or provoke a target within Far range, make a Presence Roll against them. Once per rest on a success, roll a number of d4s equal to your Proficiency. The target must mark Stress equal to the highest result rolled.",
+      "new_description": "Level 2 Grace Ability\nRecall Cost: 2\nWhen you taunt or provoke a target within Far range, make a Presence Roll against them. Once per rest on a success, roll a number of d6s equal to your Proficiency. The target must mark Stress equal to the highest result rolled."
+    },
+    {
+      "name": "INSPIRATIONAL WORDS",
+      "old_description": "Level 1 Grace Ability\nRecall Cost: 1\nYour speech is imbued with power. After a long rest, place a number of tokens on this card equal to your Presence. When you speak with an ally, you can spend a token from this card to give them one benefit from the following options:\n\u00e2\u20ac\u00a2 Your ally clears a Stress.\n\u00e2\u20ac\u00a2 Your ally clears a Hit Point.\n\u00e2\u20ac\u00a2 Your ally gains a Hope.\nWhen you take a long rest, clear all unspent tokens.",
+      "new_description": "Level 3 Grace Ability\nRecall Cost: 1\nYour speech is imbued with power. After a long rest, place a number of tokens on this card equal to your Presence. When you speak with an ally, you can spend a token from this card to give them one benefit from the following options:\n\u2022 Your ally clears a Stress.\n\u2022 Your ally clears a Hit Point.\n\u2022 Your ally gains a Hope.\nWhen you take a long rest, clear all unspent tokens."
+    },
+    {
+      "name": "NEVER UPSTAGED",
+      "old_description": "Level 6 Grace Ability\nRecall Cost: 2\nWhen you mark 1 or more Hit Points from an attack, you can mark a Stress to place a number of tokens equal to the number of Hit Points you marked on this card. On your next successful attack, gain a +5 bonus to your damage roll for each token on this card, then clear all tokens.",
+      "new_description": "Level 6 Grace Ability\nRecall Cost: 2\nWhen you mark 1 or more Hit Points from an attack, you can mark a Stress to place a number of tokens equal the number of Hit Points you marked on this card. On your next successful attack, gain a +5 bonus to your damage roll for each token on this card, then clear all tokens."
+    },
+    {
+      "name": "MASS ENRAPTURE",
+      "old_description": "Level 8 Grace Spell\nRecall Cost: 3\nMake a Spellcast Roll against all targets within Far range. Targets you succeed against become temporarily Enraptured. While Enraptured, a target's attention is fixed on you, narrowing their field of view and drowning out any sound but your voice. Mark a Stress to force all Enraptured targets to mark a Stress, ending this spell.",
+      "new_description": "Level 8 Grace Spell\nRecall Cost: 3\nMake a Spellcast Roll against all targets within Far range. Targets you succeed against become temporarily Enraptured. While Enraptured, a target's attention is fixed on you, narrowing their field of view and drowning out any sound but your voice. You can force all Enraptured targets to mark a Stress, for using this spell."
+    },
+    {
+      "name": "THROUGH YOUR EYES",
+      "old_description": "Level 4 Grace Spell\nRecall Cost: 1\nChoose a target within Very Far range. You can see through their eyes and hear through their ears. You can transition between using your own senses or the target's freely until you cast another spell or end your rest.",
+      "new_description": "Level 4 Grace Spell\nRecall Cost: 1\nChoose a target within Very Far range. You can see through their eyes and hear through their ears. You can transition between using your own senses or the target's freely until you cast another spell or until your next rest."
+    },
+    {
+      "name": "THOUGHT DELVER",
+      "old_description": "Level 5 Grace Spell\nRecall Cost: 2\nYou can peek into the minds of others. Spend a Hope to read the vague surface thoughts of a target within Far range. Make a Spellcast Roll against the target to delve in for deeper, more hidden thoughts.\nOn a roll with Fear, the target might, at the GM's discretion, become aware that you're reading their thoughts.",
+      "new_description": "Level 5 Grace Spell\nRecall Cost: 2\nYou can peek into the minds of others. Spend a Hope to read the vague surface thoughts of a target within Far range. Make a Spellcast Roll against the target to delve for deeper, more hidden thoughts.\nOn a roll with Fear, the target might, at the GM's discretion, become aware that you're reading their thoughts."
+    },
+    {
+      "name": "WORDS OF DISCORD",
+      "old_description": "Level 5 Grace Spell\nRecall Cost: 1\nWhisper words of discord to an adversary within Melee range and make a Spellcast Roll (13). On a success, the target must mark a Stress and make an attack against another adversary instead of against you or your allies.\nOnce this attack is over, the target realizes what happened. The next time you cast Words of Discord on them, gain a -5 penalty to the Spellcast Roll.",
+      "new_description": "Level 5 Grace Spell\nRecall Cost: 1\nWhisper words of discord to an adversary within Melee range to make a Spellcast Roll (13). On a success, the target must mark a Stress and make an attack against another adversary instead of against you or your allies.\nOnce this attack is over, the target realizes what happened. The next time you use Words of Discord on them, gain a -5 penalty to the Spellcast Roll."
+    },
+    {
+      "name": "GRACE-TOUCHED",
+      "old_description": "Level 7 Grace Ability\nRecall Cost: 2\nWhen 4 or more of the domain cards in your loadout are from the Grace domain, gain the following benefits:\n\u00e2\u20ac\u00a2 You can mark an Armor Slot instead of marking a Stress.\n\u00e2\u20ac\u00a2 When you would force a target to mark a number of Hit Points, you can choose instead to force them to mark that number of Stress.",
+      "new_description": "Level 7 Grace Ability\nRecall Cost: 2\nWhen 4 or more of the domain cards in your loadout are from the Grace domain, gain the following benefits:\n\u2022 You can mark an Armor Slot instead of marking a Stress.\n\u2022 When you would force a target to mark a number of Hit Points, you can choose instead to force them to mark that number of Stress."
+    },
+    {
+      "name": "ASTRAL PROJECTION",
+      "old_description": "Level 8 Grace Spell\nRecall Cost: 0\nOnce per long rest, mark a Stress to create a projected copy of yourself that can appear anywhere you've been before.\nYou can see and hear through the projection as though it were you and affect the world as though you were there. A creature investigating the projection can tell it's of magical origin. This effect lasts until your next rest or your projection takes any damage.",
+      "new_description": "Level 8 Grace Spell\nRecall Cost: 0\nOnce per long rest, mark a Stress to create a projected copy of yourself that can appear anywhere you've been before.\nYou can see and hear through the projection as though it were you, and affect the world as though you were there. A creature investigating the projection can tell it's of magical origin. This effect lasts until your next rest or your projection takes any damage."
+    },
+    {
+      "name": "RAIN OF BLADES",
+      "old_description": "Level 1 Midnight Spell\nRecall Cost: 1\nSpend a Hope to make a Spellcast Roll and conjure throwing blades that strike out at all targets within Very Close range of you. On a success against take d8+2 magic damage using your Proficiency.\nIf a target you hit is Vulnerable, they take an extra 1d8 damage.",
+      "new_description": "Level 2 Midnight Spell\nRecall Cost: 1\nSpend a Hope to make a Spellcast Roll and conjure throwing blades that strike out at all targets within Very Close range of you. Enemies you succeed against take d8+2 magic damage using your Proficiency.\nIf a target you hit is Vulnerable, they take an extra 1d8 damage."
+    },
+    {
+      "name": "UNCANNY DISGUISE",
+      "old_description": "Level 1 Midnight Spell\nRecall Cost: 0\nWhen you have a few minutes to prepare, you can mark a Stress to don the facade of any humanoid you can picture clearly in your mind. While disguised, you have advantage on Presence Rolls to avoid scrutiny.\nPlace a number of tokens equal to your Spellcast trait on this card. When you take an action while disguised, remove a token from this card. After the action that spends the last token is resolved, the disguise drops.",
+      "new_description": "Level 4 Midnight Spell\nRecall Cost: 0\nWhen you have a few minutes to prepare, you can mark a Stress to don the facade of any humanoid you can picture clearly in your mind. While disguised, you have advantage on Presence Rolls to avoid scrutiny.\nPlace a number of tokens equal to your Spellcast trait on this card. When you take an action while disguised, remove a token from this card. After the action that spends the last token is resolved, the disguise drops."
+    },
+    {
+      "name": "MIDNIGHT SPIRIT",
+      "old_description": "Level 1 Midnight Spell\nRecall Cost: 1\nSpend a Hope to summon a humanoid-sized spirit that can move or carry things for you until your next rest.\nYou can also send it to attack an adversary. When you do, make a Spellcast Roll against a target within Very Far range. On a success, the spirit moves into Melee range with that target. Roll a number of d6s equal to your Spellcast trait and deal that much magic damage to the target. The spirit then dissipates. You can only have one spirit at a time.",
+      "new_description": "Level 2 Midnight Spell\nRecall Cost: 1\nSpend a Hope to summon a humanoid-sized spirit that can move or carry things for you until your next rest.\nYou can also send it to attack an adversary. When you do, make a Spellcast Roll against a target within Very Far range. On a success, the spirit moves into Melee range with that target. Roll a number of d6s equal to your Spellcast trait and deal that much magic damage to the target. The spirit then dissipates. You can only have one spirit at a time."
+    },
+    {
+      "name": "GLYPH OF NIGHTFALL",
+      "old_description": "Level 4 Midnight Spell\nRecall Cost: 1\nMake a Spellcast Roll against a target within Very Close range. On a success, spend a Hope to place a glyph upon their body that exposes their weak points, temporarily reducing the target's Difficulty by a value equal to your Knowledge (minimum 1).",
+      "new_description": "Level 4 Midnight Spell\nRecall Cost: 1\nMake a Spellcast Roll against a target within Very Close range. On a success, spend a Hope to burn a magical glyph upon their body that exposes their weak points, temporarily reducing the target's Difficulty by a value equal to your Knowledge (minimum 1)."
+    },
+    {
+      "name": "DARK WHISPERS",
+      "old_description": "Level 6 Midnight Spell\nRecall Cost: 1\nYou can speak into the mind of any person with whom you've made physical contact. Once you've opened a channel with them, they can speak back into your mind. Additionally, you can mark a Stress to make a Spellcast Roll against them. On a success, you can ask the GM one of the following questions and receive an answer:\n\u00e2\u20ac\u00a2 Where are they?\n\u00e2\u20ac\u00a2 What are they doing?\n\u00e2\u20ac\u00a2 What are they afraid of?\n\u00e2\u20ac\u00a2 What do they cherish most in the world?",
+      "new_description": "Level 6 Midnight Spell\nRecall Cost: 1\nYou can speak into the mind of any person with whom you've made physical contact. Once you've opened a channel with them, they can speak back into your mind. Additionally, you can mark a Stress to make a Spellcast Roll against them. On a success, you can ask the GM one of the following questions and receive an answer:\n\u2022 Where are they?\n\u2022 What are they doing?\n\u2022 What are they afraid of?\n\u2022 What do they cherish most in the world?"
+    },
+    {
+      "name": "MIDNIGHT-TOUCHED",
+      "old_description": "Level 7 Midnight Ability\nRecall Cost: 2\nWhen 4 or more of the domain cards in your loadout are from the Midnight domain, gain the following benefits:\n\u00e2\u20ac\u00a2 Once per rest, when you have 0 Hope and the GM would ask you to spend a Hope, you can gain a Hope instead.\n\u00e2\u20ac\u00a2 When you make a successful attack, you can mark a Stress to add the result of your Fear Die to your damage roll.",
+      "new_description": "Level 7 Midnight Ability\nRecall Cost: 2\nWhen 4 or more of the domain cards in your loadout are from the Midnight domain, gain the following benefits:\n\u2022 Once per rest, when you have 0 Hope and the GM would ask you to spend a Hope, you can gain a Hope instead.\n\u2022 When you make a successful attack, you can mark a Stress to add the result of your Fear Die to your damage roll."
+    },
+    {
+      "name": "SPELLCHARGE",
+      "old_description": "Level 8 Midnight Spell\nRecall Cost: 1\nWhen you take magic damage, place tokens equal to the number of Hit Points you marked on this card. You can store a number of tokens equal to your Spellcast trait.\nWhen you make a successful attack against a target, you can spend any number of tokens to add a d6 for each token spent to your damage roll.",
+      "new_description": "Level 8 Midnight Spell\nRecall Cost: 1\nWhen you take magic damage, place tokens equal to the number of Hit Points you marked on this card. You can store a number of tokens equal to your Spellcast trait.\nWhen you make a successful attack against a target, you can spend any number of tokens to add d6 for each token spent to your damage roll."
+    },
+    {
+      "name": "NIGHT TERROR",
+      "old_description": "Level 9 Midnight Spell\nRecall Cost: 2\nOnce per long rest, choose any targets within Very Close range to perceive you as a nightmarish horror. The targets must succeed on a Reaction Roll (16) or become temporarily Horrified. While Horrified, they're Vulnerable. Steal a number of Fear from the GM equal to the number of targets that are Horrified (up to the number of Fear in the GM's pool). Roll a number of dice equal to the number of stolen Fear and deal the total damage to each Horrified target. Discard the stolen Fear.",
+      "new_description": "Level 9 Midnight Spell\nRecall Cost: 2\nOnce per long rest, choose any targets within Very Close range to perceive you as a nightmarish horror. The targets must succeed on a Reaction Roll (16) or become temporarily Horrified. While Horrified, they're Vulnerable. Steal a number of Fear from the GM equal to the number of targets who are Horrified (up to the number of Fear in the GM's pool). Roll a number of d6s equal to the number of stolen Fear and deal the total damage to each Horrified target. Discard the stolen Fear."
+    },
+    {
+      "name": "TWILIGHT TOLL",
+      "old_description": "Level 9 Midnight Ability\nRecall Cost: 1\nChoose a target within Far range. When you succeed on an action roll against them that doesn't result in making a damage roll, place a token on this card. When you deal damage to that target, spend any number of tokens to add a d12 for each token spent to your damage roll. You can only hold Twilight Toll on one creature at a time.\nWhen you choose a new target or take a rest, clear all unspent tokens.",
+      "new_description": "Level 9 Midnight Ability\nRecall Cost: 1\nChoose a target within Far range. When you succeed on an action roll against them that doesn't result in making a damage roll, place a token on this card. When you deal damage to the target, spend any number of tokens to add d12 for each token spent to your damage roll. You can only hold Twilight Toll on one creature at a time.\nWhen you choose a new target or take a rest, clear all unspent tokens."
+    },
+    {
+      "name": "ECLIPSE",
+      "old_description": "Level 10 Midnight Spell\nRecall Cost: 2\nMake a Spellcast Roll (16). Once per long rest on a success, plunge the entire area within Far range into complete darkness until only your allies can see through. Attack rolls have disadvantage when targeting you or an ally within this shadow.\nAdditionally, when you or an ally succeeds on a Roll with Hope against an adversary within this shadow, the target must mark a Stress.\nThis spell lasts until the GM spends a Fear on their turn to clear this effect or you take Severe damage.",
+      "new_description": "Level 10 Midnight Spell\nRecall Cost: 2\nMake a Spellcast Roll (16). Once per long rest on a success, plunge the entire area within Far range into complete darkness only you and your allies can see through. Attack rolls have disadvantage when targeting you or an ally within this shadow.\nAdditionally, when you or an ally succeeds on a Roll with Hope against an adversary within this shadow, the target must mark a Stress.\nThis spell lasts until the GM spends a Fear on their turn to clear this effect or you take Severe damage."
+    },
+    {
+      "name": "GIFTED TRACKER",
+      "old_description": "Level 1 Sage Ability\nRecall Cost: 0\nWhen you're tracking a specific creature or group of creatures based on signs of their passage, you can spend any number of Hope and ask the GM that many questions from the following list.\n\u00e2\u20ac\u00a2 What direction did they go?\n\u00e2\u20ac\u00a2 How long ago did they pass through?\n\u00e2\u20ac\u00a2 What were they doing in this location?\n\u00e2\u20ac\u00a2 How many of them were here?\nWhen you encounter creatures you've tracked in this way, gain a +1 bonus to your Evasion against them.",
+      "new_description": "Level 1 Sage Ability\nRecall Cost: 0\nWhen you're tracking a specific creature or group of creatures based on signs of their passage, you can spend any number of Hope and ask the GM that many questions from the following list.\n\u2022 What direction did they go?\n\u2022 How long ago did they pass through?\n\u2022 What were they doing in this location?\n\u2022 How many of them were here?\nWhen you encounter creatures you've tracked in this way, gain a +1 bonus to your Evasion against them."
+    },
+    {
+      "name": "NATURE'S TONGUE",
+      "old_description": "Level 1 Sage Ability\nRecall Cost: 0\nYou can speak the language of the natural world. When you want to speak to the plants and animals around you, make an Instinct Roll (12). On a success, they'll give you the information they know. On a roll with Fear, their knowledge might be limited or come at a cost.\nAdditionally, before you make a Spellcast Roll while within a natural environment, you can spend a Hope to add a +2 bonus to the roll.",
+      "new_description": "Level 1 Sage Ability\nRecall Cost: 0\nYou can speak the language of the natural world. When you want to speak to the plants and animals around you, make an Instinct Roll (12). On a success, they'll give you the information they know. On a roll with Fear, their knowledge might be limited or come at a cost.\nAdditionally, before you make a Spellcast Roll while within a natural environment, you can spend a Hope to gain a +2 bonus to the roll."
+    },
+    {
+      "name": "VICIOUS ENTANGLE",
+      "old_description": "Level 1 Sage Spell\nRecall Cost: 1\nMake a Spellcast Roll against a target within Far range. On a success, roots and vines reach out from the ground, dealing 1d8+1 physical damage and temporarily Restraining the target.\nAdditionally on a success, you can spend a Hope to temporarily Restrain another adversary within Very Close range of your target.",
+      "new_description": "Level 1 Sage Spell\nRecall Cost: 1\nMake a Spellcast Roll against a target within Far range. On a success, roots and vines reach out from the ground, dealing 1d8+1 physical damage and temporarily Restraining them.\nAdditionally on a success, you can spend a Hope to temporarily Restrain another adversary within Very Close range of your target."
+    },
+    {
+      "name": "CONJURE SWARM",
+      "old_description": "Level 2 Sage Spell\nRecall Cost: 1\nTekaira Armored Beetles: Mark a Stress to conjure armored beetles that encircle you. When you next take damage, reduce the severity by one threshold. You can spend a Hope to keep the beetles conjured after taking damage.\nFire Flies: Make a Spellcast Roll against all adversaries within Close range. Spend a Hope to deal 2d8+3 magic damage to targets you succeeded against.",
+      "new_description": "Level 2 Sage Spell\nRecall Cost: 1\nTekairo Armored Beetles: Mark a Stress to conjure armored beetles that encircle you. When you next take damage, reduce the severity by one threshold. You can spend a Hope to keep the beetles conjured after taking damage.\nFire Flies: Make a Spellcast Roll against all adversaries within Close range. Spend a Hope to deal 2d8+3 magic damage to targets you succeeded against."
+    },
+    {
+      "name": "CORROSIVE PROJECTILE",
+      "old_description": "Level 3 Sage Spell\nRecall Cost: 1\nMake a Spellcast Roll against a target within Far range. On a success, deal d6+4 magic damage using your Proficiency. Additionally, mark 2 or more Stress to make them permanently Corroded. While a target is Corroded, they gain a -1 penalty to their Difficulty for every 2 Stress you spent. This condition can stack.",
+      "new_description": "Level 3 Sage Spell\nRecall Cost: 1\nMake a Spellcast Roll against a target within Far range. On a success, deal 1d6+4 magic damage using your Proficiency. Additionally, mark 2 or more Stress to make them permanently Corroded. While a target is Corroded, they gain a -1 penalty to their Difficulty for every 2 Stress you spent. This condition can stack."
+    },
+    {
+      "name": "DEATH GRIP",
+      "old_description": "Level 4 Sage Spell\nRecall Cost: 1\nMake a Spellcast Roll against a target within Close range and choose one of the following options:\n\u00e2\u20ac\u00a2 You pull the target into Melee range or pull yourself into Melee range of them.\n\u00e2\u20ac\u00a2 You constrict the target and force them to mark 2 Stress.\n\u00e2\u20ac\u00a2 All adversaries between you and the target must succeed on a Reaction Roll (13) or be hit by vines, taking 3d6+2 physical damage.\nOn a success, vines reach out from your hands, causing the chosen effect and temporarily Restraining the target.",
+      "new_description": "Level 4 Sage Spell\nRecall Cost: 1\nMake a Spellcast Roll against a target within Close range and choose one of the following options:\n\u2022 You pull the target into Melee range or pull yourself into Melee range of them.\n\u2022 You constrict the target and force them to mark 2 Stress.\n\u2022 All adversaries between you and the target must succeed on a Reaction Roll (13) or be hit by vines, taking 3d6+2 physical damage.\nOn a success, vines reach out from your hands, causing the chosen effect and temporarily Restraining the target."
+    },
+    {
+      "name": "WILD FORTRESS",
+      "old_description": "Level 5 Sage Spell\nRecall Cost: 1\nMake a Spellcast Roll (13). On a success, spend 2 Hope to grow a natural barricade in the shape of a dome that you and one ally can take cover within. While inside the dome, a creature can't be targeted by attacks and can't make attacks. Attacks made against the dome automatically succeed. The dome has the following damage thresholds and lasts until it marks 3 Hit Points. Place tokens on this card to represent marking Hit Points.\nThresholds: 15/30",
+      "new_description": "Level 5 Sage Spell\nRecall Cost: 1\nMake a Spellcast Roll (13). On a success, spend 2 Hope to grow a natural barricade in the shape of a dome that you and one ally can take cover within. While inside the dome, a creature can't be targeted by attacks and can't make attacks. Attacks made against the dome automatically succeed. The dome has Hit Points equal to damage thresholds and lasts until it marks 3 Hit Points. Place tokens on this card to represent marking Hit Points.\nThresholds: 15/30"
+    },
+    {
+      "name": "CONJURED STEEDS",
+      "old_description": "Level 6 Sage Spell\nRecall Cost: 0\nSpend any number of Hope to conjure that many magical steeds (such as horses, camels, or elephants) that you and your allies can ride until your next long rest or the steeds take any damage. The steeds double your land speed while traveling and, when in danger, allow you to move within Far range without having to roll. Creatures riding a steed gain a -2 penalty to attack rolls and a +2 bonus to damage rolls.",
+      "new_description": "Level 5 Sage Spell\nRecall Cost: 0\nSpend any number of Hope to conjure that many magical steeds (such as horses, camels, or elephants) that you and your allies can ride until your next long rest or the steeds take any damage. The steeds double your land speed while traveling and, when in danger, allow you to move within Far range without having to roll. Creatures riding a steed gain a -2 penalty to attack rolls and a +2 bonus to damage rolls."
+    },
+    {
+      "name": "FORAGER",
+      "old_description": "Level 6 Sage Ability\nRecall Cost: 1\nAs an additional downtime move you can choose, roll a d6 to see what you forage. Work with the GM to describe it and add it to your inventory as a consumable. Your party can carry up to five foraged consumables at a time.\n1. A unique food (Clear 2 Stress)\n2. A beautiful relic (Gain 2 Hope)\n3. An arcane rune (+2 to a Spellcast Roll)\n4. A healing vial (Clear 2 Hit Points)\n5. A luck charm (Reroll any die)\n6. Choose one of the options above.",
+      "new_description": "Level 5 Sage Ability\nRecall Cost: 1\nAs an additional downtime move you can choose, roll a d6 to see what you forage. Work with the GM to describe it and add it to your inventory as a consumable. Your party can carry up to five foraged consumables at a time.\n1. A unique food (Clear 2 Stress)\n2. A beautiful relic (Gain 2 Hope)\n3. An arcane rune (+2 to a Spellcast Roll)\n4. A healing vial (Clear 2 Hit Points)\n5. A luck charm (Reroll any die)\n6. Choose one of the options above."
+    },
+    {
+      "name": "SAGE-TOUCHED",
+      "old_description": "Level 7 Sage Ability\nRecall Cost: 2\nWhen 4 or more of the domain cards in your loadout are from the Sage domain, gain the following benefits:\n\u00e2\u20ac\u00a2 While you're in a natural environment, you gain a +2 bonus to your Spellcast Rolls.\n\u00e2\u20ac\u00a2 Once per rest, you can double your Agility or Instinct when making a roll that uses that trait. You must choose to do this before you roll.",
+      "new_description": "Level 7 Sage Ability\nRecall Cost: 2\nWhen 4 or more of the domain cards in your loadout are from the Sage domain, gain the following benefits:\n\u2022 While you're in a natural environment, you gain a +2 bonus to your Spellcast Rolls.\n\u2022 Once per rest, you can double your Agility or Instinct when making a roll that uses that trait. You must choose to do this before you roll."
+    },
+    {
+      "name": "WILD SURGE",
+      "old_description": "Level 7 Sage Spell\nRecall Cost: 2\nOnce per long rest, mark a Stress to channel the natural world around you and enhance yourself. Describe how your appearance changes, then place a d6 on this card with the 1 value facing up.\nWhile the Wild Surge Die is active, you add its value to every action roll you make. After you add its value to a roll, increase the Wild Surge Die's value by one. When the die's value would exceed 6 or you take a rest, this form drops and you must mark an additional Stress.",
+      "new_description": "Level 7 Sage Spell\nRecall Cost: 2\nOnce per long rest, mark a Stress to channel the natural world around you and enhance yourself. Describe how your appearance changes, then place a d6 on this card with the d6 facing up.\nWhile the Wild Surge Die is active, you add its value to every action roll you make. After you add its value to a roll, increase the Wild Surge Die's value by one. When the die's value would exceed 6 or you take a rest, this form drops and you must mark an additional Stress."
+    },
+    {
+      "name": "FOREST SPRITES",
+      "old_description": "Level 7 Sage Spell\nRecall Cost: 2\nMake a Spellcast Roll (13). On a success, spend any number of Hope to create an equal number of small forest sprites who appear at points you choose within Far range, providing the following benefits:\n\u00e2\u20ac\u00a2 Your allies gain a +3 bonus to attack rolls against adversaries within Melee range of a sprite.\n\u00e2\u20ac\u00a2 An ally who marks an Armor Slot while within Melee range of a sprite can mark an additional Armor Slot.\nA sprite vanishes after granting a benefit or taking any damage.",
+      "new_description": "Level 7 Sage Spell\nRecall Cost: 2\nMake a Spellcast Roll (13). On a success, spend any number of Hope to create an equal number of small forest sprites who appear at your side. You choose within Far range, providing the following benefits:\n\u2022 Your allies gain a +3 bonus to attack rolls against adversaries within Melee range of a sprite.\n\u2022 An ally who marks an Armor Slot while within Melee range of a sprite can mark an additional Armor Slot.\nA sprite vanishes after granting a benefit or taking any damage."
+    },
+    {
+      "name": "FANE OF THE WILDS",
+      "old_description": "Level 9 Sage Ability\nRecall Cost: 2\nAfter a long rest, place a number of tokens equal to the number of Sage domain cards in your loadout and vault on this card.\nWhen you would make a Spellcast Roll, you can spend any number of tokens after the roll to gain a +1 bonus for each token spent.\nWhen you critically succeed on a Spellcast Roll for a Sage domain spell, gain a token.\nWhen you take a long rest, clear all unspent tokens.",
+      "new_description": "Level 9 Sage Ability\nRecall Cost: 2\nAfter a long rest, place a number of tokens equal to the number of Sage domain cards in your loadout and vault on this card.\nWhen you would make a Spellcast Roll, you can spend any number of tokens after rolling to gain a +1 bonus for each token spent.\nWhen you critically succeed on a Spellcast Roll for a Sage domain spell, gain a token.\nWhen you take a long rest, clear all unspent tokens."
+    },
+    {
+      "name": "PLANT DOMINION",
+      "old_description": "Level 9 Sage Spell\nRecall Cost: 1\nMake a Spellcast Roll (18). Once per long rest on a success, you reshape the natural world, changing the terrain surrounding plant life anywhere within Far range of you. For example, you can grow trees instantly, clear a path through dense vines, or create a wall of roots.",
+      "new_description": "Level 9 Sage Spell\nRecall Cost: 1\nMake a Spellcast Roll (18). Once per long rest on a success, you reshape the natural world, changing the surrounding plant life anywhere within Far range of you. For example, you can grow trees instantly, clear a path through dense vines, or create a wall of roots."
+    },
+    {
+      "name": "FORCE OF NATURE",
+      "old_description": "Level 10 Sage Spell\nRecall Cost: 2\nMark a Stress to transform into a hulking nature spirit, gaining the following benefits:\n\u00e2\u20ac\u00a2 When you succeed on an attack or Spellcast Roll, gain a +10 bonus to the damage roll.\n\u00e2\u20ac\u00a2 When you deal enough damage to defeat a creature within Close range, you absorb them and clear an Armor Slot.\n\u00e2\u20ac\u00a2 You can't be Restrained.\nBefore you make an action roll, you must spend a Hope. If you can't, you revert to your normal form.",
+      "new_description": "Level 10 Sage Spell\nRecall Cost: 2\nMark a Stress to transform into a hulking nature spirit, gaining the following benefits:\n\u2022 When you succeed on an attack or Spellcast Roll, gain a +10 bonus to the damage roll.\n\u2022 When you deal enough damage to defeat a creature within Close range, you absorb them and clear an Armor Slot.\n\u2022 You can't be Restrained.\nBefore you make an action roll, you must spend a Hope. If you can't, you revert to your normal form."
+    },
+    {
+      "name": "TEMPEST",
+      "old_description": "Level 10 Sage Spell\nRecall Cost: 2\nChoose one of the following tempests and make a Spellcast Roll against all targets within Far range. Targets you succeed against experience its effects until the GM spends a Fear on their turn to end this spell.\n\u00e2\u20ac\u00a2 Blizzard: Deal 2d20+8 magic damage and targets are temporarily Vulnerable.\n\u00e2\u20ac\u00a2 Hurricane: Deal 3d10+10 magic damage and choose a direction the wind is blowing. Targets can't move against the wind.\n\u00e2\u20ac\u00a2 Sandstorm: Deal 5d6+9 magic damage. Attacks made from beyond Melee range have disadvantage.",
+      "new_description": "Level 10 Sage Spell\nRecall Cost: 2\nChoose one of the following tempests and make a Spellcast Roll against all targets within Far range. Targets you succeed against experience its effects until the GM spends a Fear on their turn to end this spell.\n\u2022 Blizzard: Deal 2d20+8 magic damage and targets are temporarily Vulnerable.\n\u2022 Hurricane: Deal 3d10+10 magic damage and choose a direction the wind is blowing. Targets can't move against the wind.\n\u2022 Sandstorm: Deal 5d6+9 magic damage. Attacks made from beyond Melee range have disadvantage."
+    },
+    {
+      "name": "BOLT BEACON",
+      "old_description": "Level 1 Splendor Spell\nRecall Cost: 1\n\nMake a Spellcast Roll against a target within Far range. On a success, spend a Hope to send a bolt of shimmering light toward them, dealing d8+2 magic damage using your Proficiency. The target becomes temporarily Vulnerable and glows brightly until this condition is cleared.",
+      "new_description": "Level 1 Splendor Spell\nRecall Cost: 1\n\nMake a Spellcast Roll against a target within Far range. On a success, spend a Hope to send a bolt of shimmering light toward them, dealing d6+2 magic damage using your Proficiency. The target becomes temporarily Vulnerable and glows brightly until this condition is cleared."
+    },
+    {
+      "name": "FINAL WORDS",
+      "old_description": "Level 2 Splendor Spell\nRecall Cost: 1\n\nYou can infuse a corpse with a moment of life to speak with it. Make a Spellcast Roll (15). On a success with Hope, the corpse answers up to three questions. On a success with Fear, the corpse answers one question. The corpse answers truthfully, but it can't impart information it didn't know in life. On a failure, or once the corpse has finished answering your questions, the body turns to dust.",
+      "new_description": "Level 2 Splendor Spell\nRecall Cost: 1\n\nYou can infuse a corpse with a moment of life to speak with it. Make a Spellcast Roll (13). On a success with Hope, the corpse answers up to three questions. On a success with Fear, the corpse answers one question. The corpse answers truthfully, but it can't impart information it didn't know in life. On a failure, or once the corpse has finished answering your questions, the body turns to dust."
+    },
+    {
+      "name": "SPLENDOR-TOUCHED",
+      "old_description": "Level 7 Splendor Ability\nRecall Cost: 2\n\nWhen 4 or more of the domain cards in your loadout are from this Splendor domain, gain the following benefits:\n\n\u00e2\u20ac\u00a2 +3 bonus to your Severe damage threshold\n\u00e2\u20ac\u00a2 Once per long rest, when incoming damage would require you to mark a number of Hit Points, you can choose to mark that much Stress or spend that much Hope instead.",
+      "new_description": "Level 7 Splendor Ability\nRecall Cost: 2\n\nWhen 4 or more of the domain cards in your loadout are from this Splendor domain, gain the following benefits:\n\n\u2022 +3 bonus to your Severe damage threshold\n\n\u2022 Once per long rest, when incoming damage would require you to mark a number of Hit Points, you can choose to mark that much Stress or spend that much Hope instead."
+    },
+    {
+      "name": "SHIELD AURA",
+      "old_description": "Level 8 Splendor Spell\nRecall Cost: 2\n\nMark a Stress to cast a protective aura on a target within Very Close range. When the target marks an Armor Slot, they reduce the severity of the attack by one additional threshold. When the spell causes a creature who would be damaged to instead mark no Hit Points, the effect ends.\n\nYou can only hold Shield Aura on one creature at a time.",
+      "new_description": "Level 8 Splendor Spell\nRecall Cost: 2\nMark a Stress to cast a protective aura on a target within Very Close range. When the target marks an Armor Slot, they reduce the severity of the attack by an additional threshold. If this spell causes a creature who would be damaged to instead mark no Hit Points, the effect ends.\nYou can only hold Shield Aura on one creature at a time."
+    },
+    {
+      "name": "RESURRECTION",
+      "old_description": "Level 10 Splendor Spell\nRecall Cost: 2\n\nMake a Spellcast Roll (20). On a success, restore one creature who has been dead no longer than 100 years to full strength. Then roll a d6. On a result of 3 or lower, place this card in your vault permanently.\n\nOn a failure, you can't cast Resurrection again for a week.",
+      "new_description": "Level 10 Splendor Spell\nRecall Cost: 2\nMake a Spellcast Roll (20). On a success, restore one creature who has been dead no longer than 100 years to full strength. Then roll a d6. On a result of 6 or lower, place this card in your vault permanently.\nOn a failure, you can't cast Resurrection again for a week."
+    },
+    {
+      "name": "BARE BONES",
+      "old_description": "Level 1 Valor Ability\nRecall Cost: 0\n\nWhen you choose not to equip armor, you have a base Armor Score of 3 + your Strength and use the following as your base damage thresholds:\n\n\u00e2\u20ac\u00a2 Tier 1: 9/19\n\u00e2\u20ac\u00a2 Tier 2: 11/24\n\u00e2\u20ac\u00a2 Tier 3: 13/31\n\u00e2\u20ac\u00a2 Tier 4: 15/38",
+      "new_description": "Level 1 Valor Ability\nRecall Cost: 0\nWhen you choose not to equip armor, you have a base Armor Score of 3 + your Strength and use the following as your base damage thresholds:\n\u2022 Tier 1: 9/19\n\u2022 Tier 2: 11/24\n\u2022 Tier 3: 13/31\n\u2022 Tier 4: 15/38"
+    },
+    {
+      "name": "ARMORER",
+      "old_description": "Level 5 Valor Ability\nRecall Cost: 1\n\nWhile you're wearing armor, gain a +1 bonus to your Armor Score.\n\nDuring a rest, when you choose to repair your armor as a downtime activity, your allies also clear an Armor Slot.",
+      "new_description": "Level 5 Valor Ability\nRecall Cost: 1\nWhile you're wearing armor, gain a +1 bonus to your Armor Score.\nDuring a rest, when you choose to repair armor as a downtime activity, your allies also clear an Armor Slot."
+    },
+    {
+      "name": "ROUSING STRIKE",
+      "old_description": "Level 5 Valor Ability\nRecall Cost: 1\n\nOnce per rest, when you critically succeed on an attack, you and all allies who can see or hear you can clear a Hit Point or gain a Stress.",
+      "new_description": "Level 5 Valor Ability\nRecall Cost: 1\nOnce per rest, when you critically succeed on an attack, you and all allies who can see or hear you can clear a Hit Point or 1d4+Stress."
+    },
+    {
+      "name": "VALOR-TOUCHED",
+      "old_description": "Level 7 Valor Ability\nRecall Cost: 1\n\nWhen 4 or more of the domain cards in your loadout are from the Valor domain, gain the following benefits:\n\n\u00e2\u20ac\u00a2 +1 bonus to your Armor Score\n\u00e2\u20ac\u00a2 When you mark 1 or more Hit Points without marking an Armor Slot, you can clear an Armor Slot.",
+      "new_description": "Level 7 Valor Ability\nRecall Cost: 1\nWhen 4 or more of the domain cards in your loadout are from the Valor domain, gain the following benefits:\n\u2022 +1 bonus to your Armor Score\n\u2022 When you mark 1 or more Hit Points without marking an Armor Slot, clear an Armor Slot."
+    },
+    {
+      "name": "HOLD THE LINE",
+      "old_description": "Level 9 Valor Ability\nRecall Cost: 1\n\nDescribe the defensive stance you take and spend a Hope. If an adversary moves within Very Close range, they're pulled into Melee range and Restrained.\n\nThis condition lasts until you move or fail a roll with Fear, or the GM spends 2 Fear on their turn to clear it.",
+      "new_description": "Level 9 Valor Ability\nRecall Cost: 1\nDescribe the defensive stance you take and spend a Hope. If an adversary moves within Very Close range, they're pulled into Melee range and Restrained. This condition lasts until they move to fail a roll with Fear, or the GM spends 2 Fear on their turn to clear it."
+    }
+  ],
+  "new_only": [],
+  "db_only": []
+}

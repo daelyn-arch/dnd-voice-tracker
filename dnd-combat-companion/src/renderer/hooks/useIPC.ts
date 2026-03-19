@@ -87,6 +87,9 @@ export function useIPC(): void {
 
   useEffect(() => {
     const offKeyword = window.electronAPI.onKeywordDetected((payload) => {
+      // Push every recognized word to the live transcript
+      useDetectionStore.getState().pushTranscriptWord(payload.keyword)
+
       // Check for "plus {N}" dice roll first
       const diceEntry = tryDiceRoll(payload.keyword)
       if (diceEntry) {

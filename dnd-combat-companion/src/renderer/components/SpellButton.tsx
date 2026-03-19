@@ -23,7 +23,9 @@ export function SpellButton({ detection, onExpand, onDismiss }: Props): React.JS
       <span className={styles.dot} />
       <span className={styles.name}>
         {entry._type === 'diceRoll'
-          ? <>d20<span style={{ color }}>{`+${entry.modifier}`}</span>{`: ${entry.total}`}</>
+          ? entry.notation
+            ? <><span style={{ color }}>{entry.notation}</span>{`: ${entry.total}`}</>
+            : <>d20<span style={{ color }}>{`+${entry.modifier}`}</span>{`: ${entry.total}`}</>
           : entry.name}
       </span>
       <span className={styles.badge}>{badge}</span>

@@ -1,5 +1,6 @@
 import { create } from 'zustand'
 import type { Detection, Entry, EntryType, DaggerheartEntry, DiceRollEntry } from '../types'
+import { getDaggerheartSource, setDaggerheartSource, type DaggerheartSource } from '../data'
 
 const MAX_DETECTIONS = 128
 
@@ -48,6 +49,20 @@ interface DetectionStore {
   autoExpandDiceRolls: boolean
   toggleAutoExpandDiceRolls: () => void
 
+  // Display settings
+  sortByCategory: boolean
+  toggleSortByCategory: () => void
+
+  // Live transcript
+  showTranscript: boolean
+  toggleShowTranscript: () => void
+  transcriptWords: string[]
+  pushTranscriptWord: (word: string) => void
+
+  // Daggerheart data source
+  daggerheartSource: DaggerheartSource
+  setDaggerheartSource: (source: DaggerheartSource) => void
+
   // Legacy compat — derived from visibleTypes
   showSpells: boolean
   showFeatures: boolean
@@ -83,6 +98,16 @@ export const useDetectionStore = create<DetectionStore>((set, get) => ({
   visibleTypes: { ...DEFAULT_VISIBLE },
   visibleDHCategories: { ...DEFAULT_DH_CATEGORIES },
   autoExpandDiceRolls: true,
+  sortByCategory: false,
+  showTranscript: false,
+  transcriptWords: [],
+
+  // Daggerheart data source
+  daggerheartSource: getDaggerheartSource(),
+  setDaggerheartSource(source: DaggerheartSource) {
+    setDaggerheartSource(source)
+    set({ daggerheartSource: source })
+  },
 
   // Legacy derived getters
   get showSpells() { return get().visibleTypes.spell },
@@ -221,6 +246,20 @@ export const useDetectionStore = create<DetectionStore>((set, get) => ({
 
   toggleAutoExpandDiceRolls() {
     set((s) => ({ autoExpandDiceRolls: !s.autoExpandDiceRolls }))
+  },
+
+  toggleSortByCategory() {
+    set((s) => ({ sortByCategory: !s.sortByCategory }))
+  },
+
+  toggleShowTranscript() {
+    set((s) => ({ showTranscript: !s.showTranscript }))
+  },
+
+  pushTranscriptWord(word) {
+    set((s) => ({
+      transcriptWords: [...s.transcriptWords, word].slice(-10)
+    }))
   },
 
   isEntryVisible(entry) {

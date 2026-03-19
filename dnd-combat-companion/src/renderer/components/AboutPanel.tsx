@@ -42,11 +42,33 @@ export function AboutPanel({ onClose }: Props): React.JSX.Element {
       <div className={styles.divider} />
 
       <h3 className={styles.sectionTitle}>Color Legend</h3>
+
+      <h4 className={styles.legendHeader}>D&D Spell Schools</h4>
       <div className={styles.legend}>
-        {Object.entries(SCHOOL_COLORS).map(([school, color]) => (
+        {(['Evocation', 'Abjuration', 'Necromancy', 'Illusion', 'Conjuration', 'Enchantment', 'Divination', 'Transmutation'] as const).map((school) => (
           <div key={school} className={styles.legendRow}>
-            <span className={styles.legendDot} style={{ background: color }} />
+            <span className={styles.legendDot} style={{ background: SCHOOL_COLORS[school] }} />
             <span className={styles.legendLabel}>{school}</span>
+          </div>
+        ))}
+      </div>
+
+      <h4 className={styles.legendHeader}>D&D Categories</h4>
+      <div className={styles.legend}>
+        {([['Feature', 'Class Features'], ['Feat', 'Feats'], ['Equipment', 'Equipment'], ['Background', 'Backgrounds'], ['Species', 'Species'], ['Rules', 'Rules'], ['MagicItem', 'Magic Items'], ['DiceRoll', 'Dice Rolls']] as const).map(([key, label]) => (
+          <div key={key} className={styles.legendRow}>
+            <span className={styles.legendDot} style={{ background: SCHOOL_COLORS[key] }} />
+            <span className={styles.legendLabel}>{label}</span>
+          </div>
+        ))}
+      </div>
+
+      <h4 className={styles.legendHeader}>Daggerheart</h4>
+      <div className={styles.legend}>
+        {([['DH-domain', 'Domains'], ['DH-class features', 'Class Features'], ['DH-rules', 'Rules'], ['DH-adversary', 'Adversaries']] as const).map(([key, label]) => (
+          <div key={key} className={styles.legendRow}>
+            <span className={styles.legendDot} style={{ background: SCHOOL_COLORS[key] }} />
+            <span className={styles.legendLabel}>{label}</span>
           </div>
         ))}
       </div>

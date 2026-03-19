@@ -647,7 +647,7 @@
   {
     "id": "hunting-trap",
     "name": "Hunting Trap",
-    "description": "Weight: 25 lb., Cost: 5 GP"
+    "description": "Weight: 25 lb., Cost: 5 GP\nWhen you use your action to set it, this trap forms a saw-toothed steel ring that snaps shut when a creature steps on a pressure plate in the center. The trap is affixed by a heavy chain to an immobile object, such as a tree or a spike driven into the ground. A creature that steps on the plate must succeed on a DC 13 Dexterity saving throw or take 1d4 piercing damage and stop moving. Thereafter, until the creature breaks free of the trap, its movement is limited by the length of the chain (typically 3 feet long). A creature can use its action to make a DC 13 Strength check, freeing itself or another creature within its reach on a success. Each failed check deals 1 piercing damage to the trapped creature."
   },
   {
     "id": "ink",
@@ -672,32 +672,32 @@
   {
     "id": "lamp",
     "name": "Lamp",
-    "description": "Weight: 1 lb., Cost: 5 SP"
+    "description": "Weight: 1 lb., Cost: 5 SP\nA lamp casts bright light in a 15-foot radius and dim light for an additional 30 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil."
   },
   {
     "id": "lantern-bullseye",
     "name": "Lantern, Bullseye",
-    "description": "Weight: 2 lb., Cost: 10 GP"
+    "description": "Weight: 2 lb., Cost: 10 GP\nA bullseye lantern casts bright light in a 60-foot cone and dim light for an additional 60 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil."
   },
   {
     "id": "lantern-hooded",
     "name": "Lantern, Hooded",
-    "description": "Weight: 2 lb., Cost: 5 GP"
+    "description": "Weight: 2 lb., Cost: 5 GP\nA hooded lantern casts bright light in a 30-foot radius and dim light for an additional 30 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil. As an action, you can lower the hood, reducing the light to dim light in a 5-foot radius."
   },
   {
     "id": "lock",
     "name": "Lock",
-    "description": "Weight: 1 lb., Cost: 10 GP"
+    "description": "Weight: 1 lb., Cost: 10 GP\nA key is provided with the lock. Without the key, a creature proficient with thieves' tools can pick this lock with a successful DC 15 Dexterity check. Your GM may decide that better locks are available for higher prices."
   },
   {
     "id": "magnifying-glass",
     "name": "Magnifying Glass",
-    "description": "Weight: —, Cost: 100 GP"
+    "description": "Weight: —, Cost: 100 GP\nThis lens allows a closer look at small objects. It is also useful as a substitute for flint and steel when starting fires. Lighting a fire with a magnifying glass requires light as bright as sunlight to focus, tinder to ignite, and about 5 minutes for the fire to ignite. A magnifying glass grants advantage on any ability check made to appraise or inspect an item that is small or highly detailed."
   },
   {
     "id": "manacles",
     "name": "Manacles",
-    "description": "Weight: 6 lb., Cost: 2 GP"
+    "description": "Weight: 6 lb., Cost: 2 GP\nThese metal restraints can bind a Small or Medium creature. Escaping the manacles requires a successful DC 20 Dexterity check. Breaking them requires a successful DC 20 Strength check. Each set of manacles comes with one key. Without the key, a creature proficient with thieves' tools can pick the manacles' lock with a successful DC 15 Dexterity check. Manacles have 15 hit points."
   },
   {
     "id": "map",
@@ -757,7 +757,7 @@
   {
     "id": "pouch",
     "name": "Pouch",
-    "description": "Weight: 1 lb., Cost: 5 SP"
+    "description": "Weight: 1 lb., Cost: 5 SP\nA cloth or leather pouch can hold up to 20 sling bullets or 50 blowgun needles, among other things. A compartmentalized pouch for holding spell components is called a component pouch (described earlier in this section)."
   },
   {
     "id": "priests-pack",
@@ -767,12 +767,12 @@
   {
     "id": "quiver",
     "name": "Quiver",
-    "description": "Weight: 1 lb., Cost: 1 GP"
+    "description": "Weight: 1 lb., Cost: 1 GP\nA quiver can hold up to 20 arrows."
   },
   {
     "id": "ram-portable",
     "name": "Ram, Portable",
-    "description": "Weight: 35 lb., Cost: 4 GP"
+    "description": "Weight: 35 lb., Cost: 4 GP\nYou can use a portable ram to break down doors. When doing so, you gain a +4 bonus on the Strength check. One other character can help you use the ram, giving you advantage on this check."
   },
   {
     "id": "rations",
@@ -827,7 +827,7 @@
   {
     "id": "spyglass",
     "name": "Spyglass",
-    "description": "Weight: 1 lb., Cost: 1,000 GP"
+    "description": "Weight: 1 lb., Cost: 1,000 GP\nObjects viewed through a spyglass are magnified to twice their size."
   },
   {
     "id": "string",
@@ -842,12 +842,12 @@
   {
     "id": "tinderbox",
     "name": "Tinderbox",
-    "description": "Weight: 1 lb., Cost: 5 SP"
+    "description": "Weight: 1 lb., Cost: 5 SP\nThis small container holds flint, fire steel, and tinder (usually dry cloth soaked in light oil) used to kindle a fire. Using it to light a torch--or anything else with abundant, exposed fuel--takes an action. Lighting any other fire takes 1 minute."
   },
   {
     "id": "torch",
     "name": "Torch",
-    "description": "Weight: 1 lb., Cost: 1 CP"
+    "description": "Weight: 1 lb., Cost: 1 CP\nA torch burns for 1 hour, providing bright light in a 20-foot radius and dim light for an additional 20 feet. If you make a melee attack with a burning torch and hit, it deals 1 fire damage."
   },
   {
     "id": "vial",

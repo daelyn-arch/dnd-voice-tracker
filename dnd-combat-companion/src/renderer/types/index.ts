@@ -85,8 +85,10 @@ export interface DiceRollEntry {
   name: string
   description: string
   modifier: number
-  roll: number          // the raw d20 result (1-20)
+  roll: number          // the raw d20 result (1-20) or sum of generic dice
   total: number         // roll + modifier
+  notation?: string     // e.g. "8d6" — present for generic dice rolls
+  rolls?: number[]      // individual die results for generic rolls
 }
 
 export type Entry =

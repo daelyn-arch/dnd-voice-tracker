@@ -47,6 +47,12 @@ export function SettingsPanel({ onClose }: Props): React.JSX.Element {
   const selectDaggerheartOnly = useDetectionStore((s) => s.selectDaggerheartOnly)
   const autoExpandDiceRolls = useDetectionStore((s) => s.autoExpandDiceRolls)
   const toggleAutoExpandDiceRolls = useDetectionStore((s) => s.toggleAutoExpandDiceRolls)
+  const showTranscript = useDetectionStore((s) => s.showTranscript)
+  const toggleShowTranscript = useDetectionStore((s) => s.toggleShowTranscript)
+  const sortByCategory = useDetectionStore((s) => s.sortByCategory)
+  const toggleSortByCategory = useDetectionStore((s) => s.toggleSortByCategory)
+  const daggerheartSource = useDetectionStore((s) => s.daggerheartSource)
+  const setDhSource = useDetectionStore((s) => s.setDaggerheartSource)
 
   const anyDndOn = DND_TYPES.some((t) => visibleTypes[t])
   const allDndOn = DND_TYPES.every((t) => visibleTypes[t])
@@ -111,6 +117,23 @@ export function SettingsPanel({ onClose }: Props): React.JSX.Element {
 
       <div className={styles.checkList}>
         <label className={styles.checkRow}>
+          <span className={styles.checkLabel}>Data Source</span>
+        </label>
+        <div className={styles.sourceToggle}>
+          <button
+            className={`${styles.sourceBtn} ${daggerheartSource === 'corebook' ? styles.sourceBtnActive : ''}`}
+            onClick={() => setDhSource('corebook')}
+          >
+            Core Book
+          </button>
+          <button
+            className={`${styles.sourceBtn} ${daggerheartSource === 'srd' ? styles.sourceBtnActive : ''}`}
+            onClick={() => setDhSource('srd')}
+          >
+            SRD (Commercial)
+          </button>
+        </div>
+        <label className={styles.checkRow}>
           <input
             type="checkbox"
             className={styles.checkbox}
@@ -153,6 +176,36 @@ export function SettingsPanel({ onClose }: Props): React.JSX.Element {
             onChange={toggleAutoExpandDiceRolls}
           />
           <span className={styles.checkLabel}>Auto-expand on pop up</span>
+        </label>
+      </div>
+
+      <div className={styles.divider} />
+
+      <h3 className={styles.sectionTitle}>Display</h3>
+      <div className={styles.checkList}>
+        <label className={styles.checkRow}>
+          <input
+            type="checkbox"
+            className={styles.checkbox}
+            checked={sortByCategory}
+            onChange={toggleSortByCategory}
+          />
+          <span className={styles.checkLabel}>Group cards by category</span>
+        </label>
+      </div>
+
+      <div className={styles.divider} />
+
+      <h3 className={styles.sectionTitle}>Debug</h3>
+      <div className={styles.checkList}>
+        <label className={styles.checkRow}>
+          <input
+            type="checkbox"
+            className={styles.checkbox}
+            checked={showTranscript}
+            onChange={toggleShowTranscript}
+          />
+          <span className={styles.checkLabel}>Live transcript</span>
         </label>
       </div>
     </div>

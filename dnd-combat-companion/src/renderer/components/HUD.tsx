@@ -5,6 +5,8 @@ import { StatusIndicator } from './StatusIndicator'
 import { SearchBar } from './SearchBar'
 import { AboutPanel } from './AboutPanel'
 import { SettingsPanel } from './SettingsPanel'
+import { LibraryPanel } from './LibraryPanel'
+import { TranscriptCard } from './TranscriptCard'
 import styles from './HUD.module.css'
 
 const MIN_WIDTH = 280
@@ -24,6 +26,7 @@ export function HUD(): React.JSX.Element {
   const visibleTypes = useDetectionStore((s) => s.visibleTypes)
   const visibleDHCategories = useDetectionStore((s) => s.visibleDHCategories)
   const isEntryVisible = useDetectionStore((s) => s.isEntryVisible)
+  const sortByCategory = useDetectionStore((s) => s.sortByCategory)
 
   // visibleTypes and visibleDHCategories subscriptions ensure re-render on filter changes
   void visibleTypes
@@ -32,9 +35,18 @@ export function HUD(): React.JSX.Element {
   const [showSearch, setShowSearch] = useState(false)
   const [showAbout, setShowAbout] = useState(false)
   const [showSettings, setShowSettings] = useState(false)
+  const [showLibrary, setShowLibrary] = useState(false)
   const [columnWidth, setColumnWidth] = useState(DEFAULT_WIDTH)
 
-  const visibleDetections = detections.filter((d) => isEntryVisible(d.entry))
+  const CATEGORY_ORDER: Record<string, number> = {
+    diceRoll: 0, spell: 1, feature: 2, feat: 3, equipment: 4,
+    background: 5, species: 6, rules: 7, magicItem: 8, daggerheart: 9
+  }
+
+  const filtered = detections.filter((d) => isEntryVisible(d.entry))
+  const visibleDetections = sortByCategory
+    ? [...filtered].sort((a, b) => (CATEGORY_ORDER[a.entry._type] ?? 99) - (CATEGORY_ORDER[b.entry._type] ?? 99))
+    : filtered
 
   const hudRef = useRef<HTMLDivElement>(null)
   const ignoreRef = useRef(true)
@@ -67,11 +79,11 @@ export function HUD(): React.JSX.Element {
   // ── Mouse passthrough ──────────────────────────────────────────────────
 
   useEffect(() => {
-    if (!showSearch && !showAbout && !showSettings) {
+    if (!showSearch && !showAbout && !showSettings && !showLibrary) {
       ignoreRef.current = true
       window.electronAPI.setIgnoreMouseEvents(true)
     }
-  }, [showSearch, showAbout, showSettings])
+  }, [showSearch, showAbout, showSettings, showLibrary])
 
   useEffect(() => {
     function setIgnore(val: boolean): void {
@@ -125,6 +137,9 @@ export function HUD(): React.JSX.Element {
         {showSearch && <SearchBar onClose={() => setShowSearch(false)} />}
         {showAbout && <AboutPanel onClose={() => setShowAbout(false)} />}
         {showSettings && <SettingsPanel onClose={() => setShowSettings(false)} />}
+        {showLibrary && <LibraryPanel onClose={() => setShowLibrary(false)} />}
+
+        <TranscriptCard />
 
         <div className={styles.statusRow}>
           <StatusIndicator />
@@ -136,22 +151,29 @@ export function HUD(): React.JSX.Element {
             ∗
           </button>
           <button
+            className={`${styles.iconBtn} ${showLibrary ? styles.iconBtnActive : ''}`}
+            onMouseDown={(e) => { e.preventDefault(); setShowLibrary((v) => !v); setShowSearch(false); setShowAbout(false); setShowSettings(false) }}
+            title="Browse library"
+          >
+            ☰
+          </button>
+          <button
             className={`${styles.iconBtn} ${showSearch ? styles.iconBtnActive : ''}`}
-            onMouseDown={(e) => { e.preventDefault(); setShowSearch((v) => !v); setShowAbout(false); setShowSettings(false) }}
+            onMouseDown={(e) => { e.preventDefault(); setShowSearch((v) => !v); setShowAbout(false); setShowSettings(false); setShowLibrary(false) }}
             title="Search all entries"
           >
             ?
           </button>
           <button
             className={`${styles.iconBtn} ${showSettings ? styles.iconBtnActive : ''}`}
-            onMouseDown={(e) => { e.preventDefault(); setShowSettings((v) => !v); setShowSearch(false); setShowAbout(false) }}
+            onMouseDown={(e) => { e.preventDefault(); setShowSettings((v) => !v); setShowSearch(false); setShowAbout(false); setShowLibrary(false) }}
             title="Settings"
           >
             ⚙
           </button>
           <button
             className={`${styles.iconBtn} ${showAbout ? styles.iconBtnActive : ''}`}
-            onMouseDown={(e) => { e.preventDefault(); setShowAbout((v) => !v); setShowSearch(false); setShowSettings(false) }}
+            onMouseDown={(e) => { e.preventDefault(); setShowAbout((v) => !v); setShowSearch(false); setShowSettings(false); setShowLibrary(false) }}
             title="About"
           >
             ℹ

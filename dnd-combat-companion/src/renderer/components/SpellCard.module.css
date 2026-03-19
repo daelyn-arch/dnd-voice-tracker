@@ -144,6 +144,18 @@
   font-style: normal;
 }
 
+.diceClickable {
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 2px;
+  transition: opacity 0.12s;
+}
+
+.diceClickable:hover {
+  opacity: 0.75;
+}
+
 .stat {
   color: var(--accent);
   font-style: italic;
@@ -152,4 +164,57 @@
 
 .dc {
   color: var(--accent);
+  font-weight: 600;
+}
+
+/* ─── Daggerheart-specific rich text ─────────────────────────────────────── */
+
+.dhSectionHeader {
+  display: block;
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-top: 6px;
+  margin-bottom: 2px;
+}
+
+.dhFeatureName {
+  color: #fff;
+  font-weight: 700;
+}
+
+.dhFeatureTag {
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.dhTrait {
+  color: #e8a838;
+  font-weight: 600;
+}
+
+.dhKeyword {
+  color: #6ec6ff;
+  font-weight: 600;
+}
+
+.dhMechanic {
+  color: #b8b8cc;
+  font-weight: 600;
+}
+
+.dhCondition {
+  color: #e06c75;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.dhTiming {
+  color: #c792ea;
+  font-style: italic;
 }
