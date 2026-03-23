@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react'
-import { getEntriesByType, getDaggerheartByCategory } from '../data'
+import { getEntriesByType, getDaggerheartByCategory, getCustomEntries, getModifiedEntries, isModifiedEntry, setCustomCards } from '../data'
 import { useDetectionStore } from '../store/detectionStore'
 import { getEntryColor, getEntryBadge, SCHOOL_COLORS } from './schoolColors'
 import type { Entry } from '../types'
@@ -34,10 +34,19 @@ const DH_CATEGORIES: CategoryDef[] = [
   { key: 'dh-adversary', label: 'Adversaries', color: SCHOOL_COLORS['DH-adversary'], getEntries: () => getDaggerheartByCategory('adversary') }
 ]
 
-const ALL_CATEGORIES = [...DND_CATEGORIES, ...DH_CATEGORIES]
+const CUSTOM_CATEGORY: CategoryDef = {
+  key: 'custom', label: 'Custom', color: SCHOOL_COLORS.Custom, getEntries: () => getCustomEntries()
+}
+
+const MODIFIED_CATEGORY: CategoryDef = {
+  key: 'modified', label: 'Modified', color: SCHOOL_COLORS.Modified, getEntries: () => getModifiedEntries()
+}
+
+const ALL_CATEGORIES = [CUSTOM_CATEGORY, MODIFIED_CATEGORY, ...DND_CATEGORIES, ...DH_CATEGORIES]
 
 export function LibraryPanel({ onClose }: Props): React.JSX.Element {
   const [selectedKey, setSelectedKey] = useState<string | null>(null)
+  const [refreshKey, setRefreshKey] = useState(0)
   const addDetection = useDetectionStore((s) => s.addDetection)
   const expandDetection = useDetectionStore((s) => s.expandDetection)
 
@@ -48,13 +57,20 @@ export function LibraryPanel({ onClose }: Props): React.JSX.Element {
   const entries = useMemo(() => {
     if (!selectedCategory) return []
     return selectedCategory.getEntries().sort((a, b) => a.name.localeCompare(b.name))
-  }, [selectedCategory])
+  }, [selectedCategory, refreshKey])
 
   function handleSelectEntry(entry: Entry): void {
     const keyword = entry.name.toLowerCase()
     addDetection(keyword, entry)
     const detection = useDetectionStore.getState().detections.find((d) => d.keyword === keyword)
     if (detection) expandDetection(detection.id)
+  }
+
+  function handleRevert(entry: Entry): void {
+    window.electronAPI.customLibraryDelete(entry.id).then((cards: any[]) => {
+      setCustomCards(cards)
+      setRefreshKey((k) => k + 1)
+    })
   }
 
   // ── Category view ──────────────────────────────────────────
@@ -74,6 +90,25 @@ export function LibraryPanel({ onClose }: Props): React.JSX.Element {
         </div>
         <div className={styles.divider} />
         <div className={styles.categoryList}>
+          <button
+            className={styles.categoryBtn}
+            onMouseDown={(e) => { e.preventDefault(); setSelectedKey('custom') }}
+          >
+            <span className={styles.dot} style={{ background: CUSTOM_CATEGORY.color }} />
+            <span className={styles.categoryName}>{CUSTOM_CATEGORY.label}</span>
+            <span className={styles.categoryCount}>{CUSTOM_CATEGORY.getEntries().length}</span>
+          </button>
+          {MODIFIED_CATEGORY.getEntries().length > 0 && (
+            <button
+              className={styles.categoryBtn}
+              onMouseDown={(e) => { e.preventDefault(); setSelectedKey('modified') }}
+            >
+              <span className={styles.dot} style={{ background: MODIFIED_CATEGORY.color }} />
+              <span className={styles.categoryName}>{MODIFIED_CATEGORY.label}</span>
+              <span className={styles.categoryCount}>{MODIFIED_CATEGORY.getEntries().length}</span>
+            </button>
+          )}
+          <div className={styles.divider} />
           <div className={styles.sectionLabel}>D&D 5e</div>
           {DND_CATEGORIES.map((cat) => (
             <button
@@ -121,15 +156,28 @@ export function LibraryPanel({ onClose }: Props): React.JSX.Element {
       <div className={styles.divider} />
       <div className={styles.entryList}>
         {entries.map((entry) => (
-          <button
-            key={entry.id}
-            className={styles.entryBtn}
-            onMouseDown={(e) => { e.preventDefault(); handleSelectEntry(entry) }}
-          >
-            <span className={styles.dot} style={{ background: getEntryColor(entry) }} />
-            <span className={styles.entryName}>{entry.name}</span>
-            <span className={styles.entryBadge}>{getEntryBadge(entry)}</span>
-          </button>
+          <div key={entry.id} className={styles.entryRow}>
+            <button
+              className={styles.entryBtn}
+              onMouseDown={(e) => { e.preventDefault(); handleSelectEntry(entry) }}
+            >
+              <span className={styles.dot} style={{ background: getEntryColor(entry) }} />
+              <span className={styles.entryName}>
+                {entry.name}
+                {isModifiedEntry(entry.id) && <span className={styles.modifiedBadge}> ★</span>}
+              </span>
+              <span className={styles.entryBadge}>{getEntryBadge(entry)}</span>
+            </button>
+            {selectedKey === 'modified' && (
+              <button
+                className={styles.revertBtn}
+                onMouseDown={(e) => { e.preventDefault(); e.stopPropagation(); handleRevert(entry) }}
+                title="Revert to original"
+              >
+                ↺
+              </button>
+            )}
+          </div>
         ))}
       </div>
       <button

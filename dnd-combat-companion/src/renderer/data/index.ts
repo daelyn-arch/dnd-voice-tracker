@@ -76,26 +76,55 @@ function normalize(s: string): string {
 
 // Custom cards — must be declared before rebuildLookupMap() is called
 let customCards: Entry[] = []
+let customCardsRaw: CustomCardData[] = []
 
 // Build lookup map — rebuilt when data source changes
 let lookupMap = new Map<string, Entry>()
+// Originals that should also appear when showBoth is enabled for a modified entry
+let showBothOriginals = new Map<string, Entry>()
 
 function rebuildLookupMap(): void {
   lookupMap = new Map<string, Entry>()
-  const allSources: Entry[][] = [
+  showBothOriginals = new Map<string, Entry>()
+
+  // First pass: load all bundled entries
+  const bundledSources: Entry[][] = [
     spellsData, featuresData, featsData, equipmentData,
     backgroundsData, speciesData, rulesData, magicItemsData,
-    daggerheartData, customCards
+    daggerheartData
   ]
-  for (const entries of allSources) {
+  for (const entries of bundledSources) {
     for (const entry of entries) {
       lookupMap.set(normalize(entry.name), entry)
-      // Register aliases so voice recognition of sub-entry names triggers the grouped card
       const aliases = (entry as any).aliases as string[] | undefined
       if (aliases) {
         for (const alias of aliases) {
           lookupMap.set(normalize(alias), entry)
         }
+      }
+    }
+  }
+
+  // Second pass: overlay custom/modified cards — save originals for showBoth
+  for (let i = 0; i < customCardsRaw.length; i++) {
+    const raw = customCardsRaw[i]
+    const entry = customCards[i]
+    if (!entry) continue
+    const key = normalize(entry.name)
+
+    if (raw.originalEntryId && raw.showBoth) {
+      // Save the original before overwriting
+      const original = lookupMap.get(key)
+      if (original && original.id !== entry.id) {
+        showBothOriginals.set(key, original)
+      }
+    }
+
+    lookupMap.set(key, entry)
+    const aliases = (entry as any).aliases as string[] | undefined
+    if (aliases) {
+      for (const alias of aliases) {
+        lookupMap.set(normalize(alias), entry)
       }
     }
   }
@@ -140,6 +169,16 @@ export function setDaggerheartSource(source: DaggerheartSource): void {
 
 export function lookupEntry(keyword: string): Entry | undefined {
   return lookupMap.get(normalize(keyword))
+}
+
+/** Look up all entries for a keyword — returns [modified, original] when showBoth is on */
+export function lookupAllEntries(keyword: string): Entry[] {
+  const key = normalize(keyword)
+  const primary = lookupMap.get(key)
+  if (!primary) return []
+  const original = showBothOriginals.get(key)
+  if (original) return [primary, original]
+  return [primary]
 }
 
 /** All recognized keywords, normalized — fed to Vosk grammar */
@@ -189,25 +228,44 @@ export const ENTRY_TYPE_LABELS: Record<EntryType, string> = {
   diceRoll: 'Dice Rolls'
 }
 
-/** Get all entries of a given type */
+/** Get all entries of a given type, including modified entries replacing originals */
 export function getEntriesByType(type: EntryType): Entry[] {
+  let base: Entry[]
   switch (type) {
-    case 'spell': return spellsData
-    case 'feature': return featuresData
-    case 'feat': return featsData
-    case 'equipment': return equipmentData
-    case 'background': return backgroundsData
-    case 'species': return speciesData
-    case 'rules': return rulesData
-    case 'magicItem': return magicItemsData
-    case 'daggerheart': return daggerheartData
+    case 'spell': base = spellsData; break
+    case 'feature': base = featuresData; break
+    case 'feat': base = featsData; break
+    case 'equipment': base = equipmentData; break
+    case 'background': base = backgroundsData; break
+    case 'species': base = speciesData; break
+    case 'rules': base = rulesData; break
+    case 'magicItem': base = magicItemsData; break
+    case 'daggerheart': base = daggerheartData; break
     default: return []
   }
+  const modifiedOfType = customCardsRaw
+    .filter((c) => c.originalEntryId && c.originalEntryType === type)
+    .map(customCardToEntry)
+  if (modifiedOfType.length === 0) return base
+  const modifiedOrigIds = new Set(customCardsRaw.filter((c) => c.originalEntryId && c.originalEntryType === type).map((c) => c.originalEntryId))
+  return [
+    ...base.filter((e) => !modifiedOrigIds.has(e.id)),
+    ...modifiedOfType
+  ]
 }
 
-/** Get daggerheart entries filtered by category */
+/** Get daggerheart entries filtered by category, including modified entries */
 export function getDaggerheartByCategory(cat: DaggerheartEntry['category']): DaggerheartEntry[] {
-  return daggerheartData.filter((d) => d.category === cat)
+  const base = daggerheartData.filter((d) => d.category === cat)
+  const modifiedOfCat = customCardsRaw
+    .filter((c) => c.originalEntryId && c.originalEntryType === 'daggerheart' && c.dhCategory === cat)
+    .map(customCardToEntry) as DaggerheartEntry[]
+  if (modifiedOfCat.length === 0) return base
+  const modifiedOrigIds = new Set(customCardsRaw.filter((c) => c.originalEntryId && c.originalEntryType === 'daggerheart' && c.dhCategory === cat).map((c) => c.originalEntryId))
+  return [
+    ...base.filter((e) => !modifiedOrigIds.has(e.id)),
+    ...modifiedOfCat
+  ]
 }
 
 // ─── Custom Library ──────────────────────────────────────────────────────────
@@ -219,6 +277,7 @@ export interface CustomCardData {
   game: 'dnd' | 'daggerheart' | 'other'
   category: string
   createdAt: number
+  // D&D spell-specific fields
   spellLevel?: number
   spellSchool?: string
   castingTime?: string
@@ -226,10 +285,28 @@ export interface CustomCardData {
   components?: string
   duration?: string
   classes?: string[]
+  // Daggerheart-specific fields
+  dhCategory?: 'domain' | 'class features' | 'rules' | 'adversary'
+  // Modification tracking — set when editing a bundled entry
+  originalEntryId?: string
+  originalEntryType?: EntryType
+  showBoth?: boolean  // when true, both original and modified show up on detection
 }
 
 /** Convert a custom card to an Entry for the lookup map */
 function customCardToEntry(card: CustomCardData): Entry {
+  // Daggerheart custom cards
+  if (card.game === 'daggerheart') {
+    return {
+      _type: 'daggerheart',
+      id: card.id,
+      name: card.name,
+      description: card.description,
+      category: card.dhCategory ?? 'rules'
+    } as DaggerheartEntry
+  }
+
+  // D&D spell
   const cat = card.category
   if (cat === 'spell') {
     return {
@@ -247,7 +324,8 @@ function customCardToEntry(card: CustomCardData): Entry {
       classes: card.classes ?? []
     } as SpellEntry
   }
-  // Default: treat as equipment-style entry (generic name + description)
+
+  // Default D&D: treat as equipment-style entry (generic name + description)
   return {
     _type: (cat === 'feature' ? 'feature' : cat === 'feat' ? 'feat' : cat === 'rules' ? 'rules' : cat === 'magicItem' ? 'magicItem' : 'equipment') as any,
     id: card.id,
@@ -258,11 +336,97 @@ function customCardToEntry(card: CustomCardData): Entry {
 
 /** Load custom cards and inject into lookup map */
 export function setCustomCards(cards: CustomCardData[]): void {
+  customCardsRaw = cards
   customCards = cards.map(customCardToEntry)
   rebuildLookupMap()
 }
 
-/** Get all custom card entries */
+/** Get custom card entries (user-created, not modifications of bundled entries) */
 export function getCustomEntries(): Entry[] {
-  return customCards
+  return customCardsRaw.filter((c) => !c.originalEntryId).map(customCardToEntry)
+}
+
+/** Get modified entries (edits of bundled entries) */
+export function getModifiedEntries(): Entry[] {
+  return customCardsRaw.filter((c) => !!c.originalEntryId).map(customCardToEntry)
+}
+
+/** Find the raw CustomCardData by entry ID */
+export function getCustomCardDataById(entryId: string): CustomCardData | undefined {
+  return customCardsRaw.find((c) => c.id === entryId)
+}
+
+/** Check if an entry ID belongs to a modified bundled entry */
+export function isModifiedEntry(entryId: string): boolean {
+  return customCardsRaw.some((c) => c.id === entryId && !!c.originalEntryId)
+}
+
+/** Find original bundled entry for a modified card */
+export function getOriginalEntry(originalId: string, originalType: EntryType): Entry | undefined {
+  const baseEntries = (() => {
+    switch (originalType) {
+      case 'spell': return spellsData
+      case 'feature': return featuresData
+      case 'feat': return featsData
+      case 'equipment': return equipmentData
+      case 'background': return backgroundsData
+      case 'species': return speciesData
+      case 'rules': return rulesData
+      case 'magicItem': return magicItemsData
+      case 'daggerheart': return daggerheartData
+      default: return []
+    }
+  })()
+  return baseEntries.find((e) => e.id === originalId)
+}
+
+/** Convert any Entry to CustomCardData for editing */
+export function entryToCustomCardData(entry: Entry): CustomCardData {
+  const base: CustomCardData = {
+    id: `custom-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`,
+    name: entry.name,
+    description: entry.description,
+    game: entry._type === 'daggerheart' ? 'daggerheart' : 'dnd',
+    category: entry._type,
+    createdAt: Date.now(),
+    originalEntryId: entry.id,
+    originalEntryType: entry._type
+  }
+
+  switch (entry._type) {
+    case 'spell':
+      base.category = 'spell'
+      base.spellLevel = entry.level
+      base.spellSchool = entry.school
+      base.castingTime = entry.castingTime
+      base.range = entry.range
+      base.components = entry.components
+      base.duration = entry.duration
+      base.classes = [...entry.classes]
+      break
+    case 'daggerheart':
+      base.dhCategory = (entry as DaggerheartEntry).category
+      base.category = (entry as DaggerheartEntry).category
+      break
+    case 'feature':
+      base.category = 'feature'
+      break
+    case 'feat':
+      base.category = 'feat'
+      break
+    case 'equipment':
+      base.category = 'equipment'
+      break
+    case 'rules':
+      base.category = 'rules'
+      break
+    case 'magicItem':
+      base.category = 'magicItem'
+      break
+    default:
+      base.category = 'other'
+      break
+  }
+
+  return base
 }

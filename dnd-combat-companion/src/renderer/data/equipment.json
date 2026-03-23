@@ -405,11 +405,6 @@
     "description": "As a Bonus Action, you can drink a vial of Antitoxin to gain Advantage on saving throws to avoid or end the Poisoned condition for 1 hour."
   },
   {
-    "id": "arcane-focus",
-    "name": "Arcane Focus",
-    "description": "An Arcane Focus takes one of the forms in the Arcane Focuses table and is bejeweled or carved to channel arcane magic. A Sorcerer, Warlock, or Wizard can use such an item as a Spellcasting Focus."
-  },
-  {
     "id": "backpack",
     "name": "Backpack",
     "description": "A Backpack holds up to 30 pounds within 1 cubic foot. It can also serve as a saddlebag. Weight: 5 lb., Cost: 2 GP"
@@ -533,11 +528,6 @@
     "id": "diplomats-pack",
     "name": "Diplomat's Pack",
     "description": "A Diplomat's Pack contains the following items: Chest, Fine Clothes, Ink, 5 Ink Pens, Lamp, 2 Map or Scroll Cases, 4 flasks of Oil, 5 sheets of Paper, 5 sheets of Parchment, Perfume, and Tinderbox. Weight: 39 lb., Cost: 39 GP"
-  },
-  {
-    "id": "druidic-focus",
-    "name": "Druidic Focus",
-    "description": "A Druidic Focus takes one of the forms in the Druidic Focuses table and is carved, tied with ribbon, or painted to channel primal magic. A Druid or Ranger can use such an object as a Spellcasting Focus."
   },
   {
     "id": "dungeoneers-pack",

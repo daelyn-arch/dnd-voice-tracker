@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { useDetectionStore } from '../store/detectionStore'
-import { lookupEntry, getAllEntries } from '../data'
+import { lookupEntry, lookupAllEntries, getAllEntries } from '../data'
 import type { Entry, DiceRollEntry } from '../types'
 import { useAudio } from './useAudio'
 
@@ -107,6 +107,18 @@ function extractExactMatches(phrase: string): Entry[] {
   const lower = phrase.toLowerCase().replace(/\[unk\]/g, '').trim()
   if (!lower) return []
 
+  // Build variants: original + all adjacent-word merges
+  const variants = [lower]
+  const words = lower.split(/\s+/)
+  if (words.length >= 2) {
+    // Fully collapsed: "anti magic field" → "antimagicfield"
+    variants.push(words.join(''))
+    // Pairwise merges: "anti magic field" → "antimagic field", "anti magicfield"
+    for (let i = 0; i < words.length - 1; i++) {
+      variants.push([...words.slice(0, i), words[i] + words[i + 1], ...words.slice(i + 2)].join(' '))
+    }
+  }
+
   const seen = new Set<string>()
   const results: Entry[] = []
 
@@ -115,9 +127,10 @@ function extractExactMatches(phrase: string): Entry[] {
     for (const name of getEntryNames(entry)) {
       // Skip very short names (1-2 chars) to avoid false positives
       if (name.length < 3) continue
-      // Check if the entry name appears as a whole word/phrase in the input
-      const pattern = new RegExp(`\\b${name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`)
-      if (pattern.test(lower)) {
+      const escaped = name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+      const pattern = new RegExp(`\\b${escaped}\\b`)
+      // Check against all variants of the input
+      if (variants.some((v) => pattern.test(v))) {
         seen.add(entry.id)
         results.push(entry)
         break
@@ -228,8 +241,23 @@ export function useIPC(): void {
         catchAllLookup(keyword).forEach(addIfNew)
       } else {
         // Exact mode: try direct lookup of the full phrase
-        const entry = lookupEntry(keyword)
-        if (entry) addIfNew(entry)
+        // lookupAllEntries returns [modified, original] when showBoth is on
+        lookupAllEntries(keyword).forEach(addIfNew)
+
+        // Also try with spaces collapsed so "anti magic field" matches "antimagic field"
+        const collapsed = keyword.replace(/\s+/g, '')
+        if (collapsed !== keyword.replace(/\s+/g, ' ')) {
+          lookupAllEntries(collapsed).forEach(addIfNew)
+        }
+        // And try all ways to merge adjacent word pairs:
+        // "anti magic field" → try "antimagic field", "anti magicfield"
+        const words = keyword.split(/\s+/)
+        if (words.length >= 2) {
+          for (let i = 0; i < words.length - 1; i++) {
+            const merged = [...words.slice(0, i), words[i] + words[i + 1], ...words.slice(i + 2)].join(' ')
+            lookupAllEntries(merged).forEach(addIfNew)
+          }
+        }
       }
 
       detectedFromPartial.clear()

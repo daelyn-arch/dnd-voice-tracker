@@ -87,6 +87,23 @@
   cursor: pointer;
 }
 
+.checkRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.checkbox {
+  accent-color: #e85757;
+  cursor: pointer;
+}
+
+.checkLabel {
+  font-size: 12px;
+  color: #bbb;
+}
+
 .saveBtn {
   margin-top: 6px;
   padding: 8px 16px;

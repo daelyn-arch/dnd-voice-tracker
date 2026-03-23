@@ -19,6 +19,9 @@ export const SCHOOL_COLORS: Record<string, string> = {
   Species: '#26a69a',
   Rules: '#5c6bc0',
   MagicItem: '#ffd54f',
+  // Custom cards
+  Custom: '#ce93d8',
+  Modified: '#ffb74d',
   // Dice rolls
   DiceRoll: '#ffab40',
   // Daggerheart categories
@@ -62,23 +65,24 @@ export function getEntryColor(entry: Entry): string {
 
 /** Get a short badge label for any entry */
 export function getEntryBadge(entry: Entry): string {
+  const srd = (entry as any).srd ? ' SRD' : ''
   switch (entry._type) {
     case 'spell':
-      return entry.level === 0 ? 'Cantrip' : `L${entry.level} ${entry.school.slice(0, 4)}`
+      return (entry.level === 0 ? 'Cantrip' : `L${entry.level} ${entry.school.slice(0, 4)}`) + srd
     case 'feature':
-      return entry.class
+      return (entry.class || 'Feature') + srd
     case 'feat':
-      return entry.featType ?? 'Feat'
+      return (entry.featType ?? 'Feat') + srd
     case 'equipment':
-      return 'Equip'
+      return 'Equip' + srd
     case 'background':
       return 'BG'
     case 'species':
       return 'Species'
     case 'rules':
-      return 'Rules'
+      return 'Rules' + srd
     case 'magicItem':
-      return entry.rarity ?? 'Magic'
+      return (entry.rarity ?? 'Magic') + srd
     case 'daggerheart': {
       const cat = (entry as DaggerheartEntry).category
       if (cat === 'domain') return 'Domain'

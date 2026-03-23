@@ -5,9 +5,13 @@ import { registerIpcHandlers } from './ipc'
 let mainWindow: BrowserWindow | null = null
 
 function createWindow(): void {
+  // Size window to cover the full work area height, anchored to the right
+  const { screen } = require('electron')
+  const { width, height } = screen.getPrimaryDisplay().workAreaSize
+
   mainWindow = new BrowserWindow({
     width: 900,
-    height: 800,
+    height: height,
     transparent: true,
     frame: false,
     alwaysOnTop: true,
@@ -22,10 +26,7 @@ function createWindow(): void {
     }
   })
 
-  // Position: bottom-right of primary display
-  const { screen } = require('electron')
-  const { width, height } = screen.getPrimaryDisplay().workAreaSize
-  mainWindow.setPosition(width - 920, height - 840)
+  mainWindow.setPosition(width - 920, 0)
 
   mainWindow.setIgnoreMouseEvents(true, { forward: true })
 

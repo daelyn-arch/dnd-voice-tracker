@@ -22,6 +22,10 @@ export interface CustomCard {
   components?: string
   duration?: string
   classes?: string[]
+  // Modification tracking
+  originalEntryId?: string
+  originalEntryType?: string
+  showBoth?: boolean
 }
 
 function getLibraryPath(): string {

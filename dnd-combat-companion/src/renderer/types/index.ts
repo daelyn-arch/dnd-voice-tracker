@@ -24,6 +24,7 @@ export interface FeatureEntry {
   subclass?: string
   usesPerRest?: string
   restType?: 'short' | 'long' | 'none'
+  srd?: boolean
 }
 
 export interface FeatEntry {
@@ -32,6 +33,7 @@ export interface FeatEntry {
   name: string
   description: string
   featType?: string
+  srd?: boolean
 }
 
 export interface EquipmentEntry {
@@ -40,6 +42,7 @@ export interface EquipmentEntry {
   name: string
   description: string
   aliases?: string[]
+  srd?: boolean
 }
 
 export interface BackgroundEntry {
@@ -61,6 +64,7 @@ export interface RulesEntry {
   id: string
   name: string
   description: string
+  srd?: boolean
 }
 
 export interface MagicItemEntry {
@@ -70,6 +74,7 @@ export interface MagicItemEntry {
   description: string
   rarity?: string
   attunement?: boolean
+  srd?: boolean
 }
 
 export interface DaggerheartEntry {

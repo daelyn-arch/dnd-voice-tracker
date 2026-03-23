@@ -146,8 +146,14 @@
   scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
 }
 
+.entryRow {
+  display: flex;
+  align-items: center;
+}
+
 .entryBtn {
-  width: 100%;
+  flex: 1;
+  min-width: 0;
   background: transparent;
   border: none;
   display: flex;
@@ -162,6 +168,26 @@
 .entryBtn:hover {
   background: rgba(255, 255, 255, 0.06);
   transform: translateX(-2px);
+}
+
+.modifiedBadge {
+  color: #ffb74d;
+  font-size: 9px;
+}
+
+.revertBtn {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 14px;
+  cursor: pointer;
+  flex-shrink: 0;
+  padding: 4px 8px;
+  transition: color 0.15s;
+}
+
+.revertBtn:hover {
+  color: #ffb74d;
 }
 
 .entryName {

@@ -5248,7 +5248,8 @@
       "Major Attune Potion",
       "Major Charm Potion",
       "Major Enlighten Potion"
-    ]
+    ],
+    "category": "rules"
   },
   {
     "id": "stat-relics",
@@ -5261,7 +5262,8 @@
       "Attune Relic",
       "Charm Relic",
       "Enlighten Relic"
-    ]
+    ],
+    "category": "rules"
   },
   {
     "id": "leather-armor",
@@ -5271,7 +5273,8 @@
       "Improved Leather Armor",
       "Advanced Leather Armor",
       "Legendary Leather Armor"
-    ]
+    ],
+    "category": "rules"
   },
   {
     "id": "chainmail-armor",
@@ -5281,6 +5284,7 @@
       "Improved Chainmail Armor",
       "Advanced Chainmail Armor",
       "Legendary Chainmail Armor"
-    ]
+    ],
+    "category": "rules"
   }
 ]

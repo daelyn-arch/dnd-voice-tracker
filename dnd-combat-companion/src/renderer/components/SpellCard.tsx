@@ -1,7 +1,8 @@
 import React from 'react'
 import type { Detection, DiceRollEntry } from '../types'
 import { useDetectionStore } from '../store/detectionStore'
-import { getEntryColor } from './schoolColors'
+import { getEntryColor, SCHOOL_COLORS } from './schoolColors'
+import { isModifiedEntry } from '../data'
 import styles from './SpellCard.module.css'
 
 /** Parse dice notation like "8d6" or "2d10+5", roll, and return an entry */
@@ -40,9 +41,10 @@ interface Props {
   onDismiss: () => void
   onPin: () => void
   onStickyToggle: () => void
+  onEdit: () => void
 }
 
-export function SpellCard({ detection, onCollapse, onDismiss, onPin, onStickyToggle }: Props): React.JSX.Element {
+export function SpellCard({ detection, onCollapse, onDismiss, onPin, onStickyToggle, onEdit }: Props): React.JSX.Element {
   const { entry } = detection
   const color = getEntryColor(entry)
   const showSticky = entry._type === 'diceRoll' && detection.pinned
@@ -57,7 +59,7 @@ export function SpellCard({ detection, onCollapse, onDismiss, onPin, onStickyTog
               ? entry.notation
                 ? <><span style={{ color }}>{entry.notation}</span>{`: ${entry.total}`}</>
                 : <>d20<span style={{ color }}>{`+${entry.modifier}`}</span>{`: ${entry.total}`}</>
-              : entry.name}
+              : <>{entry.name}{isModifiedEntry(entry.id) && <span style={{ color: SCHOOL_COLORS.Modified, fontSize: '10px' }}> ★</span>}</>}
           </h2>
         </div>
         <div className={styles.controls}>
@@ -77,6 +79,9 @@ export function SpellCard({ detection, onCollapse, onDismiss, onPin, onStickyTog
           >
             ◈
           </button>
+          {entry._type !== 'diceRoll' && (
+            <button className={styles.btn} onClick={onEdit} title="Edit this card">✎</button>
+          )}
           <button className={styles.btn} onClick={onCollapse} title="Collapse">−</button>
           {!detection.pinned && (
             <button className={styles.btn} onClick={onDismiss} title="Dismiss">×</button>
@@ -89,6 +94,11 @@ export function SpellCard({ detection, onCollapse, onDismiss, onPin, onStickyTog
       </div>
     </div>
   )
+}
+
+function SrdBadge({ entry }: { entry: Detection['entry'] }): React.JSX.Element | null {
+  if (!(entry as any).srd) return null
+  return <MetaRow label="Source" value="SRD" />
 }
 
 function CardBody({ entry, sourceId }: { entry: Detection['entry']; sourceId: string }): React.JSX.Element {
@@ -132,6 +142,7 @@ function CardBody({ entry, sourceId }: { entry: Detection['entry']; sourceId: st
             {entry.restType && entry.restType !== 'none' && (
               <MetaRow label="Recharges" value={`${entry.restType} rest`} />
             )}
+            <SrdBadge entry={entry} />
           </div>
           <div className={styles.divider} />
           <p className={styles.description}><RichText text={entry.description} sourceId={sourceId} /></p>
@@ -143,6 +154,7 @@ function CardBody({ entry, sourceId }: { entry: Detection['entry']; sourceId: st
         <>
           <div className={styles.meta}>
             <MetaRow label="Type" value={entry.featType ?? 'Feat'} />
+            <SrdBadge entry={entry} />
           </div>
           <div className={styles.divider} />
           <p className={styles.description}><RichText text={entry.description} sourceId={sourceId} /></p>
@@ -157,6 +169,7 @@ function CardBody({ entry, sourceId }: { entry: Detection['entry']; sourceId: st
             {entry.attunement !== undefined && (
               <MetaRow label="Attunement" value={entry.attunement ? 'Required' : 'No'} />
             )}
+            <SrdBadge entry={entry} />
           </div>
           <div className={styles.divider} />
           <p className={styles.description}><RichText text={entry.description} sourceId={sourceId} /></p>
@@ -230,6 +243,12 @@ function CardBody({ entry, sourceId }: { entry: Detection['entry']; sourceId: st
     default:
       return (
         <>
+          {(entry as any).srd && (
+            <>
+              <div className={styles.meta}><SrdBadge entry={entry} /></div>
+              <div className={styles.divider} />
+            </>
+          )}
           <p className={styles.description}><RichText text={entry.description} sourceId={sourceId} /></p>
         </>
       )

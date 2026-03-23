@@ -21,6 +21,7 @@ interface DetectionStore {
   /** Update the sticky-pinned d20 card in-place. Returns true if one was updated. */
   updateStickyRoll: (entry: DiceRollEntry) => boolean
   toggleStickyRoll: (id: string) => void
+  updateDetectionEntry: (keyword: string, entry: Entry) => void
   removeDetection: (id: string) => void
   expandDetection: (id: string) => void
   collapseDetection: (id: string) => void
@@ -100,7 +101,7 @@ export const useDetectionStore = create<DetectionStore>((set, get) => ({
   visibleTypes: { ...DEFAULT_VISIBLE },
   visibleDHCategories: { ...DEFAULT_DH_CATEGORIES },
   autoExpandDiceRolls: true,
-  sortByCategory: false,
+  sortByCategory: true,
   showTranscript: false,
   transcriptWords: [],
 
@@ -170,6 +171,14 @@ export const useDetectionStore = create<DetectionStore>((set, get) => ({
     set((state) => ({
       detections: state.detections.map((d) =>
         d.id === id ? { ...d, stickyRoll: !d.stickyRoll } : d
+      )
+    }))
+  },
+
+  updateDetectionEntry(keyword, entry) {
+    set((state) => ({
+      detections: state.detections.map((d) =>
+        d.keyword === keyword ? { ...d, entry } : d
       )
     }))
   },
