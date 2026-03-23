@@ -3,13 +3,13 @@
   bottom: 60px;
   right: 16px;
   width: 260px;
-  background: rgba(4, 12, 4, 0.97);
-  border: 1px solid #1a6b1a;
+  background: rgba(12, 4, 4, 0.97);
+  border: 1px solid #6b1a1a;
   border-radius: 6px;
   padding: 14px 16px 12px;
   font-family: 'Courier New', Courier, monospace;
-  color: #39d353;
-  box-shadow: 0 0 18px rgba(57, 211, 83, 0.15), inset 0 0 30px rgba(0, 0, 0, 0.4);
+  color: #d35339;
+  box-shadow: 0 0 18px rgba(211, 83, 57, 0.15), inset 0 0 30px rgba(0, 0, 0, 0.4);
   z-index: 100;
   pointer-events: none;
   animation: flicker 0.15s ease-in-out;
@@ -34,24 +34,24 @@
 
 .banner {
   margin: 0 0 4px;
-  font-size: 9px;
+  font-size: 12px;
   line-height: 1.4;
-  color: #57e870;
-  letter-spacing: 0.5px;
-  white-space: pre;
+  color: #e85757;
+  letter-spacing: 0.12em;
+  font-weight: bold;
 }
 
 .subtitle {
   font-size: 10px;
   font-weight: bold;
-  color: #57e870;
+  color: #e85757;
   letter-spacing: 0.12em;
   margin-bottom: 8px;
 }
 
 .divider {
   font-size: 10px;
-  color: #1a6b1a;
+  color: #6b1a1a;
   margin-bottom: 8px;
   letter-spacing: 0;
 }
@@ -59,16 +59,16 @@
 .log {
   font-size: 11px;
   line-height: 1.8;
-  color: #39d353;
+  color: #d35339;
 }
 
 .prompt {
-  color: #57e870;
+  color: #e85757;
   font-weight: bold;
 }
 
 .ok {
-  color: #57e870;
+  color: #e85757;
   font-weight: bold;
 }
 
@@ -80,12 +80,12 @@
 }
 
 .bar {
-  color: #39d353;
+  color: #d35339;
   letter-spacing: -0.5px;
 }
 
 .barLabel {
-  color: #57e870;
+  color: #e85757;
   font-weight: bold;
   font-size: 11px;
   margin-left: 2px;

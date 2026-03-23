@@ -74,7 +74,7 @@ export function LibraryPanel({ onClose }: Props): React.JSX.Element {
         </div>
         <div className={styles.divider} />
         <div className={styles.categoryList}>
-          <div className={styles.sectionLabel}>D&D 2024</div>
+          <div className={styles.sectionLabel}>D&D 5e</div>
           {DND_CATEGORIES.map((cat) => (
             <button
               key={cat.key}

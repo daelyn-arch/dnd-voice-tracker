@@ -86,6 +86,15 @@ export function startSpeechPipeline(mainWindow: BrowserWindow): void {
       console.log('[speech] Detected:', payload.keyword)
       mainWindow.webContents.send('keyword-detected', payload)
 
+    } else if (msg.type === 'partial') {
+      // Forward partial results for low-latency keyword detection
+      const payload: KeywordDetectedPayload = {
+        keyword: msg.keyword as string,
+        id: `partial-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`,
+        timestamp: Date.now()
+      }
+      mainWindow.webContents.send('keyword-partial', payload)
+
     } else if (msg.type === 'error') {
       console.error('[speech] Worker error:', msg.message)
       mainWindow.webContents.send('speech:error', msg.message)

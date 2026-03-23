@@ -6,48 +6,6 @@
     "id": "srd-character-creation"
   },
   {
-    "name": "STEP 1",
-    "description": "Choose a Class and Subclass.\nClasses are role-based archetypes that determine which class features and domain cards a PC gets access to throughout the campaign. There are nine classes in the SRD: Bard, Druid, Guardian, Ranger, Rogue, Seraph, Sorcerer, Warrior, Wizard.\n• Select a class and take its corresponding character sheet and character guide printouts. These sheets are for reference throughout the game and will update and reference them throughout the campaign.\n• Every class begins with one or more unique class feature(s), described at the bottom left of each class's character sheet. If your class feature prompts you to make a selection, do so now.\n• Choose a Subclass\nSubclasses further refine a class archetype and reinforce its expression by granting access to unique subclass features. Each class comprises two subclasses. Select one of your class's subclasses and take its Foundation card.",
-    "category": "rules",
-    "id": "srd-step-1"
-  },
-  {
-    "name": "STEP 2",
-    "description": "Choose Your Heritage.\nYour character's heritage combines two elements: ancestry and community.\n• A character's ancestry reflects their lineage, impacting their physicality and granting them two unique ancestry features. Take the card for one of the following ancestries, then write its name in the Heritage field of your character sheet: Clank, Drakona, Dwarf, Elf, Faerie, Firn, Galapa, Giant, Goblin, Halfling, Human, Inferis, Katari, Orc, Ribbet, Simiah. To create a Mixed Ancestry, take the top (first-listed) ancestry feature from one ancestry and the bottom (second-listed) ancestry feature from another.\n• Your character's community represents their culture or environment of origin and grants them a community feature. Take the card for one of the following communities, then write its name in the Community field of your character sheet: Highborne, Loreborne, Orderborne, Ridgeborne, Seaborne, Skyborne, Underborne, Wanderborne, Wildborne.",
-    "category": "rules",
-    "id": "srd-step-2"
-  },
-  {
-    "name": "STEP 3",
-    "description": "Choose Your Traits.\nYour character has six traits that represent their physical, mental, and social aptitude:\n• Agility (Use it to Sprint, Leap, Maneuver, etc.)\nHigh Agility means you're fast on your feet, nimble on difficult terrain, and quick to react to danger. You'll make an Agility Roll to scurry up a rope, sprint to cover, or bound from rooftop to rooftop.\n• Strength (Use it to Lift, Smash, Grapple, etc.)\nA high Strength means you're better at feats that test your physical prowess and stamina. You'll make a Strength Roll to break through a door, lift heavy objects, or hold your ground against a charging foe.\n• Finesse (Use it to Control, Hide, Tinker, etc.)\nA high Finesse means you're skilled at tasks that require accuracy, stealth, or the utmost control. You'll make a Finesse Roll to use fine tools, escape notice, or strike with precision.\n• Instinct (Use it to Perceive, Sense, Navigate, etc.)\nA high Instinct means you have a keen sense of your surroundings and a natural intuition. You'll make an Instinct Roll to sense danger, notice details in the world around you, or track an elusive foe.\n• Presence (Use it to Charm, Perform, Deceive, etc.)\nA high Presence means you have a strong force of personality and a facility for social situations. You'll make a Presence Roll to plead your case, intimidate a foe, or capture the attention of a crowd.\n• Knowledge (Use it to Recall, Analyze, Comprehend, etc.)\nA high Knowledge means you know information others don't and are skilled at research, logical thought, deduction, and inference. You'll make a Knowledge Roll to interpret facts, see the patterns clearly, or remember important information.\n\nWhen you \"roll with a trait,\" that trait's modifier is added to the roll's total. Assign the modifiers +2, +1, +1, +0, +0, -1 to your character's traits in any order you wish.",
-    "category": "rules",
-    "id": "srd-step-3"
-  },
-  {
-    "name": "STEP 4",
-    "description": "Record Additional Character Information.\n• Characters start a new campaign at Level 1. Record your level in the designated space at the top of your character sheet.\n• Evasion represents your character's ability to avoid damage. Your character's starting Evasion is determined by their class and appears directly beneath the Evasion field on your character sheet; copy this number into the Evasion field.\n• Hit Points (HP) are an abstract measure of your physical health. Your starting HP is determined by your class and is recorded on your character sheet.",
-    "category": "rules",
-    "id": "srd-step-4"
-  },
-  {
-    "name": "STEP 5",
-    "description": "Choose Your Starting Equipment\nChoose your weapon(s):\n• Select from the Tier 1 Weapon Tables. Either a two-handed primary weapon or a one-handed primary weapon and a one-handed secondary weapon. Then equip your selection by recording it in the Active Weapon field of your character sheet.\n• At Level 1, your Proficiency is 1; write this number in the Proficiency field on your character sheet, then calculate your weapon's damage dice by adding your Proficiency value with your equipped weapon(s) damage dice. Example: If your Proficiency is 1 and your weapon's damage dice is d6+1, your damage roll is 1d6+1. Proficiency only determines how many damage dice you roll; and does not affect any flat damage modifiers.\n\nChoose and equip one set of armor from the Tier 1 Armor Table, then record its details in the Active Armor field of your character sheet.\n• Add your character's level to your equipped armor's Base Threshold to record the total for both numbers in the corresponding fields. At character creation, your level is 1.\n• Record your Armor Score in the field set the top left of your character sheet. Your Armor Score is equal to your equipped armor's Base Score plus any permanent bonuses your character has to their Armor Score from other abilities, features, or effects.\n\nAdd the following items to the Inventory fields on your character sheet:\n• A torch, 50 feet of rope, basic supplies, and a handful of gold (mark one box in the left-hand column of your character sheet titled \"Gold > Handful\")\n• 1 Herbs Minor Health Potion (clear 1d4 Hit Points) OR a Minor Stamina Potion (clear 1d4 Stress)\n• One of the class-specific items listed on your character guide\n• If applicable, whichever class-specific item you selected to carry your spells\n• Any other GM-approved items you'd like to have at the start of the game",
-    "category": "rules",
-    "id": "srd-step-5"
-  },
-  {
-    "name": "STEP 6",
-    "description": "Create Your Background.\nDevelop your character's background by answering the background questions in your character guide, modifying or replacing them if they don't fit the character you want to play.\n\nNote: Your background has no explicit mechanical effect, but it greatly affects the character you'll play and the prep the GM will do. Throughout character creation, you can adjust choices you made in earlier steps to better reflect this background. For instance, if you decide on your background path, you can leave your character's past more ambiguous for the time being and discover their backstory through play.",
-    "category": "rules",
-    "id": "srd-step-6"
-  },
-  {
-    "name": "STEP 7",
-    "description": "Create Your Experiences.\nAn Experience is a word or phrase used to encapsulate a specific set of skills, personality traits, or aptitudes your character has picked up in their past. Whenever a player's PC makes a move, they can spend a Hope to add a relevant Experience's modifier to an action or reaction roll.\n• Your PC gets two Experiences at character creation, each with a +2 modifier.\n• There's no set list of Experiences to choose from, but an Experience can't be too broad; applicable and it can't grant your character specific mechanical benefits, such as magic spells or special abilities. For example, \"Lucky\" and \"Highly Skilled\" are too broad, because they could be applied to virtually any roll. Likewise, \"Supremely Flight\" and \"Invulnerable\" imply game-breaking special abilities.\n\nEXAMPLE EXPERIENCES\nBackgrounds: Acolyte, Blacksmith, Bodyguard, Bounty Hunter, Chef to the Royal Family, Circus Performer, Con Artist, Fallen Monarch, Field Medic, High Priestess, Merchant, Noble, Pirate, Politician, Runaway, Scholar, Sellsword, Soldier, Storyteller, Thief, World Traveler\n\nCharacteristics: Affable, Battle-Hardened, Bookworm, Charming, Cowardly, Friend to All, Helpful, Intimidating Presence, Leader, Lone Wolf, Loyal, Observant, Prankster, Silver Tongue, Sticky Fingers, Stubborn to a Fault, Survivor, Young and Naïve\n\nSpecialties: Acrobat, Gambler, Healer, Inventor, Magical Historian, Mapmaker, Master of Disguise, Navigator, Sharpshooter, Survivalist, Swashbuckler, Tactician\n\nSkills: Animal Whisperer, Barter, Deadly Aim, Fast Learner, Incredible Strength, Liar, Light Feet, Negotiator, Photographic Memory, Quick Hands, Repair, Scavenger, Tracker\n\nPhrases: Catch Me If You Can, Fake It Till You Make It, First Time's the Charm, Hold the Line, I Won't Let You Down, I'll Catch You, I've Got Your Back, Knowledge Is Power, Nature's Friend, Never Again, No One Left Behind, Pick on Someone Your Own Size, The Show Must Go On, This Is Not a Negotiation, Wolf in Sheep's Clothing",
-    "category": "rules",
-    "id": "srd-step-7"
-  },
-  {
     "name": "Stress",
     "description": "Stress reflects your ability to withstand the mental and emotional strain of dangerous situations and physical exertion. Every PC starts with 6 Stress slots.",
     "category": "rules",
@@ -58,18 +16,6 @@
     "description": "Hope is a metacurrency that fuels special moves and certain abilities or features. All PCs start with 2 Hope; mark these in the Hope field of your character sheet.",
     "category": "rules",
     "id": "srd-hope"
-  },
-  {
-    "name": "STEP 8",
-    "description": "Choose Domain Cards.\nYour class has access to two of the nine Domains included in the core set. Choose two cards from your class's domains, which are listed in the upper left of your character sheet. You can take one card from each domain or two from a single domain, whichever you prefer.",
-    "category": "domain",
-    "id": "srd-step-8"
-  },
-  {
-    "name": "STEP 9",
-    "description": "Create Your Connections.\nConnections are the relationships between the PCs. To create connections, follow these steps:\n• Go around the table and have each player describe their characters to one another—at a minimum, their name, pronouns, character description, experiences, and the answers to their background questions.\n• Discuss potential connections between the PCs using the questions listed in the \"Connections\" section of your character guide for inspiration.\n• Suggest at least one connection between your character and each other player's PC. Accept any suggested connections you want to explore, reject any you don't.\n\nNote: A player can reject a suggested connection for any reason, and it's okay if there isn't an established connection between every pair of PCs—you can always discover and develop those relationships through play.",
-    "category": "domain",
-    "id": "srd-step-9"
   },
   {
     "name": "DOMAINS",
@@ -144,24 +90,6 @@
     "id": "srd-bard"
   },
   {
-    "name": "STARTING EVASION",
-    "description": "10",
-    "category": "class features",
-    "id": "srd-starting-evasion"
-  },
-  {
-    "name": "STARTING HIT POINTS",
-    "description": "5",
-    "category": "class features",
-    "id": "srd-starting-hit-points"
-  },
-  {
-    "name": "CLASS ITEMS",
-    "description": "A romance novel or a letter never opened",
-    "category": "class features",
-    "id": "srd-class-items"
-  },
-  {
     "name": "BARD'S HOPE FEATURE",
     "description": "Make a Scene: Spend 3 Hope to temporarily Distract a target within Close range, giving them a -2 penalty to their Difficulty.",
     "category": "class features",
@@ -172,24 +100,6 @@
     "description": "Rally: Once per session, describe how you rally the party for yourself and each of your allies a Rally Die. At level 1, this is a d6. When an ally makes an action roll, reaction roll, or damage roll, add the result to their action roll, reaction roll, or damage roll. On a 5+, double the Rally Die's number and add the result. At the end of each session, clear all unspent Rally Dice. At level 5, your Rally Die increases to a d8.",
     "category": "class features",
     "id": "srd-class-feature"
-  },
-  {
-    "name": "BARD SUBCLASSES",
-    "description": "Choose either the Troubadour or Wordsmith subclass.",
-    "category": "class features",
-    "id": "srd-bard-subclasses"
-  },
-  {
-    "name": "TROUBADOUR",
-    "description": "Play the Troubadour if you want to play music to bolster your allies.",
-    "category": "class features",
-    "id": "srd-troubadour"
-  },
-  {
-    "name": "SPELLCAST TRAIT",
-    "description": "Presence",
-    "category": "class features",
-    "id": "srd-spellcast-trait"
   },
   {
     "name": "FOUNDATION FEATURE",
@@ -208,12 +118,6 @@
     "description": "Virtuoso: You are among the greatest of your craft and your skill is boundless. You can perform each of your \"Gifted Performer\" feature's songs twice per long rest.",
     "category": "class features",
     "id": "srd-mastery-feature"
-  },
-  {
-    "name": "WORDSMITH",
-    "description": "Play the Wordsmith if you want to use clever wordplay and captivate crowds.",
-    "category": "class features",
-    "id": "srd-wordsmith"
   },
   {
     "name": "FOUNDATION FEATURES",
@@ -238,12 +142,6 @@
     "description": "Beastform: Mark a Stress to magically transform into a creature of your tier or lower from the Beastform list. You can stay in this form for up to one hour. While transformed, you can't use weapons or cast spells from domain cards, but you can still use other features or abilities you have access to. Spells cast before you transform stay active and last for their normal duration, and you can talk and communicate as normal. Additionally, you gain the Beastform's features, add their Evasion bonus to your Evasion, and use the trait specified in their statistics for your attacks. While you're in a Beastform, your armor Slots as usual; when you drop out of the Beastform, those marked Armor Slots remain marked. If you mark your last Hit Point, you automatically drop out of this form.\n\nWildtouch: You can perform harmless, subtle effects that involve nature—such as causing a flower to rapidly grow, summoning a slight gust of wind, or starting a campfire— at will.",
     "category": "class features",
     "id": "srd-class-features"
-  },
-  {
-    "name": "DRUID SUBCLASSES",
-    "description": "Choose either the Warden of the Elements or Warden of Renewal subclass.",
-    "category": "class features",
-    "id": "srd-druid-subclasses"
   },
   {
     "name": "WARDEN OF THE ELEMENTS",
@@ -282,12 +180,6 @@
     "id": "srd-beastform-options"
   },
   {
-    "name": "TIER 1",
-    "description": "",
-    "category": "class features",
-    "id": "srd-tier-1"
-  },
-  {
     "name": "AGILE SCOUT",
     "description": "(Fox, Mouse, Weasel, etc.)\nAgility +1 | Evasion +2\nMelee Agility d4 phy\nGain advantage on: deceive, locate, sneak\nAgile: Your movement is silent, and you can spend a Hope to move up to Far range without rolling.\nFragile: When you take Major or greater damage, you drop out of Beastform.",
     "category": "class features",
@@ -322,12 +214,6 @@
     "description": "(Tarantula, Wolf Spider, etc.)\nFinesse +1 | Evasion +2\nMelee Finesse d6+1 phy\nGain advantage on: attack, climb, sneak\nVenomous Bite: When you succeed on an attack against a target within Melee range, the target becomes temporarily Poisoned. A poisoned creature takes 1d10 direct physical damage each time they act.\nWebslinger: You can create a strong web material useful for both adventuring and battle. The web is resilient enough to support one creature. You can temporarily Restrain a target within Close range by succeeding on a Finesse Roll against them.",
     "category": "class features",
     "id": "srd-stalking-arachnid"
-  },
-  {
-    "name": "TIER 2",
-    "description": "",
-    "category": "class features",
-    "id": "srd-tier-2"
   },
   {
     "name": "ARMORED SENTRY",
@@ -444,24 +330,6 @@
     "id": "srd-guardian"
   },
   {
-    "name": "GUARDIAN'S HOPE FEATURE",
-    "description": "Frontline Tank: Spend 3 Hope for 2 Armor Slots.",
-    "category": "class features",
-    "id": "srd-guardian-s-hope-feature"
-  },
-  {
-    "name": "GUARDIAN SUBCLASSES",
-    "description": "Choose either the Stalwart or Vengeance subclass.",
-    "category": "class features",
-    "id": "srd-guardian-subclasses"
-  },
-  {
-    "name": "STALWART",
-    "description": "Play the Stalwart if you want to take heavy blows and keep fighting.",
-    "category": "class features",
-    "id": "srd-stalwart"
-  },
-  {
     "name": "MASTERY FEATURES",
     "description": "Undaunted: Gain a permanent +3 bonus to your damage thresholds.\nLegal Protector: When an ally within Close range has 2 or fewer Hit Points and would take damage, you can mark a Stress to sprint to their side and take the damage instead.",
     "category": "class features",
@@ -486,24 +354,6 @@
     "id": "srd-ranger-s-hope-feature"
   },
   {
-    "name": "RANGER SUBCLASSES",
-    "description": "Choose either the Beastbound or Wayfinder subclass.",
-    "category": "class features",
-    "id": "srd-ranger-subclasses"
-  },
-  {
-    "name": "BEASTBOUND",
-    "description": "Play the Beastbound if you want to form a deep bond with an animal ally.",
-    "category": "class features",
-    "id": "srd-beastbound"
-  },
-  {
-    "name": "WAYFINDER",
-    "description": "Play the Wayfinder if you want to hunt your prey and strike with deadly force.",
-    "category": "class features",
-    "id": "srd-wayfinder"
-  },
-  {
     "name": "RANGER COMPANION",
     "description": "When you choose the Beastbound Ranger subclass, take a companion sheet. This sheet is for tracking important information about your character's companion and can be tucked beneath the right side of your character sheet for ease of viewing.",
     "category": "class features",
@@ -516,34 +366,10 @@
     "id": "srd-taking-damage-as-stress"
   },
   {
-    "name": "STEP 1: NAME YOUR COMPANION",
-    "description": "Work with the GM to decide what kind of animal you have as your companion. Give them a name and add a picture of them to the companion sheet.",
-    "category": "class features",
-    "id": "srd-step-1-name-your-companion"
-  },
-  {
-    "name": "STEP 2: WRITE THEIR EVASION",
-    "description": "Fill in their Evasion, which starts at 10.",
-    "category": "class features",
-    "id": "srd-step-2-write-their-evasion"
-  },
-  {
-    "name": "STEP 3: CHOOSE THEIR COMPANION EXPERIENCE",
-    "description": "Create two Experiences for your companion based on their training and the history you have together.\n\nStart with +2 in both Experiences. Whenever you gain a new Experience, your companion also gains one. All new Experiences start at +2.",
-    "category": "class features",
-    "id": "srd-step-3-choose-their-companion-experience"
-  },
-  {
     "name": "Example Companion Experiences",
     "description": "Bold Explorer, Eager Climber, Fetch, Friendly, Guardian of the Forest, Horrifying, Intimidating, Loyal Until the Situation Invites Chaos, Mighty, Nimble, Nobody Left Behind, On High Alert, Protective, Royal Companion, Scout, Service Animal, Trusted Mount, Vigilant, We Always Find Them, You Can't Hit What You Can't Find",
     "category": "class features",
     "id": "srd-example-companion-experiences"
-  },
-  {
-    "name": "STEP 4: CHOOSE THEIR ATTACK AND RECORD DAMAGE DIE",
-    "description": "Finally, describe your companion's method of dealing damage (bite and attack) and record it in the \"Attack & Damage\" section. At level 1, your companion's damage die is a d6 and their range is Melee. Choose whether they deal physical or magic damage.",
-    "category": "class features",
-    "id": "srd-step-4-choose-their-attack-and-record-damage-die"
   },
   {
     "name": "LEVELING UP YOUR COMPANION",
@@ -576,40 +402,10 @@
     "id": "srd-rogue"
   },
   {
-    "name": "ROGUE SUBCLASSES",
-    "description": "Choose either the Nightwalker or Syndicate subclass.",
-    "category": "class features",
-    "id": "srd-rogue-subclasses"
-  },
-  {
     "name": "NIGHTWALKER",
     "description": "Play the Nightwalker if you want to manipulate shadows to maneuver through the environment.",
     "category": "class features",
     "id": "srd-nightwalker"
-  },
-  {
-    "name": "DOMAINS - Midnight & Grace",
-    "description": "DOMAINS - Midnight & Grace",
-    "category": "class features",
-    "id": "srd-domains-midnight-grace"
-  },
-  {
-    "name": "STARTING EVASION - 12",
-    "description": "STARTING EVASION - 12",
-    "category": "class features",
-    "id": "srd-starting-evasion-12"
-  },
-  {
-    "name": "STARTING HIT POINTS - 6",
-    "description": "STARTING HIT POINTS - 6",
-    "category": "class features",
-    "id": "srd-starting-hit-points-6"
-  },
-  {
-    "name": "CLASS ITEMS - A set of forgery tools or a grappling hook",
-    "description": "CLASS ITEMS - A set of forgery tools or a grappling hook",
-    "category": "class features",
-    "id": "srd-class-items-a-set-of-forgery-tools-or-a-grappling-hook"
   },
   {
     "name": "ROGUE'S HOPE FEATURE",
@@ -618,22 +414,10 @@
     "id": "srd-rogue-s-hope-feature"
   },
   {
-    "name": "SYNDICATE",
-    "description": "Play the Syndicate if you want to have a web of contacts everywhere you go.",
-    "category": "class features",
-    "id": "srd-syndicate"
-  },
-  {
     "name": "SERAPH",
     "description": "Seraphs are healers and healers imbued with sacred purpose. A wide array of deities exist within the realms, and thus numerous kinds of seraphs are appointed by these gods. Their ethos traditionally aligns with the domain or goals of their god, such as defending the weak, exacting vengeance, protecting a land or artifact, or upholding a particular faith. Some seraphs ally themselves with an army or locale, much to the satisfaction of their rulers, but other crusaders fight in opposition to the follies of the Mortal Realm. It is better to be a seraph's ally than their enemy, as they are terrifying foes to those who defy their purpose.",
     "category": "class features",
     "id": "srd-seraph"
-  },
-  {
-    "name": "SERAPH SUBCLASSES",
-    "description": "Choose either the Divine Wielder or Winged Sentinel subclass.",
-    "category": "class features",
-    "id": "srd-seraph-subclasses"
   },
   {
     "name": "DIVINE WIELDER",
@@ -646,30 +430,6 @@
     "description": "Play the Winged Sentinel if you want to take flight and strike crushing blows from the sky.",
     "category": "class features",
     "id": "srd-winged-sentinel"
-  },
-  {
-    "name": "DOMAINS - Splendor & Valor",
-    "description": "DOMAINS - Splendor & Valor",
-    "category": "class features",
-    "id": "srd-domains-splendor-valor"
-  },
-  {
-    "name": "STARTING EVASION - 9",
-    "description": "STARTING EVASION - 9",
-    "category": "class features",
-    "id": "srd-starting-evasion-9"
-  },
-  {
-    "name": "STARTING HIT POINTS - 7",
-    "description": "STARTING HIT POINTS - 7",
-    "category": "class features",
-    "id": "srd-starting-hit-points-7"
-  },
-  {
-    "name": "CLASS ITEMS - A bundle of offerings or a sigil of your god",
-    "description": "CLASS ITEMS - A bundle of offerings or a sigil of your god",
-    "category": "class features",
-    "id": "srd-class-items-a-bundle-of-offerings-or-a-sigil-of-your-god"
   },
   {
     "name": "SERAPH'S HOPE FEATURE",
@@ -688,12 +448,6 @@
     "description": "Volatile Magic: Spend 3 Hope to reroll any number of your damage dice on an attack that deals magic damage.",
     "category": "class features",
     "id": "srd-sorcerer-s-hope-feature"
-  },
-  {
-    "name": "SORCERER SUBCLASSES",
-    "description": "Choose either the Elemental Origin or Primal Origin subclass.",
-    "category": "class features",
-    "id": "srd-sorcerer-subclasses"
   },
   {
     "name": "ELEMENTAL ORIGIN",
@@ -720,12 +474,6 @@
     "id": "srd-warrior-s-hope-feature"
   },
   {
-    "name": "WARRIOR SUBCLASSES",
-    "description": "Choose either the Call of the Brave or Call of the Slayer subclass.",
-    "category": "class features",
-    "id": "srd-warrior-subclasses"
-  },
-  {
     "name": "CALL OF THE BRAVE",
     "description": "Play the Call of the Brave if you want to use the might of your enemies to fuel your own power.",
     "category": "class features",
@@ -750,58 +498,16 @@
     "id": "srd-wizard-s-hope-feature"
   },
   {
-    "name": "WIZARD SUBCLASSES",
-    "description": "Choose either the School of Knowledge or School of War subclass.",
-    "category": "class features",
-    "id": "srd-wizard-subclasses"
-  },
-  {
     "name": "SCHOOL OF KNOWLEDGE",
     "description": "Play the School of Knowledge if you want a keen understanding of the world around you.",
     "category": "class features",
     "id": "srd-school-of-knowledge"
   },
   {
-    "name": "SCHOOL OF WAR",
-    "description": "Play the School of War if you want to utilize trained magic for violence.",
-    "category": "class features",
-    "id": "srd-school-of-war"
-  },
-  {
-    "name": "DOMAINS - Codex & Splendor",
-    "description": "",
-    "category": "class features",
-    "id": "srd-domains-codex-splendor"
-  },
-  {
-    "name": "STARTING EVASION - 11",
-    "description": "",
-    "category": "class features",
-    "id": "srd-starting-evasion-11"
-  },
-  {
-    "name": "STARTING HIT POINTS - 5",
-    "description": "",
-    "category": "class features",
-    "id": "srd-starting-hit-points-5"
-  },
-  {
-    "name": "CLASS ITEMS - A book you're trying to translate or a tiny, harmless elemental pet",
-    "description": "",
-    "category": "class features",
-    "id": "srd-class-items-a-book-you-re-trying-to-translate-or-a-tiny-harmless-elemental-pet"
-  },
-  {
     "name": "ANCESTRIES",
     "description": "Ancestries represent your character's lineage, which affects their physical appearance and access to certain special abilities. The following section describes each ancestry in Daggerheart and the characteristics generally shared by members of that ancestry, however, each player decides how much their character aligns with the \"standard\" or \"average\" expression of their ancestry.\n\nIn Daggerheart, the term \"people\" is used to refer to all ancestries, as individuals from all lineages possess unique characteristics and cultures, as well as personhood.\n\nSome ancestries are described using the term \"humanoid.\" This does not imply any genetic relation to \"humans,\" which is a distinct ancestry within Daggerheart. Instead, it refers to the set of physical characteristics humans will recognize as familiar from their own lineage: upright stance, bipedal posture, facial layout, and more. These traits vary by ancestry and individual, though \"humanoid\" should still provide a useful frame of reference.\n\nThe core ruleset includes the following ancestries: Clank, Drakona, Dwarf, Elf, Faerie, Faun, Firbolg, Fungril, Galapa, Giant, Goblin, Halfling, Human, Infernis, Katari, Orc, Ribbet, Simiah, and Mixed Ancestry.",
     "category": "class features",
     "id": "srd-ancestries"
-  },
-  {
-    "name": "ANCESTRY FEATURES",
-    "description": "Purposeful Design: Decide who made you and for what purpose. At character creation, choose one of your Experiences that best aligns with this purpose and gain a permanent +1 bonus to it.\n\nEfficient: When you take a short rest, you can choose a long rest move instead of a short rest move.",
-    "category": "class features",
-    "id": "srd-ancestry-features"
   },
   {
     "name": "DRAKONA",
@@ -1038,34 +744,10 @@
     "id": "srd-human"
   },
   {
-    "name": "ANCESTRY FEATURES - Keen Instincts",
-    "description": "Keen Instincts: Gain an additional Stress slot at character creation.",
-    "category": "class features",
-    "id": "srd-ancestry-features-keen-instincts"
-  },
-  {
-    "name": "ANCESTRY FEATURES - Adaptability",
-    "description": "Adaptability: When you fail a roll that utilized one of your Experiences, you can mark a Stress to reroll.",
-    "category": "class features",
-    "id": "srd-ancestry-features-adaptability"
-  },
-  {
     "name": "INFERNIS",
     "description": "Infernis are humanoids who possess sharp canine teeth, pointed tails, and conspicuous horns that are a clear sign they're from the Circles Below. On average, infernis range in height from 5 feet to 6 feet and are known to have long fingers and pointed nails. Some have long, thin, and smooth tails that end in points, forks, or arrowheads. It's common for infernis to have two or four horns—though some have crowns of many horns, or only one. These horns can also grow asymmetrically, forming unique, often curving, shapes that infernis enhance with care and ornamentation. Their skin, hair, and horns often come in an array of colors that can include soft pastels, stark tones, or vibrant hues, such as rosy scarlet, deep purple, and pitch black.\n\nInfernis possess a \"dread visage\" that manifests both involuntarily, such as when they experience fear or other strong emotions, or purposefully, such as when they wish to intimidate an adversary. This visage can briefly modify their appearance in a variety of ways, including lengthening their teeth and nails, changing the colors of their eyes, twisting their horns, or enhancing their height. On average, infernis live up to 350 years, with some attributing this lifespan to their demonic lineage.",
     "category": "class features",
     "id": "srd-infernis"
-  },
-  {
-    "name": "ANCESTRY FEATURES - Fearless",
-    "description": "Fearless: When you roll with Fear, you can mark 2 Stress to change it into a roll with Hope instead.",
-    "category": "class features",
-    "id": "srd-ancestry-features-fearless"
-  },
-  {
-    "name": "ANCESTRY FEATURES - Dread Visage",
-    "description": "Dread Visage: You have advantage on rolls to intimidate hostile creatures.",
-    "category": "class features",
-    "id": "srd-ancestry-features-dread-visage"
   },
   {
     "name": "KATARI",
@@ -1074,34 +756,10 @@
     "id": "srd-katari"
   },
   {
-    "name": "ANCESTRY FEATURES - Feline Instincts",
-    "description": "Feline Instincts: When you make an Agility Roll, you can spend 2 Hope to reroll your Hope Die.",
-    "category": "class features",
-    "id": "srd-ancestry-features-feline-instincts"
-  },
-  {
-    "name": "ANCESTRY FEATURES - Retracting Claws",
-    "description": "Retracting Claws: Make an Agility Roll to scratch a target within Melee range. On a success, they become temporarily Vulnerable.",
-    "category": "class features",
-    "id": "srd-ancestry-features-retracting-claws"
-  },
-  {
     "name": "ORCS",
     "description": "Orcs are humanoids most easily recognized by their square features and boar-like tusks that protrude from their lower jaw. Tusks come in various sizes, and though they extend from the mouth, they aren't used for consuming food. Instead, many orcs choose to decorate their tusks with significant ornamentation. Orcs typically live for 125 years, and unless they shave or cut their hair, it continues to grow for most of their lives. Their ears are pointed, and their hair and skin typically have green, blue, pink, or gray tones. Orcs tend toward a muscular build, and their average height ranges from 5 feet to 6 ½ feet.",
     "category": "class features",
     "id": "srd-orcs"
-  },
-  {
-    "name": "ANCESTRY FEATURES - Sturdy",
-    "description": "Sturdy: When you have 1 Hit Point remaining, attacks against you have disadvantage.",
-    "category": "class features",
-    "id": "srd-ancestry-features-sturdy"
-  },
-  {
-    "name": "ANCESTRY FEATURES - Tusks",
-    "description": "Tusks: When you succeed on an attack against a target within Melee range, you can spend a Hope to gore the target with your tusks, dealing an extra 1d6 damage.",
-    "category": "class features",
-    "id": "srd-ancestry-features-tusks"
   },
   {
     "name": "RIBBET",
@@ -1110,34 +768,10 @@
     "id": "srd-ribbet"
   },
   {
-    "name": "ANCESTRY FEATURES - Amphibious",
-    "description": "Amphibious: You can breathe and move naturally underwater.",
-    "category": "class features",
-    "id": "srd-ancestry-features-amphibious"
-  },
-  {
-    "name": "ANCESTRY FEATURES - Long Tongue",
-    "description": "Long Tongue: You can use your long tongue to grab onto things within Close range. Mark a Stress to use your tongue as a Finesse Close weapon that deals d12 physical damage using your Finesse.",
-    "category": "class features",
-    "id": "srd-ancestry-features-long-tongue"
-  },
-  {
     "name": "SIMIAH",
     "description": "Simiah resemble anthropomorphic monkeys and apes with long limbs and prehensile feet. While their appearance reflects all simian creatures, from the largest gorilla to the smallest marmoset, their size does not align with their animal counterparts. Most simiah range from 2 to 5 feet in height, tall. All simiah can use their dexterous feet for nonverbal communication, work, and combat. Additionally, some also have prehensile tails that can grasp objects or help with balance during difficult maneuvers. These traits grant members of this ancestry unique agility that aids them in a variety of physical tasks. In particular, simiah are skilled climbers and can easily transition from bipedal movement to knuckle-walking and climbing, and back again. On average, simiah live to around 200 years.",
     "category": "class features",
     "id": "srd-simiah"
-  },
-  {
-    "name": "ANCESTRY FEATURES - Natural Climber",
-    "description": "Natural Climber: You have advantage on Agility Rolls that involve balancing and climbing.",
-    "category": "class features",
-    "id": "srd-ancestry-features-natural-climber"
-  },
-  {
-    "name": "ANCESTRY FEATURES - Nimble",
-    "description": "Nimble: Gain a permanent +1 bonus to your Evasion at character creation.",
-    "category": "class features",
-    "id": "srd-ancestry-features-nimble"
   },
   {
     "name": "MIXED ANCESTRY",
@@ -1272,24 +906,6 @@
     "id": "srd-the-spotlight"
   },
   {
-    "name": "STEP 2 ASK AND ANSWER QUESTIONS",
-    "description": "The players ask clarifying questions to explore the scene more deeply and gather information that could inform their choices. The GM answers these questions, sometimes by giving the players information their characters could easily obtain, or by asking questions of their own to the players. The players also respond to any questions the GM poses to them. In this way, the table builds out the fiction collaboratively.",
-    "category": "rules",
-    "id": "srd-step-2-ask-and-answer-questions"
-  },
-  {
-    "name": "STEP 3 BUILD ON THE FICTION",
-    "description": "As the scene develops, the players find opportunities to take action—problems to solve, obstacles to overcome, mysteries to unravel. When a player decides what they want their character to proceed; if their proposed actions carry no chance of failure (or if failure would be boring), they automatically succeed. But if the outcome of their action is unknown, the GM calls for an action roll. Either way, the table works the outcome into the story and moves the fiction forward, narrating how the PC's actions have changed things.",
-    "category": "rules",
-    "id": "srd-step-3-build-on-the-fiction"
-  },
-  {
-    "name": "STEP 4 GO BACK TO STEP 1",
-    "description": "The process repeats. The scene continues until the GM has any updated details or material changes to the scene. The process continues until the end of the session or it is resolved by a mechanic or arrives organically.",
-    "category": "rules",
-    "id": "srd-step-4-go-back-to-step-1"
-  },
-  {
     "name": "TURN ORDER & ACTION ECONOMY",
     "description": "Daggerheart's turns don't follow a traditional, rigid format; there is no explicit initiative mechanic and characters don't each get an exact number of actions or movement that they must do before the spotlight passes to someone else. A player with the spotlight describes what their character does and the spotlight simply swings to whoever:\n\nA. the fiction would naturally turn it toward\nB. hasn't had the focus in a while, or\nC. a triggered mechanic puts it on\n\nOptional: Spotlight Tracker Tool\n\nIf your group prefers a more traditional action economy, you can use tokens to track how many times a player has had the spotlight. At the start of a session or scene, each player adds a certain number of tokens (we recommend 3) to their character sheet and removes a token each time they have the spotlight. When the spotlight swings to someone without any tokens, it swings to someone else instead. Once every player has used all their available tokens, players refill their character sheet with the same number of tokens as before, then continue playing.",
     "category": "rules",
@@ -1326,18 +942,6 @@
     "id": "srd-procedure"
   },
   {
-    "name": "STEP 4: ROLL THE DICE",
-    "description": "The acting player rolls their entire dice pool and announces the results in the format of \"Total result\" with Hope/Fear\"—or \"Critical Success\" in the case of matching Duality Dice.\n\nExample: A player is making an action roll with a Hope Die relevant trait and no other modifiers; they roll the Duality Dice and get a result of 5 on their Hope Die and 7 on their Fear Die, then announce \"I rolled a 13 with Fear!\"",
-    "category": "rules",
-    "id": "srd-step-4-roll-the-dice"
-  },
-  {
-    "name": "STEP 5: RESOLVE THE OUTCOME",
-    "description": "The acting player and the GM work together, along with the suggestions and support of the rest of the table, to resolve the outcome of the action.",
-    "category": "rules",
-    "id": "srd-step-5-resolve-the-outcome"
-  },
-  {
     "name": "GM MOVES AND ADVERSARY ACTIONS",
     "description": "GMs also make moves. They should consider making a move when a player does one of the following things:\n\n• Rolls the worst Fear on an action roll.\n• Fails an action roll.\n• Does something that would have consequences.\n• Gives them a golden opportunity.\n• Looks to them for what happens next.\n\nAfter the GM turn is done, the spotlight goes back to the PCs.\n\nMany adversaries and environments have Fear Features, especially powerful or consequential moves that the GM must spend Fear to activate.\n\nNote: This Fear is in addition to any Fear the GM has previously spent to seize the spotlight or activate another action or ability.",
     "category": "rules",
@@ -1354,12 +958,6 @@
     "description": "An action roll that specifies which character trait applies to it is called a trait roll. In the text of a feature or effect, a trait roll is referenced with the format \"[Trait] Roll (Difficulty)\" (e.g., \"Agility Roll (12)\"). If the text of an effect doesn't specify a trait roll's Difficulty, the GM sets the Difficulty based on the circumstances.\n\nFeatures and effects that affect a trait roll also affect any action roll that uses the same trait, including attack rolls, Spellcast rolls, and standard action rolls.\n\nExample: The dwarf is an ancestry \"Edging Instincts,\" which allows the kestari to reroll an Agility Roll, can also be used on a standard action roll using Agility to traverse dangerous terrain or on an attack roll made with a weapon that uses Agility.",
     "category": "rules",
     "id": "srd-trait-rolls"
-  },
-  {
-    "name": "SPELLCAST ROLLS",
-    "description": "Spellcast Rolls are trait rolls that require you to use your Spellcast trait. Your Spellcast trait, if you have one, is determined by your subclass.\n\nSpellcast Rolls are only made when a character uses a feature that requires one. A successful Spellcast Roll activates the effect as described by the feature.\n\nNotes:\n\nA Spellcast Roll that can damage a target is also considered an attack roll.\n\nWhen you cast a spell, the text tells you when the effect ends. The GM can end a Fear to end a temporary effect. If your spell doesn't specify when it ends, it lasts until you cast another spell or natural moment of the story. You can choose to end your own spell at any time.\n\nYou can cast and maintain the effects of more than one spell at the same time.",
-    "category": "rules",
-    "id": "srd-spellcast-rolls"
   },
   {
     "name": "REACTION ROLLS",
@@ -1390,24 +988,6 @@
     "description": "If the Duality Dice show matching results, you rolled a \"Critical Success\" (\"Crit\"). You automatically succeed with a bonus, gain a Hope, and clear a Stress. If this was an attack roll, you deal critical damage.\n\nNote: A Critical Success counts as a roll \"with Hope.\"",
     "category": "rules",
     "id": "srd-critical-success"
-  },
-  {
-    "name": "STEP 1: PICK AN APPROPRIATE TRAIT",
-    "description": "Some actions and effects specify in their description which trait applies to the roll; otherwise, the GM picks a trait based on what part of the character the action being attempted. If more than one trait could apply to the roll, the GM chooses or lets the acting player decide.",
-    "category": "rules",
-    "id": "srd-step-1-pick-an-appropriate-trait"
-  },
-  {
-    "name": "STEP 2: DETERMINE THE DIFFICULTY",
-    "description": "Some actions and features say in their description what the Difficulty is. Otherwise, the GM determines the Difficulty based on the scenario. The GM can choose whether to share the Difficulty with the table. In either case, the GM should communicate the potential consequences of failure to the acting player.",
-    "category": "rules",
-    "id": "srd-step-2-determine-the-difficulty"
-  },
-  {
-    "name": "STEP 3: APPLY EXTRA DICE AND MODIFIERS",
-    "description": "The acting player decides whether to Utilize an Experience or activate other effects, then, if applicable, adds the appropriate tokens and dice (such as advantage or Rally dice) to their dice pool.\n\nNote: Unless an action, ability, or feature specifically allows for it, a player must declare the use of any Experiences, extra dice, or other modifiers before they roll.",
-    "category": "rules",
-    "id": "srd-step-3-apply-extra-dice-and-modifiers"
   },
   {
     "name": "Example: The warlock ancestry feature \"Feline Instincts,\"",
@@ -1584,12 +1164,6 @@
     "id": "srd-conditions"
   },
   {
-    "name": "STANDARD CONDITIONS",
-    "description": "Daggerheart has three standard conditions:",
-    "category": "rules",
-    "id": "srd-standard-conditions"
-  },
-  {
     "name": "HIDDEN",
     "description": "While you're out of sight from all enemies and they don't otherwise know your location, you gain the Hidden condition. Attacks made against you are made with disadvantage. After an adversary moves to where they would see you, you move into their line of sight, or you make an attack, you are no longer Hidden.",
     "category": "rules",
@@ -1698,12 +1272,6 @@
     "id": "srd-death"
   },
   {
-    "name": "ADDITIONAL RULES",
-    "description": "The following rules apply to many aspects of the game.",
-    "category": "rules",
-    "id": "srd-additional-rules"
-  },
-  {
     "name": "ROUNDING UP",
     "description": "This game doesn't use fractions: if you need to round to a whole number, round up unless otherwise specified. When in doubt, resolve any ambiguity in favor of the PCs.",
     "category": "rules",
@@ -1756,30 +1324,6 @@
     "description": "Your party levels up whenever the GM decides you've reached a narrative milestone (usually about every 3 sessions). All party members level up at the same time.\n\nDaggerheart has 10 PC levels divided into 4 tiers:\n\n→ Tier 1 encompasses level 1 only.\n→ Tier 2 encompasses levels 2–4.\n→ Tier 3 encompasses levels 5–7.\n→ Tier 4 encompasses levels 8–10.\n\nYour tier affects your damage thresholds, tier achievements, and access to advancements.",
     "category": "rules",
     "id": "srd-leveling-up"
-  },
-  {
-    "name": "STEP ONE TIER ACHIEVEMENTS",
-    "description": "Take any applicable tier achievements:\n\n• At level 2, you gain a new Experience at +2 and permanently increase your Proficiency by 1.\n• At level 5, you gain a new Experience at +2, permanently increase your Proficiency by 1, and clear any marked traits.\n• At level 8, you gain a new Experience at +2, permanently increase your Proficiency by 1, and clear any marked traits.",
-    "category": "rules",
-    "id": "srd-step-one-tier-achievements"
-  },
-  {
-    "name": "STEP TWO ADVANCEMENTS",
-    "description": "Choose any two advancements with at least one unmarked slot from your tier or below. Options with multiple slots can be chosen more than once. When you choose an advancement, mark one of its slots.\n\n• When you choose to increase two unmarked character traits and mark them: Choose two unmarked character traits and gain a permanent +1 bonus to them. You can't increase these stats again until the next tier (when your tier advancement allows you to clear those marks).\n• When you choose to permanently add 1 or more Hit Point slots: Darken the outline of the next rectangle in the Hit Point section of your character sheet in pen or permanent marker.\n• When you choose to permanently add 1 or more Stress slots: Darken the outline of the next rectangle in the Stress section of your character sheet in pen or permanent marker.\n• When you choose to increase your Experience: Choose two Experiences on your character sheet and gain a permanent +1 bonus to both.\n• When you take an additional domain card: You can choose an additional domain card at your level or lower from your class's domains. If you've multiclassed, you can instead select a card at or below half your level from your chosen multiclass domain.",
-    "category": "rules",
-    "id": "srd-step-two-advancements"
-  },
-  {
-    "name": "STEP THREE DAMAGE THRESHOLDS",
-    "description": "Increase all damage thresholds by 1.",
-    "category": "rules",
-    "id": "srd-step-three-damage-thresholds"
-  },
-  {
-    "name": "STEP FOUR DOMAIN CARDS",
-    "description": "Acquire a new domain card at your level or lower from one of your class's domains and add it to your loadout or vault. If your vault becomes too full for the new addition, decide which card you move another into your vault. You can also exchange one domain card you've previously acquired for a different domain card of the same level or lower.",
-    "category": "rules",
-    "id": "srd-step-four-domain-cards"
   },
   {
     "name": "MULTICLASSING",
@@ -1846,42 +1390,6 @@
     "description": "Players can choose one Tier 1 primary weapon during character creation. The GM can make other weapons available throughout the campaign as the PCs level up.",
     "category": "rules",
     "id": "srd-primary-weapon-tables"
-  },
-  {
-    "name": "TIER 1 (LEVEL 1) Physical Weapons",
-    "description": "Physical Weapons\n\nNAME | TRAIT | RANGE | DAMAGE | BURDEN | FEATURE\nBroadsword | Agility | Melee | d8 phy | One-Handed | Reliable: +1 to attack rolls\nLongsword | Agility | Melee | d10+3 phy | Two-Handed | —\nBastaxe | Strength | Melee | d10+3 phy | Two-Handed | —\nGreatsword | Strength | Melee | d10+3 phy | Two-Handed | Massive: -1 to Evasion; on a successful attack, roll an additional damage die and discard the lowest result.\nMace | Strength | Melee | d8+1 phy | One-Handed | —\nWarhammer | Strength | Melee | d12+3 phy | Two-Handed | Heavy: -1 to Evasion\nDagger | Finesse | Melee | d8+1 phy | One-Handed | —\nQuarterstaff | Instinct | Melee | d10+3 phy | Two-Handed | —\nCutlass | Presence | Melee | d8+1 phy | One-Handed | —\nRapier | Presence | Melee | d8 phy | One-Handed | Quick: When you make an attack, you can mark a Stress to target another creature within range.\nHalberd | Strength | Very Close | d10+2 phy | Two-Handed | Cumbersome: -1 to Finesse\nSpear | Finesse | Very Close | d8+3 phy | Two-Handed | —\nShortbow | Agility | Far | d6+3 phy | Two-Handed | —\nCrossbow | Finesse | Far | d6+1 phy | One-Handed | —\nLongbow | Agility | Very Far | d8+3 phy | Two-Handed | Cumbersome: -1 to Finesse",
-    "category": "rules",
-    "id": "srd-tier-1-level-1-physical-weapons"
-  },
-  {
-    "name": "TIER 1 (LEVEL 1) Magic Weapons",
-    "description": "Magic Weapons\nAll magic weapons require a Spellcast trait\n\nNAME | TRAIT | RANGE | DAMAGE | BURDEN | FEATURE\nArcane Gauntlets | Strength | Melee | d10+3 mag | Two-Handed | —\nHallowed Axe | Strength | Melee | d8+1 mag | One-Handed | —\nGlowing Rings | Agility | Very Close | d10+2 mag | Two-Handed | —\nHand Runes | Instinct | Very Close | d10 mag | One-Handed | —\nReturning Blade | Finesse | Close | d8 mag | One-Handed | Returning: When this weapon is thrown within its range, it appears in your hand immediately after the attack.\nShortstaff | Instinct | Close | d8+1 mag | One-Handed | —\nDualstaff | Instinct | Far | d6+3 mag | Two-Handed | —\nScepter | Presence | Far | d6 mag | Two-Handed | Versatile: This weapon can also be used with these statistics—Presence, Melee, d8.\nWand | Knowledge | Far | d6+1 mag | One-Handed | —\nGreatstaff | Knowledge | Very Far | d6 mag | Two-Handed | Powerful: On a successful attack, roll an additional damage die and discard the lowest result.",
-    "category": "rules",
-    "id": "srd-tier-1-level-1-magic-weapons"
-  },
-  {
-    "name": "TIER 2 (LEVELS 2-4) Physical Weapons",
-    "description": "Physical Weapons\n\nNAME | TRAIT | RANGE | DAMAGE | BURDEN | FEATURE\nImproved Broadsword | Agility | Melee | d8+3 phy | One-Handed | Reliable: +1 to attack rolls\nImproved Longsword | Agility | Melee | d10+6 phy | Two-Handed | —\nImproved Bastaxe | Strength | Melee | d10+6 phy | Two-Handed | —\nImproved Greatsword | Strength | Melee | d10+6 phy | Two-Handed | Massive: -1 to Evasion; on a successful attack, roll an additional damage die and discard the lowest result.\nImproved Mace | Strength | Melee | d8+4 phy | One-Handed | —\nImproved Warhammer | Strength | Melee | d12+6 phy | Two-Handed | Heavy: -1 to Evasion\nImproved Dagger | Finesse | Melee | d8+4 phy | One-Handed | —\nImproved Quarterstaff | Instinct | Melee | d10+6 phy | Two-Handed | —\nImproved Cutlass | Presence | Melee | d8+4 phy | One-Handed | —\nImproved Rapier | Presence | Melee | d8+3 phy | One-Handed | Quick: When you make an attack, you can mark a Stress to target another creature within range.\nImproved Halberd | Strength | Very Close | d10+5 phy | Two-Handed | Cumbersome: -1 to Finesse\nImproved Spear | Finesse | Very Close | d8+6 phy | Two-Handed | —\nImproved Shortbow | Agility | Far | d6+6 phy | Two-Handed | —\nImproved Crossbow | Finesse | Far | d6+4 phy | One-Handed | —\nImproved Longbow | Agility | Very Far | d8+6 phy | Two-Handed | Cumbersome: -1 to Finesse\nGilded Falchion | Strength | Melee | d10+4 phy | One-Handed | Powerful: On a successful attack, roll an additional damage die and discard the lowest result.\nKnuckle Blades | Strength | Melee | d10+6 phy | Two-Handed | Brutal: Before you make an attack roll on a successful attack, roll an additional damage die.\nUruk Broadsword | Strength | Melee | d8+3 phy | One-Handed | Deadly: When you deal Severe damage, the target must mark an additional HP.\nBroken Lute | Agility | Very Close | d8+3 phy | One-Handed | Quick: When you make an attack, you can mark a Stress to target another creature within range.\nSteelforged Halberd | Strength | Very Close | d8+4 phy | Two-Handed | Scary: On a successful attack, the target must mark a Stress.\nWar Scythe | Finesse | Very Close | d8+5 phy | Two-Handed | Reliable: +1 to attack rolls\nBlunderbuss | Finesse | Close | d8+6 phy | Two-Handed | Reloading: After you make an attack, roll a d6. On a result of 1, you must mark a Stress to reload this weapon before you can fire it again.\nGreatbow | Strength | Far | d6+6 phy | Two-Handed | Powerful: On a successful attack, roll an additional damage die and discard the lowest result.\nFinehair Bow | Agility | Very Far | d6+5 phy | Two-Handed | Reliable: +1 to attack rolls",
-    "category": "rules",
-    "id": "srd-tier-2-levels-2-4-physical-weapons"
-  },
-  {
-    "name": "TIER 2 (LEVELS 2-4) Magic Weapons",
-    "description": "Magic Weapons\nAll magic weapons require a Spellcast trait\n\nNAME | TRAIT | RANGE | DAMAGE | BURDEN | FEATURE\nImproved Arcane Gauntlets | Strength | Melee | d10+6 mag | Two-Handed | —\nImproved Hallowed Axe | Strength | Melee | d8+4 mag | One-Handed | —\nImproved Glowing Rings | Agility | Very Close | d10+5 mag | Two-Handed | —\nImproved Hand Runes | Instinct | Very Close | d10+3 mag | One-Handed | —\nImproved Returning Blade | Finesse | Close | d8+3 mag | One-Handed | Returning: When this weapon is thrown within its range, it appears in your hand immediately after the attack.\nImproved Shortstaff | Instinct | Close | d8+4 mag | One-Handed | —\nImproved Dualstaff | Instinct | Far | d6+6 mag | Two-Handed | —\nImproved Scepter | Presence | Far | d6+3 mag | Two-Handed | Versatile: This weapon can also be used with these statistics—Presence, Melee, d8+3.\nImproved Wand | Knowledge | Far | d6+4 mag | One-Handed | —\nImproved Greatstaff | Knowledge | Very Far | d6+3 mag | Two-Handed | Powerful: On a successful attack, roll an additional damage die and discard the lowest result.\nEgg Blade | Agility | Melee | d12+4 mag | One-Handed | Pompous: You must have a Presence of 0 or lower to use this weapon.\nCasting Sword | Strength | Melee | d10+4 mag | Two-Handed | Versatile: This weapon can also be used with these statistics—Knowledge, Far, d6+3.\nDevouring Dagger | Finesse | Melee | d8+4 mag | One-Handed | Scary: On a successful attack, the target must mark a Stress.\nHammer of Exata | Instinct | Melee | d8+6 mag | Two-Handed | Deadly: On a successful attack (2d+1) or Greater within Melee range, all other adversaries within Very Close range must succeed on a reaction roll (d10) or take half damage.\nYutari Bloodbow | Finesse | Far | d6+4 mag | Two-Handed | Brutal: When you roll the maximum value on a damage die, roll an additional damage die.\nElder Bow | Instinct | Far | d6+4 mag | Two-Handed | Powerful: On a successful attack, roll an additional damage die and discard the lowest result.\nScepter of Elias | Presence | Far | d6+3 mag | One-Handed | Invigorating: On a successful attack, roll a d4. On a result of 4, clear a Stress.\nWand of Sentient Flame | Presence | Far | d6+4 mag | One-Handed | Persuasive: Before you make a Presence Roll, you can mark a Stress to gain a +2 bonus to the result.\nKeeper's Staff | Knowledge | Far | d6+4 mag | Two-Handed | Reliable: +1 to attack rolls",
-    "category": "rules",
-    "id": "srd-tier-2-levels-2-4-magic-weapons"
-  },
-  {
-    "name": "TIER 3 (LEVELS 5-7) Physical Weapons",
-    "description": "Physical Weapons\n\nNAME | TRAIT | RANGE | DAMAGE | BURDEN | FEATURE\nAdvanced Broadsword | Agility | Melee | d8+6 phy | One-Handed | Reliable: +1 to attack rolls\nAdvanced Longsword | Agility | Melee | d10+9 phy | Two-Handed | —\nAdvanced Bastaxe | Strength | Melee | d10+9 phy | Two-Handed | —\nAdvanced Greatsword | Strength | Melee | d10+9 phy | Two-Handed | Massive: -1 to Evasion; on a successful attack, roll an additional damage die and discard the lowest result.\nAdvanced Mace | Strength | Melee | d8+7 phy | One-Handed | —\nAdvanced Warhammer | Strength | Melee | d12+9 phy | Two-Handed | Heavy: -1 to Evasion\nAdvanced Dagger | Finesse | Melee | d8+7 phy | One-Handed | —\nAdvanced Quarterstaff | Instinct | Melee | d10+9 phy | Two-Handed | —\nAdvanced Cutlass | Presence | Melee | d8+7 phy | One-Handed | —\nAdvanced Rapier | Presence | Melee | d8+6 phy | One-Handed | Quick: When you make an attack, you can mark a Stress to target another creature within range.\nAdvanced Halberd | Strength | Very Close | d10+8 phy | Two-Handed | Cumbersome: -1 to Finesse\nAdvanced Spear | Finesse | Very Close | d8+9 phy | Two-Handed | —\nAdvanced Shortbow | Agility | Far | d6+9 phy | Two-Handed | —\nAdvanced Crossbow | Finesse | Far | d6+7 phy | One-Handed | —\nAdvanced Longbow | Agility | Very Far | d8+9 phy | Two-Handed | Cumbersome: -1 to Finesse\nFlickery Blade | Agility | Melee | d8+5 phy | One-Handed | Sharpening: Gain a bonus to your damage rolls equal to your Agility.\nBravesword | Strength | Melee | d12+7 phy | Two-Handed | Brave: -1 to Evasion, +3 to Severe damage threshold\nHammer of Wrath | Strength | Melee | d10+7 phy | Two-Handed | Concussion: Before you make an attack roll you can mark a Stress to use a d20 as your damage die.\nLazy Axe | Finesse | Melee | d10+7 phy | Two-Handed | Protective: +1 to Armor Score\nMeridian Cutlass | Presence | Melee | d10+5 phy | One-Handed | Dueling: When there are no other creatures within Close range of the target, gain advantage on your attack roll against them.\nRetractable Saber | Presence | Melee | d10+7 phy | One-Handed | Retractable: The blade can be hidden in the hilt to avoid detection.\nDouble Flail | Agility | Very Close | d10+8 phy | Two-Handed | Powerful: On a successful attack, roll an additional damage die and discard the lowest result.\nTalon Blades | Finesse | Close | d10+7 phy | Two-Handed | Brutal: When you roll the maximum value on a damage die, roll an additional damage die.\nBlack Powder Revolver | Finesse | Far | d6+8 phy | One-Handed | Reloading: After you make an attack, roll a d6. On a result of 1, you must mark a Stress to reload this weapon before you can fire it again.\nSpiked Bow | Agility | Very Far | d6+7 phy | Two-Handed | Versatile: This weapon can also be used with these statistics—Agility, Melee, d10+5.",
-    "category": "rules",
-    "id": "srd-tier-3-levels-5-7-physical-weapons"
-  },
-  {
-    "name": "TIER 3 (LEVELS 5-7) Magic Weapons",
-    "description": "Magic Weapons\nAll magic weapons require a Spellcast trait\n\nNAME | TRAIT | RANGE | DAMAGE | BURDEN | FEATURE\nAdvanced Arcane Gauntlets | Strength | Melee | d10+9 mag | Two-Handed | —\nAdvanced Hallowed Axe | Strength | Melee | d8+7 mag | One-Handed | —\nAdvanced Glowing Rings | Agility | Very Close | d10+8 mag | Two-Handed | —\nAdvanced Hand Runes | Instinct | Very Close | d10+6 mag | One-Handed | —\nAdvanced Returning Blade | Finesse | Close | d8+6 mag | One-Handed | Returning: When this weapon is thrown within its range, it appears in your hand immediately after the attack.\nAdvanced Shortstaff | Instinct | Close | d8+7 mag | One-Handed | —\nAdvanced Dualstaff | Instinct | Far | d6+9 mag | Two-Handed | —\nAdvanced Scepter | Presence | Far | d6+6 mag | Two-Handed | Versatile: This weapon can also be used with these statistics—Presence, Melee, d8+4.\nAdvanced Wand | Knowledge | Far | d6+7 mag | One-Handed | —\nAdvanced Greatstaff | Knowledge | Very Far | d6+6 mag | Two-Handed | Powerful: On a successful attack, roll an additional damage die and discard the lowest result.\nAxe of Fortuna | Strength | Melee | d10+8 mag | Two-Handed | Lucky: On a failed attack, you can mark a Stress to reroll your attack.\nBlessed Anlace | Instinct | Melee | d10+6 mag | One-Handed | Healing: During downtime, automatically clear a Hit Point.\nGhostblade | Presence | Melee | d10+7 phy or d10+7 mag | One-Handed | Otherworldly: On a successful attack, you can deal physical or magic damage.\nStaff of Ruination | Knowledge | Very Close | d20+4 mag | One-Handed | Focused: Whenever you make a successful attack, you must mark a Stress.\nWildwood Pendant | Knowledge | Close | d10+5 mag | One-Handed | Timebending: You gain an extra action die each round after making your attack roll.\nGilded Saw | Instinct | Far | d6+7 mag | Two-Handed | Self-Correcting: When you roll 1 or 2 for damage die, it deals 6 damage instead.\nFirestaff | Instinct | Far | d6+7 mag | Two-Handed | Burning: When you deal 6 damage die, the target must mark a Stress.\nMage Orb | Knowledge | Far | d6+7 mag | One-Handed | Powerful: On a successful attack, roll an additional damage die and discard the lowest result.\nIman's Rifle | Finesse | Very Far | d6+6 mag | One-Handed | Reloading: After you make an attack, roll a d6. On a result of 1, you must mark a Stress to reload this weapon before you can fire it again.",
-    "category": "rules",
-    "id": "srd-tier-3-levels-5-7-magic-weapons"
   },
   {
     "name": "Meteor",
@@ -2448,18 +1956,6 @@
     "id": "srd-gambeson-armor"
   },
   {
-    "name": "Leather Armor",
-    "description": "BASE THRESHOLDS: 6 / 13, BASE SCORE: 3",
-    "category": "rules",
-    "id": "srd-leather-armor"
-  },
-  {
-    "name": "Chainmail Armor",
-    "description": "BASE THRESHOLDS: 7 / 15, BASE SCORE: 4, FEATURE: Heavy: -1 to Evasion",
-    "category": "rules",
-    "id": "srd-chainmail-armor"
-  },
-  {
     "name": "Full Plate Armor",
     "description": "BASE THRESHOLDS: 8 / 17, BASE SCORE: 4, FEATURE: Very Heavy: -2 to Evasion; -1 to Agility",
     "category": "rules",
@@ -2470,18 +1966,6 @@
     "description": "BASE THRESHOLDS: 7 / 16, BASE SCORE: 4, FEATURE: Flexible: +1 to Evasion",
     "category": "rules",
     "id": "srd-improved-gambeson-armor"
-  },
-  {
-    "name": "Improved Leather Armor",
-    "description": "BASE THRESHOLDS: 9 / 20, BASE SCORE: 4",
-    "category": "rules",
-    "id": "srd-improved-leather-armor"
-  },
-  {
-    "name": "Improved Chainmail Armor",
-    "description": "BASE THRESHOLDS: 11 / 24, BASE SCORE: 5, FEATURE: Heavy: -1 to Evasion",
-    "category": "rules",
-    "id": "srd-improved-chainmail-armor"
   },
   {
     "name": "Improved Full Plate Armor",
@@ -2532,18 +2016,6 @@
     "id": "srd-advanced-gambeson-armor"
   },
   {
-    "name": "Advanced Leather Armor",
-    "description": "BASE THRESHOLDS: 13 / 27, BASE SCORE: 5",
-    "category": "rules",
-    "id": "srd-advanced-leather-armor"
-  },
-  {
-    "name": "Advanced Chainmail Armor",
-    "description": "BASE THRESHOLDS: 13 / 31, BASE SCORE: 6, FEATURE: Heavy: -1 to Evasion",
-    "category": "rules",
-    "id": "srd-advanced-chainmail-armor"
-  },
-  {
     "name": "Advanced Full Plate Armor",
     "description": "BASE THRESHOLDS: 15 / 35, BASE SCORE: 6, FEATURE: Very Heavy: -2 to Evasion; -1 to Agility",
     "category": "rules",
@@ -2590,18 +2062,6 @@
     "description": "BASE THRESHOLDS: 11 / 32, BASE SCORE: 6, FEATURE: Flexible: +1 to Evasion",
     "category": "rules",
     "id": "srd-legendary-gambeson-armor"
-  },
-  {
-    "name": "Legendary Leather Armor",
-    "description": "BASE THRESHOLDS: 13 / 36, BASE SCORE: 6",
-    "category": "rules",
-    "id": "srd-legendary-leather-armor"
-  },
-  {
-    "name": "Legendary Chainmail Armor",
-    "description": "BASE THRESHOLDS: 15 / 40, BASE SCORE: 7, FEATURE: Heavy: -1 to Evasion",
-    "category": "rules",
-    "id": "srd-legendary-chainmail-armor"
   },
   {
     "name": "Legendary Full Plate Armor",
@@ -2886,42 +2346,6 @@
     "id": "srd-infinite-bag"
   },
   {
-    "name": "Stride Relic",
-    "description": "You gain a +1 bonus to your Agility. You can only carry one relic.",
-    "category": "rules",
-    "id": "srd-stride-relic"
-  },
-  {
-    "name": "Bolder Relic",
-    "description": "You gain a +1 bonus to your Strength. You can only carry one relic.",
-    "category": "rules",
-    "id": "srd-bolder-relic"
-  },
-  {
-    "name": "Control Relic",
-    "description": "You gain a +1 bonus to your Finesse. You can only carry one relic.",
-    "category": "rules",
-    "id": "srd-control-relic"
-  },
-  {
-    "name": "Attune Relic",
-    "description": "You gain a +1 bonus to your Instinct. You can only carry one relic.",
-    "category": "rules",
-    "id": "srd-attune-relic"
-  },
-  {
-    "name": "Charm Relic",
-    "description": "You gain a +1 bonus to your Presence. You can only carry one relic.",
-    "category": "rules",
-    "id": "srd-charm-relic"
-  },
-  {
-    "name": "Enlighten Relic",
-    "description": "You gain a +1 bonus to your Knowledge. You can only carry one relic.",
-    "category": "rules",
-    "id": "srd-enlighten-relic"
-  },
-  {
     "name": "Honing Relic",
     "description": "You gain a +1 bonus to an Experience of your choice. You can only carry one relic.",
     "category": "rules",
@@ -3004,42 +2428,6 @@
     "description": "Once per session, you can spend 5 Hope to lead a Tag Team Roll with three PCs instead of two.",
     "category": "rules",
     "id": "srd-belt-of-unity"
-  },
-  {
-    "name": "Stride Potion",
-    "description": "You gain a +1 bonus to your next Agility Roll.",
-    "category": "rules",
-    "id": "srd-stride-potion"
-  },
-  {
-    "name": "Bolster Potion",
-    "description": "You gain a +1 bonus to your next Strength Roll.",
-    "category": "rules",
-    "id": "srd-bolster-potion"
-  },
-  {
-    "name": "Control Potion",
-    "description": "You gain a +1 bonus to your next Finesse Roll.",
-    "category": "rules",
-    "id": "srd-control-potion"
-  },
-  {
-    "name": "Attune Potion",
-    "description": "You gain a +1 bonus to your next Instinct Roll.",
-    "category": "rules",
-    "id": "srd-attune-potion"
-  },
-  {
-    "name": "Charm Potion",
-    "description": "You gain a +1 bonus to your next Presence Roll.",
-    "category": "rules",
-    "id": "srd-charm-potion"
-  },
-  {
-    "name": "Enlighten Potion",
-    "description": "You gain a +1 bonus to your next Knowledge Roll.",
-    "category": "rules",
-    "id": "srd-enlighten-potion"
   },
   {
     "name": "Minor Health",
@@ -3148,42 +2536,6 @@
     "description": "You can make a Finesse Roll to throw this shard at a group of adversaries within Far range. Targets you succeed against take 2d6 magic damage.",
     "category": "rules",
     "id": "srd-improved-arcane-shard"
-  },
-  {
-    "name": "Major Stride Potion",
-    "description": "You gain a +1 bonus to your Agility until your next rest.",
-    "category": "rules",
-    "id": "srd-major-stride-potion"
-  },
-  {
-    "name": "Major Bolster Potion",
-    "description": "You gain a +1 bonus to your Strength until your next rest.",
-    "category": "rules",
-    "id": "srd-major-bolster-potion"
-  },
-  {
-    "name": "Major Control Potion",
-    "description": "You gain a +1 bonus to your Finesse until your next rest.",
-    "category": "rules",
-    "id": "srd-major-control-potion"
-  },
-  {
-    "name": "Major Attune Potion",
-    "description": "You gain a +1 bonus to your Instinct until your next rest.",
-    "category": "rules",
-    "id": "srd-major-attune-potion"
-  },
-  {
-    "name": "Major Charm Potion",
-    "description": "You gain a +1 bonus to your Presence until your next rest.",
-    "category": "rules",
-    "id": "srd-major-charm-potion"
-  },
-  {
-    "name": "Major Enlighten Potion",
-    "description": "You gain a +1 bonus to your Knowledge until your next rest.",
-    "category": "rules",
-    "id": "srd-major-enlighten-potion"
   },
   {
     "name": "Blood Leaves of Yorgi",
@@ -3612,12 +2964,6 @@
     "id": "srd-feature-s"
   },
   {
-    "name": "Fear Feature(s)",
-    "description": "High-impact effects that cost a Fear to activate.",
-    "category": "rules",
-    "id": "srd-fear-feature-s"
-  },
-  {
     "name": "Haymaker",
     "description": "Action: Make an attack against a target within Very Close range. On a success, deal X direct physical damage.",
     "category": "adversary",
@@ -3712,144 +3058,6 @@
     "description": "ADVERSARY STATISTIC | TIER 1 | TIER 2 | TIER 3 | TIER 4\nAttack Modifier | +1 | +2 | +3 | +4\nDamage Dice | 1d6+2 to 1d12+4 | 2d6+3 to 2d12+4 | 3d6+3 to 3d12+5 | 4d8+10 to 4d12+15\nDifficulty | 11 | 14 | 17 | 20\nDamage Thresholds | Major 7/Severe 12 | Major 10/Severe 20 | Major 20/Severe 32 | Major 25/Severe 45",
     "category": "adversary",
     "id": "srd-adversary-stat-block-benchmarks"
-  },
-  {
-    "name": "ADVERSARIES BY TIER",
-    "description": "This section contains the following stat blocks:",
-    "category": "adversary",
-    "id": "srd-adversaries-by-tier"
-  },
-  {
-    "name": "TIER 1 (LEVEL 1)",
-    "description": "• Sellsword\n• Skeleton Archer\n• Skeleton Dredge\n• Skeleton Knight\n• Skeleton Warrior\n• Spillblade\n• Swarm of Rats\n• Sylvan Soldier\n• Tangle Bramble Swarm\n• Tangle Bramble\n• Weaponmaster\n• Young Dryad\n• Brawny Zombie\n• Patchwork Zombie Hulk\n• Rotted Zombie\n• Shambling Zombie\n• Zombie Pack\n\n• Acid Burrower\n• Bear\n• Cave Ogre\n• Construct\n• Courtier\n• Deeproot Defender\n• Dire Wolf\n• Giant Mosquitoes\n• Giant Rat\n• Giant Scorpion\n• Glass Snake\n• Harrier\n• Archer Guard\n• Bladed Guard\n• Head Guard\n• Jagged Knife Bandit\n• Jagged Knife Hexer\n• Jagged Knife Kneebreaker\n• Jagged Knife Lackey\n• Jagged Knife Lieutenant\n• Jagged Knife Shadow\n• Jagged Knife Sniper\n• Merchant\n• Minor Chaos Elemental\n• Minor Fire Elemental\n• Minor Demon\n• Minor Treant\n• Green Ooze\n• Tiny Green Ooze\n• Red Ooze\n• Tiny Red Ooze\n• Petty Noble\n• Pirate Captain\n• Pirate Raiders\n• Pirate Tough",
-    "category": "adversary",
-    "id": "srd-tier-1-level-1"
-  },
-  {
-    "name": "TIER 2 (LEVELS 2-4)",
-    "description": "• Archer Squadron\n• Apprentice Assassin\n• Assassin Poisoner\n• Master Assassin\n• Battle Box\n• Chaos Skull\n• Conscript\n• Courtesan\n• Cult Adept\n• Cult Fang\n• Cult Initiate\n• Demonic Hound Pack\n• Electric Eels\n• Elite Soldier\n• Failed Experiment\n• Giant Beastmaster\n• Giant Brawler\n• Giant Recruit",
-    "category": "adversary",
-    "id": "srd-tier-2-levels-2-4"
-  },
-  {
-    "name": "TIER 3 (LEVELS 5-7)",
-    "description": "• Adult Flickerfly\n• Demon of Avarice\n• Demon of Despair\n• Demon of Hubris\n• Demon of Jealousy\n• Demon of Wrath\n• Dire Bat\n• Dryad\n• Elemental Spark\n• Greater Earth Elemental\n• Greater Water Elemental\n• Huge Green Ooze\n• Hydra\n• Monarch\n• Stag Knight\n• Oak Treant\n• Treant Sapling\n• Head Vampire\n• Vampire\n• Vault Guardian Gaoler\n• Vault Guardian Sentinel\n• Vault Guardian Turret\n• Young Ice Dragon",
-    "category": "adversary",
-    "id": "srd-tier-3-levels-5-7"
-  },
-  {
-    "name": "TIER 4 (LEVELS 8-10)",
-    "description": "• Arch-Necromancer\n• Fallen Shock Troop\n• Fallen Sorcerer\n• Fallen Warlord: Realm-Breaker\n• Fallen Warlord: Undefeated Champion\n• Hallowed Archer\n• Hallowed Soldier\n• High Seraph\n• Kraken\n• Oracle of Doom\n• Outer Realms Abomination\n• Outer Realms Corruptor\n• Outer Realms Thrall\n• Volcanic Dragon: Obsidian Predator\n• Volcanic Dragon: Molten Scourge\n• Volcanic Dragon: Ashen Tyrant\n• Perfected Zombie\n• Zombie Legion",
-    "category": "adversary",
-    "id": "srd-tier-4-levels-8-10"
-  },
-  {
-    "name": "Giant Eagle",
-    "description": "• Giant Eagle",
-    "category": "adversary",
-    "id": "srd-giant-eagle"
-  },
-  {
-    "name": "Gorgon",
-    "description": "• Gorgon",
-    "category": "adversary",
-    "id": "srd-gorgon"
-  },
-  {
-    "name": "Juvenile Flickerfly",
-    "description": "• Juvenile Flickerfly",
-    "category": "adversary",
-    "id": "srd-juvenile-flickerfly"
-  },
-  {
-    "name": "Knight of the Realm",
-    "description": "• Knight of the Realm",
-    "category": "adversary",
-    "id": "srd-knight-of-the-realm"
-  },
-  {
-    "name": "Masked Thief",
-    "description": "• Masked Thief",
-    "category": "adversary",
-    "id": "srd-masked-thief"
-  },
-  {
-    "name": "Merchant Baron",
-    "description": "• Merchant Baron",
-    "category": "adversary",
-    "id": "srd-merchant-baron"
-  },
-  {
-    "name": "Minotaur Wrecker",
-    "description": "• Minotaur Wrecker",
-    "category": "adversary",
-    "id": "srd-minotaur-wrecker"
-  },
-  {
-    "name": "Mortal Hunter",
-    "description": "• Mortal Hunter",
-    "category": "adversary",
-    "id": "srd-mortal-hunter"
-  },
-  {
-    "name": "Royal Advisor",
-    "description": "• Royal Advisor",
-    "category": "adversary",
-    "id": "srd-royal-advisor"
-  },
-  {
-    "name": "Secret-Keeper",
-    "description": "• Secret-Keeper",
-    "category": "adversary",
-    "id": "srd-secret-keeper"
-  },
-  {
-    "name": "Shark",
-    "description": "• Shark",
-    "category": "adversary",
-    "id": "srd-shark"
-  },
-  {
-    "name": "Siren",
-    "description": "• Siren",
-    "category": "adversary",
-    "id": "srd-siren"
-  },
-  {
-    "name": "Spectral Archer",
-    "description": "• Spectral Archer",
-    "category": "adversary",
-    "id": "srd-spectral-archer"
-  },
-  {
-    "name": "Spectral Captain",
-    "description": "• Spectral Captain",
-    "category": "adversary",
-    "id": "srd-spectral-captain"
-  },
-  {
-    "name": "Spectral Guardian",
-    "description": "• Spectral Guardian",
-    "category": "adversary",
-    "id": "srd-spectral-guardian"
-  },
-  {
-    "name": "Spy",
-    "description": "• Spy",
-    "category": "adversary",
-    "id": "srd-spy"
-  },
-  {
-    "name": "Stonewrath",
-    "description": "• Stonewrath",
-    "category": "adversary",
-    "id": "srd-stonewrath"
-  },
-  {
-    "name": "War Wizard",
-    "description": "• War Wizard",
-    "category": "adversary",
-    "id": "srd-war-wizard"
   },
   {
     "name": "ACID BURROWER",
@@ -4278,12 +3486,6 @@
     "id": "srd-stonewraith"
   },
   {
-    "name": "TIER 3 ADVERSARIES (LEVELS 5-7)",
-    "description": "TIER 3 ADVERSARIES (LEVELS 5-7)",
-    "category": "adversary",
-    "id": "srd-tier-3-adversaries-levels-5-7"
-  },
-  {
     "name": "ADULT FLICKERFLY",
     "description": "Tier 3 Solo\nA winged insect the size of a large house with iridescent scales and wings that move too fast to track.\nMotives & Tactics: Quick, shiny things, hunt, swoop\nDifficulty: 17 | Thresholds: 20/35 | HP: 12 | Stress: 6\nATK: +3 | Wing Slash: Very Close | 3d20 phy\n\nFEATURES\nRelentless (4) - Passive: The Flickerfly can be spotlighted up to four times per GM turn. Spend Fear as usual to spotlight them.\nFly By Attack - Action: Before the Flickerfly makes an attack, move target's Evasion is halved against the attack.\nDeadly Flight - Passive: While flying, the Flickerfly can move up to Far range instead of Close range before taking an action.\nWhirlwind - Action: Spend a Fear to move up to whirl, making an attack against all targets within Very Close range. If the Flickerfly succeeds against two 3d8 direct physical damage.\nMind Dance - Action: Mark a Stress to create a magically dazzling display that grapples the minds of nearby foes. All targets within Close range must make an Instinct Reaction Roll. For each target who fails their roll, their next action is a Standard Move toward the Flickerfly instead of using their action to move away from their fears.\nHallucinatory Breath - Reaction: Countdown (Loop 1d6). When the Flickerfly takes damage for the first time, activate the countdown. When it triggers, the Flickerfly breathes hallucinatory gas on all targets in front of them up to Far range. Targets must make an Instinct Reaction Roll or be tormented by fearful hallucinations. Targets whose fears are known to the GM must make an additional Reaction Roll. Targets who fail lose 2 Hope and take 3d8+3 direct magic damage.\nUncanny Reflexes - Reaction: When the Flickerfly takes a reaction from an attack within Close range, you can mark a Stress to take half damage.",
     "category": "adversary",
@@ -4420,12 +3622,6 @@
     "description": "Tier 3 Solo\nA glacier-blue dragon with four powerful limbs and frost-tinged wings.\nMotives & Tactics: Avalanche, defend lair, fly, freeze, defend what is theirs, maul\nDifficulty: 18 | Thresholds: 21/41 | HP: 10 | Stress: 6\nATK: +7 | Bite and Claws: Close | 4d10 phy\nExperience: Protect What is Mine +3\n\nFEATURES\nRelentless (3) - Passive: The Dragon can be spotlighted up to three times per GM turn. Spend Fear as usual for each.\nRend and Crush - Passive: If a target damaged by the Dragon doesn't mark an Armor Slot to reduce the damage, they mark a Stress.\nNo Hope - Passive: When a PC rolls with Fear while within Far range of the Dragon, they lose a Hope.\nBlizzard Breath - Action: Spend 2 Fear to release an icy whorl in front of the Dragon within Close range. All targets in this area must make an Agility Reaction Roll. Targets who fail take 4d6+5 magic damage and are Restrained by an until they break free. Targets who succeed take half damage. Targets who succeed and mark 2 Stress or take half damage.\nAvalanche - Action: Spend a Fear to have the Dragon unleash a huge downfall of snow and ice, covering all other creatures within Far range. All targets within this area must succeed on an Agility Reaction Roll or become Restrained and Vulnerable until they dig themselves out from the debris. For each PC that fails the reaction roll, you gain a Fear.\nFrozen Scales - Reaction: When a creature makes a successful attack against the Dragon from within Very Far range with a physical attack, they are Chilled until the end of their next turn. If they rest or they clear a Stress. While they are Chilled, they have disadvantage on attack rolls.\nMomentum - Reaction: When the Dragon makes a successful attack against a PC, you gain a Fear.",
     "category": "adversary",
     "id": "srd-young-ice-dragon"
-  },
-  {
-    "name": "TIER 4 ADVERSARIES (LEVELS 8-10)",
-    "description": "TIER 4 ADVERSARIES\n(LEVELS 8-10)",
-    "category": "adversary",
-    "id": "srd-tier-4-adversaries-levels-8-10"
   },
   {
     "name": "ARCH-NECROMANCER",
@@ -4704,12 +3900,6 @@
     "id": "srd-the-pitch"
   },
   {
-    "name": "TONE & FEEL",
-    "description": "Adventurous, Dynamic, Epic, Heroic, Thrilling, Uncanny, Whimsical",
-    "category": "rules",
-    "id": "srd-tone-feel"
-  },
-  {
     "name": "THEMES",
     "description": "Cultural Clash, Ends Justify Means, Grief, People vs. Nature, Transformation and Change, Survival",
     "category": "rules",
@@ -4906,12 +4096,6 @@
     "description": "Ask any of these questions to your players, or make your own.\n\nWhat dangerous animal comes out during the week of night that isn't out during the week of day?\n\nWhat unique trait (such as appearance, smell, or taste) does anything tainted by the Witherwild have?\n\nWhat superstitions does your character or their community have about traversing Fanewick during the long nights?\n\nYour character has witnessed something beautiful that came from the Witherwild. What is it and how has it transformed their view of the corruption?",
     "category": "rules",
     "id": "srd-session-zero-questions"
-  },
-  {
-    "name": "ARCANA DOMAIN",
-    "description": "",
-    "category": "rules",
-    "id": "srd-arcana-domain"
   },
   {
     "name": "RUNE WARD",
@@ -6046,5 +5230,57 @@
     "description": "Level 10 Valor Ability\nRecall Cost: 1\n\nGain a bonus to your Severe threshold equal to your Proficiency.\n\nWhen you would mark an Armor Slot, roll a number of d6s equal to your Proficiency. If any roll a 6, reduce the severity by one threshold without marking an Armor Slot.",
     "category": "domain",
     "id": "srd-untiring-armor"
+  },
+  {
+    "id": "stat-potions",
+    "name": "Stat Potions",
+    "description": "Potions that grant a temporary +1 bonus to a specific trait.\n\nStandard (bonus to next roll):\n• Stride Potion: You gain a +1 bonus to your next Agility Roll.\n• Bolster Potion: You gain a +1 bonus to your next Strength Roll.\n• Control Potion: You gain a +1 bonus to your next Finesse Roll.\n• Attune Potion: You gain a +1 bonus to your next Instinct Roll.\n• Charm Potion: You gain a +1 bonus to your next Presence Roll.\n• Enlighten Potion: You gain a +1 bonus to your next Knowledge Roll.\n\nMajor (bonus until next rest):\n• Major Stride Potion: You gain a +1 bonus to your Agility until your next rest.\n• Major Bolster Potion: You gain a +1 bonus to your Strength until your next rest.\n• Major Control Potion: You gain a +1 bonus to your Finesse until your next rest.\n• Major Attune Potion: You gain a +1 bonus to your Instinct until your next rest.\n• Major Charm Potion: You gain a +1 bonus to your Presence until your next rest.\n• Major Enlighten Potion: You gain a +1 bonus to your Knowledge until your next rest.",
+    "aliases": [
+      "Stride Potion",
+      "Bolster Potion",
+      "Control Potion",
+      "Attune Potion",
+      "Charm Potion",
+      "Enlighten Potion",
+      "Major Stride Potion",
+      "Major Bolster Potion",
+      "Major Control Potion",
+      "Major Attune Potion",
+      "Major Charm Potion",
+      "Major Enlighten Potion"
+    ]
+  },
+  {
+    "id": "stat-relics",
+    "name": "Stat Relics",
+    "description": "Relics that grant a permanent +1 bonus to a specific trait. You can only carry one relic.\n\n• Stride Relic: You gain a +1 bonus to your Agility. You can only carry one relic.\n• Bolder Relic: You gain a +1 bonus to your Strength. You can only carry one relic.\n• Control Relic: You gain a +1 bonus to your Finesse. You can only carry one relic.\n• Attune Relic: You gain a +1 bonus to your Instinct. You can only carry one relic.\n• Charm Relic: You gain a +1 bonus to your Presence. You can only carry one relic.\n• Enlighten Relic: You gain a +1 bonus to your Knowledge. You can only carry one relic.",
+    "aliases": [
+      "Stride Relic",
+      "Bolder Relic",
+      "Control Relic",
+      "Attune Relic",
+      "Charm Relic",
+      "Enlighten Relic"
+    ]
+  },
+  {
+    "id": "leather-armor",
+    "name": "Leather Armor",
+    "description": "Leather armor across all tiers.\n\n• Leather Armor: BASE THRESHOLDS: 6 / 13, BASE SCORE: 3\n\n• Improved Leather Armor: BASE THRESHOLDS: 9 / 20, BASE SCORE: 4\n\n• Advanced Leather Armor: BASE THRESHOLDS: 13 / 27, BASE SCORE: 5\n\n• Legendary Leather Armor: BASE THRESHOLDS: 13 / 36, BASE SCORE: 6",
+    "aliases": [
+      "Improved Leather Armor",
+      "Advanced Leather Armor",
+      "Legendary Leather Armor"
+    ]
+  },
+  {
+    "id": "chainmail-armor",
+    "name": "Chainmail Armor",
+    "description": "Chainmail armor across all tiers.\n\n• Chainmail Armor: BASE THRESHOLDS: 7 / 15, BASE SCORE: 4, FEATURE: Heavy: -1 to Evasion\n\n• Improved Chainmail Armor: BASE THRESHOLDS: 11 / 24, BASE SCORE: 5, FEATURE: Heavy: -1 to Evasion\n\n• Advanced Chainmail Armor: BASE THRESHOLDS: 13 / 31, BASE SCORE: 6, FEATURE: Heavy: -1 to Evasion\n\n• Legendary Chainmail Armor: BASE THRESHOLDS: 15 / 40, BASE SCORE: 7, FEATURE: Heavy: -1 to Evasion",
+    "aliases": [
+      "Improved Chainmail Armor",
+      "Advanced Chainmail Armor",
+      "Legendary Chainmail Armor"
+    ]
   }
 ]

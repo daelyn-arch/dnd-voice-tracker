@@ -1,0 +1,22 @@
+[
+  {
+    "id": "acolyte",
+    "name": "Acolyte",
+    "description": "Ability Scores: INT, WIS, CHA\nFeat: Magic Initiate"
+  },
+  {
+    "id": "criminal",
+    "name": "Criminal",
+    "description": "Ability Scores: DEX, CON, INT\nFeat: Alert"
+  },
+  {
+    "id": "sage",
+    "name": "Sage",
+    "description": "Ability Scores: CON, INT, WIS\nFeat: Magic Initiate"
+  },
+  {
+    "id": "soldier",
+    "name": "Soldier",
+    "description": "Ability Scores: STR, DEX, CON\nFeat: Savage Attacker"
+  }
+]

@@ -476,13 +476,6 @@
     "description": "Level 18: Improved War Magic\nWhen you take the Attack action on your turn, you can replace two of the attacks with a casting of one of your level 1 or level 2 Wizard spells that has a casting time of an action."
   },
   {
-    "id": "monk",
-    "name": "Monk",
-    "class": "Monk",
-    "levelAvailable": 1,
-    "description": "Monk\nA Martial Artist of Supernatural Focus"
-  },
-  {
     "id": "core-monk-traits",
     "name": "Core Monk Traits",
     "class": "Monk",
@@ -735,13 +728,6 @@
     "description": "You gain an Epic Boon feat (see chapter 5) or another feat of your choice for which you qualify. Boon of Dimensional Travel is recommended."
   },
   {
-    "id": "ranger",
-    "name": "Ranger",
-    "class": "Unknown",
-    "levelAvailable": 0,
-    "description": "A Wandering Warrior Imbued with Primal Magic"
-  },
-  {
     "id": "core-ranger-traits",
     "name": "Core Ranger Traits",
     "class": "Ranger",
@@ -866,13 +852,6 @@
     "class": "Rogue",
     "levelAvailable": 1,
     "description": "Level 1: Weapon Mastery\nYour training with weapons allows you to use the mastery properties of two kinds of weapons of your choice with which you have proficiency, such as Daggers and Shortbows.\nWhenever you finish a Long Rest, you can change the kinds of weapons you chose. For example, you could switch to using the mastery properties of Scimitars and Shortswords."
-  },
-  {
-    "id": "rogue",
-    "name": "Rogue",
-    "class": "Rogue",
-    "levelAvailable": 1,
-    "description": "Rogue\nA Dexterous Expert in Stealth and Subterfuge"
   },
   {
     "id": "core-rogue-traits",

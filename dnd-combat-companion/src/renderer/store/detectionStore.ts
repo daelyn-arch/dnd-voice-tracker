@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 import type { Detection, Entry, EntryType, DaggerheartEntry, DiceRollEntry } from '../types'
-import { getDaggerheartSource, setDaggerheartSource, type DaggerheartSource } from '../data'
+import { getDaggerheartSource, setDaggerheartSource, type DaggerheartSource, getDndSource, setDndSource, type DndSource } from '../data'
 
 const MAX_DETECTIONS = 128
 
@@ -59,7 +59,9 @@ interface DetectionStore {
   transcriptWords: string[]
   pushTranscriptWord: (word: string) => void
 
-  // Daggerheart data source
+  // Data sources
+  dndSource: DndSource
+  setDndSource: (source: DndSource) => void
   daggerheartSource: DaggerheartSource
   setDaggerheartSource: (source: DaggerheartSource) => void
 
@@ -102,7 +104,12 @@ export const useDetectionStore = create<DetectionStore>((set, get) => ({
   showTranscript: false,
   transcriptWords: [],
 
-  // Daggerheart data source
+  // Data sources
+  dndSource: getDndSource(),
+  setDndSource(source: DndSource) {
+    setDndSource(source)
+    set({ dndSource: source })
+  },
   daggerheartSource: getDaggerheartSource(),
   setDaggerheartSource(source: DaggerheartSource) {
     setDaggerheartSource(source)

@@ -24,7 +24,16 @@ export function loadKeywords(): string[] {
     'species.json',
     'rules.json',
     'magicItems.json',
-    'daggerheart.json'
+    'spells_srd.json',
+    'features_srd.json',
+    'feats_srd.json',
+    'equipment_srd.json',
+    'backgrounds_srd.json',
+    'species_srd.json',
+    'rules_srd.json',
+    'magicItems_srd.json',
+    'daggerheart.json',
+    'daggerheart_srd.json'
   ]
 
   const allNames: string[] = []
@@ -33,8 +42,13 @@ export function loadKeywords(): string[] {
     try {
       const filePath = path.join(dataDir, file)
       if (fs.existsSync(filePath)) {
-        const entries: { name: string }[] = JSON.parse(fs.readFileSync(filePath, 'utf-8'))
-        allNames.push(...entries.map((e) => e.name.toLowerCase()))
+        const entries: { name: string; aliases?: string[] }[] = JSON.parse(fs.readFileSync(filePath, 'utf-8'))
+        for (const e of entries) {
+          allNames.push(e.name.toLowerCase())
+          if (e.aliases) {
+            allNames.push(...e.aliases.map((a) => a.toLowerCase()))
+          }
+        }
       } else {
         console.warn(`[grammar] ${file} not found at`, filePath)
       }
@@ -64,13 +78,14 @@ export function loadKeywords(): string[] {
   ]
   const plusPhrases = NUMBERS.map((n) => `plus ${n}`)
 
-  const keywords = [...allNames, ...wordParts, ...plusPhrases]
+  const phoneticPhrases = getPhoneticPhrases()
+  const keywords = [...allNames, ...wordParts, ...plusPhrases, ...phoneticPhrases]
 
   // Deduplicate and strip entries with special characters vosk can't use
   // (parentheses, colons, slashes, digits, apostrophes, etc.)
   const unique = Array.from(new Set([...keywords, ...COMPOUND_FRAGMENTS]))
     .filter((k) => /^[a-z][a-z\s-]*[a-z]$/.test(k) || /^[a-z]+$/.test(k))
-  console.log(`[grammar] Loaded ${unique.length} keywords`)
+  console.log(`[grammar] Loaded ${unique.length} keywords (${phoneticPhrases.length} phonetic aliases)`)
   return unique
 }
 
@@ -111,3 +126,90 @@ const COMPOUND_FRAGMENTS = [
   // overchannel
   'channel',
 ]
+
+/**
+ * Phonetic alternatives for fantasy/unusual TTRPG terms.
+ * Maps spoken alternative → canonical keyword that the lookup can resolve.
+ * These get added to the Vosk grammar so it can recognise common mispronunciations
+ * and phonetic spellings of fantasy words.
+ */
+export const PHONETIC_ALIASES: Record<string, string> = {
+  // ─── Daggerheart ancestries ──────────────────────────────────────────
+  'fur bolg': 'firbolg',
+  'fir bolg': 'firbolg',
+  'fire bolg': 'firbolg',
+  'fun grill': 'fungril',
+  'fung rill': 'fungril',
+  'gal ah pah': 'galapa',
+  'gal a pa': 'galapa',
+  'rib it': 'ribbet',
+  'rib bet': 'ribbet',
+  'sim ee ah': 'simiah',
+  'sim eye ah': 'simiah',
+  'ka tar ee': 'katari',
+  'ka tar eye': 'katari',
+  'in fur nis': 'infernis',
+  'in fern is': 'infernis',
+  'dra ko na': 'drakona',
+  'dra cone ah': 'drakona',
+
+  // ─── Daggerheart domains & classes ───────────────────────────────────
+  'are kah na': 'arcana',
+  'are cane ah': 'arcana',
+  'co dex': 'codex',
+  'code ex': 'codex',
+  'sare af': 'seraph',
+  'sair a': 'seraph',
+  'sarah': 'seraph',
+
+  // ─── D&D named spells ───────────────────────────────────────────────
+  'more den kine en': 'mordenkainen',
+  'mor den kai nen': 'mordenkainen',
+  'big bees hand': "bigby's hand",
+  'big bee': 'bigby',
+  'toss a': 'tasha',
+  'tash a': 'tasha',
+  'melfs': 'melf',
+  'evo rds': 'evard',
+  'ot a luke': 'otiluke',
+  'ot ill uke': 'otiluke',
+  'draw midge': 'drawmij',
+  'ten sir': 'tenser',
+  'nigh stool': 'nystul',
+  'lay oh mund': 'leomund',
+  'lee oh mund': 'leomund',
+  'rare ee': 'rary',
+  'a gah nah zar': 'aganazzar',
+
+  // ─── Commonly mispronounced D&D terms ───────────────────────────────
+  'can trip': 'cantrip',
+  'eldritch': 'eldritch',
+  'eld rich': 'eldritch',
+  'necromancy': 'necromancy',
+  'neck row man see': 'necromancy',
+  'transmutation': 'transmutation',
+  'trans mew tay shun': 'transmutation',
+  'evocation': 'evocation',
+  'ev oh cay shun': 'evocation',
+  'abjuration': 'abjuration',
+  'ab jure ay shun': 'abjuration',
+  'conjuration': 'conjuration',
+  'con jure ay shun': 'conjuration',
+  'divination': 'divination',
+  'div in ay shun': 'divination',
+  'enchantment': 'enchantment',
+  'illusion': 'illusion',
+
+  // ─── Daggerheart game terms ─────────────────────────────────────────
+  'spell cast': 'spellcast',
+  'spell cast roll': 'spellcast roll',
+  'hit points': 'hit point',
+  'armor slots': 'armor slot',
+  'damage threshold': 'damage thresholds',
+  'recall cost': 'recall cost',
+}
+
+/** All phonetic alternative phrases for the Vosk grammar */
+export function getPhoneticPhrases(): string[] {
+  return Object.keys(PHONETIC_ALIASES)
+}

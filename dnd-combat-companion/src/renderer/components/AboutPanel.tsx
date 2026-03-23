@@ -10,11 +10,12 @@ export function AboutPanel({ onClose }: Props): React.JSX.Element {
   return (
     <div className={styles.panel}>
       <div className={styles.header}>
-        <h2 className={styles.title}>D&D Combat Companion</h2>
+        <h2 className={styles.title}>Log of Beholding</h2>
         <button className={styles.close} onClick={onClose} aria-label="Close">×</button>
       </div>
 
-      <p className={styles.version}>v1.0.0 — Voice-activated spell reference overlay</p>
+      <p className={styles.version}>v1.0.0 — Voice-activated TTRPG reference overlay</p>
+      <p className={styles.attribution} style={{ fontStyle: 'italic', marginTop: 4 }}>Like a Bag of Holding, but for knowledge.</p>
 
       <div className={styles.divider} />
 
@@ -43,7 +44,7 @@ export function AboutPanel({ onClose }: Props): React.JSX.Element {
 
       <h3 className={styles.sectionTitle}>Color Legend</h3>
 
-      <h4 className={styles.legendHeader}>D&D Spell Schools</h4>
+      <h4 className={styles.legendHeader}>Spell Schools</h4>
       <div className={styles.legend}>
         {(['Evocation', 'Abjuration', 'Necromancy', 'Illusion', 'Conjuration', 'Enchantment', 'Divination', 'Transmutation'] as const).map((school) => (
           <div key={school} className={styles.legendRow}>
@@ -53,7 +54,7 @@ export function AboutPanel({ onClose }: Props): React.JSX.Element {
         ))}
       </div>
 
-      <h4 className={styles.legendHeader}>D&D Categories</h4>
+      <h4 className={styles.legendHeader}>D&D 5e Categories</h4>
       <div className={styles.legend}>
         {([['Feature', 'Class Features'], ['Feat', 'Feats'], ['Equipment', 'Equipment'], ['Background', 'Backgrounds'], ['Species', 'Species'], ['Rules', 'Rules'], ['MagicItem', 'Magic Items'], ['DiceRoll', 'Dice Rolls']] as const).map(([key, label]) => (
           <div key={key} className={styles.legendRow}>

@@ -39,6 +39,7 @@ export interface EquipmentEntry {
   id: string
   name: string
   description: string
+  aliases?: string[]
 }
 
 export interface BackgroundEntry {
@@ -77,6 +78,7 @@ export interface DaggerheartEntry {
   name: string
   description: string
   category: 'domain' | 'class features' | 'rules' | 'adversary'
+  aliases?: string[]
 }
 
 export interface DiceRollEntry {

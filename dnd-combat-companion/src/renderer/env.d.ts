@@ -4,6 +4,7 @@ import type { KeywordDetectedPayload } from './types'
 
 interface ElectronAPI {
   onKeywordDetected: (callback: (payload: KeywordDetectedPayload) => void) => () => void
+  onKeywordPartial: (callback: (payload: KeywordDetectedPayload) => void) => () => void
   onSpeechStatus: (callback: (status: string) => void) => () => void
   onSpeechError: (callback: (msg: string) => void) => () => void
   startListening: () => Promise<void>
@@ -11,6 +12,11 @@ interface ElectronAPI {
   sendAudioChunk: (buffer: ArrayBuffer) => void
   setIgnoreMouseEvents: (ignore: boolean) => void
   resizeWidth: (width: number) => void
+  customLibraryGet: () => Promise<any[]>
+  customLibraryAdd: (card: any) => Promise<any[]>
+  customLibraryUpdate: (id: string, updates: any) => Promise<any[]>
+  customLibraryDelete: (id: string) => Promise<any[]>
+  customLibraryImport: (json: string) => Promise<any[]>
 }
 
 declare global {

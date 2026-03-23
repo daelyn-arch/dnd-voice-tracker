@@ -2,13 +2,20 @@ import { contextBridge, ipcRenderer } from 'electron'
 import type { KeywordDetectedPayload } from './types'
 
 contextBridge.exposeInMainWorld('electronAPI', {
-  /** Subscribe to keyword detections from the speech pipeline */
+  /** Subscribe to keyword detections from the speech pipeline (final results) */
   onKeywordDetected: (callback: (payload: KeywordDetectedPayload) => void) => {
     const listener = (_event: Electron.IpcRendererEvent, payload: KeywordDetectedPayload) =>
       callback(payload)
     ipcRenderer.on('keyword-detected', listener)
-    // Return cleanup function
     return () => ipcRenderer.off('keyword-detected', listener)
+  },
+
+  /** Subscribe to partial keyword detections (low-latency, mid-utterance) */
+  onKeywordPartial: (callback: (payload: KeywordDetectedPayload) => void) => {
+    const listener = (_event: Electron.IpcRendererEvent, payload: KeywordDetectedPayload) =>
+      callback(payload)
+    ipcRenderer.on('keyword-partial', listener)
+    return () => ipcRenderer.off('keyword-partial', listener)
   },
 
   /** Subscribe to speech pipeline status changes */
@@ -35,5 +42,12 @@ contextBridge.exposeInMainWorld('electronAPI', {
   setIgnoreMouseEvents: (ignore: boolean) => ipcRenderer.send('set-ignore-mouse', ignore),
 
   /** Resize window width, keeping right edge anchored */
-  resizeWidth: (width: number) => ipcRenderer.send('resize-width', width)
+  resizeWidth: (width: number) => ipcRenderer.send('resize-width', width),
+
+  /** Custom library CRUD */
+  customLibraryGet: () => ipcRenderer.invoke('custom-library:get'),
+  customLibraryAdd: (card: any) => ipcRenderer.invoke('custom-library:add', card),
+  customLibraryUpdate: (id: string, updates: any) => ipcRenderer.invoke('custom-library:update', id, updates),
+  customLibraryDelete: (id: string) => ipcRenderer.invoke('custom-library:delete', id),
+  customLibraryImport: (json: string) => ipcRenderer.invoke('custom-library:import', json)
 })

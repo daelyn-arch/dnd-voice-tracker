@@ -51,6 +51,8 @@ export function SettingsPanel({ onClose }: Props): React.JSX.Element {
   const toggleShowTranscript = useDetectionStore((s) => s.toggleShowTranscript)
   const sortByCategory = useDetectionStore((s) => s.sortByCategory)
   const toggleSortByCategory = useDetectionStore((s) => s.toggleSortByCategory)
+  const dndSource = useDetectionStore((s) => s.dndSource)
+  const setDndSrc = useDetectionStore((s) => s.setDndSource)
   const daggerheartSource = useDetectionStore((s) => s.daggerheartSource)
   const setDhSource = useDetectionStore((s) => s.setDaggerheartSource)
 
@@ -76,7 +78,7 @@ export function SettingsPanel({ onClose }: Props): React.JSX.Element {
 
       <div className={styles.quickRow}>
         <button className={styles.quickBtn} onMouseDown={(e) => { e.preventDefault(); selectDndOnly() }}>
-          D&D 2024
+          D&D 5e
         </button>
         <button className={styles.quickBtn} onMouseDown={(e) => { e.preventDefault(); selectDaggerheartOnly() }}>
           Daggerheart
@@ -85,9 +87,26 @@ export function SettingsPanel({ onClose }: Props): React.JSX.Element {
 
       <div className={styles.divider} />
 
-      <h3 className={styles.sectionTitle}>D&D 2024</h3>
+      <h3 className={styles.sectionTitle}>D&D 5e</h3>
 
       <div className={styles.checkList}>
+        <label className={styles.checkRow}>
+          <span className={styles.checkLabel}>Data Source</span>
+        </label>
+        <div className={styles.sourceToggle}>
+          <button
+            className={`${styles.sourceBtn} ${dndSource === 'full' ? styles.sourceBtnActive : ''}`}
+            onClick={() => setDndSrc('full')}
+          >
+            Full (Personal)
+          </button>
+          <button
+            className={`${styles.sourceBtn} ${dndSource === 'srd' ? styles.sourceBtnActive : ''}`}
+            onClick={() => setDndSrc('srd')}
+          >
+            SRD (Commercial)
+          </button>
+        </div>
         <label className={styles.checkRow}>
           <input
             type="checkbox"

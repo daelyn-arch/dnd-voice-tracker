@@ -2,12 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useDetectionStore } from '../store/detectionStore'
 import styles from './BootSplash.module.css'
 
-const BANNER = `
-  ####   ##  ##  ####
-  ##  #  ### ##  ##  #
-  ##  #  ## ###  ##  #
-  ####   ##  ##  ####
-`.trim()
+const BANNER = 'LOG OF BEHOLDING v1.0'
 
 export function BootSplash(): React.JSX.Element | null {
   const isListening = useDetectionStore((s) => s.isListening)
@@ -39,8 +34,7 @@ export function BootSplash(): React.JSX.Element | null {
 
   return (
     <div className={`${styles.splash} ${phase === 'ready' ? styles.fadeOut : ''}`}>
-      <pre className={styles.banner}>{BANNER}</pre>
-      <div className={styles.subtitle}>COMBAT COMPANION v1.0</div>
+      <div className={styles.banner}>{BANNER}</div>
       <div className={styles.divider}>{'─'.repeat(22)}</div>
       <div className={styles.log}>
         <span className={styles.prompt}>&gt;</span> LOADING SPELLS

@@ -1470,30 +1470,6 @@
     "category": "class features"
   },
   {
-    "id": "dh-step-1-name-your-companion",
-    "name": "Step 1: Name Your Companion",
-    "description": "Work with the GM to decide what kind of animal you have as your companion. Give them a name and add a picture of them to the companion sheet.",
-    "category": "class features"
-  },
-  {
-    "id": "dh-step-2-write-their-evasion",
-    "name": "Step 2: Write Their Evasion",
-    "description": "Fill in their Evasion, which starts at 10.",
-    "category": "class features"
-  },
-  {
-    "id": "dh-step-3-choose-their-companion-experience",
-    "name": "Step 3: Choose Their Companion Experience",
-    "description": "Create two Experiences for your companion based on their training and the history you have together.\n\nStart with +2 in both Experiences. Whenever you gain a new Experience, your companion also gains one. All new Experiences start at +2.",
-    "category": "class features"
-  },
-  {
-    "id": "dh-step-4-choose-their-attack-and-record-damage-die",
-    "name": "Step 4: Choose Their Attack and Record Damage Die",
-    "description": "Finally, describe your companion's method of dealing damage (their standard attack) and record it in the \"Attack & Damage\" section. At level 1, your companion's damage die is a d6 and their range is Melee. Choose whether they deal physical or magic damage.",
-    "category": "class features"
-  },
-  {
     "id": "dh-using-spellcast-rolls-hope-and-experiences",
     "name": "Using Spellcast Rolls, Hope, and Experiences",
     "description": "Make a Spellcast Roll to connect with your companion and command them to take action. Spend a Hope to add an applicable Companion Experience to the roll. On a success with Hope, if your next action builds on their success, you gain advantage on the roll.",
@@ -1617,12 +1593,6 @@
     "id": "dh-wizard",
     "name": "Wizard",
     "description": "Whether through an institution or individual study, those known as wizards acquire and hone immense magical power over years of learning using a variety of tools, including books, stones, potions, and herbs. Some wizards dedicate their lives to mastering a particular school of magic, while others learn from a wide variety of disciplines. Many wizards become wise and powerful figures in their communities, advising rulers, providing medicines and healing spells, and even leading war councils. While these mages all work toward the common goal of collecting magical knowledge, wizards often have the most conflict within their own ranks, as the acquisition, keeping, and sharing of powerful secrets is a topic of intense debate that has resulted in innumerable deaths.",
-    "category": "class features"
-  },
-  {
-    "id": "dh-wizard-class-items",
-    "name": "Wizard Class Items",
-    "description": "A book you're trying to translate or a tiny, harmless elemental pet",
     "category": "class features"
   },
   {
@@ -2061,30 +2031,6 @@
     "id": "dh-action-rolls",
     "name": "Action Rolls",
     "description": "In each scene, the GM and players go back and forth describing what happens. If you make a move where the outcome is in question, and the success or failure of that move is interesting to the story, your move is an action and the GM calls for an action roll to determine the outcome. However, if an action is either easy to pull off without complication or impossible to perform, there's no need to roll—you already know the result.\n\nWhen the GM (or your spell, attack, or ability) asks you to make an action roll, you'll do so by rolling your Duality Dice. Each action roll follows four basic steps, which are summarized here and detailed in the sections that follow:",
-    "category": "rules"
-  },
-  {
-    "id": "dh-step-1-pick-a-character-trait",
-    "name": "Step 1: Pick a Character Trait",
-    "description": "The GM tells you which character trait best applies to the roll and sets a Difficulty for the roll (either openly or privately, at their discretion) based on the details of the scene.",
-    "category": "rules"
-  },
-  {
-    "id": "dh-step-2-add-extra-dice-and-modifiers",
-    "name": "Step 2: Add Extra Dice and Modifiers",
-    "description": "You decide if any Experiences or other modifiers also apply, and grab character tokens, advantage or disadvantage dice, and other dice as needed.",
-    "category": "rules"
-  },
-  {
-    "id": "dh-step-3-roll-the-dice",
-    "name": "Step 3: Roll the Dice",
-    "description": "You roll your Duality Dice and any additional dice, then add up the result of the dice and the tokens. Tell the GM the total and which Duality Die rolled higher (\"I got a 15 with Fear!\").",
-    "category": "rules"
-  },
-  {
-    "id": "dh-step-4-resolve-the-situation",
-    "name": "Step 4: Resolve the Situation",
-    "description": "You and the GM work together to resolve the outcome of your action.",
     "category": "rules"
   },
   {
@@ -4068,18 +4014,6 @@
     "category": "rules"
   },
   {
-    "id": "dh-leather-armor",
-    "name": "Leather Armor",
-    "description": "Base Thresholds: 6 / 13; Base Score: 3; Feature: —",
-    "category": "rules"
-  },
-  {
-    "id": "dh-chainmail-armor",
-    "name": "Chainmail Armor",
-    "description": "NAME: Chainmail Armor\nBASE THRESHOLDS: 7 / 15\nBASE SCORE: 4\nFEATURE: Heavy: -1 to Evasion",
-    "category": "rules"
-  },
-  {
     "id": "dh-full-plate-armor",
     "name": "Full Plate Armor",
     "description": "Base Thresholds: 8 / 17; Base Score: 4; Feature: Very Heavy: -2 to Evasion; -1 to Agility",
@@ -4089,18 +4023,6 @@
     "id": "dh-improved-gambeson-armor",
     "name": "Improved Gambeson Armor",
     "description": "Base Thresholds: 7 / 16; Base Score: 4; Feature: Flexible: +1 to Evasion",
-    "category": "rules"
-  },
-  {
-    "id": "dh-improved-leather-armor",
-    "name": "Improved Leather Armor",
-    "description": "Base Thresholds: 9 / 20; Base Score: 4; Feature: —",
-    "category": "rules"
-  },
-  {
-    "id": "dh-improved-chainmail-armor",
-    "name": "Improved Chainmail Armor",
-    "description": "Base Thresholds: 11 / 24; Base Score: 5; Feature: Heavy: -1 to Evasion",
     "category": "rules"
   },
   {
@@ -4152,18 +4074,6 @@
     "category": "rules"
   },
   {
-    "id": "dh-advanced-leather-armor",
-    "name": "Advanced Leather Armor",
-    "description": "Base Thresholds: 11 / 27; Base Score: 5; Feature: —",
-    "category": "rules"
-  },
-  {
-    "id": "dh-advanced-chainmail-armor",
-    "name": "Advanced Chainmail Armor",
-    "description": "Base Thresholds: 13 / 31; Base Score: 6; Feature: Heavy: -1 to Evasion",
-    "category": "rules"
-  },
-  {
     "id": "dh-advanced-full-plate-armor",
     "name": "Advanced Full Plate Armor",
     "description": "Base Thresholds: 15 / 35; Base Score: 6; Feature: Very Heavy: -2 to Evasion; -1 to Agility",
@@ -4209,18 +4119,6 @@
     "id": "dh-legendary-gambeson-armor",
     "name": "Legendary Gambeson Armor",
     "description": "Base Thresholds: 11 / 32; Base Score: 6; Feature: Flexible: +1 to Evasion",
-    "category": "rules"
-  },
-  {
-    "id": "dh-legendary-leather-armor",
-    "name": "Legendary Leather Armor",
-    "description": "Base Thresholds: 13 / 36; Base Score: 6; Feature: —",
-    "category": "rules"
-  },
-  {
-    "id": "dh-legendary-chainmail-armor",
-    "name": "Legendary Chainmail Armor",
-    "description": "Base Thresholds: 15 / 40; Base Score: 7; Feature: Heavy: -1 to Evasion",
     "category": "rules"
   },
   {
@@ -4506,42 +4404,6 @@
     "category": "rules"
   },
   {
-    "id": "dh-stride-relic",
-    "name": "Stride Relic",
-    "description": "You gain a +1 bonus to your Agility. You can only carry one relic.",
-    "category": "rules"
-  },
-  {
-    "id": "dh-bolster-relic",
-    "name": "Bolster Relic",
-    "description": "You gain a +1 bonus to your Strength. You can only carry one relic.",
-    "category": "rules"
-  },
-  {
-    "id": "dh-control-relic",
-    "name": "Control Relic",
-    "description": "You gain a +1 bonus to your Finesse. You can only carry one relic.",
-    "category": "rules"
-  },
-  {
-    "id": "dh-attune-relic",
-    "name": "Attune Relic",
-    "description": "You gain a +1 bonus to your Instinct. You can only carry one relic.",
-    "category": "rules"
-  },
-  {
-    "id": "dh-charm-relic",
-    "name": "Charm Relic",
-    "description": "You gain a +1 bonus to your Presence. You can only carry one relic.",
-    "category": "rules"
-  },
-  {
-    "id": "dh-enlighten-relic",
-    "name": "Enlighten Relic",
-    "description": "You gain a +1 bonus to your Knowledge. You can only carry one relic.",
-    "category": "rules"
-  },
-  {
     "id": "dh-honing-relic",
     "name": "Honing Relic",
     "description": "You gain a +1 bonus to an Experience of your choice. You can only carry one relic.",
@@ -4623,42 +4485,6 @@
     "id": "dh-belt-of-unity",
     "name": "Belt of Unity",
     "description": "Once per session, you can spend 5 Hope to lead a Tag Team Roll with three PCs instead of two.",
-    "category": "rules"
-  },
-  {
-    "id": "dh-stride-potion",
-    "name": "Stride Potion",
-    "description": "You gain a +1 bonus to your next Agility Roll.",
-    "category": "rules"
-  },
-  {
-    "id": "dh-bolster-potion",
-    "name": "Bolster Potion",
-    "description": "You gain a +1 bonus to your next Strength Roll.",
-    "category": "rules"
-  },
-  {
-    "id": "dh-control-potion",
-    "name": "Control Potion",
-    "description": "You gain a +1 bonus to your next Finesse Roll.",
-    "category": "rules"
-  },
-  {
-    "id": "dh-attune-potion",
-    "name": "Attune Potion",
-    "description": "You gain a +1 bonus to your next Instinct Roll.",
-    "category": "rules"
-  },
-  {
-    "id": "dh-charm-potion",
-    "name": "Charm Potion",
-    "description": "You gain a +1 bonus to your next Presence Roll.",
-    "category": "rules"
-  },
-  {
-    "id": "dh-enlighten-potion",
-    "name": "Enlighten Potion",
-    "description": "You gain a +1 bonus to your next Knowledge Roll.",
     "category": "rules"
   },
   {
@@ -4767,42 +4593,6 @@
     "id": "dh-improved-arcane-shard",
     "name": "Improved Arcane Shard",
     "description": "You can make a Finesse Roll to throw this shard at a group of adversaries within Far range. Targets you succeed against take 2d20 magic damage.",
-    "category": "rules"
-  },
-  {
-    "id": "dh-major-stride-potion",
-    "name": "Major Stride Potion",
-    "description": "You gain a +1 bonus to your Agility until your next rest.",
-    "category": "rules"
-  },
-  {
-    "id": "dh-major-bolster-potion",
-    "name": "Major Bolster Potion",
-    "description": "You gain a +1 bonus to your Strength until your next rest.",
-    "category": "rules"
-  },
-  {
-    "id": "dh-major-control-potion",
-    "name": "Major Control Potion",
-    "description": "You gain a +1 bonus to your Finesse until your next rest.",
-    "category": "rules"
-  },
-  {
-    "id": "dh-major-attune-potion",
-    "name": "Major Attune Potion",
-    "description": "You gain a +1 bonus to your Instinct until your next rest.",
-    "category": "rules"
-  },
-  {
-    "id": "dh-major-charm-potion",
-    "name": "Major Charm Potion",
-    "description": "You gain a +1 bonus to your Presence until your next rest.",
-    "category": "rules"
-  },
-  {
-    "id": "dh-major-enlighten-potion",
-    "name": "Major Enlighten Potion",
-    "description": "You gain a +1 bonus to your Knowledge until your next rest.",
     "category": "rules"
   },
   {
@@ -5193,12 +4983,6 @@
     "id": "dh-take-away-an-opportunity-permanently",
     "name": "Take Away an Opportunity Permanently",
     "description": "When things are dire, sometimes the PCs lose an opportunity they once had. A softer version of this move might be to collapse the party's straightforward pathway through a cave system, forcing them to find another, more treacherous way to escape. A harder version of this move would be to kill an NPC or destroy a powerful object the party desperately needs. These moves can be used to great effect when you want to twist the trajectory of the story in a new direction.",
-    "category": "rules"
-  },
-  {
-    "id": "dh-fear",
-    "name": "Fear",
-    "description": "While PCs gain Hope as a metacurrency during the game, you gain Fear.",
     "category": "rules"
   },
   {
@@ -5664,12 +5448,6 @@
     "category": "rules"
   },
   {
-    "id": "dh-description",
-    "name": "Description",
-    "description": "An evocative one-line summary of the environment.",
-    "category": "rules"
-  },
-  {
     "id": "dh-motives-tactics",
     "name": "Motives & Tactics",
     "description": "Each stat block contains the adversary's motives and tactics. When in doubt, the bandit tries to escape (caring more for their own life than victory), profit (by any means necessary, including lying and stealing), and throw smoke (obscuring the battlefield and escape route). These motives and tactics are suggestions rather than rules—feel free to improvise their choices as you would when playing any NPC.",
@@ -5940,12 +5718,6 @@
     "category": "adversary"
   },
   {
-    "id": "dh-minions",
-    "name": "MINIONS",
-    "description": "Minions are easily dispatched but dangerous in numbers.",
-    "category": "rules"
-  },
-  {
     "id": "dh-giant-rat",
     "name": "GIANT RAT",
     "description": "Tier 1 Minion\nA cat-sized rodent skilled at scavenging and survival.\nMotives & Tactics: Burrow, eat, gnaw, scavenge, wear down\n\nDifficulty: 10 | Thresholds: None | HP: 1 | Stress: 1\nATK: −4 | Claws: Melee | 1 phy\n\nExperience: Keen Senses +3\n\nFEATURES\nMinion (3) - Passive: The Rat is defeated when they take any damage. For every 3 damage a PC deals to the Rat, defeat an additional Minion within range the attack would succeed against.\nGroup Attack - Action: Spend a Fear to choose a target and spotlight all Giant Rats within Close range of them. Those Minions move into Melee range of the target and make one shared attack roll. On a success, they deal 1 physical damage each. Combine this damage.",
@@ -5974,12 +5746,6 @@
     "name": "ICEWASTE HUNTER",
     "description": "Tier 2 Ranged\nA survivalist who trawls the icy wastes in search of dangerous game.\nMotives & Tactics: Hunt, persevere, rescue, track\n\nDifficulty: 13 | Thresholds: 7/14 | HP: 5 | Stress: 4\nATK: +3 | Longbow: Far | 2d12+6 phy\n\nExperience: Navigate +2, Survivalist +3\n\nFEATURES\nSteady Aim - Passive: Mark a Stress to give the Hunter advantage on their next attack.\nSnowblind Trap - Action: Spend a Fear to target a group within Close range. All targets must succeed on an Agility Reaction Roll or be caught in the trap, becoming Vulnerable until they escape with a successful Strength or Finesse (14) roll. You gain a Fear when a target who is caught in this trap makes an action roll.\nTake Cover! - Reaction: Mark a Stress to give an attack against the Hunter disadvantage. If the attack still succeeds, reduce the severity of the damage they take by one threshold.",
     "category": "adversary"
-  },
-  {
-    "id": "dh-skulks",
-    "name": "SKULKS",
-    "description": "Skulks maneuver and exploit opportunities to ambush opponents.",
-    "category": "rules"
   },
   {
     "id": "dh-jagged-knife-shadow",
@@ -6964,5 +6730,57 @@
     "name": "Necromancer's Ossuary",
     "description": "Tier 4 Exploration\nA dusty crypt with a library, twisting corridors, and abundant sarcophagi, spattered with the blood of ill-fated invaders.\nImpulses: Confound intruders, delve into secrets best left buried, manifest unlife, unleash a tide of undead\n\nDifficulty: 19\nPotential Adversaries: Arch-Necromancer's Host (Perfected Zombie, Zombie Legion)\n\nFEATURES\nNo Place for the Living - Passive: A feature or action that clears HP requires spending a Hope to use. If it already costs Hope, a PC must spend an additional Hope.\nWhat does it feel like to try to heal in a place so antithetical to life?\n\nCenturies of Knowledge - Passive: A PC can investigate the library and laboratory and make a Knowledge Roll to learn information related to arcana, local history, and the Necromancer's plans.\nWhat are the names of the tomes? What project is the necromancer working on that they does it communicate about their plans?\n\nSkeletal Burst - Action: All targets within Close range of a point you choose in this environment must succeed on an Agility Reaction Roll or take 4d8+8 Physical damage from skeletal shrapnel as part of the ossuary detonates around them.\nWhat signs of the skeletal architecture is destroyed? What bone dust stick in your armor?\n\nAura of Death - Action: Once per scene, roll a d6. Each undead within Far range of the Necromancer can clear HP and Stress equal to the result rolled. The undead can choose how that number is divided between HP and Stress.\nHow does their renewed vigor manifest? Do they look more lifelike, or paradoxically, more vigorous?\n\nThey Just Keep Coming! - Action: Spend a Fear to summon 1d6 Rotted Zombies, two Perfected Zombies, or a Zombie Legion, who appear at Close range of a chosen PC.\nWho were these people before they became the necromancer's pawns? What vestiges of those lives remain for the heroes to see?",
     "category": "rules"
+  },
+  {
+    "id": "stat-potions",
+    "name": "Stat Potions",
+    "description": "Potions that grant a temporary +1 bonus to a specific trait.\n\nStandard (bonus to next roll):\n• Stride Potion: You gain a +1 bonus to your next Agility Roll.\n• Bolster Potion: You gain a +1 bonus to your next Strength Roll.\n• Control Potion: You gain a +1 bonus to your next Finesse Roll.\n• Attune Potion: You gain a +1 bonus to your next Instinct Roll.\n• Charm Potion: You gain a +1 bonus to your next Presence Roll.\n• Enlighten Potion: You gain a +1 bonus to your next Knowledge Roll.\n\nMajor (bonus until next rest):\n• Major Stride Potion: You gain a +1 bonus to your Agility until your next rest.\n• Major Bolster Potion: You gain a +1 bonus to your Strength until your next rest.\n• Major Control Potion: You gain a +1 bonus to your Finesse until your next rest.\n• Major Attune Potion: You gain a +1 bonus to your Instinct until your next rest.\n• Major Charm Potion: You gain a +1 bonus to your Presence until your next rest.\n• Major Enlighten Potion: You gain a +1 bonus to your Knowledge until your next rest.",
+    "aliases": [
+      "Stride Potion",
+      "Bolster Potion",
+      "Control Potion",
+      "Attune Potion",
+      "Charm Potion",
+      "Enlighten Potion",
+      "Major Stride Potion",
+      "Major Bolster Potion",
+      "Major Control Potion",
+      "Major Attune Potion",
+      "Major Charm Potion",
+      "Major Enlighten Potion"
+    ]
+  },
+  {
+    "id": "stat-relics",
+    "name": "Stat Relics",
+    "description": "Relics that grant a permanent +1 bonus to a specific trait. You can only carry one relic.\n\n• Stride Relic: You gain a +1 bonus to your Agility. You can only carry one relic.\n• Bolster Relic: You gain a +1 bonus to your Strength. You can only carry one relic.\n• Control Relic: You gain a +1 bonus to your Finesse. You can only carry one relic.\n• Attune Relic: You gain a +1 bonus to your Instinct. You can only carry one relic.\n• Charm Relic: You gain a +1 bonus to your Presence. You can only carry one relic.\n• Enlighten Relic: You gain a +1 bonus to your Knowledge. You can only carry one relic.",
+    "aliases": [
+      "Stride Relic",
+      "Bolster Relic",
+      "Control Relic",
+      "Attune Relic",
+      "Charm Relic",
+      "Enlighten Relic"
+    ]
+  },
+  {
+    "id": "leather-armor",
+    "name": "Leather Armor",
+    "description": "Leather armor across all tiers.\n\n• Leather Armor: Base Thresholds: 6 / 13; Base Score: 3; Feature: —\n\n• Improved Leather Armor: Base Thresholds: 9 / 20; Base Score: 4; Feature: —\n\n• Advanced Leather Armor: Base Thresholds: 11 / 27; Base Score: 5; Feature: —\n\n• Legendary Leather Armor: Base Thresholds: 13 / 36; Base Score: 6; Feature: —",
+    "aliases": [
+      "Improved Leather Armor",
+      "Advanced Leather Armor",
+      "Legendary Leather Armor"
+    ]
+  },
+  {
+    "id": "chainmail-armor",
+    "name": "Chainmail Armor",
+    "description": "Chainmail armor across all tiers.\n\n• Chainmail Armor: NAME: Chainmail Armor\nBASE THRESHOLDS: 7 / 15\nBASE SCORE: 4\nFEATURE: Heavy: -1 to Evasion\n\n• Improved Chainmail Armor: Base Thresholds: 11 / 24; Base Score: 5; Feature: Heavy: -1 to Evasion\n\n• Advanced Chainmail Armor: Base Thresholds: 13 / 31; Base Score: 6; Feature: Heavy: -1 to Evasion\n\n• Legendary Chainmail Armor: Base Thresholds: 15 / 40; Base Score: 7; Feature: Heavy: -1 to Evasion",
+    "aliases": [
+      "Improved Chainmail Armor",
+      "Advanced Chainmail Armor",
+      "Legendary Chainmail Armor"
+    ]
   }
 ]

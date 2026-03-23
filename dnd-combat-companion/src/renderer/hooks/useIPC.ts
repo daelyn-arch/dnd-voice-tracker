@@ -4,6 +4,45 @@ import { lookupEntry, getAllEntries } from '../data'
 import type { Entry, DiceRollEntry } from '../types'
 import { useAudio } from './useAudio'
 
+/**
+ * Phonetic aliases — maps spoken alternative phrases back to canonical keywords.
+ * Must stay in sync with the PHONETIC_ALIASES in main/grammar.ts.
+ * (Duplicated here because main and renderer are separate processes.)
+ */
+const PHONETIC_ALIASES: Record<string, string> = {
+  'fur bolg': 'firbolg', 'fir bolg': 'firbolg', 'fire bolg': 'firbolg',
+  'fun grill': 'fungril', 'fung rill': 'fungril',
+  'gal ah pah': 'galapa', 'gal a pa': 'galapa',
+  'rib it': 'ribbet', 'rib bet': 'ribbet',
+  'sim ee ah': 'simiah', 'sim eye ah': 'simiah',
+  'ka tar ee': 'katari', 'ka tar eye': 'katari',
+  'in fur nis': 'infernis', 'in fern is': 'infernis',
+  'dra ko na': 'drakona', 'dra cone ah': 'drakona',
+  'are kah na': 'arcana', 'are cane ah': 'arcana',
+  'co dex': 'codex', 'code ex': 'codex',
+  'sare af': 'seraph', 'sair a': 'seraph', 'sarah': 'seraph',
+  'more den kine en': 'mordenkainen', 'mor den kai nen': 'mordenkainen',
+  'big bees hand': "bigby's hand", 'big bee': 'bigby',
+  'toss a': 'tasha', 'tash a': 'tasha',
+  'melfs': 'melf', 'evo rds': 'evard',
+  'ot a luke': 'otiluke', 'ot ill uke': 'otiluke',
+  'draw midge': 'drawmij', 'ten sir': 'tenser',
+  'nigh stool': 'nystul', 'lay oh mund': 'leomund', 'lee oh mund': 'leomund',
+  'rare ee': 'rary', 'a gah nah zar': 'aganazzar',
+  'can trip': 'cantrip', 'eld rich': 'eldritch',
+  'neck row man see': 'necromancy', 'trans mew tay shun': 'transmutation',
+  'ev oh cay shun': 'evocation', 'ab jure ay shun': 'abjuration',
+  'con jure ay shun': 'conjuration', 'div in ay shun': 'divination',
+  'spell cast': 'spellcast', 'spell cast roll': 'spellcast roll',
+  'hit points': 'hit point', 'armor slots': 'armor slot',
+  'damage threshold': 'damage thresholds', 'recall cost': 'recall cost',
+}
+
+/** Resolve a phonetic alias to its canonical keyword, or return as-is */
+function resolveAlias(keyword: string): string {
+  return PHONETIC_ALIASES[keyword] ?? keyword
+}
+
 // Words to ignore when searching — short/common English words and dice grammar words
 const CATCH_ALL_IGNORE = new Set([
   'the', 'of', 'and', 'at', 'in', 'to', 'or', 'a', 'an', 'unk',
@@ -44,10 +83,48 @@ function tryDiceRoll(keyword: string): DiceRollEntry | null {
   }
 }
 
-let _allEntries: Entry[] | null = null
 function allEntries(): Entry[] {
-  if (!_allEntries) _allEntries = getAllEntries()
-  return _allEntries
+  return getAllEntries()
+}
+
+/** Get all searchable names for an entry (its name + any aliases) */
+function getEntryNames(entry: Entry): string[] {
+  const names = [entry.name.toLowerCase()]
+  const aliases = (entry as any).aliases as string[] | undefined
+  if (aliases) {
+    names.push(...aliases.map((a: string) => a.toLowerCase()))
+  }
+  return names
+}
+
+/**
+ * Scan a phrase for exact entry name matches (e.g. "fireball" inside
+ * "so when you cast the fireball it is going to find the room").
+ * Only matches whole words to avoid false positives.
+ * Also checks aliases so grouped entries trigger on sub-entry names.
+ */
+function extractExactMatches(phrase: string): Entry[] {
+  const lower = phrase.toLowerCase().replace(/\[unk\]/g, '').trim()
+  if (!lower) return []
+
+  const seen = new Set<string>()
+  const results: Entry[] = []
+
+  for (const entry of allEntries()) {
+    if (seen.has(entry.id)) continue
+    for (const name of getEntryNames(entry)) {
+      // Skip very short names (1-2 chars) to avoid false positives
+      if (name.length < 3) continue
+      // Check if the entry name appears as a whole word/phrase in the input
+      const pattern = new RegExp(`\\b${name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`)
+      if (pattern.test(lower)) {
+        seen.add(entry.id)
+        results.push(entry)
+        break
+      }
+    }
+  }
+  return results
 }
 
 function catchAllLookup(phrase: string): Entry[] {
@@ -63,7 +140,9 @@ function catchAllLookup(phrase: string): Entry[] {
   const results: Entry[] = []
   for (const word of words) {
     for (const entry of allEntries()) {
-      if (!seen.has(entry.id) && entry.name.toLowerCase().includes(word)) {
+      if (seen.has(entry.id)) continue
+      // Check entry name and aliases for the spoken word
+      if (getEntryNames(entry).some((name) => name.includes(word))) {
         seen.add(entry.id)
         results.push(entry)
       }
@@ -86,38 +165,74 @@ export function useIPC(): void {
   useAudio()
 
   useEffect(() => {
+    // Track which keywords we already detected from partials so we don't
+    // double-fire when the final result arrives
+    const detectedFromPartial = new Set<string>()
+
+    // Partial results — low-latency detection mid-sentence.
+    // Only fires for exact entry name matches (no catch-all/dice from partials).
+    const offPartial = window.electronAPI.onKeywordPartial((payload) => {
+      const keyword = resolveAlias(payload.keyword)
+
+      // Update transcript with partial
+      useDetectionStore.getState().pushTranscriptWord(keyword)
+
+      // Scan for exact entry names in the partial text
+      const matches = extractExactMatches(keyword)
+      for (const entry of matches) {
+        const key = entry.name.toLowerCase()
+        if (!detectedFromPartial.has(key)) {
+          detectedFromPartial.add(key)
+          addDetection(key, entry)
+        }
+      }
+    })
+
+    // Final results — complete utterance
     const offKeyword = window.electronAPI.onKeywordDetected((payload) => {
-      // Push every recognized word to the live transcript
+      // Push to transcript
       useDetectionStore.getState().pushTranscriptWord(payload.keyword)
 
+      // Resolve phonetic aliases
+      const keyword = resolveAlias(payload.keyword)
+
       // Check for "plus {N}" dice roll first
-      const diceEntry = tryDiceRoll(payload.keyword)
+      const diceEntry = tryDiceRoll(keyword)
       if (diceEntry) {
-        // If a sticky-pinned d20 card exists, update it in-place
         const updated = useDetectionStore.getState().updateStickyRoll(diceEntry)
         if (!updated) {
-          // Otherwise create a new card
           addDetection(diceEntry.id, diceEntry)
         }
+        detectedFromPartial.clear()
         return
       }
 
-      // Read catchAllMode from store directly so closure always sees latest value
-      if (useDetectionStore.getState().catchAllMode) {
-        const matches = catchAllLookup(payload.keyword)
-        if (matches.length > 0) {
-          matches.forEach((e) => addDetection(e.name.toLowerCase(), e))
-        } else {
-          console.warn('[IPC] Catch-all: no matches for:', payload.keyword)
-        }
-      } else {
-        const entry = lookupEntry(payload.keyword)
-        if (entry) {
-          addDetection(payload.keyword, entry)
-        } else {
-          console.warn('[IPC] No entry found for keyword:', payload.keyword)
+      // Collect all matches from multiple strategies, deduplicating
+      const added = new Set<string>(detectedFromPartial)
+
+      function addIfNew(entry: Entry): void {
+        const key = entry.name.toLowerCase()
+        if (!added.has(key)) {
+          added.add(key)
+          addDetection(key, entry)
         }
       }
+
+      // 1. Exact entry-name extraction (finds "fireball" inside a sentence)
+      extractExactMatches(keyword).forEach(addIfNew)
+
+      // 2. Mode-specific lookup
+      if (useDetectionStore.getState().catchAllMode) {
+        // Catch-all: find entries whose name contains any spoken word
+        // (e.g. "smite" → finds "blinding smite", "divine smite", etc.)
+        catchAllLookup(keyword).forEach(addIfNew)
+      } else {
+        // Exact mode: try direct lookup of the full phrase
+        const entry = lookupEntry(keyword)
+        if (entry) addIfNew(entry)
+      }
+
+      detectedFromPartial.clear()
     })
 
     const offStatus = window.electronAPI.onSpeechStatus((status) => {
@@ -132,6 +247,7 @@ export function useIPC(): void {
     window.electronAPI.startListening()
 
     return () => {
+      offPartial()
       offKeyword()
       offStatus()
       offError()

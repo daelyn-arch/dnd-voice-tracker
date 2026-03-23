@@ -6,7 +6,9 @@ import { SearchBar } from './SearchBar'
 import { AboutPanel } from './AboutPanel'
 import { SettingsPanel } from './SettingsPanel'
 import { LibraryPanel } from './LibraryPanel'
+import { AddCardPanel } from './AddCardPanel'
 import { TranscriptCard } from './TranscriptCard'
+import { setCustomCards, type CustomCardData } from '../data'
 import styles from './HUD.module.css'
 
 const MIN_WIDTH = 280
@@ -36,7 +38,23 @@ export function HUD(): React.JSX.Element {
   const [showAbout, setShowAbout] = useState(false)
   const [showSettings, setShowSettings] = useState(false)
   const [showLibrary, setShowLibrary] = useState(false)
+  const [showAddCard, setShowAddCard] = useState(false)
   const [columnWidth, setColumnWidth] = useState(DEFAULT_WIDTH)
+
+  // Load custom cards on startup
+  useEffect(() => {
+    try {
+      window.electronAPI.customLibraryGet?.()?.then?.((cards: CustomCardData[]) => {
+        if (cards) setCustomCards(cards)
+      }).catch(() => {})
+    } catch { /* custom library not available yet */ }
+  }, [])
+
+  function handleSaveCard(card: CustomCardData): void {
+    window.electronAPI.customLibraryAdd(card).then((cards: CustomCardData[]) => {
+      setCustomCards(cards)
+    })
+  }
 
   const CATEGORY_ORDER: Record<string, number> = {
     diceRoll: 0, spell: 1, feature: 2, feat: 3, equipment: 4,
@@ -79,11 +97,11 @@ export function HUD(): React.JSX.Element {
   // ── Mouse passthrough ──────────────────────────────────────────────────
 
   useEffect(() => {
-    if (!showSearch && !showAbout && !showSettings && !showLibrary) {
+    if (!showSearch && !showAbout && !showSettings && !showLibrary && !showAddCard) {
       ignoreRef.current = true
       window.electronAPI.setIgnoreMouseEvents(true)
     }
-  }, [showSearch, showAbout, showSettings, showLibrary])
+  }, [showSearch, showAbout, showSettings, showLibrary, showAddCard])
 
   useEffect(() => {
     function setIgnore(val: boolean): void {
@@ -138,6 +156,7 @@ export function HUD(): React.JSX.Element {
         {showAbout && <AboutPanel onClose={() => setShowAbout(false)} />}
         {showSettings && <SettingsPanel onClose={() => setShowSettings(false)} />}
         {showLibrary && <LibraryPanel onClose={() => setShowLibrary(false)} />}
+        {showAddCard && <AddCardPanel onClose={() => setShowAddCard(false)} onSave={handleSaveCard} />}
 
         <TranscriptCard />
 
@@ -151,29 +170,36 @@ export function HUD(): React.JSX.Element {
             ∗
           </button>
           <button
+            className={`${styles.iconBtn} ${showAddCard ? styles.iconBtnActive : ''}`}
+            onMouseDown={(e) => { e.preventDefault(); setShowAddCard((v) => !v); setShowSearch(false); setShowAbout(false); setShowSettings(false); setShowLibrary(false) }}
+            title="Add custom card"
+          >
+            +
+          </button>
+          <button
             className={`${styles.iconBtn} ${showLibrary ? styles.iconBtnActive : ''}`}
-            onMouseDown={(e) => { e.preventDefault(); setShowLibrary((v) => !v); setShowSearch(false); setShowAbout(false); setShowSettings(false) }}
+            onMouseDown={(e) => { e.preventDefault(); setShowLibrary((v) => !v); setShowSearch(false); setShowAbout(false); setShowSettings(false); setShowAddCard(false) }}
             title="Browse library"
           >
             ☰
           </button>
           <button
             className={`${styles.iconBtn} ${showSearch ? styles.iconBtnActive : ''}`}
-            onMouseDown={(e) => { e.preventDefault(); setShowSearch((v) => !v); setShowAbout(false); setShowSettings(false); setShowLibrary(false) }}
+            onMouseDown={(e) => { e.preventDefault(); setShowSearch((v) => !v); setShowAbout(false); setShowSettings(false); setShowLibrary(false); setShowAddCard(false) }}
             title="Search all entries"
           >
             ?
           </button>
           <button
             className={`${styles.iconBtn} ${showSettings ? styles.iconBtnActive : ''}`}
-            onMouseDown={(e) => { e.preventDefault(); setShowSettings((v) => !v); setShowSearch(false); setShowAbout(false); setShowLibrary(false) }}
+            onMouseDown={(e) => { e.preventDefault(); setShowSettings((v) => !v); setShowSearch(false); setShowAbout(false); setShowLibrary(false); setShowAddCard(false) }}
             title="Settings"
           >
             ⚙
           </button>
           <button
             className={`${styles.iconBtn} ${showAbout ? styles.iconBtnActive : ''}`}
-            onMouseDown={(e) => { e.preventDefault(); setShowAbout((v) => !v); setShowSearch(false); setShowSettings(false); setShowLibrary(false) }}
+            onMouseDown={(e) => { e.preventDefault(); setShowAbout((v) => !v); setShowSearch(false); setShowSettings(false); setShowLibrary(false); setShowAddCard(false) }}
             title="About"
           >
             ℹ

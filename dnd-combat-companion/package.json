@@ -1,7 +1,7 @@
 {
   "name": "dnd-combat-companion",
   "version": "1.0.0",
-  "description": "D&D 5e Combat Companion — voice-activated spell and feature lookup overlay",
+  "description": "Log of Beholding — voice-activated TTRPG reference overlay",
   "main": "out/main/index.js",
   "scripts": {
     "dev": "electron-vite dev",
@@ -30,8 +30,9 @@
     "typescript": "^5.5.2"
   },
   "build": {
-    "appId": "com.dnd.combatcompanion",
-    "productName": "D&D Combat Companion",
+    "appId": "com.logofbeholding.app",
+    "productName": "Log of Beholding",
+    "icon": "resources/icon.png",
     "asar": true,
     "npmRebuild": false,
     "asarUnpack": [
